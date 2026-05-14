@@ -2,7 +2,7 @@
 # Clean URL redirects and legacy WordPress URL handling
 
 # Coming soon — remove this line when the full site is ready
-/*    /coming-soon.html    200
+/    /coming-soon.html    302
 
 # WordPress legacy URLs → new clean URLs
 /our-story/                          /about/our-story/                    301
