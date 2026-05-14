@@ -1,6 +1,9 @@
 # JPIC Website — Cloudflare Pages Redirects
 # Clean URL redirects and legacy WordPress URL handling
 
+# Coming soon — remove this line when the full site is ready
+/*    /coming-soon.html    200
+
 # WordPress legacy URLs → new clean URLs
 /our-story/                          /about/our-story/                    301
 /our-vision-and-mission/             /about/vision-and-mission/           301
