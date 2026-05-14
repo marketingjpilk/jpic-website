@@ -1,0 +1,1370 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore the full Cambridge Pathway at St. John Paul II International College — from Early Years through to A Level. A globally recognised education from age 3 to 19, Wennappuwa, Sri Lanka." />
+  <meta name="keywords" content="Cambridge programmes JPIC, Cambridge pathway Sri Lanka, Cambridge Early Years, Cambridge Primary, Cambridge IGCSE, Cambridge A Level, Wennappuwa Cambridge school" />
+  <meta property="og:title" content="Academic Programmes — St. John Paul II International College" />
+  <meta property="og:description" content="Explore the full Cambridge International pathway at JPIC — from Early Years through to A Level — a globally recognised education from age 3 to 19." />
+  <meta property="og:image" content="https://jpeducation.net/assets/images/og-image.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/webp" />
+  <meta property="og:url" content="https://jpeducation.net/academic/programmes.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="St. John Paul II International College" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://jpeducation.net/assets/images/og-image.webp" />
+  <meta name="twitter:title" content="Academic Programmes | JPIC Cambridge School Wennappuwa" />
+  <meta name="twitter:description" content="The full Cambridge Pathway from Early Years to A Level at St. John Paul II International College, Wennappuwa, Sri Lanka." />
+  <title>Academic Programmes — St. John Paul II International College | Cambridge School Wennappuwa</title>
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="/assets/css/main.css?v=20260514" />
+  <link rel="stylesheet" href="/assets/css/components.css?v=20260514" />
+
+  <style>
+    /* ── PAGE-LEVEL TOKENS (supplement main.css) ── */
+    :root {
+      --oxford-deep:    #001530;
+      --oxford-mid:     #003166;
+      --champagne-dark: #D4AE3A;
+      --tiffany:        #00BDB6;
+      --turquoise:      #3BE0D0;
+      --light-cyan-alt: #D7FDF5;
+      --text-muted:     #5A6478;
+      --rule:           rgba(0,33,71,0.10);
+      --rule-soft:      rgba(0,33,71,0.06);
+
+      --serif-display: var(--font-display);
+      --serif-italic:  var(--font-accent);
+      --sans:          var(--font-body);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; overflow-x: hidden; }
+    body {
+      font-family: var(--sans);
+      background: var(--baby-powder);
+      color: var(--eerie-black);
+      line-height: 1.7;
+      font-size: 16px;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── SHARED ATOMS ── */
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--tiffany);
+    }
+    .eyebrow::before {
+      content: '';
+      width: 28px;
+      height: 1px;
+      background: var(--tiffany);
+    }
+    .eyebrow.centered { justify-content: center; }
+
+    .h-display {
+      font-family: var(--serif-display);
+      font-weight: 400;
+      color: var(--oxford-blue);
+      line-height: 1.15;
+      letter-spacing: -0.012em;
+    }
+    .h-display em { font-style: italic; color: var(--tiffany); }
+
+    .gold-rule {
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: var(--champagne);
+      border: none;
+    }
+    .gold-rule.centered { margin-left: auto; margin-right: auto; }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      font-family: var(--sans);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 16px 32px;
+      border-radius: 2px;
+      text-decoration: none;
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .btn .arrow {
+      width: 22px; height: 1px;
+      background: currentColor;
+      position: relative;
+      transition: width 0.3s ease;
+    }
+    .btn .arrow::after {
+      content: ''; position: absolute;
+      right: 0; top: -3px;
+      width: 7px; height: 7px;
+      border-right: 1px solid currentColor;
+      border-top: 1px solid currentColor;
+      transform: rotate(45deg);
+    }
+    .btn:hover .arrow { width: 32px; }
+
+    .btn-primary {
+      background: var(--oxford-blue);
+      color: var(--champagne);
+      border-color: var(--oxford-blue);
+    }
+    .btn-primary:hover {
+      background: var(--tiffany);
+      border-color: var(--tiffany);
+      color: #ffffff;
+      transform: translateY(-1px);
+      box-shadow: 0 14px 32px rgba(0,189,182,0.28);
+    }
+    .btn-outline {
+      background: transparent;
+      color: var(--oxford-blue);
+      border-color: var(--oxford-blue);
+    }
+    .btn-outline:hover {
+      background: var(--oxford-blue);
+      color: #ffffff;
+      transform: translateY(-1px);
+    }
+
+    /* ── REVEAL ── */
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.8s ease, transform 0.8s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal[data-delay="1"] { transition-delay: 0.08s; }
+    .reveal[data-delay="2"] { transition-delay: 0.16s; }
+    .reveal[data-delay="3"] { transition-delay: 0.24s; }
+    .reveal[data-delay="4"] { transition-delay: 0.32s; }
+    .reveal[data-delay="5"] { transition-delay: 0.40s; }
+
+    /* ══════════════════════════════════════════════════════════
+       SECTION 1 — INTRO
+       ══════════════════════════════════════════════════════════ */
+    #intro {
+      background: #ffffff;
+      padding: 140px 0 110px;
+      position: relative;
+      overflow: hidden;
+    }
+    #intro::before {
+      content: '';
+      position: absolute;
+      top: 80px; right: -160px;
+      width: 460px; height: 460px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0,189,182,0.05) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 80px;
+      align-items: center;
+      position: relative;
+    }
+
+    .intro-breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--sans);
+      font-size: 11px;
+      color: var(--text-muted);
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: 32px;
+    }
+    .intro-breadcrumb a { color: var(--text-muted); text-decoration: none; transition: color 0.3s ease; }
+    .intro-breadcrumb a:hover { color: var(--tiffany); }
+    .intro-breadcrumb .sep { color: rgba(0,33,71,0.3); }
+    .intro-breadcrumb .here { color: var(--oxford-blue); font-weight: 500; }
+
+    .intro-title { font-size: clamp(40px, 5vw, 64px); margin: 18px 0 28px; }
+
+    .intro-lede {
+      font-family: var(--sans);
+      font-size: 17.5px;
+      color: var(--eerie-black);
+      line-height: 1.8;
+      max-width: 580px;
+      margin: 32px 0 40px;
+    }
+
+    .intro-stats { display: flex; gap: 16px; flex-wrap: wrap; }
+    .stat-pill {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 16px 22px;
+      border: 1px solid var(--rule);
+      border-left: 3px solid var(--champagne);
+      border-radius: 2px;
+      background: var(--baby-powder);
+      transition: all 0.3s ease;
+    }
+    .stat-pill:hover {
+      border-left-color: var(--tiffany);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 28px rgba(0,33,71,0.07);
+    }
+    .stat-pill-num {
+      font-family: var(--serif-display);
+      font-size: 26px;
+      font-weight: 600;
+      color: var(--oxford-blue);
+      line-height: 1;
+      letter-spacing: -0.01em;
+    }
+    .stat-pill-num em { font-style: italic; color: var(--tiffany); font-weight: 500; }
+    .stat-pill-sub {
+      font-family: var(--sans);
+      font-size: 11px;
+      color: var(--text-muted);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+
+    .intro-cam-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-top: 36px;
+    }
+    .intro-cam-badge img {
+      height: 52px;
+      width: auto;
+      display: block;
+    }
+
+    /* intro visual */
+    .intro-visual { position: relative; width: 100%; height: 480px; }
+
+    .intro-image {
+      width: 100%;
+      height: 380px;
+      border-radius: 8px;
+      overflow: hidden;
+      position: relative;
+    }
+    .intro-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    .intro-overlay-card {
+      position: absolute;
+      bottom: 24px;
+      left: -28px;
+      background: var(--oxford-blue);
+      color: #fff;
+      padding: 22px 26px;
+      border-top: 3px solid var(--champagne);
+      box-shadow: 0 22px 48px rgba(0,33,71,0.22);
+      max-width: 230px;
+    }
+    .intro-overlay-num {
+      font-family: var(--serif-display);
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--champagne);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .intro-overlay-label {
+      font-family: var(--sans);
+      font-size: 11px;
+      color: rgba(255,255,255,0.7);
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      line-height: 1.5;
+    }
+
+    /* ══════════════════════════════════════════════════════════
+       SECTION 2 — PATHWAY STRIP
+       ══════════════════════════════════════════════════════════ */
+    #pathway {
+      background: var(--oxford-blue);
+      padding: 64px 0 56px;
+      position: relative;
+      overflow: hidden;
+    }
+    #pathway::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: repeating-linear-gradient(
+        45deg, rgba(255,230,158,0.025) 0px, rgba(255,230,158,0.025) 1px,
+        transparent 1px, transparent 14px
+      );
+      pointer-events: none;
+    }
+
+    .pathway-head { text-align: center; margin-bottom: 48px; position: relative; }
+    .pathway-head .eyebrow { color: var(--champagne); }
+    .pathway-head .eyebrow::before { background: var(--champagne); }
+    .pathway-title {
+      font-family: var(--serif-display);
+      font-size: 22px;
+      font-weight: 500;
+      color: #fff;
+      margin-top: 12px;
+      letter-spacing: 0.02em;
+    }
+    .pathway-title em { font-style: italic; color: var(--turquoise); }
+
+    .pathway-strip {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 0;
+      align-items: start;
+      position: relative;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 30px;
+    }
+    .pathway-strip::before {
+      content: '';
+      position: absolute;
+      top: 30px; left: 12%; right: 12%;
+      height: 1px;
+      background: repeating-linear-gradient(
+        90deg, var(--champagne) 0px, var(--champagne) 6px,
+        transparent 6px, transparent 12px
+      );
+      opacity: 0.55;
+      z-index: 0;
+    }
+
+    .pathway-node {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      position: relative;
+      z-index: 1;
+      padding: 0 8px;
+    }
+    .pathway-circle {
+      width: 60px; height: 60px;
+      border-radius: 50%;
+      background: var(--champagne);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 22px rgba(255,230,158,0.25), inset 0 0 0 3px rgba(255,255,255,0.4);
+      position: relative;
+      transition: transform 0.3s ease;
+    }
+    .pathway-node:hover .pathway-circle { transform: translateY(-3px) scale(1.04); }
+    .pathway-circle::after {
+      content: '';
+      position: absolute;
+      inset: -6px;
+      border-radius: 50%;
+      border: 1px solid rgba(255,230,158,0.25);
+    }
+    .pathway-num {
+      font-family: var(--serif-display);
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--oxford-blue);
+      line-height: 1;
+    }
+    .pathway-name {
+      font-family: var(--sans);
+      font-size: 12px;
+      font-weight: 600;
+      color: #fff;
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 1.4;
+    }
+    .pathway-age {
+      font-family: var(--serif-italic);
+      font-style: italic;
+      font-size: 14px;
+      color: var(--turquoise);
+      letter-spacing: 0.02em;
+    }
+    .pathway-text { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+
+    .pathway-foot {
+      text-align: center;
+      margin-top: 44px;
+      padding-top: 32px;
+      border-top: 1px solid rgba(255,230,158,0.12);
+      font-family: var(--serif-italic);
+      font-style: italic;
+      font-size: 16px;
+      color: rgba(255,255,255,0.78);
+      letter-spacing: 0.01em;
+    }
+
+    /* ══════════════════════════════════════════════════════════
+       SECTION 3 — PROGRAMME CARDS
+       ══════════════════════════════════════════════════════════ */
+    #programmes {
+      background: var(--baby-powder);
+      padding: 120px 0 60px;
+    }
+
+    .programmes-head {
+      text-align: center;
+      margin-bottom: 80px;
+    }
+    .programmes-head .h-display {
+      font-size: clamp(32px, 4vw, 48px);
+      margin-top: 14px;
+      margin-bottom: 24px;
+    }
+    .programmes-head .lead {
+      max-width: 640px;
+      margin: 28px auto 0;
+      font-family: var(--sans);
+      font-size: 16px;
+      color: var(--text-muted);
+      line-height: 1.8;
+    }
+
+    .prog-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+      padding: 80px 0;
+      border-bottom: 1px solid var(--rule);
+      position: relative;
+    }
+    .prog-row:last-child { border-bottom: none; }
+    .prog-row.reverse .prog-content { order: 2; }
+    .prog-row.reverse .prog-visual  { order: 1; }
+
+    .prog-content { display: flex; flex-direction: column; gap: 0; }
+
+    .prog-meta {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 22px;
+    }
+    .age-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--tiffany);
+      color: #fff;
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 2px;
+    }
+    .age-badge::before {
+      content: '';
+      width: 5px; height: 5px;
+      border-radius: 50%;
+      background: #fff;
+    }
+    .stage-label {
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--text-muted);
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+    }
+
+    .prog-title {
+      font-family: var(--serif-display);
+      font-size: clamp(28px, 3vw, 38px);
+      font-weight: 500;
+      color: var(--oxford-blue);
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      margin-bottom: 8px;
+    }
+    .prog-title em { font-style: italic; color: var(--tiffany); }
+
+    .prog-rule {
+      width: 48px;
+      height: 2px;
+      background: var(--champagne);
+      margin: 20px 0 22px;
+      border: none;
+    }
+
+    .prog-body {
+      font-family: var(--sans);
+      font-size: 16px;
+      color: var(--eerie-black);
+      line-height: 1.8;
+      margin-bottom: 28px;
+      max-width: 540px;
+    }
+
+    .prog-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 28px;
+    }
+    .prog-tag {
+      font-family: var(--sans);
+      font-size: 12px;
+      color: var(--oxford-blue);
+      letter-spacing: 0.04em;
+      padding: 7px 14px;
+      border: 1px solid var(--rule);
+      border-radius: 2px;
+      background: rgba(255,255,255,0.6);
+      transition: all 0.3s ease;
+    }
+    .prog-tag:hover {
+      border-color: var(--tiffany);
+      background: #fff;
+      color: var(--tiffany);
+    }
+
+    .prog-benefit {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 0;
+      margin-bottom: 28px;
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+      font-family: var(--sans);
+      font-size: 14.5px;
+      font-weight: 500;
+      color: var(--oxford-blue);
+    }
+    .prog-benefit svg {
+      width: 18px; height: 18px;
+      color: var(--tiffany);
+      flex-shrink: 0;
+    }
+    .prog-benefit em {
+      font-family: var(--serif-italic);
+      font-style: italic;
+      color: var(--tiffany);
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    /* visual side */
+    .prog-visual { position: relative; }
+
+    .prog-image {
+      width: 100%;
+      height: 380px;
+      border-radius: 8px;
+      overflow: hidden;
+      position: relative;
+      transition: transform 0.4s ease;
+    }
+    .prog-row:hover .prog-image { transform: translateY(-4px); }
+    .prog-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    /* styled placeholder for cards without specific images */
+    .prog-image-placeholder {
+      width: 100%;
+      height: 380px;
+      background: var(--light-cyan);
+      border-radius: 8px;
+      border: 1px solid rgba(0,189,182,0.2);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.4s ease;
+    }
+    .prog-image-placeholder.alt { background: var(--light-cyan-alt); }
+    .prog-row:hover .prog-image-placeholder { transform: translateY(-4px); }
+    .prog-image-placeholder::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: repeating-linear-gradient(
+        135deg, rgba(0,189,182,0.05) 0px, rgba(0,189,182,0.05) 1px,
+        transparent 1px, transparent 16px
+      );
+    }
+    .prog-image-placeholder-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      position: relative;
+      z-index: 1;
+    }
+    .prog-image-icon {
+      width: 64px; height: 64px;
+      border-radius: 50%;
+      border: 1px solid rgba(0,33,71,0.18);
+      background: rgba(255,255,255,0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .prog-image-icon svg { width: 24px; height: 24px; color: var(--oxford-blue); }
+    .prog-image-label {
+      font-family: var(--sans);
+      font-size: 14px;
+      font-weight: 500;
+      color: rgba(0,33,71,0.55);
+      letter-spacing: 0.02em;
+    }
+
+    .prog-stage-num {
+      position: absolute;
+      top: -34px; left: -20px;
+      font-family: var(--serif-display);
+      font-size: 180px;
+      font-weight: 900;
+      color: rgba(0,33,71,0.05);
+      line-height: 1;
+      letter-spacing: -0.04em;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .prog-row.reverse .prog-stage-num { left: auto; right: -20px; }
+
+    /* ══════════════════════════════════════════════════════════
+       SECTION 4 — WHY CAMBRIDGE
+       ══════════════════════════════════════════════════════════ */
+    #why {
+      background: var(--oxford-blue);
+      padding: 120px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    #why::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: repeating-linear-gradient(
+        45deg, rgba(255,230,158,0.025) 0px, rgba(255,230,158,0.025) 1px,
+        transparent 1px, transparent 10px
+      );
+      pointer-events: none;
+    }
+    #why::after {
+      content: 'CAMBRIDGE';
+      position: absolute;
+      bottom: -50px; right: -40px;
+      font-family: var(--serif-display);
+      font-size: 280px;
+      font-weight: 900;
+      color: rgba(255,255,255,0.025);
+      letter-spacing: -0.03em;
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .why-head { text-align: center; margin-bottom: 80px; position: relative; }
+    .why-head .eyebrow { color: var(--champagne); }
+    .why-head .eyebrow::before { background: var(--champagne); }
+    .why-head .h-display {
+      color: #fff;
+      font-size: clamp(32px, 4vw, 48px);
+      margin-top: 14px;
+    }
+    .why-head .h-display em { color: var(--turquoise); }
+    .why-head .gold-rule { margin-top: 28px; }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 60px 80px;
+      position: relative;
+    }
+    .why-item {
+      display: grid;
+      grid-template-columns: 56px 1fr;
+      gap: 22px;
+      align-items: start;
+    }
+    .why-num {
+      width: 56px; height: 56px;
+      border-radius: 50%;
+      background: rgba(0,189,182,0.12);
+      border: 1px solid rgba(0,189,182,0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--serif-display);
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--turquoise);
+      flex-shrink: 0;
+      transition: all 0.3s ease;
+    }
+    .why-item:hover .why-num {
+      background: var(--tiffany);
+      border-color: var(--tiffany);
+      color: #fff;
+      transform: scale(1.04);
+    }
+    .why-content { padding-top: 8px; }
+    .why-h {
+      font-family: var(--sans);
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--champagne);
+      letter-spacing: 0.02em;
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+    .why-body {
+      font-family: var(--sans);
+      font-size: 14.5px;
+      color: rgba(255,255,255,0.78);
+      line-height: 1.75;
+    }
+
+    /* ══════════════════════════════════════════════════════════
+       SECTION 5 — CTA BANNER
+       ══════════════════════════════════════════════════════════ */
+    #cta {
+      background: var(--light-cyan-alt);
+      padding: 100px 0;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+    #cta::before, #cta::after {
+      content: '';
+      position: absolute;
+      width: 280px; height: 280px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0,189,182,0.18) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    #cta::before { top: -100px; left: -80px; }
+    #cta::after  { bottom: -100px; right: -80px; }
+
+    .cta-inner { position: relative; max-width: 720px; margin: 0 auto; }
+    .cta-title {
+      font-family: var(--serif-display);
+      font-size: clamp(34px, 4.2vw, 50px);
+      font-weight: 400;
+      color: var(--oxford-blue);
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      margin: 18px 0 24px;
+    }
+    .cta-title em { font-style: italic; color: var(--tiffany); }
+    .cta-sub {
+      font-family: var(--sans);
+      font-size: 17px;
+      color: var(--eerie-black);
+      line-height: 1.75;
+      margin-bottom: 40px;
+      max-width: 540px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .cta-actions {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* ══════════════════════════════════════════════════════════
+       RESPONSIVE
+       ══════════════════════════════════════════════════════════ */
+    @media (max-width: 900px) {
+      #intro { padding: 70px 0 56px; }
+      .intro-grid { grid-template-columns: 1fr; gap: 40px; }
+      .intro-title { font-size: clamp(32px, 8vw, 44px); }
+      .intro-visual { height: auto; }
+      .intro-image { height: 280px; }
+      .intro-overlay-card { left: 0; max-width: 200px; padding: 18px 20px; }
+      .intro-stats { flex-direction: column; gap: 12px; }
+      .stat-pill { width: 100%; }
+
+      #pathway { padding: 48px 0; }
+      .pathway-strip {
+        grid-template-columns: 1fr;
+        gap: 0;
+        padding: 0 20px;
+        max-width: 320px;
+      }
+      .pathway-strip::before { display: none; }
+      .pathway-node {
+        display: grid;
+        grid-template-columns: 60px 1fr;
+        gap: 18px;
+        align-items: center;
+        text-align: left;
+        padding: 16px 0;
+        position: relative;
+      }
+      .pathway-node:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        left: 30px; top: 76px;
+        width: 1px; height: 32px;
+        background: repeating-linear-gradient(
+          180deg, var(--champagne) 0px, var(--champagne) 4px,
+          transparent 4px, transparent 8px
+        );
+        opacity: 0.5;
+      }
+      .pathway-text { flex-direction: column; align-items: flex-start; gap: 4px; }
+      .pathway-name, .pathway-age { text-align: left; }
+      .pathway-circle { flex-shrink: 0; }
+
+      #programmes { padding: 70px 0 30px; }
+      .programmes-head { margin-bottom: 40px; }
+      .prog-row {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding: 56px 0;
+      }
+      .prog-row .prog-content    { order: 2; }
+      .prog-row .prog-visual     { order: 1; }
+      .prog-row.reverse .prog-content { order: 2; }
+      .prog-row.reverse .prog-visual  { order: 1; }
+      .prog-image, .prog-image-placeholder { height: 260px; }
+      .prog-stage-num { font-size: 110px; top: -18px; left: auto; right: -10px; }
+      .prog-row.reverse .prog-stage-num { right: -10px; left: auto; }
+
+      #why { padding: 70px 0; }
+      .why-grid { grid-template-columns: 1fr; gap: 36px; }
+      .why-head { margin-bottom: 48px; }
+
+      #cta { padding: 70px 0; }
+      .cta-actions { flex-direction: column; align-items: stretch; }
+      .cta-actions .btn { justify-content: center; }
+    }
+
+    @media (max-width: 1100px) and (min-width: 901px) {
+      .why-grid { grid-template-columns: repeat(2, 1fr); }
+      .pathway-strip { padding: 0 10px; }
+      .pathway-name { font-size: 11px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation (injected by JS) -->
+  <div data-component="nav"></div>
+
+  <main id="main-content">
+
+    <!-- ══════════════════════════════════════════════════════════
+         SECTION 1 — INTRO
+         ══════════════════════════════════════════════════════════ -->
+    <section id="intro" aria-labelledby="page-title">
+      <div class="container">
+
+        <nav class="intro-breadcrumb" aria-label="Breadcrumb">
+          <a href="/">Home</a>
+          <span class="sep">/</span>
+          <a href="/academic/">Academic</a>
+          <span class="sep">/</span>
+          <span class="here">Programmes</span>
+        </nav>
+
+        <div class="intro-grid">
+          <div class="intro-left">
+            <span class="eyebrow">Cambridge International Education</span>
+            <h1 id="page-title" class="h-display intro-title">Academic <em>Programmes</em></h1>
+            <hr class="gold-rule" />
+
+            <p class="intro-lede">
+              As a registered Cambridge International school, JPIC offers the full
+              Cambridge Pathway — a clear, continuous route of internationally
+              recognised education from age 3 to 19. Every stage builds purposefully
+              on the last, preparing learners for university and life beyond.
+            </p>
+
+            <div class="intro-stats">
+              <div class="stat-pill">
+                <div>
+                  <div class="stat-pill-num">160<em>+</em> Years</div>
+                  <div class="stat-pill-sub">of Cambridge excellence</div>
+                </div>
+              </div>
+              <div class="stat-pill">
+                <div>
+                  <div class="stat-pill-num">10,000<em>+</em> Schools</div>
+                  <div class="stat-pill-sub">in over 160 countries</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="intro-cam-badge">
+              <img src="/assets/images/cambridge-logo.png" alt="Cambridge International Education" />
+            </div>
+          </div>
+
+          <div class="intro-visual reveal" data-delay="2">
+            <div class="intro-image">
+              <img
+                src="/assets/images/gallery/Student_Photo.webp"
+                alt="Students at St. John Paul II International College"
+                loading="lazy"
+              />
+            </div>
+            <div class="intro-overlay-card">
+              <div class="intro-overlay-num">Age 3 &#8594; 19</div>
+              <div class="intro-overlay-label">One continuous<br />academic pathway</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════
+         SECTION 2 — PATHWAY STRIP
+         ══════════════════════════════════════════════════════════ -->
+    <section id="pathway" aria-label="Cambridge Pathway timeline">
+      <div class="container">
+        <div class="pathway-head">
+          <span class="eyebrow">The Cambridge Pathway</span>
+          <div class="pathway-title">Five <em>connected</em> stages of learning.</div>
+        </div>
+
+        <div class="pathway-strip">
+
+          <div class="pathway-node reveal" data-delay="1">
+            <div class="pathway-circle"><span class="pathway-num">1</span></div>
+            <div class="pathway-text">
+              <div class="pathway-name">Cambridge Early Years</div>
+              <div class="pathway-age">Age 3&#8211;6</div>
+            </div>
+          </div>
+
+          <div class="pathway-node reveal" data-delay="2">
+            <div class="pathway-circle"><span class="pathway-num">2</span></div>
+            <div class="pathway-text">
+              <div class="pathway-name">Cambridge Primary</div>
+              <div class="pathway-age">Age 5&#8211;11</div>
+            </div>
+          </div>
+
+          <div class="pathway-node reveal" data-delay="3">
+            <div class="pathway-circle"><span class="pathway-num">3</span></div>
+            <div class="pathway-text">
+              <div class="pathway-name">Lower Secondary</div>
+              <div class="pathway-age">Age 11&#8211;14</div>
+            </div>
+          </div>
+
+          <div class="pathway-node reveal" data-delay="4">
+            <div class="pathway-circle"><span class="pathway-num">4</span></div>
+            <div class="pathway-text">
+              <div class="pathway-name">Upper Secondary</div>
+              <div class="pathway-age">Age 14&#8211;16</div>
+            </div>
+          </div>
+
+          <div class="pathway-node reveal" data-delay="5">
+            <div class="pathway-circle"><span class="pathway-num">5</span></div>
+            <div class="pathway-text">
+              <div class="pathway-name">Cambridge Advanced</div>
+              <div class="pathway-age">Age 16&#8211;19</div>
+            </div>
+          </div>
+
+        </div>
+
+        <p class="pathway-foot">&#8220;A clear path for educational success from age 3 to 19.&#8221;</p>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════
+         SECTION 3 — PROGRAMME CARDS
+         ══════════════════════════════════════════════════════════ -->
+    <section id="programmes" aria-labelledby="programmes-heading">
+      <div class="container">
+
+        <div class="programmes-head reveal">
+          <span class="eyebrow centered">Our Programmes</span>
+          <h2 id="programmes-heading" class="h-display">Explore <em>Each Stage</em></h2>
+          <hr class="gold-rule centered" />
+          <p class="lead">From the wonder of the early years to the rigour of A Level &#8212; every stage at JPIC is taught by Cambridge-qualified teachers and benchmarked to international standards.</p>
+        </div>
+
+        <!-- CARD 1 — Early Years -->
+        <article class="prog-row reveal" aria-labelledby="prog-1">
+          <div class="prog-content">
+            <div class="prog-meta">
+              <span class="age-badge">Age 3&#8211;6</span>
+              <span class="stage-label">Stage 01</span>
+            </div>
+            <h3 id="prog-1" class="prog-title">Cambridge <em>Early Years</em></h3>
+            <hr class="prog-rule" />
+            <p class="prog-body">A child-centred, play-based programme that helps young learners develop at their own pace. Built around six curriculum areas, it gives children the knowledge, understanding and skills they need for the next stage of their education.</p>
+
+            <div class="prog-tags">
+              <span class="prog-tag">Communication &amp; Literacy</span>
+              <span class="prog-tag">Creative Expression</span>
+              <span class="prog-tag">Mathematics</span>
+              <span class="prog-tag">Physical Development</span>
+              <span class="prog-tag">Personal &amp; Social</span>
+              <span class="prog-tag">Understanding the World</span>
+            </div>
+
+            <div class="prog-benefit">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 6L9 17l-5-5"/></svg>
+              <span>Supports <em>bilingual and multilingual</em> learners</span>
+            </div>
+
+            <a href="/academic/cambridge-early-years/" class="btn btn-primary">
+              Explore Early Years
+              <span class="arrow"></span>
+            </a>
+          </div>
+
+          <div class="prog-visual">
+            <div class="prog-stage-num" aria-hidden="true">01</div>
+            <div class="prog-image-placeholder alt" role="img" aria-label="Cambridge Early Years programme">
+              <div class="prog-image-placeholder-inner">
+                <div class="prog-image-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/></svg>
+                </div>
+                <div class="prog-image-label">Early Years · Age 3&#8211;6</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 2 — Primary -->
+        <article class="prog-row reverse reveal" aria-labelledby="prog-2">
+          <div class="prog-content">
+            <div class="prog-meta">
+              <span class="age-badge">Age 5&#8211;11</span>
+              <span class="stage-label">Stage 02</span>
+            </div>
+            <h3 id="prog-2" class="prog-title">Cambridge <em>Primary</em></h3>
+            <hr class="prog-rule" />
+            <p class="prog-body">A broad and balanced curriculum across 11 subjects that sets clear learning objectives and builds strong foundations in English, Mathematics and Science. Flexible assessment options help teachers understand each child's potential and progress.</p>
+
+            <div class="prog-tags">
+              <span class="prog-tag">English</span>
+              <span class="prog-tag">Mathematics</span>
+              <span class="prog-tag">Science</span>
+              <span class="prog-tag">Computing</span>
+              <span class="prog-tag">Art &amp; Design</span>
+              <span class="prog-tag">Music</span>
+              <span class="prog-tag">Physical Education</span>
+              <span class="prog-tag">Digital Literacy</span>
+              <span class="prog-tag">Wellbeing</span>
+            </div>
+
+            <div class="prog-benefit">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              <span>Taught in <em>2,300+ schools</em> across 120 countries</span>
+            </div>
+
+            <a href="/academic/cambridge-primary/" class="btn btn-primary">
+              Explore Primary
+              <span class="arrow"></span>
+            </a>
+          </div>
+
+          <div class="prog-visual">
+            <div class="prog-stage-num" aria-hidden="true">02</div>
+            <div class="prog-image-placeholder" role="img" aria-label="Cambridge Primary programme">
+              <div class="prog-image-placeholder-inner">
+                <div class="prog-image-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                </div>
+                <div class="prog-image-label">Cambridge Primary · Age 5&#8211;11</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 3 — Lower Secondary -->
+        <article class="prog-row reveal" aria-labelledby="prog-3">
+          <div class="prog-content">
+            <div class="prog-meta">
+              <span class="age-badge">Age 11&#8211;14</span>
+              <span class="stage-label">Stage 03</span>
+            </div>
+            <h3 id="prog-3" class="prog-title">Cambridge <em>Lower Secondary</em></h3>
+            <hr class="prog-rule" />
+            <p class="prog-body">Develops skills across 11 subjects and prepares learners for the next step of their education. Cambridge Checkpoint assessments at the end of the stage provide internationally benchmarked feedback for students and parents.</p>
+
+            <div class="prog-tags">
+              <span class="prog-tag">English</span>
+              <span class="prog-tag">Mathematics</span>
+              <span class="prog-tag">Science</span>
+              <span class="prog-tag">Computing</span>
+              <span class="prog-tag">Art &amp; Design</span>
+              <span class="prog-tag">Music</span>
+              <span class="prog-tag">Physical Education</span>
+              <span class="prog-tag">Digital Literacy</span>
+              <span class="prog-tag">Wellbeing</span>
+            </div>
+
+            <div class="prog-benefit">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3v18h18"/><path d="M18.4 7.8L8.7 17.5l-3.3-3.3"/></svg>
+              <span>Over <em>110,000 Checkpoint entries</em> received every year</span>
+            </div>
+
+            <a href="/academic/cambridge-lower-secondary/" class="btn btn-primary">
+              Explore Lower Secondary
+              <span class="arrow"></span>
+            </a>
+          </div>
+
+          <div class="prog-visual">
+            <div class="prog-stage-num" aria-hidden="true">03</div>
+            <div class="prog-image-placeholder alt" role="img" aria-label="Cambridge Lower Secondary programme">
+              <div class="prog-image-placeholder-inner">
+                <div class="prog-image-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5"/></svg>
+                </div>
+                <div class="prog-image-label">Lower Secondary · Age 11&#8211;14</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 4 — Upper Secondary -->
+        <article class="prog-row reverse reveal" aria-labelledby="prog-4">
+          <div class="prog-content">
+            <div class="prog-meta">
+              <span class="age-badge">Age 14&#8211;16</span>
+              <span class="stage-label">Stage 04</span>
+            </div>
+            <h3 id="prog-4" class="prog-title">Cambridge <em>Upper Secondary</em></h3>
+            <hr class="prog-rule" />
+            <p class="prog-body">Inspires students to love learning through Cambridge IGCSE and Cambridge O Level &#8212; the world&#8217;s most popular international qualifications for this age group. Choose from 70+ subjects in any combination, with fair assessment designed for international learners.</p>
+
+            <div class="prog-tags">
+              <span class="prog-tag">Cambridge IGCSE</span>
+              <span class="prog-tag">Cambridge O Level</span>
+              <span class="prog-tag">Cambridge ICE</span>
+            </div>
+
+            <div class="prog-benefit">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+              <span>Offered in <em>5,000 schools</em> across 150 countries</span>
+            </div>
+
+            <a href="/academic/cambridge-upper-secondary/" class="btn btn-primary">
+              Explore Upper Secondary
+              <span class="arrow"></span>
+            </a>
+          </div>
+
+          <div class="prog-visual">
+            <div class="prog-stage-num" aria-hidden="true">04</div>
+            <div class="prog-image-placeholder" role="img" aria-label="Cambridge Upper Secondary programme">
+              <div class="prog-image-placeholder-inner">
+                <div class="prog-image-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                </div>
+                <div class="prog-image-label">Upper Secondary · Age 14&#8211;16</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 5 — Advanced -->
+        <article class="prog-row reveal" aria-labelledby="prog-5">
+          <div class="prog-content">
+            <div class="prog-meta">
+              <span class="age-badge">Age 16&#8211;19</span>
+              <span class="stage-label">Stage 05</span>
+            </div>
+            <h3 id="prog-5" class="prog-title">Cambridge <em>Advanced</em></h3>
+            <hr class="prog-rule" />
+            <p class="prog-body">Cambridge International AS &amp; A Level &#8212; the gold standard for university preparation. With 50+ subjects and three flexible assessment routes, students develop deep subject knowledge and the higher-order thinking skills that the world&#8217;s leading universities value.</p>
+
+            <div class="prog-tags">
+              <span class="prog-tag">Cambridge AS &amp; A Level</span>
+              <span class="prog-tag">Cambridge AICE Diploma</span>
+              <span class="prog-tag">Cambridge IPQ</span>
+            </div>
+
+            <div class="prog-benefit">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+              <span>Recognised by <em>2,200+ universities</em> including all UK universities</span>
+            </div>
+
+            <a href="/academic/cambridge-advanced/" class="btn btn-primary">
+              Explore Advanced
+              <span class="arrow"></span>
+            </a>
+          </div>
+
+          <div class="prog-visual">
+            <div class="prog-stage-num" aria-hidden="true">05</div>
+            <div class="prog-image-placeholder alt" role="img" aria-label="Cambridge Advanced programme">
+              <div class="prog-image-placeholder-inner">
+                <div class="prog-image-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                </div>
+                <div class="prog-image-label">Cambridge Advanced · Age 16&#8211;19</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════
+         SECTION 4 — WHY CAMBRIDGE
+         ══════════════════════════════════════════════════════════ -->
+    <section id="why" aria-labelledby="why-heading">
+      <div class="container">
+
+        <div class="why-head reveal">
+          <span class="eyebrow centered">Why Cambridge</span>
+          <h2 id="why-heading" class="h-display">A Globally Trusted <em>Education</em></h2>
+          <hr class="gold-rule centered" />
+        </div>
+
+        <div class="why-grid">
+
+          <div class="why-item reveal" data-delay="1">
+            <div class="why-num">01</div>
+            <div class="why-content">
+              <div class="why-h">Globally Recognised Qualifications</div>
+              <div class="why-body">Cambridge qualifications are accepted by the world&#8217;s top-ranked universities and higher education institutions worldwide.</div>
+            </div>
+          </div>
+
+          <div class="why-item reveal" data-delay="2">
+            <div class="why-num">02</div>
+            <div class="why-content">
+              <div class="why-h">160 Years of Excellence</div>
+              <div class="why-body">With over 160 years of experience, Cambridge sets the global standard for fair, valid and reliable international assessments.</div>
+            </div>
+          </div>
+
+          <div class="why-item reveal" data-delay="3">
+            <div class="why-num">03</div>
+            <div class="why-content">
+              <div class="why-h">Flexible &amp; Adaptable Curriculum</div>
+              <div class="why-body">Schools can adapt the curriculum to their local context, culture and ethos while maintaining international standards.</div>
+            </div>
+          </div>
+
+          <div class="why-item reveal" data-delay="1">
+            <div class="why-num">04</div>
+            <div class="why-content">
+              <div class="why-h">Learning with Lasting Impact</div>
+              <div class="why-body">Learners build deep subject knowledge, conceptual understanding and a broad range of skills and attributes for life.</div>
+            </div>
+          </div>
+
+          <div class="why-item reveal" data-delay="2">
+            <div class="why-num">05</div>
+            <div class="why-content">
+              <div class="why-h">Data-Led Insight</div>
+              <div class="why-body">Trusted baseline and diagnostic assessments help teachers turn data into actionable insights to improve learner outcomes.</div>
+            </div>
+          </div>
+
+          <div class="why-item reveal" data-delay="3">
+            <div class="why-num">06</div>
+            <div class="why-content">
+              <div class="why-h">A Global Community</div>
+              <div class="why-body">Join a community of educators in 160 countries, sharing ideas and best practice across a world-class network.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════
+         SECTION 5 — CTA BANNER
+         ══════════════════════════════════════════════════════════ -->
+    <section id="cta" aria-labelledby="cta-heading">
+      <div class="container">
+        <div class="cta-inner reveal">
+          <span class="eyebrow centered">Begin the Journey</span>
+          <h2 id="cta-heading" class="cta-title">Ready to Begin <em>the Journey?</em></h2>
+          <p class="cta-sub">Speak with our Admissions team to find the right Cambridge stage for your child.</p>
+
+          <div class="cta-actions">
+            <a href="/admissions/" class="btn btn-primary">
+              Apply Now
+              <span class="arrow"></span>
+            </a>
+            <a href="/contact.html" class="btn btn-outline">
+              Contact Admissions
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer (injected by JS) -->
+  <div data-component="footer"></div>
+
+  <!-- Back to top -->
+  <button class="back-to-top" aria-label="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="/assets/js/main.js?v=20260514"></script>
+
+  <script>
+    /* Scroll reveal */
+    const revealEls = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach(el => revealObserver.observe(el));
+  </script>
+
+</body>
+</html>

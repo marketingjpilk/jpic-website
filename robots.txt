@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jpeducation.net/sitemap.xml

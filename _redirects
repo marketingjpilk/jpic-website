@@ -1,0 +1,43 @@
+# JPIC Website — Cloudflare Pages Redirects
+# Clean URL redirects and legacy WordPress URL handling
+
+# WordPress legacy URLs → new clean URLs
+/our-story/                          /about/our-story/                    301
+/our-vision-and-mission/             /about/vision-and-mission/           301
+/coat-of-arms/                       /about/coat-of-arms/                 301
+/governance/                         /about/governance/                   301
+/academic-council-sjpic/             /about/academic-council/             301
+/bishops-message/                    /about/bishops-message/              301
+/rectors-message/                    /about/rectors-message/              301
+/principals-message/                 /about/principals-message/           301
+/school-anthem/                      /about/school-anthem/                301
+/school-houses/                      /about/school-houses/                301
+/school-flag/                        /about/school-flag/                  301
+/sjpic/                              /about/our-school/                   301
+/history-sjpic/                      /about/our-story/                    301
+
+/academic-staff/                     /academic/academic-staff/            301
+/academic-pathways/                  /academic/academic-pathways/         301
+/benefits/                           /academic/benefits/                  301
+/academic-calendar/                  /academic/academic-calendar/         301
+/cambridge-early-years/              /academic/cambridge-early-years/     301
+/cambridge-primary/                  /academic/cambridge-primary/         301
+/cambridge-lower-secondary/          /academic/cambridge-lower-secondary/ 301
+/cambridge-upper-secondary/          /academic/cambridge-upper-secondary/ 301
+/cambridge-advanced/                 /academic/cambridge-advanced/        301
+/cambridge-international/            /academic/                           301
+
+/spiritual-formation/                /student-life/spiritual-formation/   301
+/pastoral-formation/                 /student-life/pastoral-formation/    301
+/prefects/                           /student-life/prefects/              301
+
+/latest-news/                        /news/                               301
+/notices/                            /news/notices/                       301
+/events-calendar/                    /news/events/                        301
+/blog-page/                          /news/                               301
+
+/contact-us/                         /contact/                            301
+/apply-for-admissions/               /admissions/                         301
+
+# Catch-all for any stray WordPress-style ?p= links
+/?p=*                                /                                    301

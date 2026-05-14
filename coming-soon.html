@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Coming Soon | JPIC – St. John Paul II International College</title>
+  <meta name="description" content="Our new website is coming soon. St. John Paul II International College, Wennappuwa, Sri Lanka." />
+
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Cormorant+Garamond:ital,wght@1,400;1,600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --oxford-blue:    #002147;
+      --champagne:      #FFE69E;
+      --tiffany:        #00BDB6;
+      --turquoise:      #3BE0D0;
+      --baby-powder:    #F7FAFA;
+      --eerie-black:    #1F2121;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'DM Sans', system-ui, sans-serif;
+      color: rgba(255,255,255,0.85);
+      background:
+        radial-gradient(ellipse 800px 600px at 50% 40%,
+          rgba(0,189,182,0.07) 0%, transparent 70%),
+        repeating-linear-gradient(
+          -45deg,
+          transparent, transparent 40px,
+          rgba(255,255,255,0.025) 40px, rgba(255,255,255,0.025) 41px
+        ),
+        var(--oxford-blue);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 24px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    body::before, body::after {
+      content: '';
+      position: fixed;
+      width: 360px; height: 360px;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 0;
+    }
+    body::before {
+      top: -160px; left: -160px;
+      background: radial-gradient(circle, rgba(255,230,158,0.06) 0%, transparent 70%);
+    }
+    body::after {
+      bottom: -160px; right: -160px;
+      background: radial-gradient(circle, rgba(0,189,182,0.07) 0%, transparent 70%);
+    }
+
+    .wrap {
+      width: 100%;
+      max-width: 720px;
+      position: relative;
+      z-index: 1;
+      text-align: center;
+    }
+
+    /* ─── Logo area ─── */
+    .logo-mark {
+      width: 116px;
+      height: 116px;
+      margin: 0 auto 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      animation: fadeUp 0.7s ease 0.10s both;
+    }
+    .logo-mark::before {
+      content: '';
+      position: absolute;
+      inset: -22px;
+      background: radial-gradient(circle, rgba(255,230,158,0.14) 0%, transparent 65%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .logo-mark img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+      position: relative;
+      z-index: 1;
+      filter: drop-shadow(0 8px 22px rgba(0, 0, 30, 0.45));
+    }
+
+    .school-name {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.70);
+      margin-bottom: 4px;
+      animation: fadeUp 0.7s ease 0.10s both;
+    }
+    .location {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 12px;
+      color: rgba(255,255,255,0.45);
+      margin-bottom: 48px;
+      animation: fadeUp 0.7s ease 0.10s both;
+    }
+
+    /* ─── Divider ─── */
+    .divider {
+      width: 1px; height: 48px;
+      background: linear-gradient(to bottom, transparent, var(--champagne), transparent);
+      margin: 0 auto 48px;
+      animation: fadeUp 0.7s ease 0.20s both;
+    }
+
+    /* ─── Main message ─── */
+    .eyebrow {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--tiffany);
+      margin-bottom: 20px;
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      animation: fadeUp 0.7s ease 0.30s both;
+    }
+    .eyebrow::before, .eyebrow::after {
+      content: '';
+      width: 28px;
+      height: 1px;
+      background: rgba(0,189,182,0.4);
+    }
+
+    .headline {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 56px;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.15;
+      margin-bottom: 8px;
+      letter-spacing: -0.01em;
+      animation: fadeUp 0.7s ease 0.40s both;
+    }
+    .headline-italic {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 56px;
+      font-weight: 400;
+      font-style: italic;
+      color: var(--champagne);
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      animation: fadeUp 0.7s ease 0.40s both;
+    }
+
+    .gold-rule {
+      width: 64px;
+      height: 3px;
+      background: var(--champagne);
+      display: block;
+      margin: 28px auto;
+      border: none;
+      animation: fadeUp 0.7s ease 0.50s both;
+    }
+
+    .subtitle {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 22px;
+      font-style: italic;
+      color: rgba(255,255,255,0.80);
+      line-height: 1.7;
+      max-width: 520px;
+      margin: 0 auto 16px;
+      animation: fadeUp 0.7s ease 0.55s both;
+    }
+
+    .body-note {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 14px;
+      color: rgba(255,255,255,0.55);
+      margin-bottom: 56px;
+      animation: fadeUp 0.7s ease 0.60s both;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* ─── Contact details ─── */
+    .contacts {
+      display: flex;
+      gap: 48px;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: stretch;
+      animation: fadeUp 0.7s ease 0.70s both;
+    }
+    .contact-item {
+      text-align: center;
+      flex: 0 1 200px;
+      min-width: 180px;
+      position: relative;
+    }
+    .contact-item + .contact-item::before {
+      content: '';
+      position: absolute;
+      left: -24px;
+      top: 12%;
+      bottom: 12%;
+      width: 1px;
+      background: rgba(255,255,255,0.10);
+    }
+    .contact-icon {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.10);
+      margin: 0 auto 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+    .contact-icon svg {
+      width: 18px; height: 18px;
+      color: var(--tiffany);
+      transition: color 0.3s ease;
+    }
+    .contact-item:hover .contact-icon {
+      border-color: var(--tiffany);
+      background: rgba(0,189,182,0.14);
+    }
+
+    .contact-label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255,230,158,0.70);
+      margin-bottom: 8px;
+    }
+    .contact-values {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 14px;
+      color: #ffffff;
+      line-height: 1.8;
+    }
+    .contact-values a {
+      color: #ffffff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      display: block;
+    }
+    .contact-values a:hover,
+    .contact-values a:focus-visible { color: var(--tiffany); outline: none; }
+    .contact-values a:focus-visible {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    /* ─── Social ─── */
+    .social {
+      margin-top: 48px;
+      animation: fadeUp 0.7s ease 0.80s both;
+    }
+    .social-label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 11px;
+      color: rgba(255,255,255,0.40);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .social-buttons {
+      display: inline-flex;
+      gap: 12px;
+      justify-content: center;
+    }
+    .social-btn {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .social-btn svg { width: 16px; height: 16px; }
+    .social-btn:hover {
+      background: var(--tiffany);
+      border-color: var(--tiffany);
+      transform: scale(1.08);
+    }
+    .social-btn:focus-visible {
+      outline: 2px solid var(--champagne);
+      outline-offset: 3px;
+    }
+
+    /* ─── Footer ─── */
+    .copyright {
+      margin-top: 64px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 12px;
+      color: rgba(255,255,255,0.30);
+      letter-spacing: 0.02em;
+      animation: fadeUp 0.7s ease 0.90s both;
+    }
+    .copyright .sep { color: rgba(255,230,158,0.25); margin: 0 8px; }
+
+    /* ─── Animation ─── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.001ms !important;
+        transition-duration: 0.001ms !important;
+      }
+    }
+
+    /* ─── Responsive ─── */
+    @media (max-width: 600px) {
+      body { padding: 32px 20px; }
+      .logo-mark { width: 92px; height: 92px; margin-bottom: 20px; }
+      .logo-mark::before { inset: -14px; }
+
+      .school-name { font-size: 12px; letter-spacing: 0.14em; }
+      .location { margin-bottom: 36px; }
+
+      .divider { height: 36px; margin-bottom: 36px; }
+
+      .eyebrow { font-size: 10px; gap: 10px; }
+      .eyebrow::before, .eyebrow::after { width: 18px; }
+
+      .headline, .headline-italic { font-size: 36px; }
+
+      .gold-rule { margin: 22px auto; }
+
+      .subtitle { font-size: 18px; max-width: 100%; }
+
+      .body-note { margin-bottom: 40px; font-size: 13px; }
+
+      .contacts {
+        flex-direction: column;
+        align-items: center;
+        gap: 28px;
+      }
+      .contact-item + .contact-item::before { display: none; }
+
+      .social { margin-top: 36px; }
+      .copyright { margin-top: 48px; font-size: 11px; }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap" role="main">
+
+    <!-- Logo -->
+    <div class="logo-mark">
+      <img src="/assets/images/school-logo.png" alt="St. John Paul II International College crest — Truth · Wisdom · Love" />
+    </div>
+
+    <div class="school-name">St. John Paul II International College</div>
+    <div class="location">Wennappuwa, Sri Lanka</div>
+
+    <!-- Divider -->
+    <div class="divider" aria-hidden="true"></div>
+
+    <!-- Main message -->
+    <div class="eyebrow">Website Under Development</div>
+
+    <h1 class="headline">Something Great</h1>
+    <div class="headline-italic">Is Coming Soon</div>
+
+    <hr class="gold-rule" />
+
+    <p class="subtitle">"We are working on our new website to serve you better. Our commitment to excellence in Catholic education continues — online and beyond."</p>
+
+    <p class="body-note">In the meantime, please reach us directly using the contact details below.</p>
+
+    <!-- Contacts -->
+    <section class="contacts" aria-label="Contact information">
+
+      <div class="contact-item">
+        <div class="contact-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92Z"/>
+          </svg>
+        </div>
+        <div class="contact-label">Call Us</div>
+        <div class="contact-values">
+          <a href="tel:+94312254143">031 225 4143</a>
+          <a href="tel:+94761900925">076 190 0925</a>
+          <a href="tel:+94707640657">070 764 0657</a>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="5" width="18" height="14" rx="2"/>
+            <path d="M3 7l9 6 9-6"/>
+          </svg>
+        </div>
+        <div class="contact-label">Email Us</div>
+        <div class="contact-values">
+          <a href="mailto:admissions@jpeducation.net">admissions@jpeducation.net</a>
+          <a href="mailto:info@jpeducation.net">info@jpeducation.net</a>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+        </div>
+        <div class="contact-label">Find Us</div>
+        <div class="contact-values">
+          <a href="https://maps.app.goo.gl/z21TS1Hp1QR4RRk88" target="_blank" rel="noopener noreferrer">
+            Lunuwila Junction, Chilaw Road<br />
+            Wennappuwa 61170, Sri Lanka
+          </a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Social -->
+    <section class="social" aria-label="Follow us on social media">
+      <div class="social-label">Follow Us</div>
+      <div class="social-buttons">
+        <a href="https://www.facebook.com/jpinternationalcollege" class="social-btn" title="Facebook" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.25-1.5 1.55-1.5H16.7V3.65a22 22 0 0 0-2.4-.12c-2.4 0-4 1.46-4 4.14V9.9H7.6V13h2.7v8z"/>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/stjohnpauliicollege" class="social-btn" title="Instagram" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/company/st-john-paul-ii-international-cambridge-college" class="social-btn" title="LinkedIn" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+            <rect x="2" y="9" width="4" height="12"/>
+            <circle cx="4" cy="4" r="2"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="copyright">
+      <span>&copy; 2025 St. John Paul II International College, Wennappuwa.</span>
+      <span class="sep">·</span>
+      <span>All rights reserved.</span>
+    </div>
+
+  </main>
+</body>
+</html>

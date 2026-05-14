@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cambridge Early Years (Age 3–6) | JPIC</title>
+  <meta name="description" content="Cambridge Early Years at St. John Paul II International College — a play-based programme for ages 3 to 6 building the foundations of lifelong learning." />
+  <meta name="keywords" content="Cambridge Early Years JPIC, early years education Sri Lanka, Cambridge foundation stage Wennappuwa, play-based learning, JPIC Cambridge school" />
+
+  <meta property="og:title" content="Cambridge Early Years | JPIC" />
+  <meta property="og:description" content="Cambridge Early Years at St. John Paul II International College — a play-based programme for ages 3 to 6 building the foundations of lifelong learning." />
+  <meta property="og:image" content="https://jpeducation.net/assets/images/og-image.webp" />
+  <meta property="og:url" content="https://jpeducation.net/academic/cambridge-early-years.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="St. John Paul II International College" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cambridge Early Years | JPIC Cambridge School Wennappuwa" />
+  <meta name="twitter:description" content="A play-based Cambridge programme for ages 3–6 at St. John Paul II International College, Wennappuwa." />
+  <meta name="twitter:image" content="https://jpeducation.net/assets/images/og-image.webp" />
+
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="/assets/css/main.css?v=20260514" />
+  <link rel="stylesheet" href="/assets/css/components.css?v=20260514" />
+  <script src="/assets/js/main.js" defer></script>
+
+  <style>
+    /* ════════════════════════════════════════════════════
+       PAGE-LEVEL ALIASES — bridge design tokens to production vars
+       ════════════════════════════════════════════════════ */
+    :root {
+      --light-cyan-alt: #D7FDF5;
+      --rule:           rgba(0, 33, 71, 0.10);
+      --serif-display:  var(--font-display);
+      --serif-italic:   var(--font-accent);
+      --sans:           var(--font-body);
+    }
+
+    /* ════════════════════════════════════════════════════
+       SHARED ATOMS (not in production main.css)
+       ════════════════════════════════════════════════════ */
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--tiffany);
+    }
+    .eyebrow.with-line::before {
+      content: '';
+      width: 28px;
+      height: 1px;
+      background: currentColor;
+    }
+
+    .gold-rule {
+      display: block;
+      width: 64px;
+      height: 3px;
+      background: var(--champagne);
+      border: none;
+    }
+
+    /* ════════════════════════════════════════════════════
+       REVEAL-CHILDREN support (production JS only handles .reveal)
+       ════════════════════════════════════════════════════ */
+    .reveal-children > * {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+      transition-delay: calc(var(--i, 0) * 0.1s);
+    }
+    .reveal-children.revealed > * {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ════════════════════════════════════════════════════
+       Section 1 — Hero
+       ════════════════════════════════════════════════════ */
+    .ey-hero {
+      background: var(--oxford-blue);
+      background-image: repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 40px,
+        rgba(255,255,255,0.03) 40px,
+        rgba(255,255,255,0.03) 41px
+      );
+      min-height: 460px;
+      padding: 80px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .ey-hero::before {
+      content: '';
+      position: absolute;
+      top: -200px; right: -180px;
+      width: 540px; height: 540px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0,189,182,0.18) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .ey-hero::after {
+      content: '01';
+      position: absolute;
+      bottom: -80px; left: -30px;
+      font-family: var(--serif-display);
+      font-size: 360px;
+      font-weight: 900;
+      color: rgba(255,230,158,0.04);
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .ey-hero-grid {
+      display: grid;
+      grid-template-columns: 58% 42%;
+      gap: 64px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .ey-hero-age-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin: 16px 0;
+      background: var(--champagne);
+      color: var(--oxford-blue);
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 20px;
+    }
+    .ey-hero-age-badge .sep {
+      width: 4px; height: 4px;
+      border-radius: 50%;
+      background: var(--oxford-blue);
+      opacity: 0.5;
+    }
+
+    .ey-hero-title {
+      font-family: var(--serif-display);
+      font-weight: 700;
+      color: #ffffff;
+      font-size: 58px;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+    }
+    .ey-hero-title em {
+      font-style: italic;
+      color: var(--champagne);
+      font-weight: 400;
+    }
+
+    .ey-hero-rule {
+      display: block;
+      width: 64px; height: 3px;
+      background: var(--champagne);
+      border: none;
+      margin: 20px 0;
+    }
+
+    .ey-hero-intro {
+      font-family: var(--sans);
+      font-size: 17px;
+      color: rgba(255,255,255,0.88);
+      line-height: 1.7;
+      max-width: 520px;
+    }
+
+    .ey-hero-chips {
+      display: inline-flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 32px;
+    }
+    .ey-hero-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 6px;
+      padding: 8px 18px;
+      font-family: var(--sans);
+      font-size: 13px;
+      color: #ffffff;
+      transition: all 0.3s ease;
+    }
+    .ey-hero-chip:hover {
+      border-color: var(--champagne);
+      background: rgba(255,230,158,0.06);
+    }
+    .ey-hero-chip strong { font-weight: 700; color: var(--champagne); }
+    .ey-hero-chip .chip-sep {
+      width: 1px; height: 14px;
+      background: rgba(255,255,255,0.2);
+    }
+    .ey-hero-chip span:last-child { color: rgba(255,255,255,0.65); }
+
+    /* Hero right visual */
+    .ey-hero-visual { position: relative; }
+    .ey-hero-img {
+      background: rgba(255,255,255,0.07);
+      border: 1.5px dashed rgba(255,255,255,0.25);
+      border-radius: 10px;
+      height: 340px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      color: rgba(255,255,255,0.4);
+      position: relative;
+      overflow: hidden;
+    }
+    .ey-hero-img::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: repeating-linear-gradient(
+        135deg,
+        rgba(255,255,255,0.025) 0px, rgba(255,255,255,0.025) 1px,
+        transparent 1px, transparent 16px
+      );
+    }
+    .ey-hero-img svg { width: 36px; height: 36px; opacity: 0.55; position: relative; z-index: 1; }
+    .ey-hero-img-l1 { font-family: var(--sans); font-size: 13px; font-weight: 500; position: relative; z-index: 1; }
+    .ey-hero-img-l2 { font-family: monospace; font-size: 11px; opacity: 0.8; position: relative; z-index: 1; }
+
+    .ey-hero-overlay {
+      position: absolute;
+      bottom: -28px; left: -20px;
+      background: var(--oxford-blue);
+      border-left: 4px solid var(--champagne);
+      border-radius: 6px;
+      padding: 16px 20px;
+      box-shadow: 0 14px 38px rgba(0,0,0,0.32);
+      z-index: 2;
+    }
+    .ey-hero-overlay-label {
+      font-family: var(--sans);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--champagne);
+      margin-bottom: 4px;
+    }
+    .ey-hero-overlay-val {
+      font-family: var(--serif-display);
+      font-size: 15px;
+      color: #ffffff;
+      font-weight: 500;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Section 2 — Overview
+       ════════════════════════════════════════════════════ */
+    .ey-overview {
+      background: #ffffff;
+      padding: 96px 0;
+    }
+    .ey-overview-grid {
+      display: grid;
+      grid-template-columns: 62% 38%;
+      gap: 64px;
+      align-items: start;
+    }
+    .ey-overview-h2 {
+      font-family: var(--serif-display);
+      font-size: 40px;
+      font-weight: 500;
+      color: var(--oxford-blue);
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      margin-top: 12px;
+    }
+    .ey-overview-h2 em { font-style: italic; color: var(--tiffany); }
+    .ey-overview .gold-rule { margin: 18px 0 28px; }
+    .ey-overview-body p {
+      font-family: var(--sans);
+      font-size: 16px;
+      color: var(--eerie-black);
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    .ey-subheading {
+      font-family: var(--sans);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--oxford-blue);
+      margin: 40px 0 24px;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .ey-subheading::after {
+      content: '';
+      flex: 1;
+      min-width: 80px;
+      height: 1px;
+      background: var(--rule);
+    }
+
+    .ey-principles { display: flex; flex-direction: column; gap: 20px; }
+    .ey-principle { display: flex; gap: 16px; align-items: flex-start; padding: 14px 0; }
+    .ey-principle-num {
+      width: 36px; height: 36px;
+      flex-shrink: 0;
+      background: var(--tiffany);
+      color: #ffffff;
+      border-radius: 50%;
+      font-family: var(--sans);
+      font-size: 14px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+    .ey-principle:hover .ey-principle-num {
+      background: var(--oxford-blue);
+      transform: scale(1.04);
+    }
+    .ey-principle-title {
+      font-family: var(--sans);
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--oxford-blue);
+      margin-bottom: 4px;
+      letter-spacing: 0.02em;
+    }
+    .ey-principle-desc {
+      font-family: var(--sans);
+      font-size: 14px;
+      color: var(--eerie-black);
+      line-height: 1.65;
+    }
+
+    /* Sidebar */
+    .ey-sidebar {
+      position: sticky;
+      top: 100px;
+      background: var(--light-cyan-alt);
+      border-radius: 10px;
+      border-left: 4px solid var(--tiffany);
+      padding: 32px 28px;
+    }
+    .ey-sidebar-title {
+      font-family: var(--serif-display);
+      font-size: 22px;
+      font-weight: 500;
+      color: var(--oxford-blue);
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .ey-sidebar-title::before {
+      content: '';
+      display: block;
+      width: 18px; height: 1px;
+      background: var(--tiffany);
+    }
+    .ey-fact-row {
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(0,189,182,0.2);
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .ey-fact-row:last-child { border-bottom: none; }
+    .ey-fact-icon {
+      width: 36px; height: 36px;
+      border-radius: 8px;
+      background: rgba(0,189,182,0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .ey-fact-icon svg { width: 18px; height: 18px; color: var(--tiffany); }
+    .ey-fact-label {
+      font-family: var(--sans);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--tiffany);
+      display: block;
+      margin-bottom: 2px;
+    }
+    .ey-fact-value {
+      font-family: var(--sans);
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--oxford-blue);
+      line-height: 1.3;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Section 3 — Curriculum
+       ════════════════════════════════════════════════════ */
+    .ey-curriculum {
+      background: var(--baby-powder);
+      padding: 96px 0;
+    }
+    .ey-section-head {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+    .ey-section-head .eyebrow { justify-content: center; }
+    .ey-section-head h2 {
+      font-family: var(--serif-display);
+      font-size: 40px;
+      font-weight: 500;
+      color: var(--oxford-blue);
+      margin-top: 14px;
+      letter-spacing: -0.01em;
+    }
+    .ey-section-head h2 em { font-style: italic; color: var(--tiffany); }
+    .ey-section-head .gold-rule { margin: 18px auto 16px; }
+    .ey-section-head .lede {
+      font-family: var(--sans);
+      font-size: 15px;
+      color: var(--eerie-black);
+      max-width: 580px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    .ey-curriculum-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .ey-curric-card {
+      background: #ffffff;
+      border-radius: 10px;
+      border-top: 3px solid var(--tiffany);
+      padding: 32px 28px;
+      box-shadow: 0 2px 16px rgba(0,33,71,0.06);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .ey-curric-card::before {
+      content: attr(data-num);
+      position: absolute;
+      top: 14px; right: 18px;
+      font-family: var(--serif-display);
+      font-size: 56px;
+      font-weight: 700;
+      color: rgba(0,33,71,0.05);
+      line-height: 1;
+      pointer-events: none;
+    }
+    .ey-curric-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 36px rgba(0,33,71,0.12);
+    }
+    .ey-curric-icon {
+      width: 52px; height: 52px;
+      background: var(--light-cyan-alt);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      transition: background 0.3s ease;
+    }
+    .ey-curric-card:hover .ey-curric-icon { background: var(--tiffany); }
+    .ey-curric-icon svg { width: 26px; height: 26px; color: var(--tiffany); transition: color 0.3s ease; }
+    .ey-curric-card:hover .ey-curric-icon svg { color: #ffffff; }
+    .ey-curric-name {
+      font-family: var(--sans);
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--oxford-blue);
+      margin-bottom: 10px;
+      letter-spacing: 0.01em;
+      line-height: 1.3;
+    }
+    .ey-curric-desc {
+      font-family: var(--sans);
+      font-size: 14px;
+      color: var(--eerie-black);
+      line-height: 1.65;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Section 4 — Assessment
+       ════════════════════════════════════════════════════ */
+    .ey-assessment {
+      background: #ffffff;
+      padding: 96px 0;
+    }
+    .ey-assessment-grid {
+      display: grid;
+      grid-template-columns: 55% 45%;
+      gap: 56px;
+      align-items: center;
+    }
+    .ey-assessment h2 {
+      font-family: var(--serif-display);
+      font-size: 38px;
+      font-weight: 500;
+      color: var(--oxford-blue);
+      margin-top: 12px;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+    .ey-assessment h2 em { font-style: italic; color: var(--tiffany); }
+    .ey-assessment .gold-rule { margin: 18px 0 24px; }
+    .ey-assessment-body {
+      font-family: var(--sans);
+      font-size: 15px;
+      color: var(--eerie-black);
+      line-height: 1.8;
+    }
+
+    .ey-asmt-blocks { margin-top: 36px; display: flex; flex-direction: column; gap: 0; }
+    .ey-asmt-block {
+      border-left: 3px solid var(--champagne);
+      padding: 16px 0 16px 20px;
+      margin-bottom: 8px;
+      transition: border-color 0.3s ease, padding-left 0.3s ease;
+    }
+    .ey-asmt-block:hover { border-left-color: var(--tiffany); padding-left: 26px; }
+    .ey-asmt-title {
+      font-family: var(--sans);
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--oxford-blue);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .ey-asmt-title .num {
+      font-family: var(--serif-display);
+      font-style: italic;
+      font-size: 14px;
+      color: var(--tiffany);
+      font-weight: 400;
+    }
+    .ey-asmt-desc { font-family: var(--sans); font-size: 14px; color: var(--eerie-black); line-height: 1.65; }
+
+    .ey-asmt-img {
+      background: var(--light-cyan);
+      border: 1.5px dashed var(--tiffany);
+      border-radius: 10px;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      color: rgba(0,33,71,0.4);
+      position: relative;
+      overflow: hidden;
+    }
+    .ey-asmt-img::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: repeating-linear-gradient(
+        135deg,
+        rgba(0,189,182,0.05) 0px, rgba(0,189,182,0.05) 1px,
+        transparent 1px, transparent 16px
+      );
+    }
+    .ey-asmt-img svg { width: 32px; height: 32px; color: var(--tiffany); opacity: 0.5; position: relative; z-index: 1; }
+    .ey-asmt-img .l1 { font-family: var(--sans); font-size: 13px; font-weight: 500; position: relative; z-index: 1; }
+    .ey-asmt-img .l2 { font-family: monospace; font-size: 11px; position: relative; z-index: 1; }
+
+    /* ════════════════════════════════════════════════════
+       Section 5 — Support
+       ════════════════════════════════════════════════════ */
+    .ey-support {
+      background: var(--oxford-blue);
+      padding: 80px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .ey-support::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: repeating-linear-gradient(
+        45deg,
+        rgba(255,230,158,0.025) 0px, rgba(255,230,158,0.025) 1px,
+        transparent 1px, transparent 14px
+      );
+      pointer-events: none;
+    }
+    .ey-support .ey-section-head h2 { color: #ffffff; }
+    .ey-support .ey-section-head h2 em { color: var(--turquoise); }
+    .ey-support .ey-section-head .eyebrow { color: var(--champagne); }
+    .ey-support .ey-section-head .lede { color: rgba(255,255,255,0.8); }
+
+    .ey-support-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+    .ey-support-card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 10px;
+      padding: 36px 28px;
+      transition: all 0.3s ease;
+    }
+    .ey-support-card:hover {
+      background: rgba(255,255,255,0.10);
+      border-color: rgba(255,230,158,0.3);
+      transform: translateY(-4px);
+    }
+    .ey-support-icon {
+      width: 48px; height: 48px;
+      background: var(--tiffany);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .ey-support-icon svg { width: 22px; height: 22px; color: #ffffff; }
+    .ey-support-card h3 {
+      font-family: var(--serif-display);
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--champagne);
+      margin: 20px 0 12px;
+    }
+    .ey-support-card p {
+      font-family: var(--sans);
+      font-size: 14px;
+      color: rgba(255,255,255,0.8);
+      line-height: 1.7;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Section 6 — Pathway strip
+       ════════════════════════════════════════════════════ */
+    .ey-pathway {
+      background: var(--baby-powder);
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+      padding: 56px 0;
+    }
+    .ey-pathway-label {
+      text-align: center;
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--tiffany);
+    }
+    .ey-pathway-strip {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 0;
+      margin-top: 32px;
+      max-width: 980px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .ey-pathway-node {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+      width: 140px;
+      text-decoration: none;
+      transition: transform 0.3s ease;
+      padding: 0 4px;
+    }
+    .ey-pathway-node:hover { transform: translateY(-3px); }
+
+    .ey-path-circle {
+      width: 52px; height: 52px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--serif-display);
+      font-size: 20px;
+      font-weight: 700;
+      transition: all 0.3s ease;
+    }
+    .ey-pathway-node.active .ey-path-circle {
+      background: var(--champagne);
+      color: var(--oxford-blue);
+      box-shadow: 0 6px 22px rgba(255,230,158,0.45), inset 0 0 0 3px rgba(255,255,255,0.5);
+    }
+    .ey-pathway-node:not(.active) .ey-path-circle {
+      background: transparent;
+      border: 2px solid rgba(0,33,71,0.3);
+      color: rgba(0,33,71,0.5);
+    }
+    .ey-pathway-node:not(.active):hover .ey-path-circle {
+      border-color: var(--tiffany);
+      color: var(--tiffany);
+    }
+    .ey-path-name {
+      font-family: var(--sans);
+      font-size: 12px;
+      font-weight: 700;
+      margin-top: 4px;
+      text-align: center;
+      line-height: 1.3;
+      letter-spacing: 0.02em;
+      transition: color 0.3s ease;
+    }
+    .ey-path-age { font-family: var(--sans); font-size: 11px; margin-top: 0; letter-spacing: 0.02em; }
+    .ey-pathway-node.active .ey-path-name { color: var(--oxford-blue); }
+    .ey-pathway-node.active .ey-path-age { color: var(--tiffany); font-weight: 600; }
+    .ey-pathway-node:not(.active) .ey-path-name { color: rgba(0,33,71,0.5); }
+    .ey-pathway-node:not(.active) .ey-path-age { color: rgba(0,33,71,0.3); }
+    .ey-pathway-node:not(.active):hover .ey-path-name,
+    .ey-pathway-node:not(.active):hover .ey-path-age { color: var(--tiffany); }
+
+    .ey-path-connector {
+      flex: 1;
+      height: 1px;
+      margin-top: 26px;
+      background: repeating-linear-gradient(
+        to right,
+        var(--champagne) 0, var(--champagne) 6px,
+        transparent 6px, transparent 12px
+      );
+      min-width: 12px;
+      max-width: 60px;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Section 7 — Prev / Next
+       ════════════════════════════════════════════════════ */
+    .ey-prevnext { background: #ffffff; border-top: 1px solid var(--rule); }
+    .ey-prevnext-grid { display: grid; grid-template-columns: 1fr 1fr; align-items: stretch; }
+    .ey-prev, .ey-next {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 48px 40px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+      position: relative;
+    }
+    .ey-prev:hover, .ey-next:hover { background: var(--baby-powder); }
+    .ey-prev { padding-left: 0; border-right: 1px solid var(--rule); }
+    .ey-next { padding-right: 0; text-align: right; align-items: flex-end; }
+    .ey-pn-label {
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(0,189,182,0.7);
+      margin-bottom: 10px;
+    }
+    .ey-pn-title {
+      font-family: var(--serif-display);
+      font-size: 22px;
+      font-weight: 500;
+      color: var(--oxford-blue);
+      transition: color 0.3s ease;
+      letter-spacing: -0.005em;
+    }
+    .ey-prev:hover .ey-pn-title,
+    .ey-next:hover .ey-pn-title { color: var(--tiffany); }
+    .ey-pn-sub { font-family: var(--sans); font-size: 13px; color: rgba(31,33,33,0.6); margin-top: 6px; }
+    .ey-next .ey-pn-sub { color: var(--tiffany); font-weight: 500; }
+
+    /* ════════════════════════════════════════════════════
+       Section 8 — CTA
+       ════════════════════════════════════════════════════ */
+    .ey-cta {
+      background: var(--light-cyan-alt);
+      padding: 88px 0;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+    .ey-cta::before, .ey-cta::after {
+      content: '';
+      position: absolute;
+      width: 280px; height: 280px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0,189,182,0.18) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .ey-cta::before { top: -120px; left: -80px; }
+    .ey-cta::after  { bottom: -120px; right: -80px; }
+
+    .ey-cta-inner { max-width: 640px; margin: 0 auto; position: relative; }
+    .ey-cta-small {
+      font-family: var(--serif-italic);
+      font-style: italic;
+      font-size: 18px;
+      color: var(--tiffany);
+      margin-bottom: 16px;
+      display: block;
+    }
+    .ey-cta h2 {
+      font-family: var(--serif-display);
+      font-size: 42px;
+      font-weight: 500;
+      color: var(--oxford-blue);
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+    .ey-cta h2 em { font-style: italic; color: var(--tiffany); }
+    .ey-cta .gold-rule { margin: 20px auto; }
+    .ey-cta-sub {
+      font-family: var(--sans);
+      font-size: 16px;
+      color: var(--eerie-black);
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+    .ey-cta-actions { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+
+    /* CTA button overrides for this page's context */
+    .ey-cta .btn-primary {
+      background: var(--oxford-blue);
+      color: var(--champagne);
+      border-color: var(--oxford-blue);
+    }
+    .ey-cta .btn-primary:hover {
+      background: var(--tiffany);
+      border-color: var(--tiffany);
+      color: #ffffff;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Responsive — 768px
+       ════════════════════════════════════════════════════ */
+    @media (max-width: 768px) {
+      .ey-hero { padding: 56px 0 64px; min-height: 0; }
+      .ey-hero-grid { grid-template-columns: 1fr; gap: 0; }
+      .ey-hero-visual { display: none; }
+      .ey-hero-title { font-size: 36px; }
+      .ey-hero-chips { gap: 8px; }
+
+      .ey-overview { padding: 64px 0; }
+      .ey-overview-grid { grid-template-columns: 1fr; gap: 40px; }
+      .ey-sidebar { position: static; top: auto; }
+      .ey-overview-h2 { font-size: 30px; }
+
+      .ey-curriculum { padding: 64px 0; }
+      .ey-curriculum-grid { grid-template-columns: 1fr; gap: 16px; }
+      .ey-section-head h2 { font-size: 30px; }
+      .ey-section-head { margin-bottom: 40px; }
+
+      .ey-assessment { padding: 64px 0; }
+      .ey-assessment-grid { grid-template-columns: 1fr; gap: 40px; }
+      .ey-assessment h2 { font-size: 28px; }
+      .ey-asmt-img { height: 280px; }
+      .ey-assessment-grid > .ey-assessment-text { order: 1; }
+      .ey-assessment-grid > .ey-asmt-img-wrap  { order: 2; }
+
+      .ey-support { padding: 64px 0; }
+      .ey-support-grid { grid-template-columns: 1fr; gap: 16px; }
+
+      .ey-pathway { padding: 48px 0; }
+      .ey-pathway-strip {
+        flex-direction: column;
+        align-items: center;
+        max-width: 280px;
+        gap: 0;
+      }
+      .ey-pathway-node {
+        width: 100%;
+        flex-direction: row;
+        gap: 18px;
+        justify-content: flex-start;
+        padding: 12px 0;
+      }
+      .ey-path-text { display: flex; flex-direction: column; align-items: flex-start; }
+      .ey-path-name, .ey-path-age { text-align: left; }
+      .ey-path-connector {
+        width: 1px; height: 24px;
+        margin-top: 0; margin-left: 25px;
+        background: repeating-linear-gradient(
+          to bottom,
+          var(--champagne) 0, var(--champagne) 5px,
+          transparent 5px, transparent 10px
+        );
+        max-width: none; min-width: 0;
+        align-self: flex-start;
+      }
+
+      .ey-prevnext-grid { grid-template-columns: 1fr; }
+      .ey-prev, .ey-next {
+        padding: 32px 0;
+        text-align: left;
+        align-items: flex-start;
+        border-right: none;
+      }
+      .ey-prev { border-bottom: 1px solid var(--rule); }
+
+      .ey-cta { padding: 64px 0; }
+      .ey-cta h2 { font-size: 32px; }
+      .ey-cta-actions { flex-direction: column; }
+      .ey-cta-actions .btn { width: 100%; justify-content: center; }
+    }
+
+    @media (max-width: 1100px) and (min-width: 769px) {
+      .ey-curriculum-grid { grid-template-columns: repeat(2, 1fr); }
+      .ey-support-grid { grid-template-columns: 1fr; gap: 18px; }
+      .ey-hero-title { font-size: 48px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation (injected by JS) -->
+  <div data-component="nav"></div>
+
+  <main id="main-content">
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 1 — HERO
+         ═══════════════════════════════════════════════════════ -->
+    <section class="ey-hero" aria-labelledby="page-h1">
+      <div class="container">
+        <div class="ey-hero-grid">
+
+          <div class="ey-hero-content">
+
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+              <a href="/">Home</a>
+              <span class="sep">/</span>
+              <a href="/academic/programmes.html">Academic</a>
+              <span class="sep">/</span>
+              <span class="current">Cambridge Early Years</span>
+            </nav>
+
+            <div class="ey-hero-age-badge">
+              <span>Age 3 – 6</span>
+              <span class="sep"></span>
+              <span>Stage 1 of 5</span>
+            </div>
+
+            <h1 id="page-h1" class="ey-hero-title">Cambridge <em>Early Years</em></h1>
+            <hr class="ey-hero-rule" />
+
+            <p class="ey-hero-intro">A child-centred, play-based programme for ages 3 to 6 — building the knowledge, understanding and skills every child needs as they grow, at their own pace.</p>
+
+            <div class="ey-hero-chips">
+              <div class="ey-hero-chip">
+                <strong>6 Curriculum Areas</strong>
+                <span class="chip-sep"></span>
+                <span>Holistic Programme</span>
+              </div>
+              <div class="ey-hero-chip">
+                <strong>Age 3 – 6</strong>
+                <span class="chip-sep"></span>
+                <span>Early Childhood</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="ey-hero-visual" aria-hidden="false">
+            <div class="ey-hero-img" role="img" aria-label="Early Years hero image placeholder" data-replace="assets/early-years-hero.jpg">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/></svg>
+              <div class="ey-hero-img-l1">[ Early Years Hero Image ]</div>
+              <div class="ey-hero-img-l2">Replace: assets/early-years-hero.jpg</div>
+            </div>
+            <div class="ey-hero-overlay">
+              <div class="ey-hero-overlay-label">Cambridge Pathway</div>
+              <div class="ey-hero-overlay-val">Stage 1 · Foundation Stage</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 2 — OVERVIEW
+         ═══════════════════════════════════════════════════════ -->
+    <section class="ey-overview" aria-labelledby="overview-h">
+      <div class="container">
+        <div class="ey-overview-grid">
+
+          <article class="ey-overview-main reveal">
+            <span class="eyebrow with-line">About the Programme</span>
+            <h2 id="overview-h" class="ey-overview-h2">A Foundation Built on <em>Play and Discovery</em></h2>
+            <hr class="gold-rule" />
+
+            <div class="ey-overview-body">
+              <p>Cambridge Early Years is built around the belief that children learn best through play. Developed in collaboration with trusted early years experts, the programme reflects the very latest educational thinking and gives every child the confidence to explore, question and grow.</p>
+              <p>At JPIC, our Early Years environment is warm, nurturing and stimulating — designed to help each child develop at their own pace while building the social, emotional and cognitive skills that form the foundation for all future learning.</p>
+            </div>
+
+            <h3 class="ey-subheading">Our Approach</h3>
+
+            <div class="ey-principles">
+
+              <div class="ey-principle">
+                <div class="ey-principle-num">1</div>
+                <div>
+                  <div class="ey-principle-title">Experience</div>
+                  <div class="ey-principle-desc">Learning complements the social and cultural factors — home, community and environment — that shape each child's development and growth.</div>
+                </div>
+              </div>
+
+              <div class="ey-principle">
+                <div class="ey-principle-num">2</div>
+                <div>
+                  <div class="ey-principle-title">Active</div>
+                  <div class="ey-principle-desc">Children are actively involved in their own learning, developing competence, responsibility, confidence and a strong sense of self-worth.</div>
+                </div>
+              </div>
+
+              <div class="ey-principle">
+                <div class="ey-principle-num">3</div>
+                <div>
+                  <div class="ey-principle-title">Balance</div>
+                  <div class="ey-principle-desc">Learning balances physical, cognitive, language, communication, and social and emotional development in equal measure.</div>
+                </div>
+              </div>
+
+              <div class="ey-principle">
+                <div class="ey-principle-num">4</div>
+                <div>
+                  <div class="ey-principle-title">Play</div>
+                  <div class="ey-principle-desc">Learning is age-appropriate, play-based and child-centred — including both child-led and adult-guided activities.</div>
+                </div>
+              </div>
+
+              <div class="ey-principle">
+                <div class="ey-principle-num">5</div>
+                <div>
+                  <div class="ey-principle-title">Transition</div>
+                  <div class="ey-principle-desc">The programme carefully prepares children for Cambridge Primary, moving from informal play-based learning toward more structured teaching.</div>
+                </div>
+              </div>
+
+            </div>
+          </article>
+
+          <aside class="ey-sidebar reveal" aria-label="Programme facts at a glance">
+            <div class="ey-sidebar-title">At a Glance</div>
+
+            <div class="ey-fact-row">
+              <div class="ey-fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/></svg>
+              </div>
+              <div>
+                <span class="ey-fact-label">Age Range</span>
+                <div class="ey-fact-value">3 to 6 years</div>
+              </div>
+            </div>
+
+            <div class="ey-fact-row">
+              <div class="ey-fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+              </div>
+              <div>
+                <span class="ey-fact-label">Curriculum Areas</span>
+                <div class="ey-fact-value">6 holistic areas</div>
+              </div>
+            </div>
+
+            <div class="ey-fact-row">
+              <div class="ey-fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12l2 2 4-4"/><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              </div>
+              <div>
+                <span class="ey-fact-label">Assessment</span>
+                <div class="ey-fact-value">Observational &amp; portfolio-based</div>
+              </div>
+            </div>
+
+            <div class="ey-fact-row">
+              <div class="ey-fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              </div>
+              <div>
+                <span class="ey-fact-label">Language Support</span>
+                <div class="ey-fact-value">Bilingual &amp; multilingual approach</div>
+              </div>
+            </div>
+
+            <div class="ey-fact-row">
+              <div class="ey-fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </div>
+              <div>
+                <span class="ey-fact-label">Global Reach</span>
+                <div class="ey-fact-value">Available in 160+ countries</div>
+              </div>
+            </div>
+
+            <div class="ey-fact-row">
+              <div class="ey-fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+              </div>
+              <div>
+                <span class="ey-fact-label">Leads To</span>
+                <div class="ey-fact-value">Cambridge Primary (Age 5–11)</div>
+              </div>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 3 — CURRICULUM
+         ═══════════════════════════════════════════════════════ -->
+    <section class="ey-curriculum" aria-labelledby="curriculum-h">
+      <div class="container">
+
+        <div class="ey-section-head reveal">
+          <span class="eyebrow with-line">Curriculum</span>
+          <h2 id="curriculum-h">What Your Child Will <em>Learn</em></h2>
+          <hr class="gold-rule" />
+          <p class="lede">Six carefully designed curriculum areas develop the whole child — intellectually, physically, creatively and socially.</p>
+        </div>
+
+        <div class="ey-curriculum-grid reveal-children">
+
+          <article class="ey-curric-card" data-num="01">
+            <div class="ey-curric-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8z"/></svg>
+            </div>
+            <h3 class="ey-curric-name">Communication &amp; Literacy</h3>
+            <p class="ey-curric-desc">Developing early reading, writing and communication skills through storytelling, rhymes, shared reading and purposeful play.</p>
+          </article>
+
+          <article class="ey-curric-card" data-num="02">
+            <div class="ey-curric-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9.06 11.9l8.07-8.06a2.85 2.85 0 1 1 4.03 4.03l-8.06 8.07"/><path d="M7.07 14.94c-1.66 0-3 1.35-3 3.02 0 1.33-2.5 1.52-2 2.02 1.08 1.1 2.49 2.02 4 2.02 2.2 0 4-1.8 4-4.04a3.01 3.01 0 0 0-3-3.02z"/></svg>
+            </div>
+            <h3 class="ey-curric-name">Creative Expression</h3>
+            <p class="ey-curric-desc">Art, music, movement and imaginative play nurture creativity, self-expression and a love of making and exploring.</p>
+          </article>
+
+          <article class="ey-curric-card" data-num="03">
+            <div class="ey-curric-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="7" height="7" rx="1"/><circle cx="17.5" cy="6.5" r="3.5"/><polygon points="17.5,14 22,22 13,22"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>
+            </div>
+            <h3 class="ey-curric-name">Mathematics</h3>
+            <p class="ey-curric-desc">Exploring numbers, patterns, shapes and measurement through hands-on, playful and real-world activities.</p>
+          </article>
+
+          <article class="ey-curric-card" data-num="04">
+            <div class="ey-curric-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="13" cy="4" r="2"/><path d="M15 22l-2-7 3-3-3-3-2 3-4 1"/><path d="M19 9l-3 3 1 4"/></svg>
+            </div>
+            <h3 class="ey-curric-name">Physical Development</h3>
+            <p class="ey-curric-desc">Developing gross and fine motor skills through movement, outdoor play, dance and physical exploration.</p>
+          </article>
+
+          <article class="ey-curric-card" data-num="05">
+            <div class="ey-curric-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <h3 class="ey-curric-name">Personal, Social &amp; Emotional</h3>
+            <p class="ey-curric-desc">Building confidence, self-regulation, empathy, resilience and positive relationships with others.</p>
+          </article>
+
+          <article class="ey-curric-card" data-num="06">
+            <div class="ey-curric-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h3 class="ey-curric-name">Understanding the World</h3>
+            <p class="ey-curric-desc">Exploring the natural world, technology, people, communities and environments — sparking curiosity about everything.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 4 — ASSESSMENT
+         ═══════════════════════════════════════════════════════ -->
+    <section class="ey-assessment" aria-labelledby="assessment-h">
+      <div class="container">
+        <div class="ey-assessment-grid">
+
+          <div class="ey-assessment-text reveal">
+            <span class="eyebrow with-line">Assessment</span>
+            <h2 id="assessment-h">Measuring <em>Growth</em>, Not Just Achievement</h2>
+            <hr class="gold-rule" />
+            <p class="ey-assessment-body">Cambridge Early Years uses observational and portfolio-based assessment — a holistic approach focused on the whole child, not just academic outcomes. Teachers observe, evaluate and plan in a continuous three-stage cycle.</p>
+
+            <div class="ey-asmt-blocks">
+
+              <div class="ey-asmt-block">
+                <div class="ey-asmt-title"><span class="num">01 ·</span> Observation of Learning</div>
+                <div class="ey-asmt-desc">Teachers observe and record children's learning throughout the day in natural, everyday settings — capturing authentic evidence of development.</div>
+              </div>
+
+              <div class="ey-asmt-block">
+                <div class="ey-asmt-title"><span class="num">02 ·</span> Evaluation of Evidence</div>
+                <div class="ey-asmt-desc">Evidence is analysed against curriculum learning statements to build a clear picture of each child's development and understanding.</div>
+              </div>
+
+              <div class="ey-asmt-block">
+                <div class="ey-asmt-title"><span class="num">03 ·</span> Planning Next Steps</div>
+                <div class="ey-asmt-desc">Assessment directly informs planning, ensuring every child is supported to grow and reach their full potential at their own pace.</div>
+              </div>
+
+              <div class="ey-asmt-block">
+                <div class="ey-asmt-title"><span class="num">04 ·</span> Cambridge Early Years Check Together</div>
+                <div class="ey-asmt-desc">An optional baseline assessment that complements teacher judgement within the three-stage assessment process, providing additional structured insight.</div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="ey-asmt-img-wrap reveal">
+            <div class="ey-asmt-img" role="img" aria-label="Assessment image placeholder" data-replace="assets/early-years-assessment.jpg">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/></svg>
+              <div class="l1">[ Assessment Image ]</div>
+              <div class="l2">Replace: assets/early-years-assessment.jpg</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 5 — SUPPORT
+         ═══════════════════════════════════════════════════════ -->
+    <section class="ey-support" aria-labelledby="support-h">
+      <div class="container">
+
+        <div class="ey-section-head reveal">
+          <span class="eyebrow with-line">At JPIC</span>
+          <h2 id="support-h">Everything Your Child Needs to <em>Thrive</em></h2>
+          <hr class="gold-rule" />
+          <p class="lede">Our Early Years environment combines Cambridge's world-class framework with the warmth and care of a Catholic school community.</p>
+        </div>
+
+        <div class="ey-support-grid reveal-children">
+
+          <article class="ey-support-card">
+            <div class="ey-support-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            </div>
+            <h3>Teaching Support</h3>
+            <p>Our teachers receive comprehensive support including curriculum implementation guidance, planning templates, active learning strategies and resources for multilingual learners.</p>
+          </article>
+
+          <article class="ey-support-card">
+            <div class="ey-support-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M19.43 12.98a7.952 7.952 0 0 0 0-1.96l2.11-1.65a.5.5 0 0 0 .12-.64l-2-3.46a.5.5 0 0 0-.61-.22l-2.49 1a7.987 7.987 0 0 0-1.69-.98l-.38-2.65A.5.5 0 0 0 14 2h-4a.5.5 0 0 0-.5.42l-.38 2.65c-.61.24-1.18.56-1.69.98l-2.49-1a.5.5 0 0 0-.61.22l-2 3.46a.5.5 0 0 0 .12.64L4.57 11c-.07.65-.07 1.31 0 1.96L2.46 14.6a.5.5 0 0 0-.12.64l2 3.46c.14.24.42.34.61.22l2.49-1c.51.42 1.08.74 1.69.98l.38 2.65c.04.24.25.42.5.42h4a.5.5 0 0 0 .5-.42l.38-2.65c.61-.24 1.18-.56 1.69-.98l2.49 1c.19.07.47-.03.61-.22l2-3.46a.5.5 0 0 0-.12-.64z"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <h3>Learning Resources</h3>
+            <p>Engaging classroom resources — guided play ideas, projectable stories, worksheets, puppet cards and bright learner books with colourful activities and playful rhymes.</p>
+          </article>
+
+          <article class="ey-support-card">
+            <div class="ey-support-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <h3>Professional Development</h3>
+            <p>Teachers have access to Cambridge Professional Development Qualifications (PDQ) in Early Years Good Practice at both Certificate and Diploma level.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 6 — PATHWAY STRIP
+         ═══════════════════════════════════════════════════════ -->
+    <section class="ey-pathway" aria-label="Cambridge Pathway navigation">
+      <div class="container">
+        <div class="ey-pathway-label">The Cambridge Pathway at JPIC</div>
+
+        <div class="ey-pathway-strip">
+
+          <a class="ey-pathway-node active" href="/academic/cambridge-early-years.html" aria-current="page">
+            <div class="ey-path-circle">1</div>
+            <div class="ey-path-text">
+              <div class="ey-path-name">Early Years</div>
+              <div class="ey-path-age">Age 3–6</div>
+            </div>
+          </a>
+
+          <div class="ey-path-connector" aria-hidden="true"></div>
+
+          <a class="ey-pathway-node" href="/academic/cambridge-primary.html">
+            <div class="ey-path-circle">2</div>
+            <div class="ey-path-text">
+              <div class="ey-path-name">Primary</div>
+              <div class="ey-path-age">Age 5–11</div>
+            </div>
+          </a>
+
+          <div class="ey-path-connector" aria-hidden="true"></div>
+
+          <a class="ey-pathway-node" href="/academic/cambridge-lower-secondary.html">
+            <div class="ey-path-circle">3</div>
+            <div class="ey-path-text">
+              <div class="ey-path-name">Lower Secondary</div>
+              <div class="ey-path-age">Age 11–14</div>
+            </div>
+          </a>
+
+          <div class="ey-path-connector" aria-hidden="true"></div>
+
+          <a class="ey-pathway-node" href="/academic/cambridge-upper-secondary.html">
+            <div class="ey-path-circle">4</div>
+            <div class="ey-path-text">
+              <div class="ey-path-name">Upper Secondary</div>
+              <div class="ey-path-age">Age 14–16</div>
+            </div>
+          </a>
+
+          <div class="ey-path-connector" aria-hidden="true"></div>
+
+          <a class="ey-pathway-node" href="/academic/cambridge-advanced.html">
+            <div class="ey-path-circle">5</div>
+            <div class="ey-path-text">
+              <div class="ey-path-name">Advanced</div>
+              <div class="ey-path-age">Age 16–19</div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 7 — PREV / NEXT
+         ═══════════════════════════════════════════════════════ -->
+    <section class="ey-prevnext" aria-label="Programme navigation">
+      <div class="container">
+        <div class="ey-prevnext-grid">
+
+          <a class="ey-prev" href="/academic/programmes.html">
+            <div class="ey-pn-label">← Overview</div>
+            <div class="ey-pn-title">All Cambridge Programmes</div>
+            <div class="ey-pn-sub">Return to programme overview</div>
+          </a>
+
+          <a class="ey-next" href="/academic/cambridge-primary.html">
+            <div class="ey-pn-label">Next Stage →</div>
+            <div class="ey-pn-title">Cambridge Primary</div>
+            <div class="ey-pn-sub">Age 5 – 11</div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 8 — CTA
+         ═══════════════════════════════════════════════════════ -->
+    <section class="ey-cta" aria-labelledby="cta-h">
+      <div class="container">
+        <div class="ey-cta-inner reveal">
+          <span class="ey-cta-small">Begin the journey at JPIC</span>
+          <h2 id="cta-h">Give Your Child the <em>Best Possible Start</em></h2>
+          <hr class="gold-rule" />
+          <p class="ey-cta-sub">Our Admissions team is ready to answer your questions and guide you through enrolment for Cambridge Early Years at St. John Paul II International College.</p>
+
+          <div class="ey-cta-actions">
+            <a href="/admissions/index.html" class="btn btn-primary">
+              Apply Now
+              <span class="arrow">→</span>
+            </a>
+            <a href="/contact.html" class="btn btn-outline">
+              Contact Admissions
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer (injected by JS) -->
+  <div data-component="footer"></div>
+
+  <script>
+    /* reveal-children: extend production scroll-reveal for staggered grids */
+    (function () {
+      if (!('IntersectionObserver' in window)) {
+        document.querySelectorAll('.reveal-children').forEach(function (el) {
+          el.classList.add('revealed');
+        });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            var parent = entry.target;
+            Array.from(parent.children).forEach(function (child, i) {
+              child.style.setProperty('--i', i);
+            });
+            parent.classList.add('revealed');
+            io.unobserve(parent);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+      document.querySelectorAll('.reveal-children').forEach(function (el) {
+        io.observe(el);
+      });
+    })();
+  </script>
+
+</body>
+</html>

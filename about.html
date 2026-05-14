@@ -1,0 +1,1109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us — St. John Paul II International College</title>
+  <meta name="description" content="Learn about St. John Paul II International College, Wennappuwa — our story, vision, mission, core values, governance, and messages from our Bishop and Principal." />
+
+  <link rel="icon" href="assets/images/favicon.png" type="image/png" />
+
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+
+  <style>
+  /* ---- Page-specific styles — global tokens come from main.css ---- */
+
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;overflow-y:scroll;scrollbar-gutter:stable;}
+  body{font-family:'DM Sans',sans-serif;background:var(--baby-powder);color:var(--eerie-black);-webkit-font-smoothing:antialiased;}
+  img{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+
+  .container{
+    max-width:1280px;width:100%;margin-left:auto;margin-right:auto;
+    padding-left:24px;padding-right:24px;box-sizing:border-box;
+  }
+
+  h1,h2,h3,h4,h5{font-family:'Playfair Display',serif;color:var(--oxford-blue);font-weight:700;}
+
+  :focus-visible{outline:2px solid var(--tiffany);outline-offset:3px;}
+
+  /* section anchor offsets — nav(72px) + sub-nav(48px) + 4px buffer */
+  section[id]{scroll-margin-top:124px;}
+
+  /* ---- Sticky Sub-Nav ---- */
+  .sub-nav{
+    position:sticky;top:var(--nav-height);z-index:90;
+    background:#fff;border-bottom:1px solid #E8E8E8;height:48px;
+  }
+  .sub-nav .container{display:flex;align-items:center;overflow-x:auto;height:100%;scrollbar-width:none;}
+  .sub-nav .container::-webkit-scrollbar{display:none;}
+  .sub-nav a{
+    font-family:'DM Sans',sans-serif;font-size:13px;color:var(--oxford-blue);
+    white-space:nowrap;padding:0 18px;height:48px;line-height:48px;
+    border-bottom:3px solid transparent;transition:0.3s ease;
+  }
+  .sub-nav a:hover,.sub-nav a.active{color:var(--tiffany);border-bottom-color:var(--tiffany);}
+  @media(max-width:768px){.sub-nav a{font-size:12px;padding:0 14px;}}
+
+  /* ---- Reusable Components ---- */
+  .eyebrow{
+    font-family:'DM Sans',sans-serif;font-size:11px;font-weight:700;
+    text-transform:uppercase;letter-spacing:0.14em;
+    color:var(--tiffany);display:block;margin-bottom:12px;
+  }
+  .gold-rule{display:block;width:64px;height:3px;background:var(--champagne);margin:18px 0;border:0;}
+  .gold-rule.centered{margin:18px auto;}
+
+  .pull-quote{
+    background:var(--light-cyan-2);
+    border-left:4px solid var(--tiffany);
+    border-radius:0 8px 8px 0;
+    padding:24px 28px;margin-bottom:28px;position:relative;
+  }
+  .pull-quote .quote-mark{
+    font-family:'Playfair Display',serif;font-size:80px;
+    color:rgba(0,189,182,0.2);line-height:0.4;display:block;margin-bottom:12px;
+  }
+  .pull-quote p{
+    font-family:'Cormorant Garamond',serif;font-size:21px;font-style:italic;
+    color:var(--oxford-blue);line-height:1.65;
+  }
+
+  .sign-off{margin-top:32px;padding-top:24px;border-top:1px solid #E8E8E8;}
+  .sign-off .regards{font-family:'DM Sans',sans-serif;font-size:14px;color:var(--eerie-black);margin-bottom:8px;}
+  .sign-off .name{font-family:'Playfair Display',serif;font-size:19px;color:var(--oxford-blue);}
+  .sign-off .credentials{font-family:'DM Sans',sans-serif;font-size:13px;color:rgba(31,33,33,0.65);margin-top:4px;}
+  .sign-off .title{font-family:'DM Sans',sans-serif;font-size:13px;color:var(--tiffany);margin-top:2px;}
+
+  .name-card{
+    background:var(--oxford-blue);border-radius:0 0 10px 10px;
+    padding:20px 24px;max-width:300px;margin:0 auto;
+  }
+  .name-card .nc-name{font-family:'Playfair Display',serif;font-size:16px;color:#fff;}
+  .name-card .nc-credentials{font-family:'DM Sans',sans-serif;font-size:11px;color:var(--champagne);margin-top:4px;}
+  .name-card .nc-sub{font-family:'DM Sans',sans-serif;font-size:11px;color:rgba(255,255,255,0.55);margin-top:2px;}
+
+  /* CTA buttons — primary: oxford bg + champagne text; secondary: transparent + oxford border */
+  .btn-primary,.btn-secondary{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:15px 36px;border-radius:4px;
+    font-family:'DM Sans',sans-serif;font-size:13px;font-weight:700;
+    letter-spacing:0.1em;text-transform:uppercase;
+    cursor:pointer;text-decoration:none;transition:0.3s ease;
+    border:2px solid var(--oxford-blue);
+  }
+  .btn-primary{background:var(--oxford-blue);color:var(--champagne);}
+  .btn-primary:hover{background:var(--tiffany);border-color:var(--tiffany);color:#fff;}
+  .btn-secondary{background:transparent;color:var(--oxford-blue);}
+  .btn-secondary:hover{background:var(--oxford-blue);color:#fff;}
+
+  /* Placeholder blocks for content not yet provided */
+  .placeholder{
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    gap:10px;border:1.5px dashed var(--tiffany);border-radius:10px;
+    text-align:center;padding:24px;
+  }
+  .placeholder .ph-label{
+    font-family:'DM Sans',sans-serif;font-size:13px;font-weight:700;
+    color:rgba(0,33,71,0.5);
+  }
+  .placeholder .ph-sub{
+    font-family:'DM Sans',sans-serif;font-size:11px;
+    color:rgba(0,189,182,0.6);
+  }
+
+  /* Scroll reveal — main.js adds 'revealed'; fallback 'visible' retained for safety */
+  .reveal{opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease;}
+  .reveal.revealed,.reveal.visible{opacity:1;transform:translateY(0);}
+
+  /* ---- HERO ---- */
+  .hero{
+    background:var(--oxford-blue);
+    background-image:repeating-linear-gradient(-45deg,transparent,transparent 40px,rgba(255,255,255,0.025) 40px,rgba(255,255,255,0.025) 41px);
+    padding:calc(var(--nav-height) + 96px) 0 96px;min-height:380px;text-align:center;
+  }
+  .hero .eyebrow{color:var(--champagne);}
+  .hero h1{font-size:58px;color:#fff;line-height:1.15;margin:16px 0;}
+  .hero .subtitle{font-family:'Cormorant Garamond',serif;font-size:24px;font-style:italic;color:rgba(255,255,255,0.85);}
+
+  /* ---- OUR STORY ---- */
+  .our-story{background:#fff;padding:96px 0;}
+  .our-story .grid{display:grid;grid-template-columns:60fr 40fr;gap:64px;align-items:start;}
+  .our-story h2{font-size:40px;line-height:1.2;}
+  .our-story p.body{font-family:'DM Sans',sans-serif;font-size:16px;line-height:1.8;color:var(--eerie-black);margin-bottom:20px;}
+  .anniversary{
+    background:var(--light-cyan-2);
+    border-left:4px solid var(--champagne);
+    border-radius:6px;padding:22px 26px;margin-top:36px;
+    display:flex;gap:16px;align-items:flex-start;
+  }
+  .anniversary svg{flex-shrink:0;margin-top:3px;}
+  .anniversary p{font-family:'Playfair Display',serif;font-size:16px;color:var(--oxford-blue);line-height:1.6;}
+
+  .timeline{position:relative;padding-left:24px;border-left:2px solid var(--light-cyan);}
+  .timeline .milestone{position:relative;padding:0 0 32px 20px;}
+  .timeline .milestone:last-child{padding-bottom:0;}
+  .timeline .milestone::before{
+    content:"";position:absolute;left:-31px;top:4px;width:13px;height:13px;
+    background:var(--tiffany);border-radius:50%;border:3px solid #fff;
+    box-shadow:0 0 0 2px var(--tiffany);
+  }
+  .timeline .year{
+    font-family:'DM Sans',sans-serif;font-size:11px;font-weight:700;
+    text-transform:uppercase;letter-spacing:0.1em;color:var(--tiffany);
+    display:block;margin-bottom:4px;
+  }
+  .timeline .event{font-family:'DM Sans',sans-serif;font-size:15px;color:var(--eerie-black);line-height:1.6;}
+
+  /* ---- VISION & MISSION ---- */
+  .vision-mission{background:var(--oxford-blue);padding:88px 0;}
+  .vision-mission .grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;}
+  .vm-card{
+    background:rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.12);
+    border-radius:12px;padding:48px 40px;transition:background 0.3s ease;
+  }
+  .vm-card:hover{background:rgba(255,255,255,0.1);}
+  .vm-card .icon-circle{
+    width:56px;height:56px;background:var(--tiffany);border-radius:50%;
+    display:flex;align-items:center;justify-content:center;margin-bottom:28px;
+  }
+  .vm-card .eyebrow{color:var(--champagne);}
+  .vm-card h3{font-size:28px;color:#fff;line-height:1.25;margin-bottom:16px;font-weight:700;}
+  .vm-card .rule{display:block;width:48px;height:2px;background:var(--champagne);margin-bottom:20px;}
+  .vm-card p{font-family:'DM Sans',sans-serif;font-size:15px;color:rgba(255,255,255,0.82);line-height:1.8;}
+
+  /* ---- CORE VALUES ---- */
+  .core-values{background:var(--baby-powder);padding:96px 0;}
+  .section-header{text-align:center;margin-bottom:56px;}
+  .section-header h2{font-size:40px;line-height:1.2;}
+  .section-header .sub{
+    font-family:'DM Sans',sans-serif;font-size:16px;color:var(--eerie-black);
+    text-align:center;max-width:560px;margin:0 auto;line-height:1.7;
+  }
+  .values-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
+  .value-card{
+    background:#fff;border-radius:12px;border-top:3px solid var(--tiffany);
+    padding:40px 28px;text-align:center;
+    box-shadow:0 2px 16px rgba(0,33,71,0.06);
+    transition:transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .value-card:hover{transform:translateY(-8px);box-shadow:0 16px 40px rgba(0,33,71,0.12);}
+  .value-card .icon-circle{
+    width:68px;height:68px;background:var(--light-cyan-2);border-radius:50%;
+    display:flex;align-items:center;justify-content:center;margin:0 auto 24px;
+  }
+  .value-card .name{font-family:'Playfair Display',serif;font-size:24px;color:var(--oxford-blue);margin-bottom:6px;}
+  .value-card .tagline{font-family:'Cormorant Garamond',serif;font-size:15px;font-style:italic;color:var(--tiffany);margin-bottom:18px;}
+  .value-card .rule{display:block;width:40px;height:2px;background:var(--champagne);margin:0 auto 18px;}
+  .value-card .desc{font-family:'DM Sans',sans-serif;font-size:14px;color:var(--eerie-black);line-height:1.75;text-align:left;}
+  @media(max-width:900px){.values-grid{grid-template-columns:repeat(2,1fr);}}
+
+  /* ---- COAT OF ARMS ---- */
+  .coat-of-arms{background:#fff;padding:96px 0;}
+  .coat-of-arms .grid{display:grid;grid-template-columns:42fr 58fr;gap:64px;align-items:center;}
+  .coat-of-arms h2{font-size:40px;}
+  .coa-image{
+    background:var(--light-cyan-2);
+    border:1.5px dashed var(--tiffany);border-radius:12px;
+    height:440px;max-width:320px;margin:0 auto;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;
+  }
+  .coat-of-arms p.body,.school-flag p.body{font-family:'DM Sans',sans-serif;font-size:16px;line-height:1.8;color:var(--eerie-black);margin-bottom:20px;}
+  .dummy-block{
+    background:var(--baby-powder);border-radius:8px;
+    padding:24px;border-left:4px solid var(--champagne);
+    font-family:'DM Sans',sans-serif;font-size:14px;font-style:italic;
+    color:rgba(31,33,33,0.7);line-height:1.7;
+  }
+  .update-note{font-family:'DM Sans',sans-serif;font-size:12px;color:var(--tiffany);margin-top:16px;}
+
+  /* ---- SCHOOL FLAG ---- */
+  .school-flag{background:var(--baby-powder);padding:96px 0;}
+  .school-flag .grid{display:grid;grid-template-columns:58fr 42fr;gap:64px;align-items:center;}
+  .school-flag h2{font-size:40px;}
+  .flag-image{
+    background:var(--light-cyan);
+    border:1.5px dashed var(--tiffany);border-radius:12px;
+    height:320px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;
+  }
+
+  /* ---- SCHOOL HOUSES ---- */
+  .school-houses{background:#fff;padding:96px 0;}
+  .houses-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+  .house-card{
+    background:#fff;border-radius:12px;overflow:hidden;
+    box-shadow:0 2px 16px rgba(0,33,71,0.06);
+    transition:transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .house-card:hover{transform:translateY(-8px);box-shadow:0 20px 48px rgba(0,33,71,0.14);}
+  .house-card .band{height:6px;}
+  .house-card .body{padding:36px 28px;}
+  .house-card .badge-img{
+    border-radius:10px;height:180px;margin-bottom:28px;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;
+    border:1.5px dashed;
+  }
+  .house-card .h-name{font-family:'Playfair Display',serif;font-size:26px;margin-bottom:4px;}
+  .house-card .motto{font-family:'Cormorant Garamond',serif;font-size:14px;font-style:italic;color:rgba(31,33,33,0.55);margin-bottom:18px;}
+  .house-card .rule{display:block;width:40px;height:2px;margin-bottom:18px;}
+  .house-card .desc{font-family:'DM Sans',sans-serif;font-size:14px;color:var(--eerie-black);line-height:1.7;}
+  .house-card .note{font-family:'DM Sans',sans-serif;font-size:11px;font-style:italic;margin-top:12px;}
+  @media(max-width:900px){.houses-grid{grid-template-columns:1fr;}}
+
+  /* ---- GOVERNANCE ---- */
+  .governance{background:var(--baby-powder);padding:96px 0;}
+  .governance h2{font-size:40px;}
+  .governance .intro{font-family:'DM Sans',sans-serif;font-size:16px;max-width:700px;line-height:1.8;margin-bottom:48px;color:var(--eerie-black);}
+  .gov-table{width:100%;border-collapse:collapse;background:#fff;border-radius:10px;overflow:hidden;border:1px solid #E8E8E8;}
+  .gov-table thead{background:var(--oxford-blue);}
+  .gov-table th{
+    font-family:'DM Sans',sans-serif;font-size:12px;font-weight:700;
+    text-transform:uppercase;letter-spacing:0.08em;color:#fff;
+    padding:16px 24px;text-align:left;
+  }
+  .gov-table td{
+    font-family:'DM Sans',sans-serif;font-size:14px;color:var(--eerie-black);
+    padding:16px 24px;border-bottom:1px solid #F0F0F0;
+  }
+  .gov-table tbody tr:nth-child(odd){background:#fff;}
+  .gov-table tbody tr:nth-child(even){background:var(--baby-powder);}
+  .gov-table tbody tr:last-child td{border-bottom:0;}
+
+  /* ---- ACADEMIC COUNCIL ---- */
+  .academic-council{background:#fff;padding:96px 0;}
+  .academic-council h2{font-size:40px;}
+  .academic-council .intro{font-family:'DM Sans',sans-serif;font-size:16px;max-width:700px;line-height:1.8;margin-bottom:48px;color:var(--eerie-black);}
+  .council-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
+  .council-card{
+    background:var(--baby-powder);border-radius:12px;
+    padding:32px 24px;text-align:center;
+    border-top:3px solid var(--tiffany);
+    box-shadow:0 2px 16px rgba(0,33,71,0.06);
+    transition:transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .council-card:hover{transform:translateY(-6px);box-shadow:0 16px 40px rgba(0,33,71,0.12);}
+  .council-card .ph-circle{
+    width:96px;height:96px;border-radius:50%;
+    background:var(--light-cyan-2);
+    border:2px dashed var(--tiffany);
+    margin:0 auto 20px;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .council-card .c-name{font-family:'Playfair Display',serif;font-size:17px;color:var(--oxford-blue);}
+  .council-card .c-role{font-family:'DM Sans',sans-serif;font-size:11px;color:var(--tiffany);text-transform:uppercase;letter-spacing:0.08em;margin-top:4px;}
+  .council-card .c-cred{font-family:'DM Sans',sans-serif;font-size:12px;color:rgba(31,33,33,0.55);font-style:italic;margin-top:4px;}
+  @media(max-width:900px){.council-grid{grid-template-columns:repeat(2,1fr);}}
+
+  /* ---- MESSAGE SECTIONS (Bishop / Rector / Principal) ---- */
+  .msg-section{padding:96px 0;}
+  .msg-section.alt{background:var(--baby-powder);}
+  .msg-section .grid{display:grid;grid-template-columns:36fr 64fr;gap:64px;align-items:start;}
+  .msg-section h2{font-size:40px;}
+
+  /* Real portrait image */
+  .portrait-real{
+    width:100%;max-width:300px;
+    border-radius:12px 12px 0 0;
+    display:block;margin:0 auto;
+    box-shadow:0 8px 40px rgba(0,33,71,0.15);
+    object-fit:cover;
+  }
+
+  /* Placeholder for portraits not yet available */
+  .portrait-ph{
+    background:var(--light-cyan-2);
+    border:1.5px dashed var(--tiffany);
+    border-radius:12px 12px 0 0;
+    height:380px;max-width:300px;margin:0 auto;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;
+    text-align:center;
+  }
+  .portrait-ph .ph-label{font-family:'DM Sans',sans-serif;font-size:13px;font-weight:700;color:rgba(0,33,71,0.5);}
+  .portrait-ph .ph-sub{font-family:'DM Sans',sans-serif;font-size:11px;color:rgba(0,189,182,0.6);}
+
+  .msg-section p.body{font-family:'DM Sans',sans-serif;font-size:15px;line-height:1.85;margin-bottom:18px;color:var(--eerie-black);}
+  .msg-section p.body-italic{font-family:'DM Sans',sans-serif;font-size:15px;color:rgba(31,33,33,0.7);font-style:italic;line-height:1.8;}
+
+  /* ---- SCHOOL ANTHEM ---- */
+  .school-anthem{background:var(--oxford-blue);padding:96px 0;}
+  .school-anthem .grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;}
+  .school-anthem .eyebrow{color:var(--champagne);}
+  .school-anthem h2{font-size:38px;color:#fff;}
+  .anthem-rule{display:block;width:64px;height:3px;background:var(--champagne);margin:18px 0 36px;}
+  .verse{margin-bottom:32px;}
+  .verse-num{font-family:'DM Sans',sans-serif;font-size:10px;text-transform:uppercase;letter-spacing:0.12em;color:rgba(255,230,158,0.5);margin-bottom:10px;display:block;}
+  .verse .line{font-family:'Cormorant Garamond',serif;font-size:20px;font-style:italic;color:rgba(255,255,255,0.9);line-height:2;margin:0;}
+
+  .player{
+    background:rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.12);
+    border-radius:14px;padding:48px 36px;text-align:center;
+  }
+  .player .note-icon{margin-bottom:20px;display:flex;justify-content:center;}
+  .player h3{font-family:'Playfair Display',serif;font-size:24px;color:#fff;font-weight:600;}
+  .player .player-sub{font-family:'DM Sans',sans-serif;font-size:13px;color:rgba(255,255,255,0.55);margin-bottom:36px;margin-top:6px;}
+  .player .play-btn{
+    width:72px;height:72px;border-radius:50%;background:var(--champagne);
+    display:flex;align-items:center;justify-content:center;
+    margin:0 auto 28px;cursor:pointer;border:0;
+    transition:transform 0.2s ease, background 0.3s ease;
+  }
+  .player .play-btn:hover{background:var(--turquoise);transform:scale(1.06);}
+  .player .play-btn:hover svg path,.player .play-btn:hover svg rect{fill:#fff;}
+  .player .play-btn svg path,.player .play-btn svg rect{fill:var(--oxford-blue);transition:fill 0.3s ease;}
+  .progress-track{
+    background:rgba(255,255,255,0.12);height:4px;border-radius:2px;
+    cursor:pointer;overflow:hidden;margin-bottom:12px;position:relative;
+  }
+  .progress-fill{height:100%;width:0%;background:var(--champagne);border-radius:2px;}
+  .time-display{font-family:'DM Sans',sans-serif;font-size:12px;color:rgba(255,255,255,0.55);text-align:right;margin-bottom:28px;}
+  .volume-row{display:flex;align-items:center;gap:10px;margin-bottom:36px;}
+  .volume-row svg{flex-shrink:0;}
+  input[type="range"]#volume-ctrl{
+    -webkit-appearance:none;appearance:none;flex:1;height:3px;
+    background:rgba(255,255,255,0.2);border-radius:2px;outline:none;
+  }
+  input[type="range"]#volume-ctrl::-webkit-slider-thumb{
+    -webkit-appearance:none;appearance:none;width:14px;height:14px;border-radius:50%;
+    background:var(--champagne);cursor:pointer;border:0;
+  }
+  input[type="range"]#volume-ctrl::-moz-range-thumb{
+    width:14px;height:14px;border-radius:50%;background:var(--champagne);cursor:pointer;border:0;
+  }
+  .player-divider{border:0;border-top:1px solid rgba(255,255,255,0.1);margin:0 0 28px;}
+  .download-link{
+    display:inline-flex;align-items:center;gap:8px;
+    background:transparent;border:1.5px solid rgba(255,255,255,0.25);
+    border-radius:6px;padding:12px 24px;
+    font-family:'DM Sans',sans-serif;font-size:12px;font-weight:500;
+    text-transform:uppercase;letter-spacing:0.1em;color:#fff;
+    transition:border-color 0.3s ease, color 0.3s ease;
+  }
+  .download-link:hover{border-color:var(--champagne);color:var(--champagne);}
+  .download-link:hover svg path{stroke:var(--champagne);}
+  .player-tiny{font-family:'DM Sans',sans-serif;font-size:11px;color:rgba(255,255,255,0.35);margin-top:14px;}
+
+  /* ---- CTA BANNER ---- */
+  .cta-banner{background:var(--light-cyan-2);padding:88px 0;}
+  .cta-banner .inner{max-width:640px;margin:0 auto;text-align:center;}
+  .cta-banner .pre{font-family:'Cormorant Garamond',serif;font-size:19px;font-style:italic;color:var(--tiffany);margin-bottom:14px;}
+  .cta-banner h2{font-size:44px;color:var(--oxford-blue);line-height:1.2;}
+  .cta-banner .desc{font-family:'DM Sans',sans-serif;font-size:16px;color:var(--eerie-black);line-height:1.7;margin-bottom:40px;}
+  .cta-banner .actions{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;}
+
+  /* ---- RESPONSIVE ---- */
+  @media(max-width:768px){
+    .hero{padding-top:calc(var(--nav-height) + 60px);padding-bottom:60px;}
+    .hero h1{font-size:36px;}
+    h2{font-size:30px !important;}
+    .our-story .grid,
+    .vision-mission .grid,
+    .coat-of-arms .grid,
+    .school-flag .grid,
+    .msg-section .grid,
+    .school-anthem .grid{grid-template-columns:1fr;gap:40px;}
+    .values-grid,.council-grid{grid-template-columns:1fr;}
+    .player{padding:28px;}
+    .cta-banner .actions{flex-direction:column;}
+    .cta-banner .actions .btn-primary,
+    .cta-banner .actions .btn-secondary{width:100%;justify-content:center;}
+    .gov-table thead{display:none;}
+    .gov-table tr{display:block;padding:14px 0;}
+    .gov-table td{display:block;padding:6px 18px;border:0;}
+  }
+  @media(max-width:480px){
+    .container{padding-left:16px;padding-right:16px;}
+  }
+  </style>
+</head>
+<body>
+
+<!-- Nav loaded by main.js via data-component attribute -->
+<div id="nav-placeholder" data-component="nav"></div>
+
+<!-- =================== STICKY SUB-NAV =================== -->
+<nav class="sub-nav" aria-label="About sections">
+  <div class="container">
+    <a href="#our-story" class="sub-link">Our Story</a>
+    <a href="#vision-mission" class="sub-link">Vision &amp; Mission</a>
+    <a href="#core-values" class="sub-link">Core Values</a>
+    <a href="#coat-of-arms" class="sub-link">Coat of Arms</a>
+    <a href="#school-flag" class="sub-link">School Flag</a>
+    <a href="#school-houses" class="sub-link">School Houses</a>
+    <a href="#governance" class="sub-link">Governance</a>
+    <a href="#academic-council" class="sub-link">Academic Council</a>
+    <a href="#bishops-message" class="sub-link">Bishop's Message</a>
+    <a href="#rectors-message" class="sub-link">Rector's Message</a>
+    <a href="#principals-message" class="sub-link">Principal's Message</a>
+    <a href="#school-anthem" class="sub-link">School Anthem</a>
+  </div>
+</nav>
+
+<main>
+
+<!-- =================== HERO =================== -->
+<section id="hero" class="hero reveal">
+  <div class="container">
+    <span class="eyebrow">ST. JOHN PAUL II INTERNATIONAL COLLEGE</span>
+    <h1>About Us</h1>
+    <hr class="gold-rule centered" />
+    <p class="subtitle">Faith · Truth · Wisdom · Love</p>
+  </div>
+</section>
+
+<!-- =================== OUR STORY =================== -->
+<section id="our-story" class="our-story reveal">
+  <div class="container">
+    <div class="grid">
+      <div>
+        <span class="eyebrow">OUR STORY</span>
+        <h2>A Decade of Cambridge Excellence</h2>
+        <hr class="gold-rule" />
+        <p class="body">St. John Paul II International College, Wennappuwa, was founded on 10th September 2015 by Very Rev. Fr. Neville Coonghe. The school was established with a clear and purposeful vision — to deliver the Cambridge curriculum, a globally recognised standard of education trusted by universities and institutions worldwide.</p>
+        <p class="body">The College opened its doors with four dedicated teachers and twenty-five students, offering classes from LKG through to Primary II. From these humble beginnings, the passion for internationally recognised education grew steadily — and so did our community.</p>
+        <p class="body">In 2023, a landmark moment was reached when our first cohort of Cambridge Ordinary Level students sat their qualifications — a proud testament to the College's academic journey and the dedication of our students and staff.</p>
+
+        <div class="anniversary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M12 2l2.5 6.7L21.5 9.5l-5.3 4.6L17.7 21 12 17.3 6.3 21l1.5-6.9L2.5 9.5l7-0.8L12 2z" fill="#FFE69E" stroke="#FFE69E" stroke-width="0.5"/>
+          </svg>
+          <p>In 2025, St. John Paul II International College proudly celebrated its 10th Anniversary — a decade of inspiring learners, building futures, and serving our community with faith, truth, wisdom and love.</p>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <div class="milestone"><span class="year">2015</span><p class="event">Founded by Very Rev. Fr. Neville Coonghe with 4 teachers and 25 students. Cambridge curriculum adopted from day one.</p></div>
+        <div class="milestone"><span class="year">2016</span><p class="event">Steady growth in enrolment as the Cambridge programme gained recognition across the region.</p></div>
+        <div class="milestone"><span class="year">2019</span><p class="event">Cambridge Lower Secondary programme fully operational, expanding the academic pathway for our students.</p></div>
+        <div class="milestone"><span class="year">2023</span><p class="event">First cohort of Cambridge O Level students sit their international qualifications — a landmark milestone.</p></div>
+        <div class="milestone"><span class="year">2025</span><p class="event">10th Anniversary celebrated — a decade of faith, excellence and community at JPIC.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== VISION & MISSION =================== -->
+<section id="vision-mission" class="vision-mission reveal">
+  <div class="container">
+    <div class="grid">
+      <article class="vm-card reveal" style="--i:0">
+        <div class="icon-circle" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+            <circle cx="12" cy="12" r="3" stroke="#fff" stroke-width="1.6"/>
+          </svg>
+        </div>
+        <span class="eyebrow">OUR VISION</span>
+        <h3>Creating a God-loving society based on human dignity.</h3>
+        <span class="rule"></span>
+        <p>We envision a world shaped by faith, compassion and integrity — where every graduate of JPIC carries with them a deep reverence for God, a respect for human dignity, and the knowledge and skills to serve their community and the world.</p>
+      </article>
+
+      <article class="vm-card reveal" style="--i:1">
+        <div class="icon-circle" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="9" stroke="#fff" stroke-width="1.6"/>
+            <circle cx="12" cy="12" r="5" stroke="#fff" stroke-width="1.6"/>
+            <path d="M12 2v3M12 19v3M2 12h3M19 12h3" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
+            <circle cx="12" cy="12" r="1.6" fill="#fff"/>
+          </svg>
+        </div>
+        <span class="eyebrow">OUR MISSION</span>
+        <h3>To gift a holistic education to society based on Christian values.</h3>
+        <span class="rule"></span>
+        <p>Our mission is to provide an education that nurtures the whole person — intellectually, spiritually, socially and emotionally — grounded in the teachings of Jesus Christ and delivered through the globally recognised Cambridge curriculum.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- =================== CORE VALUES =================== -->
+<section id="core-values" class="core-values reveal">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">CORE VALUES</span>
+      <h2>Guiding Principles for Excellence and Integrity</h2>
+      <hr class="gold-rule centered" />
+      <p class="sub">Four pillars that define who we are, how we learn, and how we serve.</p>
+    </div>
+
+    <div class="values-grid">
+      <article class="value-card reveal" style="--i:0">
+        <div class="icon-circle">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
+            <path d="M10.5 3h3v6h6v3h-6v9h-3v-9h-6V9h6V3z" fill="#00BDB6"/>
+          </svg>
+        </div>
+        <div class="name">Faith</div>
+        <div class="tagline">Faith in God, Treasuring Holiness</div>
+        <span class="rule"></span>
+        <p class="desc">Faith in God is our foundation, guiding us to treasure holiness and integrate these core values into our Catholic education, fostering spiritual growth and moral integrity.</p>
+      </article>
+
+      <article class="value-card reveal" style="--i:1">
+        <div class="icon-circle">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
+            <path d="M9 18h6M10 21h4M12 2a7 7 0 00-4 12.7c.7.6 1 1.4 1 2.3v.5h6V17c0-.9.3-1.7 1-2.3A7 7 0 0012 2z" stroke="#00BDB6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="name">Truth</div>
+        <div class="tagline">Understanding the Reality</div>
+        <span class="rule"></span>
+        <p class="desc">Embracing truth and understanding reality are essential in our Catholic education, empowering students with knowledge, critical thinking, and a commitment to authenticity and integrity in life.</p>
+      </article>
+
+      <article class="value-card reveal" style="--i:2">
+        <div class="icon-circle">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
+            <path d="M4 4h7a3 3 0 013 3v14a3 3 0 00-3-3H4V4zM20 4h-7a3 3 0 00-3 3v14a3 3 0 013-3h7V4z" stroke="#00BDB6" stroke-width="1.6" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="name">Wisdom</div>
+        <div class="tagline">Realization of the Integrity of Life</div>
+        <span class="rule"></span>
+        <p class="desc">Realizing the importance of integrity in life, our Catholic education fosters wise decision-making, moral development, and ethical principles, shaping students into compassionate and responsible individuals.</p>
+      </article>
+
+      <article class="value-card reveal" style="--i:3">
+        <div class="icon-circle">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
+            <path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z" stroke="#00BDB6" stroke-width="1.6" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="name">Love</div>
+        <div class="tagline">Love for God and Fellow Human Beings</div>
+        <span class="rule"></span>
+        <p class="desc">Embracing love for God and fellow human beings, our Catholic education nurtures compassion, empathy, and a strong sense of community, fostering harmonious and meaningful relationships.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- =================== COAT OF ARMS =================== -->
+<section id="coat-of-arms" class="coat-of-arms reveal">
+  <div class="container">
+    <div class="grid">
+      <div class="coa-image placeholder">
+        <svg width="56" height="56" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity:0.4">
+          <path d="M12 2l8 3v6c0 5-3.5 9.5-8 11-4.5-1.5-8-6-8-11V5l8-3z" stroke="#00BDB6" stroke-width="1.6" stroke-linejoin="round"/>
+        </svg>
+        <div class="ph-label">[ Coat of Arms ]</div>
+        <div class="ph-sub">Image placeholder</div>
+      </div>
+      <div>
+        <span class="eyebrow">HERALDRY</span>
+        <h2>Our Coat of Arms</h2>
+        <hr class="gold-rule" />
+        <p class="body">The Coat of Arms of St. John Paul II International College embodies the founding ideals and spiritual heritage of our institution. Each element within the heraldic design carries deep symbolic meaning, reflecting our commitment to faith, truth, wisdom and love.</p>
+        <div class="dummy-block">[Official description of the Coat of Arms, its elements and their symbolic meaning, will be provided by the school administration and added here.]</div>
+        <p class="update-note">✦ Content to be updated by the school administration.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== SCHOOL FLAG =================== -->
+<section id="school-flag" class="school-flag reveal">
+  <div class="container">
+    <div class="grid">
+      <div>
+        <span class="eyebrow">OUR FLAG</span>
+        <h2>The School Flag</h2>
+        <hr class="gold-rule" />
+        <p class="body">The school flag of St. John Paul II International College stands as a proud symbol of our identity, values and aspirations. Flown at our campus and carried at official events, it represents the unity and spirit of our school community.</p>
+        <div class="dummy-block">[Description of the school flag — its colours, symbols and their meaning — will be added here.]</div>
+        <p class="update-note">✦ Content to be updated by the school administration.</p>
+      </div>
+      <div class="flag-image placeholder">
+        <svg width="56" height="56" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity:0.4">
+          <path d="M5 3v18M5 4h13l-2.5 4L18 12H5" stroke="#00BDB6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div class="ph-label">[ School Flag ]</div>
+        <div class="ph-sub">Image placeholder</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== SCHOOL HOUSES =================== -->
+<section id="school-houses" class="school-houses reveal">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">SCHOOL HOUSES</span>
+      <h2>Our Three School Houses</h2>
+      <hr class="gold-rule centered" />
+      <p class="sub">Every student belongs to a school house — a family within our community that fosters healthy competition, teamwork and school spirit.</p>
+    </div>
+
+    <div class="houses-grid">
+      <article class="house-card reveal" style="--i:0">
+        <div class="band" style="background:#B03A2E;"></div>
+        <div class="body">
+          <div class="badge-img" style="background:rgba(176,58,46,0.12);border-color:#B03A2E;">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" style="opacity:0.5"><path d="M12 2l8 3v6c0 5-3.5 9.5-8 11-4.5-1.5-8-6-8-11V5l8-3z" stroke="#B03A2E" stroke-width="1.6"/></svg>
+            <div class="ph-label" style="color:#B03A2E;">St. Michael Badge</div>
+          </div>
+          <div class="h-name" style="color:#B03A2E;">St. Michael House</div>
+          <div class="motto">Quis ut Deus — Who is like God</div>
+          <span class="rule" style="background:#B03A2E;"></span>
+          <p class="desc">[House description, values and achievements to be confirmed by school administration.]</p>
+          <p class="note" style="color:#B03A2E;">✦ Details to be confirmed.</p>
+        </div>
+      </article>
+
+      <article class="house-card reveal" style="--i:1">
+        <div class="band" style="background:#1A5276;"></div>
+        <div class="body">
+          <div class="badge-img" style="background:rgba(26,82,118,0.12);border-color:#1A5276;">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" style="opacity:0.5"><path d="M12 2l8 3v6c0 5-3.5 9.5-8 11-4.5-1.5-8-6-8-11V5l8-3z" stroke="#1A5276" stroke-width="1.6"/></svg>
+            <div class="ph-label" style="color:#1A5276;">St. Gabriel Badge</div>
+          </div>
+          <div class="h-name" style="color:#1A5276;">St. Gabriel House</div>
+          <div class="motto">Fortitudo Dei — Strength of God</div>
+          <span class="rule" style="background:#1A5276;"></span>
+          <p class="desc">[House description, values and achievements to be confirmed by school administration.]</p>
+          <p class="note" style="color:#1A5276;">✦ Details to be confirmed.</p>
+        </div>
+      </article>
+
+      <article class="house-card reveal" style="--i:2">
+        <div class="band" style="background:#1E8449;"></div>
+        <div class="body">
+          <div class="badge-img" style="background:rgba(30,132,73,0.12);border-color:#1E8449;">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" style="opacity:0.5"><path d="M12 2l8 3v6c0 5-3.5 9.5-8 11-4.5-1.5-8-6-8-11V5l8-3z" stroke="#1E8449" stroke-width="1.6"/></svg>
+            <div class="ph-label" style="color:#1E8449;">St. Raphael Badge</div>
+          </div>
+          <div class="h-name" style="color:#1E8449;">St. Raphael House</div>
+          <div class="motto">Medicina Dei — Healing of God</div>
+          <span class="rule" style="background:#1E8449;"></span>
+          <p class="desc">[House description, values and achievements to be confirmed by school administration.]</p>
+          <p class="note" style="color:#1E8449;">✦ Details to be confirmed.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- =================== GOVERNANCE =================== -->
+<section id="governance" class="governance reveal">
+  <div class="container">
+    <span class="eyebrow">GOVERNANCE</span>
+    <h2>School Governance</h2>
+    <hr class="gold-rule" />
+    <p class="intro">St. John Paul II International College is governed under the authority of the Diocese of Chilaw, guided by the principles of Catholic education and a commitment to academic excellence. Our governance structure ensures transparency, accountability and the highest standards of institutional leadership.</p>
+
+    <table class="gov-table">
+      <thead>
+        <tr><th>Role</th><th>Name</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Diocese of Chilaw</td><td>Most Rev. Bishop</td><td>Governing Authority</td></tr>
+        <tr><td>School Board Chair</td><td>[To be confirmed]</td><td>Board of Directors</td></tr>
+        <tr><td>Principal</td><td>Rev. Fr. Isanka Mihiran Fernando</td><td>Academic Head</td></tr>
+        <tr><td>[Further positions]</td><td>—</td><td>To be updated</td></tr>
+      </tbody>
+    </table>
+
+    <p class="update-note" style="font-style:italic;margin-top:16px;">✦ Governance details to be updated by school administration.</p>
+  </div>
+</section>
+
+<!-- =================== ACADEMIC COUNCIL =================== -->
+<section id="academic-council" class="academic-council reveal">
+  <div class="container">
+    <span class="eyebrow">ACADEMIC COUNCIL</span>
+    <h2>Our Academic Council</h2>
+    <hr class="gold-rule" />
+    <p class="intro">The Academic Council of St. John Paul II International College provides strategic academic oversight, ensuring the continued quality and relevance of our Cambridge curriculum and educational programmes.</p>
+
+    <div class="council-grid">
+      <article class="council-card reveal" style="--i:0">
+        <div class="ph-circle">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" style="opacity:0.45"><circle cx="12" cy="8" r="4" stroke="#00BDB6" stroke-width="1.6"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7" stroke="#00BDB6" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </div>
+        <div class="c-name">[Member Name]</div>
+        <div class="c-role">[Position]</div>
+        <div class="c-cred">[Qualifications]</div>
+      </article>
+      <article class="council-card reveal" style="--i:1">
+        <div class="ph-circle">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" style="opacity:0.45"><circle cx="12" cy="8" r="4" stroke="#00BDB6" stroke-width="1.6"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7" stroke="#00BDB6" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </div>
+        <div class="c-name">[Member Name]</div>
+        <div class="c-role">[Position]</div>
+        <div class="c-cred">[Qualifications]</div>
+      </article>
+      <article class="council-card reveal" style="--i:2">
+        <div class="ph-circle">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" style="opacity:0.45"><circle cx="12" cy="8" r="4" stroke="#00BDB6" stroke-width="1.6"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7" stroke="#00BDB6" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </div>
+        <div class="c-name">[Member Name]</div>
+        <div class="c-role">[Position]</div>
+        <div class="c-cred">[Qualifications]</div>
+      </article>
+      <article class="council-card reveal" style="--i:3">
+        <div class="ph-circle">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" style="opacity:0.45"><circle cx="12" cy="8" r="4" stroke="#00BDB6" stroke-width="1.6"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7" stroke="#00BDB6" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </div>
+        <div class="c-name">[Member Name]</div>
+        <div class="c-role">[Position]</div>
+        <div class="c-cred">[Qualifications]</div>
+      </article>
+    </div>
+
+    <p class="update-note" style="font-style:italic;margin-top:32px;">✦ Academic Council members to be confirmed by school administration.</p>
+  </div>
+</section>
+
+<!-- =================== BISHOP'S MESSAGE =================== -->
+<section id="bishops-message" class="msg-section alt reveal">
+  <div class="container">
+    <div class="grid">
+      <div>
+        <img
+          class="portrait-real"
+          src="assets/images/Staff/Rt_Rev_Dr_Wimal-_Siri_Jayasuriya.jpg"
+          alt="Rt. Rev. Dr. Don Wimal Siri Jayasuriya, Bishop of the Diocese of Chilaw"
+          loading="lazy"
+        />
+        <div class="name-card">
+          <div class="nc-name">Rt. Rev. Dr. Don Wimal Siri Jayasuriya</div>
+          <div class="nc-credentials">Bishop of the Diocese of Chilaw</div>
+          <div class="nc-sub">Sri Lanka</div>
+        </div>
+      </div>
+
+      <div>
+        <span class="eyebrow">BISHOP'S MESSAGE</span>
+        <h2>A Message from Our Bishop</h2>
+        <hr class="gold-rule" />
+
+        <div class="pull-quote">
+          <span class="quote-mark">❝</span>
+          <p>Our schools are more than just institutions of learning; they are sanctuaries of faith, knowledge, and community.</p>
+        </div>
+
+        <p class="body">Dear Students, Faculty, Staff, Parents, and Guardians,</p>
+        <p class="body">As the Bishop of our cherished Catholic Diocese, it is with great joy and gratitude that I extend my warmest greetings to each member of our school community. Our schools are more than just institutions of learning; they are sanctuaries of faith, knowledge, and community. Rooted in the Gospel teachings and the rich traditions of our Catholic faith, our schools serve as beacons of light, guiding our students on their journey of spiritual and intellectual growth.</p>
+        <p class="body">I am immensely proud of the dedication and commitment displayed by our educators, specially Rev. Fathers of our diocese whose unwavering passion for teaching not only imparts knowledge but also nurtures the hearts and souls of our students. Their selfless efforts in fostering an environment of love, respect, and compassion reflect the essence of our Catholic identity.</p>
+        <p class="body">To our students, you are the future leaders of our Church and society. As you walk the halls of our schools, may you be inspired by the teachings of Jesus Christ to embrace empathy, humility, and service to others. Your potential is boundless, and I encourage you to pursue excellence in all aspects of your academic, spiritual, and personal endeavors.</p>
+        <p class="body">Parents and guardians, your partnership with our schools is invaluable. Your unwavering support and involvement in your child's education are integral to their success. Together, let us continue to uphold the values of faith, integrity, and community that define our Catholic identity.</p>
+        <p class="body">As we navigate the challenges and opportunities that lie ahead, let us remain steadfast in our commitment to fostering a culture of inclusivity, diversity, and acceptance within our school community. By embracing our differences and celebrating our shared humanity, we can truly embody the message of love and unity that Jesus taught us.</p>
+        <p class="body">In closing, let us entrust our schools, students, faculty, and staff to the loving embrace of our Heavenly Father, who guides us with His wisdom and grace. May His blessings continue to abound in our lives, and may we always strive to be beacons of light in a world that yearns for hope and compassion.</p>
+
+        <div class="sign-off">
+          <div class="regards">With prayers for abundant blessings,</div>
+          <div class="name">Rt. Rev. Dr. Don Wimal Siri Jayasuriya</div>
+          <div class="title">Bishop of the Diocese of Chilaw, Sri Lanka</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== RECTOR'S MESSAGE =================== -->
+<section id="rectors-message" class="msg-section reveal" style="background:#fff;">
+  <div class="container">
+    <div class="grid">
+      <div>
+        <div class="portrait-ph placeholder">
+          <svg width="72" height="72" viewBox="0 0 24 24" fill="none" style="opacity:0.35"><circle cx="12" cy="8" r="4" stroke="#00BDB6" stroke-width="1.6"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7" stroke="#00BDB6" stroke-width="1.6" stroke-linecap="round"/></svg>
+          <div class="ph-label">[ Rector's Photo ]</div>
+          <div class="ph-sub">Image placeholder</div>
+        </div>
+        <div class="name-card">
+          <div class="nc-name">[Rector's Name]</div>
+          <div class="nc-credentials">Rector</div>
+          <div class="nc-sub">To be updated</div>
+        </div>
+      </div>
+      <div>
+        <span class="eyebrow">RECTOR'S MESSAGE</span>
+        <h2>A Message from Our Rector</h2>
+        <hr class="gold-rule" />
+
+        <div class="pull-quote">
+          <span class="quote-mark">❝</span>
+          <p>Excellence in education is not merely academic — it is the formation of character, faith and purpose in every young person entrusted to our care.</p>
+        </div>
+
+        <p class="body-italic">[The Rector's message will be added here. This section is reserved for the personal message from our Rector to students, parents and the school community.]</p>
+
+        <p class="update-note" style="margin-top:20px;font-size:13px;">✦ Rector's message to be provided by school administration.</p>
+
+        <div class="sign-off">
+          <div class="regards">&nbsp;</div>
+          <div class="name">[Rector's Name]</div>
+          <div class="title">Rector, St. John Paul II International College</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== PRINCIPAL'S MESSAGE =================== -->
+<section id="principals-message" class="msg-section alt reveal">
+  <div class="container">
+    <div class="grid">
+      <div>
+        <img
+          class="portrait-real"
+          src="assets/images/Staff/Rev_Fr_Isanka_Mihiran_Fernando.jpg"
+          alt="Rev. Fr. Isanka Mihiran Fernando, Principal"
+          loading="lazy"
+        />
+        <div class="name-card">
+          <div class="nc-name">Rev. Fr. Isanka Mihiran Fernando</div>
+          <div class="nc-credentials">B. Ph (Rome) · B. Th (Rome) · STL (Rome)</div>
+          <div class="nc-sub">Principal, JPIC</div>
+        </div>
+      </div>
+
+      <div>
+        <span class="eyebrow">PRINCIPAL'S MESSAGE</span>
+        <h2>A Message from Our Principal</h2>
+        <hr class="gold-rule" />
+
+        <div class="pull-quote">
+          <span class="quote-mark">❝</span>
+          <p>Our vision is to cultivate a culture of excellence in education and integral formation where students are inspired to reach their fullest potential and become lifelong learners and responsible global citizens.</p>
+        </div>
+
+        <p class="body">Dear Parents, Students and Staff,</p>
+        <p class="body">As the Principal of St. John Paul II International College, it is my distinct pleasure to welcome you to our school community. At our school, we are committed to providing a nurturing and stimulating environment where every student can thrive academically, spiritually, socially, and emotionally.</p>
+        <p class="body">Our vision is to cultivate a culture of excellence in education and integral formation where students are inspired to reach their fullest potential and become lifelong learners and responsible global citizens. We believe in fostering a love for learning that extends beyond the classroom and empowers students to make meaningful contributions to the world around them.</p>
+        <p class="body">At the heart of our educational philosophy is the Cambridge curriculum, renowned for its rigorous academic standards and emphasis on critical thinking, creativity, and innovation. Through our partnership with Cambridge Assessment International Education, we are proud to offer a comprehensive curriculum that prepares students for success in an ever-evolving global landscape.</p>
+        <p class="body">As we have embarked on this journey together, I am confident that our dedicated faculty and staff will provide the guidance, support, and inspiration needed to help each student achieve their goals. Our commitment to academic excellence is matched only by our dedication to fostering a safe, inclusive, and supportive learning environment where every student feels valued and respected.</p>
+        <p class="body">I encourage you to explore our website to learn more about our programmes, extracurricular activities, and the rich array of opportunities available to our students. Whether you are a prospective parent, student, or member of our school community, we invite you to join us in our pursuit of excellence in education.</p>
+        <p class="body">Thank you for choosing St. John Paul II International College as your partner in education. Together, let us continue to inspire, empower, and educate the next generation of leaders and innovators.</p>
+
+        <div class="sign-off">
+          <div class="regards">Best regards,</div>
+          <div class="name">Rev. Fr. Isanka Mihiran Fernando</div>
+          <div class="credentials">B. Ph (Rome), B. Th (Rome), STL (Rome)</div>
+          <div class="title">Principal, St. John Paul II International College</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== SCHOOL ANTHEM =================== -->
+<section id="school-anthem" class="school-anthem reveal">
+  <div class="container">
+    <div class="grid">
+      <div>
+        <span class="eyebrow">SCHOOL ANTHEM</span>
+        <h2>Our School Anthem</h2>
+        <span class="anthem-rule"></span>
+
+        <div class="verse">
+          <span class="verse-num">Verse 1</span>
+          <p class="line">St. John Paul II we love you</p>
+          <p class="line">St. John Paul II we acclaim you</p>
+          <p class="line">We follow you</p>
+          <p class="line">We cherish you</p>
+          <p class="line">Be our inspiration</p>
+        </div>
+        <div class="verse">
+          <span class="verse-num">Verse 2</span>
+          <p class="line">Open your hearts to Christ you said</p>
+          <p class="line">And with the light of God you lead</p>
+          <p class="line">You are the guiding star our patron</p>
+          <p class="line">of our Alma Mater</p>
+        </div>
+        <div class="verse">
+          <span class="verse-num">Verse 3</span>
+          <p class="line">St. John Paul II we love you</p>
+          <p class="line">St. John Paul II we acclaim you</p>
+          <p class="line">We follow you</p>
+          <p class="line">We cherish you</p>
+          <p class="line">Be our inspiration</p>
+        </div>
+        <div class="verse">
+          <span class="verse-num">Verse 4</span>
+          <p class="line">Lead us to love to reach true wisdom</p>
+          <p class="line">Help us to blossom in right direction</p>
+          <p class="line">Be our strength and inspiration</p>
+          <p class="line">of our Alma Mater</p>
+        </div>
+      </div>
+
+      <div class="player">
+        <div class="note-icon">
+          <svg width="52" height="52" viewBox="0 0 24 24" fill="none">
+            <path d="M9 18V6l11-2v12" stroke="#FFE69E" stroke-width="1.6" stroke-linejoin="round"/>
+            <circle cx="6.5" cy="18" r="2.5" stroke="#FFE69E" stroke-width="1.6"/>
+            <circle cx="17.5" cy="16" r="2.5" stroke="#FFE69E" stroke-width="1.6"/>
+          </svg>
+        </div>
+        <h3>School Anthem</h3>
+        <div class="player-sub">St. John Paul II International College</div>
+
+        <audio id="anthem-audio" preload="metadata">
+          <source src="assets/audio/School_Anthem.mp3" type="audio/mpeg" />
+        </audio>
+
+        <button id="play-btn" class="play-btn" aria-label="Play anthem">
+          <svg id="play-icon" width="28" height="28" viewBox="0 0 24 24" fill="none">
+            <path d="M7 5l13 7-13 7V5z" fill="#002147"/>
+          </svg>
+          <svg id="pause-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" style="display:none;">
+            <rect x="6" y="5" width="4" height="14" rx="1" fill="#002147"/>
+            <rect x="14" y="5" width="4" height="14" rx="1" fill="#002147"/>
+          </svg>
+        </button>
+
+        <div class="progress-track" id="progress-track">
+          <div class="progress-fill" id="progress-fill"></div>
+        </div>
+        <div class="time-display" id="time-display">0:00 / 0:00</div>
+
+        <div class="volume-row">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+            <path d="M5 9v6h4l5 4V5L9 9H5z" stroke="rgba(255,255,255,0.55)" stroke-width="1.6" stroke-linejoin="round"/>
+            <path d="M17 8a5 5 0 010 8" stroke="rgba(255,255,255,0.55)" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+          <input type="range" id="volume-ctrl" min="0" max="1" step="0.01" value="0.8" aria-label="Volume" />
+        </div>
+
+        <hr class="player-divider" />
+
+        <a href="assets/audio/School_Anthem.mp3" class="download-link" download="JPIC_School_Anthem.mp3">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+            <path d="M12 4v12m0 0l-5-5m5 5l5-5M4 20h16" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Download Anthem
+        </a>
+        <div class="player-tiny">MP3 · For personal and school use only</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== CTA =================== -->
+<section class="cta-banner reveal">
+  <div class="container">
+    <div class="inner">
+      <div class="pre">Join our community</div>
+      <h2>Be Part of the JPIC Family</h2>
+      <hr class="gold-rule centered" />
+      <p class="desc">St. John Paul II International College welcomes families who share our commitment to faith, excellence and the holistic development of every child.</p>
+      <div class="actions">
+        <a href="/admissions/" class="btn-primary">Apply Now →</a>
+        <a href="/contact.html" class="btn-secondary">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer loaded by main.js via data-component attribute -->
+<div id="footer-placeholder" data-component="footer"></div>
+
+<script src="assets/js/main.js" defer></script>
+<script>
+/* Sub-nav scroll: intercept before main.js to apply correct offset (nav + sub-nav) */
+document.querySelectorAll('.sub-nav a').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var id = link.getAttribute('href');
+    var target = document.querySelector(id);
+    if (!target) return;
+    e.preventDefault();
+    e.stopImmediatePropagation();
+    var navH = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-height')) || 72;
+    var subNavEl = document.querySelector('.sub-nav');
+    var subNavH = subNavEl ? subNavEl.offsetHeight : 48;
+    var top = target.getBoundingClientRect().top + window.scrollY - navH - subNavH - 4;
+    window.scrollTo({ top: top, behavior: 'smooth' });
+  });
+});
+
+/* Scroll spy — highlight sub-nav link for the section in view */
+(function() {
+  var subLinks = document.querySelectorAll('.sub-nav a');
+  var sectionMap = {};
+  subLinks.forEach(function(a) {
+    var id = a.getAttribute('href').slice(1);
+    var sec = document.getElementById(id);
+    if (sec) sectionMap[id] = a;
+  });
+  var spyObs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(en) {
+      var id = en.target.id;
+      var link = sectionMap[id];
+      if (!link) return;
+      if (en.isIntersecting && en.intersectionRatio >= 0.25) {
+        subLinks.forEach(function(l) { l.classList.remove('active'); });
+        link.classList.add('active');
+        if (window.innerWidth <= 768) {
+          try { link.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' }); } catch(e) {}
+        }
+      }
+    });
+  }, { threshold: [0.25, 0.5, 0.75] });
+  Object.keys(sectionMap).forEach(function(id) {
+    var sec = document.getElementById(id);
+    if (sec) spyObs.observe(sec);
+  });
+})();
+
+/* Audio player */
+(function() {
+  var audio   = document.getElementById('anthem-audio');
+  var playBtn = document.getElementById('play-btn');
+  var playIcon  = document.getElementById('play-icon');
+  var pauseIcon = document.getElementById('pause-icon');
+  var fill    = document.getElementById('progress-fill');
+  var track   = document.getElementById('progress-track');
+  var timeEl  = document.getElementById('time-display');
+  var vol     = document.getElementById('volume-ctrl');
+
+  function fmt(s) {
+    if (!isFinite(s) || isNaN(s)) return '0:00';
+    s = Math.max(0, Math.floor(s));
+    return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0');
+  }
+  function setIcon(playing) {
+    playIcon.style.display  = playing ? 'none'  : 'block';
+    pauseIcon.style.display = playing ? 'block' : 'none';
+    playBtn.setAttribute('aria-label', playing ? 'Pause anthem' : 'Play anthem');
+  }
+
+  playBtn.addEventListener('click', function() {
+    if (audio.paused) {
+      audio.play().then(function() { setIcon(true); }).catch(function() {});
+    } else {
+      audio.pause();
+      setIcon(false);
+    }
+  });
+  audio.addEventListener('timeupdate', function() {
+    if (!audio.duration) return;
+    fill.style.width = (audio.currentTime / audio.duration * 100) + '%';
+    timeEl.textContent = fmt(audio.currentTime) + ' / ' + fmt(audio.duration);
+  });
+  audio.addEventListener('loadedmetadata', function() {
+    timeEl.textContent = '0:00 / ' + fmt(audio.duration);
+  });
+  audio.addEventListener('ended', function() {
+    setIcon(false);
+    fill.style.width = '0%';
+    timeEl.textContent = '0:00 / ' + fmt(audio.duration);
+    audio.currentTime = 0;
+  });
+  track.addEventListener('click', function(e) {
+    if (!audio.duration) return;
+    var r = track.getBoundingClientRect();
+    audio.currentTime = ((e.clientX - r.left) / r.width) * audio.duration;
+  });
+  vol.addEventListener('input', function() { audio.volume = parseFloat(vol.value); });
+  audio.volume = parseFloat(vol.value);
+})();
+</script>
+</body>
+</html>
