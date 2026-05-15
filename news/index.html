@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" data-root="/">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Latest news, announcements and events from St. John Paul II International College, Wennappuwa, Sri Lanka.">
+  <meta property="og:title" content="News &amp; Announcements — St. John Paul II International College">
+  <meta property="og:description" content="Stay up to date with the latest news and events from JPIC, Wennappuwa.">
+  <meta property="og:image" content="https://jpeducation.net/assets/images/og-image.webp">
+  <meta property="og:url" content="https://jpeducation.net/news/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="St. John Paul II International College">
+  <title>News &amp; Announcements | JPIC – St. John Paul II International College</title>
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css?v=20260521">
+  <link rel="stylesheet" href="/assets/css/components.css?v=20260521">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --oxford-blue:   #002147;
+      --champagne:     #FFE69E;
+      --tiffany:       #00BDB6;
+      --baby-powder:   #F7FAFA;
+      --eerie-black:   #1F2121;
+      --white:         #FFFFFF;
+      --text-body:     #2C3340;
+      --text-muted:    #5A6478;
+      --serif-display: 'Playfair Display', Georgia, serif;
+      --sans:          'DM Sans', system-ui, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; overflow-x: hidden; }
+    body { font-family: var(--sans); background: var(--baby-powder); color: var(--text-body); line-height: 1.7; font-size: 16px; }
+    img  { max-width: 100%; display: block; }
+    a    { text-decoration: none; color: inherit; }
+
+    /* ── PAGE HERO ─────────────────────────────────────────── */
+    .news-hero {
+      background: var(--oxford-blue);
+      padding: 96px 0 72px;
+      text-align: center;
+    }
+    .news-hero .eyebrow {
+      font-family: var(--sans);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--champagne);
+      display: block;
+      margin-bottom: 16px;
+    }
+    .news-hero h1 {
+      font-family: var(--serif-display);
+      font-size: clamp(2.4rem, 5vw, 3.6rem);
+      font-weight: 400;
+      color: var(--white);
+      line-height: 1.1;
+      margin-bottom: 18px;
+    }
+    .news-hero .rule {
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: var(--champagne);
+      margin: 0 auto;
+      border-radius: 2px;
+    }
+
+    /* ── LISTING ────────────────────────────────────────────── */
+    .news-listing {
+      padding: 80px 0 96px;
+    }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+
+    /* ── ARTICLE CARD ───────────────────────────────────────── */
+    .news-card {
+      background: var(--white);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 16px rgba(0, 33, 71, 0.07);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .news-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 40px rgba(0, 33, 71, 0.13);
+    }
+    .news-card-cover {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      background: #E8F4F8;
+    }
+    .news-card-cover-placeholder {
+      width: 100%;
+      height: 200px;
+      background: linear-gradient(135deg, #CAF0F8 0%, #D7FDF5 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .news-card-body {
+      padding: 24px 24px 28px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    .news-card-meta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .news-card-badge {
+      font-family: var(--sans);
+      font-size: 9.5px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--white);
+      background: var(--tiffany);
+      border-radius: 3px;
+      padding: 3px 8px;
+    }
+    .news-card-date {
+      font-family: var(--sans);
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .news-card-title {
+      font-family: var(--serif-display);
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: var(--oxford-blue);
+      line-height: 1.3;
+      margin-bottom: 10px;
+    }
+    .news-card-excerpt {
+      font-family: var(--sans);
+      font-size: 13.5px;
+      color: var(--text-body);
+      line-height: 1.65;
+      flex: 1;
+      margin-bottom: 20px;
+    }
+    .news-card-link {
+      font-family: var(--sans);
+      font-size: 11.5px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--oxford-blue);
+      border-bottom: 1.5px solid var(--champagne);
+      padding-bottom: 2px;
+      display: inline-block;
+      transition: color 0.2s ease, border-color 0.2s ease;
+    }
+    .news-card-link:hover {
+      color: var(--tiffany);
+      border-color: var(--tiffany);
+    }
+
+    /* ── EMPTY STATE ────────────────────────────────────────── */
+    .news-empty {
+      text-align: center;
+      padding: 64px 24px;
+      color: var(--text-muted);
+    }
+    .news-empty p {
+      font-family: var(--serif-display);
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: var(--oxford-blue);
+      margin-bottom: 8px;
+    }
+    .news-empty span {
+      font-family: var(--sans);
+      font-size: 14px;
+    }
+
+    /* ── RESPONSIVE ─────────────────────────────────────────── */
+    @media (max-width: 960px) {
+      .news-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .news-grid { grid-template-columns: 1fr; }
+      .news-hero  { padding: 72px 0 56px; }
+      .news-listing { padding: 56px 0 72px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="nav-placeholder"></div>
+
+  <main id="main-content">
+
+    <section class="news-hero">
+      <div class="container">
+        <span class="eyebrow">St. John Paul II International College</span>
+        <h1>News &amp; Announcements</h1>
+        <span class="rule" aria-hidden="true"></span>
+      </div>
+    </section>
+
+    <section class="news-listing">
+      <div class="container">
+        <div id="news-grid" class="news-grid" aria-live="polite" aria-label="News articles">
+          <!-- Articles injected by JS -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="/assets/js/main.js?v=20260521"></script>
+  <script>
+    fetch('/components/nav.html')
+      .then(function(r) { return r.text(); })
+      .then(function(html) { document.getElementById('nav-placeholder').innerHTML = html; });
+
+    fetch('/components/footer.html')
+      .then(function(r) { return r.text(); })
+      .then(function(html) { document.getElementById('footer-placeholder').innerHTML = html; });
+
+    function formatDate(iso) {
+      var d = new Date(iso + 'T00:00:00');
+      return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+    }
+
+    fetch('news.json')
+      .then(function(r) { return r.json(); })
+      .then(function(articles) {
+        var grid = document.getElementById('news-grid');
+
+        if (!articles || articles.length === 0) {
+          grid.innerHTML =
+            '<div class="news-empty">' +
+              '<p>No news yet — check back soon.</p>' +
+              '<span>We’ll post updates, announcements and events here.</span>' +
+            '</div>';
+          return;
+        }
+
+        // Sort newest first
+        articles.sort(function(a, b) { return b.date.localeCompare(a.date); });
+
+        grid.innerHTML = articles.map(function(article) {
+          var coverHtml = article.cover
+            ? '<img class="news-card-cover" src="' + article.cover + '" alt="' + article.title + '" loading="lazy">'
+            : '<div class="news-card-cover-placeholder" aria-hidden="true">' +
+                '<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#00BDB6" stroke-width="1.4" opacity="0.5">' +
+                  '<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/>' +
+                '</svg>' +
+              '</div>';
+
+          return (
+            '<article class="news-card">' +
+              coverHtml +
+              '<div class="news-card-body">' +
+                '<div class="news-card-meta">' +
+                  '<span class="news-card-badge">' + article.category + '</span>' +
+                  '<span class="news-card-date">' + formatDate(article.date) + '</span>' +
+                '</div>' +
+                '<h2 class="news-card-title">' + article.title + '</h2>' +
+                '<p class="news-card-excerpt">' + article.excerpt + '</p>' +
+                '<a href="article.html?id=' + article.id + '" class="news-card-link">Read More &rarr;</a>' +
+              '</div>' +
+            '</article>'
+          );
+        }).join('');
+      })
+      .catch(function() {
+        document.getElementById('news-grid').innerHTML =
+          '<div class="news-empty">' +
+            '<p>Unable to load news.</p>' +
+            '<span>Please refresh the page or try again later.</span>' +
+          '</div>';
+      });
+  </script>
+
+</body>
+</html>

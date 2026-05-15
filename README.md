@@ -176,7 +176,7 @@ No build command needed. Output directory: `/` (root).
 ---
 
 ## Key Contacts
-- admissions@jpeducation.net
 - info@jpeducation.net
+- hr@jpeducation.net
 - 031 225 4143 | 076 190 0925 | 070 764 0657
 - Lunuwila Junction, Chilaw Road, Wennappuwa 61170

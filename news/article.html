@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" data-root="/">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="News article — St. John Paul II International College, Wennappuwa, Sri Lanka.">
+  <title id="page-title">Article | JPIC – St. John Paul II International College</title>
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css?v=20260521">
+  <link rel="stylesheet" href="/assets/css/components.css?v=20260521">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --oxford-blue:   #002147;
+      --champagne:     #FFE69E;
+      --tiffany:       #00BDB6;
+      --baby-powder:   #F7FAFA;
+      --eerie-black:   #1F2121;
+      --white:         #FFFFFF;
+      --text-body:     #2C3340;
+      --text-muted:    #5A6478;
+      --serif-display: 'Playfair Display', Georgia, serif;
+      --serif-accent:  'Cormorant Garamond', Georgia, serif;
+      --sans:          'DM Sans', system-ui, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; overflow-x: hidden; }
+    body { font-family: var(--sans); background: var(--baby-powder); color: var(--text-body); line-height: 1.7; font-size: 16px; }
+    img  { max-width: 100%; display: block; }
+    a    { text-decoration: none; color: inherit; }
+
+    /* ── ARTICLE HEADER ─────────────────────────────────────── */
+    .article-header {
+      background: var(--oxford-blue);
+      padding: 88px 0 64px;
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--sans);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.6);
+      margin-bottom: 32px;
+      transition: color 0.2s ease;
+    }
+    .back-link:hover { color: var(--champagne); }
+    .article-badge {
+      font-family: var(--sans);
+      font-size: 9.5px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--oxford-blue);
+      background: var(--champagne);
+      border-radius: 3px;
+      padding: 4px 10px;
+      display: inline-block;
+      margin-bottom: 18px;
+    }
+    .article-title {
+      font-family: var(--serif-display);
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 400;
+      color: var(--white);
+      line-height: 1.15;
+      margin-bottom: 16px;
+      max-width: 800px;
+    }
+    .article-meta {
+      font-family: var(--sans);
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.55);
+    }
+
+    /* ── COVER IMAGE ────────────────────────────────────────── */
+    .article-cover-wrap {
+      background: var(--white);
+      border-bottom: 1px solid #E8E8E8;
+    }
+    .article-cover {
+      width: 100%;
+      max-height: 480px;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* ── ARTICLE BODY ───────────────────────────────────────── */
+    .article-body-section {
+      padding: 72px 0 96px;
+      background: var(--white);
+    }
+    .article-body-inner {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    .article-rule {
+      display: block;
+      width: 56px;
+      height: 3px;
+      background: var(--champagne);
+      border-radius: 2px;
+      margin-bottom: 36px;
+    }
+    /* Prose styles for body HTML */
+    .article-prose p {
+      font-family: var(--sans);
+      font-size: 16px;
+      color: var(--eerie-black);
+      line-height: 1.85;
+      margin-bottom: 20px;
+    }
+    .article-prose strong { font-weight: 600; }
+    .article-prose em     { font-style: italic; }
+    .article-prose ul, .article-prose ol {
+      margin: 0 0 20px 24px;
+    }
+    .article-prose li {
+      font-family: var(--sans);
+      font-size: 16px;
+      color: var(--eerie-black);
+      line-height: 1.75;
+      margin-bottom: 6px;
+    }
+
+    /* ── GALLERY ────────────────────────────────────────────── */
+    .article-gallery {
+      margin-top: 48px;
+      padding-top: 40px;
+      border-top: 1px solid #E8E8E8;
+    }
+    .gallery-heading {
+      font-family: var(--serif-display);
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: var(--oxford-blue);
+      margin-bottom: 20px;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+    .gallery-grid img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: opacity 0.2s ease;
+    }
+    .gallery-grid img:hover { opacity: 0.88; }
+
+    /* ── NOT FOUND ──────────────────────────────────────────── */
+    .article-not-found {
+      text-align: center;
+      padding: 96px 24px;
+    }
+    .article-not-found p {
+      font-family: var(--serif-display);
+      font-size: 1.6rem;
+      color: var(--oxford-blue);
+      margin-bottom: 12px;
+    }
+    .article-not-found span {
+      font-family: var(--sans);
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+    .article-not-found a {
+      display: inline-block;
+      margin-top: 28px;
+      font-family: var(--sans);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--oxford-blue);
+      border-bottom: 2px solid var(--champagne);
+      padding-bottom: 3px;
+    }
+
+    /* ── RESPONSIVE ─────────────────────────────────────────── */
+    @media (max-width: 768px) {
+      .article-header { padding: 72px 0 48px; }
+      .gallery-grid   { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 480px) {
+      .gallery-grid   { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="nav-placeholder"></div>
+
+  <main id="main-content">
+    <!-- Content injected by JS -->
+    <div id="article-content"></div>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="/assets/js/main.js?v=20260521"></script>
+  <script>
+    fetch('/components/nav.html')
+      .then(function(r) { return r.text(); })
+      .then(function(html) { document.getElementById('nav-placeholder').innerHTML = html; });
+
+    fetch('/components/footer.html')
+      .then(function(r) { return r.text(); })
+      .then(function(html) { document.getElementById('footer-placeholder').innerHTML = html; });
+
+    function formatDate(iso) {
+      var d = new Date(iso + 'T00:00:00');
+      return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+    }
+
+    function getParam(name) {
+      return new URLSearchParams(window.location.search).get(name);
+    }
+
+    var articleId = getParam('id');
+
+    fetch('news.json')
+      .then(function(r) { return r.json(); })
+      .then(function(articles) {
+        var article = articles.find(function(a) { return a.id === articleId; });
+        var container = document.getElementById('article-content');
+
+        if (!article) {
+          container.innerHTML =
+            '<section class="article-not-found">' +
+              '<p>Article not found.</p>' +
+              '<span>The article you\'re looking for may have been removed or the link is incorrect.</span><br>' +
+              '<a href="index.html">&larr; Back to News</a>' +
+            '</section>';
+          return;
+        }
+
+        // Update page title
+        document.getElementById('page-title').textContent = article.title + ' | JPIC';
+
+        // Cover image
+        var coverHtml = article.cover
+          ? '<div class="article-cover-wrap"><img class="article-cover" src="' + article.cover + '" alt="' + article.title + '" loading="lazy"></div>'
+          : '';
+
+        // Gallery
+        var galleryHtml = '';
+        if (article.gallery && article.gallery.length > 0) {
+          var imgs = article.gallery.map(function(src, i) {
+            return '<img src="' + src + '" alt="' + article.title + ' — photo ' + (i + 1) + '" loading="lazy">';
+          }).join('');
+          galleryHtml =
+            '<div class="article-gallery">' +
+              '<h3 class="gallery-heading">Gallery</h3>' +
+              '<div class="gallery-grid">' + imgs + '</div>' +
+            '</div>';
+        }
+
+        container.innerHTML =
+          '<header class="article-header">' +
+            '<div class="container">' +
+              '<a href="index.html" class="back-link">' +
+                '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' +
+                  '<path d="M19 12H5M12 5l-7 7 7 7"/>' +
+                '</svg>' +
+                'Back to News' +
+              '</a>' +
+              '<span class="article-badge">' + article.category + '</span>' +
+              '<h1 class="article-title">' + article.title + '</h1>' +
+              '<div class="article-meta">' + formatDate(article.date) + '</div>' +
+            '</div>' +
+          '</header>' +
+          coverHtml +
+          '<section class="article-body-section">' +
+            '<div class="container">' +
+              '<div class="article-body-inner">' +
+                '<span class="article-rule" aria-hidden="true"></span>' +
+                '<div class="article-prose">' + article.body + '</div>' +
+                galleryHtml +
+              '</div>' +
+            '</div>' +
+          '</section>';
+      })
+      .catch(function() {
+        document.getElementById('article-content').innerHTML =
+          '<section class="article-not-found">' +
+            '<p>Unable to load article.</p>' +
+            '<span>Please refresh the page or try again later.</span><br>' +
+            '<a href="index.html">&larr; Back to News</a>' +
+          '</section>';
+      });
+  </script>
+
+</body>
+</html>

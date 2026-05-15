@@ -187,7 +187,7 @@
 
     .dept-columns {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
     }
 
     .dept-col {
@@ -666,43 +666,125 @@
         font-size: 2.4rem;
       }
     }
+
+    /* ── PAGE HERO ──────────────────────────────────────── */
+    .contact-hero {
+      position: relative;
+      background: var(--oxford-blue);
+      padding: 120px 0 80px;
+      overflow: hidden;
+    }
+    .contact-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: repeating-linear-gradient(45deg, rgba(255,230,158,0.03) 0px, rgba(255,230,158,0.03) 1px, transparent 1px, transparent 8px);
+      pointer-events: none;
+    }
+    .ch-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 60px;
+      align-items: end;
+    }
+    .ch-badge { display: flex; align-items: center; gap: 10px; margin-bottom: 20px; }
+    .ch-badge-line { width: 32px; height: 1px; background: var(--champagne); }
+    .ch-badge-text { font-family: var(--sans); font-size: 12px; color: var(--champagne); letter-spacing: 0.2em; text-transform: uppercase; }
+    .ch-title { font-family: var(--serif-display); font-size: clamp(36px, 5vw, 58px); font-weight: 400; color: #fff; line-height: 1.1; letter-spacing: -0.01em; margin-bottom: 20px; }
+    .ch-title em { font-style: italic; color: var(--champagne); }
+    .ch-subtitle { font-family: var(--sans); font-size: 16px; color: rgba(255,255,255,0.65); line-height: 1.75; max-width: 480px; }
+    .ch-panels { display: flex; flex-direction: column; gap: 2px; align-self: end; }
+    .ch-panel { display: flex; align-items: center; gap: 18px; padding: 18px 22px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,230,158,0.18); }
+    .ch-panel-icon { width: 38px; height: 38px; flex-shrink: 0; border: 1px solid rgba(255,230,158,0.35); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--champagne); }
+    .ch-panel-label { font-family: var(--sans); font-size: 10px; color: var(--turquoise); letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 2px; }
+    .ch-panel-val { font-family: var(--serif-display); font-size: 15px; color: #fff; font-weight: 500; }
+
+    /* ── FAQ SECTION ────────────────────────────────────── */
+    .faq-section { background: var(--oxford-blue); padding: 88px 0; }
+    .faq-eyebrow { font-family: var(--sans); font-size: 10px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--turquoise); margin-bottom: 14px; }
+    .faq-title { font-family: var(--serif-display); font-size: clamp(28px, 3.5vw, 42px); font-weight: 400; color: #fff; line-height: 1.2; margin-bottom: 40px; }
+    .faq-title em { font-style: italic; color: var(--champagne); }
+    .faq-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 0 80px; }
+    .faq-item { padding: 24px 0; border-bottom: 1px solid rgba(255,230,158,0.12); cursor: pointer; }
+    .faq-q { display: flex; align-items: center; justify-content: space-between; gap: 24px; font-family: var(--serif-display); font-size: 17px; font-weight: 500; color: #fff; line-height: 1.4; }
+    .faq-toggle { width: 24px; height: 24px; border: 1px solid rgba(255,230,158,0.3); border-radius: 50%; flex-shrink: 0; position: relative; transition: all 0.2s; }
+    .faq-toggle::before, .faq-toggle::after { content: ''; position: absolute; background: var(--champagne); left: 50%; top: 50%; transform: translate(-50%, -50%); }
+    .faq-toggle::before { width: 10px; height: 1px; }
+    .faq-toggle::after { width: 1px; height: 10px; transition: transform 0.25s; }
+    .faq-item.open .faq-toggle::after { transform: translate(-50%, -50%) rotate(90deg); opacity: 0; }
+    .faq-item.open .faq-toggle { border-color: var(--champagne); }
+    .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.35s ease, margin 0.35s ease; font-family: var(--sans); font-size: 14.5px; color: rgba(255,255,255,0.62); line-height: 1.75; }
+    .faq-item.open .faq-a { max-height: 220px; margin-top: 14px; }
+
+    /* ── CTA STRIP ──────────────────────────────────────── */
+    .contact-cta { background: var(--champagne); padding: 56px 0; }
+    .contact-cta-inner { display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap; }
+    .contact-cta-text { font-family: var(--serif-display); font-size: clamp(22px, 2.5vw, 30px); font-weight: 400; color: var(--oxford-blue); line-height: 1.3; max-width: 680px; }
+    .contact-cta-text em { font-style: italic; }
+    .contact-cta-btn { flex-shrink: 0; font-family: var(--sans); font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; padding: 16px 32px; background: var(--oxford-blue); color: var(--champagne); border: none; border-radius: 2px; cursor: pointer; text-decoration: none; display: inline-block; transition: background 0.2s, transform 0.2s; }
+    .contact-cta-btn:hover { background: #001530; transform: translateY(-1px); }
+
+    @media (max-width: 900px) {
+      .ch-grid { grid-template-columns: 1fr; }
+      .ch-panels { display: none; }
+      .contact-hero { padding: 100px 0 60px; }
+      .faq-cols { grid-template-columns: 1fr; }
+      .contact-cta-inner { flex-direction: column; align-items: flex-start; }
+    }
   </style>
 </head>
 <body>
 
   <!-- Navigation (injected by JS) -->
-  <div id="nav-placeholder"></div>
+  <div id="nav-placeholder" data-component="nav"></div>
 
   <main id="main-content">
 
     <!-- ══════════════════════════════════════════════════════
-         1. PAGE INTRO
+         1. PAGE HERO
          ══════════════════════════════════════════════════════ -->
-    <section class="contact-intro" aria-labelledby="contact-heading">
+    <section class="contact-hero" aria-labelledby="contact-heading">
       <div class="container">
-        <div class="contact-intro-grid">
+        <div class="ch-grid">
 
-          <!-- LEFT -->
           <div>
-            <p class="intro-eyebrow">St. John Paul II International College</p>
-            <h1 id="contact-heading">Contact Us</h1>
-            <span class="intro-rule" aria-hidden="true"></span>
-            <p class="intro-desc">
-              We'd love to hear from you. Reach out to the right department
-              and our team will respond promptly.
-            </p>
-            <a href="mailto:info@jpeducation.net" class="intro-email-btn">Send Us an Email</a>
+            <div class="ch-badge">
+              <div class="ch-badge-line"></div>
+              <span class="ch-badge-text">We'd love to hear from you</span>
+            </div>
+            <h1 id="contact-heading" class="ch-title">Get in <em>Touch</em><br>with the College.</h1>
+            <p class="ch-subtitle">Whether you're enquiring about admissions, planning a campus visit, or looking to speak with a specific department — our team is here to help you take the next step.</p>
           </div>
 
-          <!-- RIGHT: subtle decorative element -->
-          <div class="intro-right" aria-hidden="true">
-            <div class="intro-right-decor">
-              <span></span>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFE69E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="opacity:.4">
-                <line x1="12" y1="2" x2="12" y2="22"/>
-                <line x1="2" y1="12" x2="22" y2="12"/>
-              </svg>
-              <span></span>
+          <div class="ch-panels" aria-hidden="true">
+            <div class="ch-panel">
+              <div class="ch-panel-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+              </div>
+              <div>
+                <div class="ch-panel-label">Call us</div>
+                <div class="ch-panel-val">031 224 5761</div>
+              </div>
+            </div>
+            <div class="ch-panel">
+              <div class="ch-panel-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <div class="ch-panel-label">Write to us</div>
+                <div class="ch-panel-val">info@jpeducation.net</div>
+              </div>
+            </div>
+            <div class="ch-panel">
+              <div class="ch-panel-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <div class="ch-panel-label">Visit campus</div>
+                <div class="ch-panel-val">Wennappuwa, Sri Lanka</div>
+              </div>
             </div>
           </div>
 
@@ -729,29 +811,17 @@
             <p class="dept-sidebar-sub">Reach the right team directly.</p>
           </div>
 
-          <!-- RIGHT: four departments -->
+          <!-- RIGHT: three departments -->
           <div class="dept-columns">
 
             <!-- HR Department -->
             <div class="dept-col">
               <div class="dept-name">HR Department</div>
               <div class="dept-detail">
-                Mrs. [Name]<br>
-                <strong>Call us:</strong> <a href="tel:+94312254143">031 225 4143</a><br>
+                <strong>Call:</strong> <a href="tel:+94312254143">031 225 4143</a><br>
                 <strong>Email:</strong> <a href="mailto:hr@jpeducation.net">hr@jpeducation.net</a>
               </div>
-              <div class="dept-hours">Mon – Fri, 8:00 AM – 4:00 PM</div>
-            </div>
-
-            <!-- Principal's Office -->
-            <div class="dept-col">
-              <div class="dept-name">Principal's Office</div>
-              <div class="dept-detail">
-                Rev. Fr. Principal<br>
-                <strong>Call us:</strong> <a href="tel:+94312254143">031 225 4143 ext. 101</a><br>
-                <strong>Email:</strong> <a href="mailto:principal@jpeducation.net">principal@jpeducation.net</a>
-              </div>
-              <div class="dept-hours">Mon – Fri, 7:30 AM – 3:30 PM</div>
+              <div class="dept-hours">Mon – Fri, 9:00 AM – 3:00 PM</div>
             </div>
 
             <!-- Education Office -->
@@ -759,10 +829,10 @@
               <div class="dept-name">Education Office</div>
               <div class="dept-detail">
                 Academic Coordinator<br>
-                <strong>Call us:</strong> <a href="tel:+94761900925">076 190 0925</a><br>
-                <strong>Email:</strong> <a href="mailto:academic@jpeducation.net">academic@jpeducation.net</a>
+                <strong>Call:</strong> <a href="tel:+94312245761">031 224 5761</a> / <a href="tel:+94707640657">070 764 0657</a><br>
+                <strong>Email:</strong> <a href="mailto:info@jpeducation.net">info@jpeducation.net</a>
               </div>
-              <div class="dept-hours">Mon – Fri, 7:30 AM – 4:00 PM</div>
+              <div class="dept-hours">Mon – Fri, 7:30 AM – 3:00 PM</div>
             </div>
 
             <!-- Admissions -->
@@ -770,10 +840,10 @@
               <div class="dept-name">Admissions</div>
               <div class="dept-detail">
                 Admissions Officer<br>
-                <strong>Call us:</strong> <a href="tel:+94707640657">070 764 0657</a><br>
-                <strong>Email:</strong> <a href="mailto:admissions@jpeducation.net">admissions@jpeducation.net</a>
+                <strong>Call:</strong> <a href="tel:+94707640657">070 764 0657</a> / <a href="tel:+94761900925">076 190 0925</a><br>
+                <strong>Email:</strong> <a href="mailto:info@jpeducation.net">info@jpeducation.net</a>
               </div>
-              <div class="dept-hours">Mon – Sat, 8:00 AM – 3:00 PM</div>
+              <div class="dept-hours">Mon – Fri, 7:30 AM – 3:00 PM</div>
             </div>
 
           </div>
@@ -790,7 +860,7 @@
 
           <!-- LEFT: Enquiry Form -->
           <div>
-            <h2 class="form-col-heading">Work Inquiries</h2>
+            <h2 class="form-col-heading">Send Us a Message</h2>
             <span class="form-col-rule" aria-hidden="true"></span>
             <p class="form-col-sub">
               Fill in this form or
@@ -798,7 +868,13 @@
               with your inquiry.
             </p>
 
+            <!-- Web3Forms access key: Register at web3forms.com with jpic@jpeducation.net
+                 then replace the value below with your actual key if it changes.
+                 The key is not sensitive — it is safe to commit to git. -->
             <form id="contact-form" novalidate aria-label="Contact enquiry form">
+              <input type="hidden" name="access_key" value="f21d5a42-9f67-4fbe-bb0e-55793e543c99">
+              <input type="hidden" name="from_name" value="JPIC Website">
+              <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" aria-hidden="true">
               <div class="form-fields-grid">
 
                 <!-- Row 1 -->
@@ -890,7 +966,7 @@
             <p class="map-label">Find Us</p>
             <iframe
               class="map-embed"
-              src="https://www.google.com/maps?q=Wennappuwa+61170+Sri+Lanka&output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.0699360515605!2d79.83729677568296!3d7.346043813057223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2c222e5c27e03%3A0x12c2213801e4ab80!2sSt%20John%20Paul%20II%20Cambridge%20College%2C%20Wennappuwa!5e0!3m2!1sen!2slk!4v1778786691064!5m2!1sen!2slk"
               title="JPIC Campus — Wennappuwa 61170, Sri Lanka"
               allowfullscreen
               loading="lazy"
@@ -906,7 +982,48 @@
     </section>
 
     <!-- ══════════════════════════════════════════════════════
-         4. OFFICE HOURS STRIP
+         4. FAQ
+         ══════════════════════════════════════════════════════ -->
+    <section class="faq-section" aria-label="Frequently asked questions">
+      <div class="container">
+        <p class="faq-eyebrow">Frequently Asked</p>
+        <h2 class="faq-title">Quick <em>answers</em> before you write.</h2>
+
+        <div class="faq-cols">
+          <div>
+            <div class="faq-item open">
+              <div class="faq-q">When does the academic year begin? <span class="faq-toggle" aria-hidden="true"></span></div>
+              <div class="faq-a">Our academic year follows the Cambridge International calendar, beginning in early September. Mid-year admissions are considered on a case-by-case basis — please contact the admissions office for details.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">How long does the application take? <span class="faq-toggle" aria-hidden="true"></span></div>
+              <div class="faq-a">From enquiry to enrolment typically takes two to four weeks, covering the application form, entrance assessment, family interview, and seat confirmation.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">Do you offer scholarships or bursaries? <span class="faq-toggle" aria-hidden="true"></span></div>
+              <div class="faq-a">Merit-based scholarships are awarded annually. Please speak with our admissions office for eligibility criteria and application details.</div>
+            </div>
+          </div>
+          <div>
+            <div class="faq-item">
+              <div class="faq-q">Can I visit before applying? <span class="faq-toggle" aria-hidden="true"></span></div>
+              <div class="faq-a">Absolutely — and we strongly encourage it. Use the contact form to request a private tour or ask about our Open Days. Visiting the campus is the best way to experience our community first-hand.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">What is the medium of instruction? <span class="faq-toggle" aria-hidden="true"></span></div>
+              <div class="faq-a">English is the medium of instruction across all Cambridge stages. Sinhala and Tamil are offered as language subjects to support cultural literacy.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">Are the qualifications recognised abroad? <span class="faq-toggle" aria-hidden="true"></span></div>
+              <div class="faq-a">Yes. Cambridge IGCSE, AS and A Level qualifications are accepted by universities in over 160 countries, including the UK, USA, Canada, Australia, and across Europe and Asia.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         5. OFFICE HOURS STRIP
          ══════════════════════════════════════════════════════ -->
     <section class="hours-strip" aria-label="Office hours">
       <div class="container">
@@ -920,7 +1037,7 @@
               </svg>
             </div>
             <div class="hours-day">Monday – Friday</div>
-            <div class="hours-time">7:30 AM – 4:00 PM</div>
+            <div class="hours-time">7:30 AM – 3:00 PM</div>
           </div>
 
           <div class="hours-item">
@@ -931,7 +1048,7 @@
               </svg>
             </div>
             <div class="hours-day">Saturday</div>
-            <div class="hours-time">8:00 AM – 12:00 PM</div>
+            <div class="hours-time closed">Closed</div>
           </div>
 
           <div class="hours-item">
@@ -950,21 +1067,33 @@
       </div>
     </section>
 
+    <!-- ══════════════════════════════════════════════════════
+         6. CTA STRIP
+         ══════════════════════════════════════════════════════ -->
+    <section class="contact-cta" aria-label="Apply now">
+      <div class="container">
+        <div class="contact-cta-inner">
+          <p class="contact-cta-text">
+            Ready to take the next step? <em>Apply now</em> — or call our admissions team and we'll walk you through it.
+          </p>
+          <a href="mailto:info@jpeducation.net" class="contact-cta-btn">Begin Enquiry &rarr;</a>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <!-- Footer (injected by JS) -->
-  <div id="footer-placeholder"></div>
+  <div id="footer-placeholder" data-component="footer"></div>
 
   <script src="/assets/js/main.js?v=20260521"></script>
   <script>
-    // ── Load shared components ──────────────────────────────────
-    fetch('components/nav.html')
-      .then(function(r) { return r.text(); })
-      .then(function(html) { document.getElementById('nav-placeholder').innerHTML = html; });
-
-    fetch('components/footer.html')
-      .then(function(r) { return r.text(); })
-      .then(function(html) { document.getElementById('footer-placeholder').innerHTML = html; });
+    // ── FAQ accordion ──────────────────────────────────────────
+    document.querySelectorAll('.faq-item').forEach(function(item) {
+      item.addEventListener('click', function() {
+        item.classList.toggle('open');
+      });
+    });
 
     // ── Contact form submission ─────────────────────────────────
     (function () {
@@ -996,23 +1125,26 @@
         setLoading(true);
         clearMsg();
 
-        fetch('http://localhost:3100/api/v1/public/leads/inquiry', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ name: name, email: email, phone: phone, subject: subject, message: message })
+        var formData = new FormData(form);
+        var payload = {};
+        formData.forEach(function(value, key) { payload[key] = value; });
+
+        fetch(‘https://api.web3forms.com/submit’, {
+          method: ‘POST’,
+          headers: { ‘Content-Type’: ‘application/json’, ‘Accept’: ‘application/json’ },
+          body: JSON.stringify(payload)
         })
-          .then(function (res) {
-            if (res.ok) {
+          .then(function (res) { return res.json(); })
+          .then(function (data) {
+            if (data.success) {
               form.reset();
-              showMsg('success', 'Your message has been sent. We’ll respond within one working day.');
+              showMsg(‘success’, ‘Your message has been sent. We’ll respond within one working day.’);
             } else {
-              return res.json().catch(function () { return {}; }).then(function (data) {
-                showMsg('error', data.message || 'Something went wrong. Please try again or call us directly.');
-              });
+              showMsg(‘error’, ‘Something went wrong. Please try again or email us directly at info@jpeducation.net’);
             }
           })
           .catch(function () {
-            showMsg('error', 'Unable to send your message. Please check your connection, or call us at 031 225 4143.');
+            showMsg(‘error’, ‘Network error. Please email us directly at info@jpeducation.net’);
           })
           .finally(function () {
             setLoading(false);

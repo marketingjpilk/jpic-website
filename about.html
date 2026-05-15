@@ -276,26 +276,9 @@
   .academic-council{background:#fff;padding:96px 0;}
   .academic-council h2{font-size:40px;}
   .academic-council .intro{font-family:'DM Sans',sans-serif;font-size:16px;max-width:700px;line-height:1.8;margin-bottom:48px;color:var(--eerie-black);}
-  .council-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
-  .council-card{
-    background:var(--baby-powder);border-radius:12px;
-    padding:32px 24px;text-align:center;
-    border-top:3px solid var(--tiffany);
-    box-shadow:0 2px 16px rgba(0,33,71,0.06);
-    transition:transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  .council-card:hover{transform:translateY(-6px);box-shadow:0 16px 40px rgba(0,33,71,0.12);}
-  .council-card .ph-circle{
-    width:96px;height:96px;border-radius:50%;
-    background:var(--light-cyan-2);
-    border:2px dashed var(--tiffany);
-    margin:0 auto 20px;
-    display:flex;align-items:center;justify-content:center;
-  }
-  .council-card .c-name{font-family:'Playfair Display',serif;font-size:17px;color:var(--oxford-blue);}
-  .council-card .c-role{font-family:'DM Sans',sans-serif;font-size:11px;color:var(--tiffany);text-transform:uppercase;letter-spacing:0.08em;margin-top:4px;}
-  .council-card .c-cred{font-family:'DM Sans',sans-serif;font-size:12px;color:rgba(31,33,33,0.55);font-style:italic;margin-top:4px;}
-  @media(max-width:900px){.council-grid{grid-template-columns:repeat(2,1fr);}}
+  .council-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:24px 24px;row-gap:48px;}
+  @media(max-width:900px){.council-grid{grid-template-columns:repeat(2,1fr);row-gap:32px;}}
+  @media(max-width:900px){.council-grid .reveal{grid-column:span 1 !important;}}
 
   /* ---- MESSAGE SECTIONS (Bishop / Rector / Principal) ---- */
   .msg-section{padding:96px 0;}
@@ -417,6 +400,45 @@
   @media(max-width:480px){
     .container{padding-left:16px;padding-right:16px;}
   }
+
+  /* ---------- SECTION HEADER (centred) ---------- */
+  .section-header{text-align:center;margin-bottom:56px;}
+  .section-header h2{font-size:40px;line-height:1.2;}
+  .section-header .sub{font-family:'DM Sans',sans-serif;font-size:16px;color:var(--eerie-black);text-align:center;max-width:560px;margin:0 auto;line-height:1.7;}
+
+  /* ---------- LEADER PROFILE (founding-bishop / pioneering-rector) ---------- */
+  .leader-profile{padding:96px 0;background:#fff;}
+  .leader-profile.alt{background:var(--baby-powder);}
+  .leader-profile .section-header{margin-bottom:48px;}
+  .patron-card{display:grid;grid-template-columns:400fr 600fr;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 8px 40px rgba(0,33,71,0.08);border:1px solid rgba(0,33,71,0.06);max-width:1080px;margin:0 auto;}
+  .patron-photo{background:linear-gradient(160deg,var(--light-cyan-alt) 0%,var(--light-cyan) 100%);position:relative;min-height:540px;display:flex;align-items:center;justify-content:center;padding:48px;overflow:hidden;}
+  .patron-photo::before{content:"";position:absolute;inset:0;background-image:repeating-linear-gradient(-45deg,transparent,transparent 32px,rgba(255,255,255,0.4) 32px,rgba(255,255,255,0.4) 33px);pointer-events:none;}
+  .patron-photo .frame{width:100%;max-width:280px;aspect-ratio:3/4;background:#fff;border:1.5px dashed var(--tiffany);border-radius:6px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:24px;text-align:center;position:relative;box-shadow:0 18px 48px rgba(0,33,71,0.14);z-index:1;overflow:hidden;}
+  .patron-photo .frame::before{content:"";position:absolute;inset:-14px;border:1px solid rgba(255,230,158,0.55);border-radius:10px;pointer-events:none;}
+  .patron-photo .frame .ph-label{font-family:'DM Sans',sans-serif;font-size:13px;font-weight:700;color:rgba(0,33,71,0.5);margin-top:4px;}
+  .patron-photo .frame .ph-sub{font-family:'DM Sans',sans-serif;font-size:11px;color:rgba(0,189,182,0.65);}
+  .patron-content{padding:64px 56px;display:flex;flex-direction:column;justify-content:center;position:relative;}
+  .patron-seal{position:absolute;top:32px;right:32px;width:96px;height:96px;border-radius:50%;background:var(--baby-powder);border:1.5px dashed var(--champagne);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:10px;gap:3px;}
+  .patron-seal::before{content:"";position:absolute;inset:-6px;border:1px solid rgba(255,230,158,0.4);border-radius:50%;pointer-events:none;}
+  .patron-seal .seal-icon{opacity:0.45;}
+  .patron-seal .seal-label{font-family:'DM Sans',sans-serif;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:rgba(0,33,71,0.55);line-height:1.2;}
+  .patron-eyebrow{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.18em;color:var(--tiffany);margin-bottom:14px;max-width:calc(100% - 110px);}
+  .patron-name{font-family:'Playfair Display',serif;font-size:30px;font-weight:600;color:var(--oxford-blue);line-height:1.2;letter-spacing:-0.005em;max-width:calc(100% - 110px);}
+  .patron-role{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:19px;color:var(--tiffany);margin-top:6px;}
+  .patron-rule{display:block;width:48px;height:3px;background:var(--champagne);margin:22px 0;border:0;}
+  .patron-bio{font-family:'DM Sans',sans-serif;font-size:15.5px;color:var(--eerie-black);line-height:1.85;}
+  .patron-attrib{display:flex;align-items:center;gap:14px;margin-top:28px;padding-top:20px;border-top:1px solid rgba(0,33,71,0.08);font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:rgba(0,33,71,0.55);}
+  .patron-attrib::before{content:"";width:28px;height:1px;background:var(--champagne);flex-shrink:0;}
+  .patron-card.no-seal .patron-eyebrow,.patron-card.no-seal .patron-name{max-width:none;}
+  @media(max-width:900px){
+    .patron-card{grid-template-columns:1fr;max-width:540px;}
+    .patron-photo{min-height:380px;padding:32px;}
+    .patron-photo .frame{max-width:220px;}
+    .patron-content{padding:40px 28px;}
+    .patron-seal{position:relative;top:0;right:0;width:74px;height:74px;margin-bottom:18px;}
+    .patron-eyebrow,.patron-name{max-width:none;}
+    .patron-name{font-size:24px;}
+  }
   </style>
 </head>
 <body>
@@ -434,6 +456,8 @@
     <a href="#school-flag" class="sub-link">School Flag</a>
     <a href="#school-houses" class="sub-link">School Houses</a>
     <a href="#governance" class="sub-link">Governance</a>
+    <a href="#founding-bishop" class="sub-link">Founding Bishop</a>
+    <a href="#pioneering-rector" class="sub-link">Founding Rector</a>
     <a href="#academic-council" class="sub-link">Academic Council</a>
     <a href="#bishops-message" class="sub-link">Bishop's Message</a>
     <a href="#rectors-message" class="sub-link">Rector's Message</a>
@@ -445,7 +469,7 @@
 <main>
 
 <!-- =================== HERO =================== -->
-<section id="hero" class="hero reveal">
+<section id="hero" class="hero">
   <div class="container">
     <span class="eyebrow">ST. JOHN PAUL II INTERNATIONAL COLLEGE</span>
     <h1>About Us</h1>
@@ -586,13 +610,12 @@
 <section id="coat-of-arms" class="coat-of-arms reveal">
   <div class="container">
     <div class="grid">
-      <div class="coa-image placeholder">
-        <svg width="56" height="56" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity:0.4">
-          <path d="M12 2l8 3v6c0 5-3.5 9.5-8 11-4.5-1.5-8-6-8-11V5l8-3z" stroke="#00BDB6" stroke-width="1.6" stroke-linejoin="round"/>
-        </svg>
-        <div class="ph-label">[ Coat of Arms ]</div>
-        <div class="ph-sub">Image placeholder</div>
-      </div>
+      <img
+        src="assets/images/school-logo.png"
+        alt="Coat of Arms — St. John Paul II International College"
+        style="max-width:320px;display:block;margin:0 auto;border-radius:12px;box-shadow:0 8px 40px rgba(0,33,71,0.15);"
+        loading="lazy"
+      />
       <div>
         <span class="eyebrow">HERALDRY</span>
         <h2>Our Coat of Arms</h2>
@@ -640,47 +663,44 @@
 
     <div class="houses-grid">
       <article class="house-card reveal" style="--i:0">
-        <div class="band" style="background:#B03A2E;"></div>
-        <div class="body">
-          <div class="badge-img" style="background:rgba(176,58,46,0.12);border-color:#B03A2E;">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" style="opacity:0.5"><path d="M12 2l8 3v6c0 5-3.5 9.5-8 11-4.5-1.5-8-6-8-11V5l8-3z" stroke="#B03A2E" stroke-width="1.6"/></svg>
-            <div class="ph-label" style="color:#B03A2E;">St. Michael Badge</div>
-          </div>
-          <div class="h-name" style="color:#B03A2E;">St. Michael House</div>
-          <div class="motto">Quis ut Deus — Who is like God</div>
-          <span class="rule" style="background:#B03A2E;"></span>
-          <p class="desc">[House description, values and achievements to be confirmed by school administration.]</p>
-          <p class="note" style="color:#B03A2E;">✦ Details to be confirmed.</p>
-        </div>
-      </article>
-
-      <article class="house-card reveal" style="--i:1">
-        <div class="band" style="background:#1A5276;"></div>
-        <div class="body">
-          <div class="badge-img" style="background:rgba(26,82,118,0.12);border-color:#1A5276;">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" style="opacity:0.5"><path d="M12 2l8 3v6c0 5-3.5 9.5-8 11-4.5-1.5-8-6-8-11V5l8-3z" stroke="#1A5276" stroke-width="1.6"/></svg>
-            <div class="ph-label" style="color:#1A5276;">St. Gabriel Badge</div>
-          </div>
-          <div class="h-name" style="color:#1A5276;">St. Gabriel House</div>
-          <div class="motto">Fortitudo Dei — Strength of God</div>
-          <span class="rule" style="background:#1A5276;"></span>
-          <p class="desc">[House description, values and achievements to be confirmed by school administration.]</p>
-          <p class="note" style="color:#1A5276;">✦ Details to be confirmed.</p>
-        </div>
-      </article>
-
-      <article class="house-card reveal" style="--i:2">
         <div class="band" style="background:#1E8449;"></div>
         <div class="body">
           <div class="badge-img" style="background:rgba(30,132,73,0.12);border-color:#1E8449;">
             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" style="opacity:0.5"><path d="M12 2l8 3v6c0 5-3.5 9.5-8 11-4.5-1.5-8-6-8-11V5l8-3z" stroke="#1E8449" stroke-width="1.6"/></svg>
-            <div class="ph-label" style="color:#1E8449;">St. Raphael Badge</div>
+            <div class="ph-label" style="color:#1E8449;">Alosius House</div>
           </div>
-          <div class="h-name" style="color:#1E8449;">St. Raphael House</div>
-          <div class="motto">Medicina Dei — Healing of God</div>
+          <div class="h-name" style="color:#1E8449;">Alosius House</div>
+          <div class="motto" style="color:#1E8449;opacity:0.75;">Green</div>
           <span class="rule" style="background:#1E8449;"></span>
           <p class="desc">[House description, values and achievements to be confirmed by school administration.]</p>
-          <p class="note" style="color:#1E8449;">✦ Details to be confirmed.</p>
+        </div>
+      </article>
+
+      <article class="house-card reveal" style="--i:1">
+        <div class="band" style="background:#B03A2E;"></div>
+        <div class="body">
+          <div class="badge-img" style="background:rgba(176,58,46,0.12);border-color:#B03A2E;">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" style="opacity:0.5"><path d="M12 2l8 3v6c0 5-3.5 9.5-8 11-4.5-1.5-8-6-8-11V5l8-3z" stroke="#B03A2E" stroke-width="1.6"/></svg>
+            <div class="ph-label" style="color:#B03A2E;">Edmund House</div>
+          </div>
+          <div class="h-name" style="color:#B03A2E;">Edmund House</div>
+          <div class="motto" style="color:#B03A2E;opacity:0.75;">Red</div>
+          <span class="rule" style="background:#B03A2E;"></span>
+          <p class="desc">[House description, values and achievements to be confirmed by school administration.]</p>
+        </div>
+      </article>
+
+      <article class="house-card reveal" style="--i:2">
+        <div class="band" style="background:#D4AC0D;"></div>
+        <div class="body">
+          <div class="badge-img" style="background:rgba(212,172,13,0.12);border-color:#D4AC0D;">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" style="opacity:0.5"><path d="M12 2l8 3v6c0 5-3.5 9.5-8 11-4.5-1.5-8-6-8-11V5l8-3z" stroke="#D4AC0D" stroke-width="1.6"/></svg>
+            <div class="ph-label" style="color:#D4AC0D;">Marcus House</div>
+          </div>
+          <div class="h-name" style="color:#D4AC0D;">Marcus House</div>
+          <div class="motto" style="color:#D4AC0D;opacity:0.75;">Yellow</div>
+          <span class="rule" style="background:#D4AC0D;"></span>
+          <p class="desc">[House description, values and achievements to be confirmed by school administration.]</p>
         </div>
       </article>
     </div>
@@ -711,6 +731,72 @@
   </div>
 </section>
 
+<!-- =================== FOUNDING BISHOP =================== -->
+<section id="founding-bishop" class="leader-profile alt reveal">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">OUR FOUNDING BISHOP</span>
+      <h2>The Visionary Behind Our Foundation</h2>
+      <hr class="gold-rule centered" />
+      <p class="sub">St. John Paul II International College was founded under the patronage of His Lordship, whose vision and pastoral encouragement gave rise to a new chapter of Catholic education in Wennappuwa.</p>
+    </div>
+    <article class="patron-card">
+      <div class="patron-photo">
+        <div class="frame">
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" style="opacity:0.35" aria-hidden="true">
+            <circle cx="12" cy="8" r="4" stroke="#00BDB6" stroke-width="1.6"/>
+            <path d="M4 21c0-4 4-7 8-7s8 3 8 7" stroke="#00BDB6" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+          <div class="ph-label">Rt. Rev. Dr. Valence Mendis</div>
+          <div class="ph-sub">Photo to be added</div>
+        </div>
+      </div>
+      <div class="patron-content">
+        <div class="patron-seal" aria-label="Diocese seal">
+          <svg class="seal-icon" width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 2l8 3v6c0 5-3.5 9.5-8 11-4.5-1.5-8-6-8-11V5l8-3z" stroke="#00BDB6" stroke-width="1.6" stroke-linejoin="round"/>
+            <path d="M9 12h6M12 9v6" stroke="#00BDB6" stroke-width="1.4" stroke-linecap="round"/>
+          </svg>
+          <span class="seal-label">Diocese of<br>Chilaw</span>
+        </div>
+        <span class="patron-eyebrow">Founding Patron &middot; 2015</span>
+        <h3 class="patron-name">Rt. Rev. Dr. Valence Mendis</h3>
+        <div class="patron-role">Bishop of the Diocese of Chilaw (2015)</div>
+        <hr class="patron-rule" />
+        <p class="patron-bio">As the founding Bishop, His Lordship Rt. Rev. Dr. Valence Mendis blessed the establishment of St. John Paul II International College in 2015 &mdash; championing the vision of bringing the globally recognised Cambridge curriculum to Wennappuwa under a Catholic ethos. His Lordship now serves as the Bishop of the Diocese of Kandy.</p>
+        <div class="patron-attrib">Founding Bishop &middot; Now Bishop of Kandy</div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- =================== PIONEERING RECTOR =================== -->
+<section id="pioneering-rector" class="leader-profile reveal">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">OUR PIONEERING RECTOR</span>
+      <h2>The Founder Who Built Our Foundation</h2>
+      <hr class="gold-rule centered" />
+      <p class="sub">Every great institution begins with a pioneer. Ours was guided by a priest whose dedication, courage and vision laid the very first stones of St. John Paul II International College.</p>
+    </div>
+    <article class="patron-card no-seal">
+      <div class="patron-photo">
+        <div class="frame">
+          <img src="assets/images/Staff/Rev. Fr. Don Neville Merinus Coonghe.webp" alt="Very Rev. Fr. Neville Coonghe, Founding Rector" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:4px;">
+        </div>
+      </div>
+      <div class="patron-content">
+        <span class="patron-eyebrow">Founding Rector &middot; 10 September 2015</span>
+        <h3 class="patron-name">Very Rev. Fr. Neville Coonghe</h3>
+        <div class="patron-role">Founding Rector, St. John Paul II International College</div>
+        <hr class="patron-rule" />
+        <p class="patron-bio">In September 2015, Very Rev. Fr. Neville Coonghe opened the doors of St. John Paul II International College with four teachers and twenty-five students. His pioneering vision &mdash; to offer a Cambridge International education within a deeply Catholic environment &mdash; set the course for everything our College has become today. We remain forever grateful for his foundational leadership and tireless dedication.</p>
+        <div class="patron-attrib">Pioneering Rector &middot; Founded 10 September 2015</div>
+      </div>
+    </article>
+  </div>
+</section>
+
 <!-- =================== ACADEMIC COUNCIL =================== -->
 <section id="academic-council" class="academic-council reveal">
   <div class="container">
@@ -720,41 +806,49 @@
     <p class="intro">The Academic Council of St. John Paul II International College provides strategic academic oversight, ensuring the continued quality and relevance of our Cambridge curriculum and educational programmes.</p>
 
     <div class="council-grid">
-      <article class="council-card reveal" style="--i:0">
-        <div class="ph-circle">
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" style="opacity:0.45"><circle cx="12" cy="8" r="4" stroke="#00BDB6" stroke-width="1.6"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7" stroke="#00BDB6" stroke-width="1.6" stroke-linecap="round"/></svg>
+      <div class="reveal" style="--i:0; grid-column:span 2">
+        <img class="portrait-real" src="assets/images/Staff/Rt_Rev_Dr_Wimal-_Siri_Jayasuriya.webp" alt="Rt. Rev. Dr. Don Wimal Siri Jayasuriya" loading="lazy">
+        <div class="name-card">
+          <div class="nc-name">Rt. Rev. Dr. Don Wimal Siri Jayasuriya</div>
+          <div class="nc-credentials">Bishop of the Diocese of Chilaw</div>
         </div>
-        <div class="c-name">[Member Name]</div>
-        <div class="c-role">[Position]</div>
-        <div class="c-cred">[Qualifications]</div>
-      </article>
-      <article class="council-card reveal" style="--i:1">
-        <div class="ph-circle">
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" style="opacity:0.45"><circle cx="12" cy="8" r="4" stroke="#00BDB6" stroke-width="1.6"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7" stroke="#00BDB6" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </div>
+      <div class="reveal" style="--i:1; grid-column:span 2">
+        <img class="portrait-real" src="assets/images/Staff/Rev_Fr_Ajith_Prasanna_Fernando.webp" alt="Rev. Fr. Ajith Prasanna Fernando" loading="lazy">
+        <div class="name-card">
+          <div class="nc-name">Rev. Fr. Ajith Prasanna Fernando</div>
+          <div class="nc-credentials">Rector</div>
         </div>
-        <div class="c-name">[Member Name]</div>
-        <div class="c-role">[Position]</div>
-        <div class="c-cred">[Qualifications]</div>
-      </article>
-      <article class="council-card reveal" style="--i:2">
-        <div class="ph-circle">
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" style="opacity:0.45"><circle cx="12" cy="8" r="4" stroke="#00BDB6" stroke-width="1.6"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7" stroke="#00BDB6" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </div>
+      <div class="reveal" style="--i:2; grid-column:span 2">
+        <img class="portrait-real" src="assets/images/Staff/Rev_Fr_Isanka_Mihiran_Fernando.webp" alt="Rev. Fr. Isanka Mihiran Fernando" loading="lazy">
+        <div class="name-card">
+          <div class="nc-name">Rev. Fr. Isanka Mihiran Fernando</div>
+          <div class="nc-credentials">Director</div>
         </div>
-        <div class="c-name">[Member Name]</div>
-        <div class="c-role">[Position]</div>
-        <div class="c-cred">[Qualifications]</div>
-      </article>
-      <article class="council-card reveal" style="--i:3">
-        <div class="ph-circle">
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" style="opacity:0.45"><circle cx="12" cy="8" r="4" stroke="#00BDB6" stroke-width="1.6"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7" stroke="#00BDB6" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </div>
+      <div class="reveal" style="--i:3; grid-column:span 2">
+        <img class="portrait-real" src="assets/images/Staff/Chrishanthi_Pereira.webp" alt="Dr. Chrishanthi Pereira" loading="lazy">
+        <div class="name-card">
+          <div class="nc-name">Dr. Chrishanthi Pereira</div>
+          <div class="nc-credentials">Council Member</div>
         </div>
-        <div class="c-name">[Member Name]</div>
-        <div class="c-role">[Position]</div>
-        <div class="c-cred">[Qualifications]</div>
-      </article>
+      </div>
+      <div class="reveal" style="--i:4; grid-column:span 2">
+        <img class="portrait-real" src="assets/images/Staff/Prof_C_A_N_Fernando.webp" alt="Prof. C. A. N. Fernando" loading="lazy">
+        <div class="name-card">
+          <div class="nc-name">Prof. C. A. N. Fernando</div>
+          <div class="nc-credentials">Council Member</div>
+        </div>
+      </div>
+      <div class="reveal" style="--i:5; grid-column:span 2">
+        <img class="portrait-real" src="assets/images/Staff/Prof_Shirley_Lal_Wijesinghe.webp" alt="Prof. Shirley Lal Wijesinghe" loading="lazy">
+        <div class="name-card">
+          <div class="nc-name">Prof. Shirley Lal Wijesinghe</div>
+          <div class="nc-credentials">Council Member</div>
+        </div>
+      </div>
     </div>
-
-    <p class="update-note" style="font-style:italic;margin-top:32px;">✦ Academic Council members to be confirmed by school administration.</p>
   </div>
 </section>
 
@@ -765,7 +859,7 @@
       <div>
         <img
           class="portrait-real"
-          src="assets/images/Staff/Rt_Rev_Dr_Wimal-_Siri_Jayasuriya.jpg"
+          src="assets/images/Staff/Rt_Rev_Dr_Wimal-_Siri_Jayasuriya.webp"
           alt="Rt. Rev. Dr. Don Wimal Siri Jayasuriya, Bishop of the Diocese of Chilaw"
           loading="lazy"
         />
@@ -851,7 +945,7 @@
       <div>
         <img
           class="portrait-real"
-          src="assets/images/Staff/Rev_Fr_Isanka_Mihiran_Fernando.jpg"
+          src="assets/images/Staff/Rev_Fr_Isanka_Mihiran_Fernando.webp"
           alt="Rev. Fr. Isanka Mihiran Fernando, Principal"
           loading="lazy"
         />
