@@ -5,11 +5,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About Us — St. John Paul II International College</title>
   <meta name="description" content="Learn about St. John Paul II International College, Wennappuwa — our story, vision, mission, core values, governance, and messages from our Bishop and Principal." />
+  <link rel="canonical" href="https://jpeducation.net/about">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://jpeducation.net/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "About Us",
+      "item": "https://jpeducation.net/about"
+    }
+  ]
+}
+</script>
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="St. John Paul II International College">
+  <meta property="og:title" content="About Us | St. John Paul II International College">
+  <meta property="og:description" content="Learn about St. John Paul II International College — our history, vision, mission, and our Cambridge International education journey in Wennappuwa, Sri Lanka.">
+  <meta property="og:image" content="https://jpeducation.net/assets/images/og-image.webp">
+  <meta property="og:url" content="https://jpeducation.net/about">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About Us | St. John Paul II International College">
+  <meta name="twitter:description" content="Learn about St. John Paul II International College — our history, vision, mission, and our Cambridge International education journey in Wennappuwa, Sri Lanka.">
+  <meta name="twitter:image" content="https://jpeducation.net/assets/images/og-image.webp">
 
-  <link rel="icon" href="assets/images/favicon.png" type="image/png" />
+  <link rel="icon" href="/assets/images/favicon.png" type="image/png" />
 
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+  <link rel="stylesheet" href="/assets/css/components.css" />
+
+  <script>
+  /* Prevent browser from jumping past hero when navigating via hash links */
+  (function(){
+    var hash = window.location.hash;
+    if(!hash || hash === '#hero') return;
+    if('scrollRestoration' in history) history.scrollRestoration = 'manual';
+    history.replaceState(null, '', window.location.pathname + window.location.search);
+    window.addEventListener('load', function(){
+      window.scrollTo(0, 0);
+      setTimeout(function(){
+        var el = document.querySelector(hash);
+        if(!el) return;
+        var navH = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-height')) || 72;
+        var subNavEl = document.querySelector('.sub-nav');
+        var subNavH = subNavEl ? subNavEl.offsetHeight : 48;
+        var top = el.getBoundingClientRect().top + window.scrollY - navH - subNavH - 4;
+        window.scrollTo({ top: top, behavior: 'smooth' });
+      }, 450);
+    });
+  })();
+  </script>
 
   <style>
   /* ---- Page-specific styles — global tokens come from main.css ---- */
@@ -401,6 +456,27 @@
     .container{padding-left:16px;padding-right:16px;}
   }
 
+  /* ---- EYEBROW WITH-LINE (matches Cambridge pages) ---- */
+  .eyebrow.with-line{display:inline-flex;align-items:center;gap:12px;}
+  .eyebrow.with-line::before{content:'';width:28px;height:1px;background:currentColor;flex-shrink:0;}
+
+  /* ---- PATRON SAINT ---- */
+  .ps-section{background:var(--oxford-blue);padding:96px 0;}
+  .ps-grid{display:grid;grid-template-columns:420px 1fr;gap:72px;align-items:start;}
+  .ps-image{width:100%;height:420px;object-fit:cover;border-radius:8px;border:3px solid var(--champagne);display:block;}
+  .ps-section .eyebrow{color:var(--champagne);}
+  .ps-h2{font-family:'Playfair Display',serif;font-size:40px;color:#ffffff;line-height:1.2;margin:12px 0 0;font-weight:700;}
+  .ps-meta{font-family:'DM Sans',sans-serif;font-size:13px;color:rgba(255,255,255,0.6);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:24px;}
+  .ps-body{font-family:'DM Sans',sans-serif;font-size:16px;color:rgba(255,255,255,0.85);line-height:1.8;margin-bottom:20px;}
+  .ps-blockquote{border-left:3px solid var(--champagne);padding:0 0 0 24px;margin:28px 0 0;background:transparent !important;border-radius:0;font-family:inherit;font-style:normal;font-size:inherit;}
+  .ps-quote-text{font-family:'Cormorant Garamond',serif;font-size:22px;font-style:italic;color:#ffffff;line-height:1.55;margin:0 0 10px;}
+  .ps-attribution{font-family:'DM Sans',sans-serif;font-size:12px;color:rgba(255,255,255,0.55);letter-spacing:0.1em;text-transform:uppercase;}
+  .ps-feast-pill{display:inline-flex;align-items:center;background:rgba(255,230,158,0.12);border:1px solid rgba(255,230,158,0.3);border-radius:20px;padding:6px 16px;font-family:'DM Sans',sans-serif;font-size:12px;color:var(--champagne);margin-top:24px;}
+  @media(max-width:900px){
+    .ps-grid{grid-template-columns:1fr;gap:40px;}
+    .ps-image{height:300px;max-width:420px;margin:0 auto;}
+  }
+
   /* ---------- SECTION HEADER (centred) ---------- */
   .section-header{text-align:center;margin-bottom:56px;}
   .section-header h2{font-size:40px;line-height:1.2;}
@@ -418,7 +494,7 @@
   .patron-photo .frame .ph-label{font-family:'DM Sans',sans-serif;font-size:13px;font-weight:700;color:rgba(0,33,71,0.5);margin-top:4px;}
   .patron-photo .frame .ph-sub{font-family:'DM Sans',sans-serif;font-size:11px;color:rgba(0,189,182,0.65);}
   .patron-content{padding:64px 56px;display:flex;flex-direction:column;justify-content:center;position:relative;}
-  .patron-seal{position:absolute;top:32px;right:32px;width:96px;height:96px;border-radius:50%;background:var(--baby-powder);border:1.5px dashed var(--champagne);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:10px;gap:3px;}
+  .patron-seal{position:absolute;top:32px;right:32px;width:96px;height:96px;border-radius:50%;overflow:hidden;background:var(--baby-powder);border:1.5px dashed var(--champagne);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:10px;gap:3px;}
   .patron-seal::before{content:"";position:absolute;inset:-6px;border:1px solid rgba(255,230,158,0.4);border-radius:50%;pointer-events:none;}
   .patron-seal .seal-icon{opacity:0.45;}
   .patron-seal .seal-label{font-family:'DM Sans',sans-serif;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:rgba(0,33,71,0.55);line-height:1.2;}
@@ -442,6 +518,7 @@
   </style>
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
 <!-- Nav loaded by main.js via data-component attribute -->
 <div id="nav-placeholder" data-component="nav"></div>
@@ -450,6 +527,7 @@
 <nav class="sub-nav" aria-label="About sections">
   <div class="container">
     <a href="#our-story" class="sub-link">Our Story</a>
+    <a href="#patron-saint" class="sub-link">Patron Saint</a>
     <a href="#vision-mission" class="sub-link">Vision &amp; Mission</a>
     <a href="#core-values" class="sub-link">Core Values</a>
     <a href="#coat-of-arms" class="sub-link">Coat of Arms</a>
@@ -457,16 +535,16 @@
     <a href="#school-houses" class="sub-link">School Houses</a>
     <a href="#governance" class="sub-link">Governance</a>
     <a href="#founding-bishop" class="sub-link">Founding Bishop</a>
+    <a href="#present-bishop" class="sub-link">Present Bishop</a>
     <a href="#pioneering-rector" class="sub-link">Founding Rector</a>
     <a href="#academic-council" class="sub-link">Academic Council</a>
     <a href="#bishops-message" class="sub-link">Bishop's Message</a>
-    <a href="#rectors-message" class="sub-link">Rector's Message</a>
     <a href="#principals-message" class="sub-link">Principal's Message</a>
     <a href="#school-anthem" class="sub-link">School Anthem</a>
   </div>
 </nav>
 
-<main>
+<main id="main-content">
 
 <!-- =================== HERO =================== -->
 <section id="hero" class="hero">
@@ -505,6 +583,38 @@
         <div class="milestone"><span class="year">2023</span><p class="event">First cohort of Cambridge O Level students sit their international qualifications — a landmark milestone.</p></div>
         <div class="milestone"><span class="year">2025</span><p class="event">10th Anniversary celebrated — a decade of faith, excellence and community at JPIC.</p></div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== PATRON SAINT =================== -->
+<section id="patron-saint" class="ps-section reveal">
+  <div class="container">
+    <div class="ps-grid">
+
+      <div>
+        <img
+          src="assets/images/ADAMELLO_-_PAPA_-_Giovanni_Paolo_II_-_panoramio_(cropped).webp"
+          alt="Saint John Paul II"
+          class="ps-image"
+          loading="lazy"
+        />
+      </div>
+
+      <div>
+        <span class="eyebrow with-line">Our Patron Saint</span>
+        <h2 class="ps-h2">Saint John Paul <em style="color:var(--champagne);font-style:italic;">II</em></h2>
+        <hr class="gold-rule" />
+        <p class="ps-meta">Karol Józef Wojtyła &middot; 1920 &ndash; 2005 &middot; Pope from 1978 to 2005</p>
+        <p class="ps-body">Karol Józef Wojtyła was born on 18 May 1920 in Wadowice, Poland. Ordained a priest in 1946 and later Archbishop of Kraków, he was elected Pope on 16 October 1978 &mdash; the first non-Italian Pope in 455 years and the first from a Slavic country. His 26-year pontificate was one of the longest and most consequential in modern history, defined by his tireless advocacy for human dignity, religious freedom and peace across the world.</p>
+        <p class="ps-body">Canonised as a saint on 27 April 2014 by Pope Francis, St. John Paul II is venerated as a champion of youth, education and the family. His feast day is celebrated on 22 October. St. John Paul II International College takes its name and its inspiration from his life &mdash; his faith, his courage, and his belief that every person carries within them an extraordinary capacity for goodness.</p>
+        <blockquote class="ps-blockquote">
+          <p class="ps-quote-text">&ldquo;Do not be afraid. Open wide the doors for Christ.&rdquo;</p>
+          <p class="ps-attribution">&mdash; St. John Paul II &middot; Homily at the start of his pontificate, 1978</p>
+        </blockquote>
+        <div class="ps-feast-pill">Feast Day: 22 October</div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -620,9 +730,13 @@
         <span class="eyebrow">HERALDRY</span>
         <h2>Our Coat of Arms</h2>
         <hr class="gold-rule" />
-        <p class="body">The Coat of Arms of St. John Paul II International College embodies the founding ideals and spiritual heritage of our institution. Each element within the heraldic design carries deep symbolic meaning, reflecting our commitment to faith, truth, wisdom and love.</p>
-        <div class="dummy-block">[Official description of the Coat of Arms, its elements and their symbolic meaning, will be provided by the school administration and added here.]</div>
-        <p class="update-note">✦ Content to be updated by the school administration.</p>
+        <p class="body">The Coat of Arms of St. John Paul II International College, Wennappuwa, serves as a sacred and educational emblem that visually expresses the institution's Catholic identity, spiritual mission, and commitment to the integral formation of young people in truth, wisdom, and love. Rooted in the rich heritage of Christian symbolism and Catholic tradition, each element has been carefully chosen to communicate the school's vocation to nurture students intellectually, morally, and spiritually.</p>
+        <p class="body">The three stars appearing on the shield represent the Blessed Virgin Mary, Mother of Jesus Christ and Mother of the Church. In Catholic iconography, stars have long been associated with Mary under the title &ldquo;Stella Maris&rdquo; (Star of the Sea), the guiding light who leads believers toward Christ. Traditionally, Marian symbolism also reflects her perpetual holiness and her role as an intercessor and model of discipleship. Within the context of the College, these stars signify the maternal guidance of Our Lady over the educational journey of every student, directing hearts and minds toward faith, virtue, and holiness.</p>
+        <p class="body">Prominently displayed within the shield is the Chi-Rho (&#9767;), one of the earliest Christograms in Christian history. The symbol is formed from the Greek letters Chi (&Chi;) and Rho (&Rho;), the first two letters of the word <em>Christos</em> (Christ). Used by the early Church and made famous through Emperor Constantine in the fourth century, the Chi-Rho became a symbol of Christ&rsquo;s triumph and the victory of faith. Within the College Coat of Arms, the Chi-Rho signifies the centrality of Jesus Christ as the source of truth, salvation, and wisdom, affirming that education reaches its fullest purpose when illuminated by the Gospel.</p>
+        <p class="body">The Holy Bible represents the Word of God and the institution&rsquo;s dedication to academic excellence grounded in Christian values. In Catholic understanding, Sacred Scripture is not only the foundation of faith but also a source of divine wisdom and truth. The Bible therefore symbolizes the pursuit of knowledge that forms both intellect and conscience, reflecting the College&rsquo;s mission to educate the whole person by integrating scholarship with faith, nurturing students who seek understanding with wisdom and learning with compassion.</p>
+        <p class="body">The central cross, inspired by the coat of arms of Pope Saint John Paul II, carries profound theological significance. During his pontificate, Saint John Paul II adopted a distinctive cross with a displaced &ldquo;M&rdquo;, signifying the loving presence of Mary beneath Christ at Calvary and emphasising total devotion to Christ through Mary. In this College emblem, the cross reflects fidelity to Christ and the spiritual legacy of Saint John Paul II, whose life and teachings consistently called young people to become &ldquo;builders of a civilization of love.&rdquo; The cross stands as the ultimate sign of sacrifice, redemption, and hope, reminding the school community that authentic education is inseparable from service, faith, and human dignity.</p>
+        <p class="body">The colours of gold and blue further enrich the symbolism of the Coat of Arms. Gold traditionally signifies divine glory, excellence, and truth, while blue has long represented heaven, wisdom, fidelity, and the Blessed Virgin Mary in Christian art and liturgical tradition.</p>
+        <p class="body">Finally, the motto &ldquo;Truth &bull; Wisdom &bull; Love&rdquo; encapsulates the educational philosophy of St. John Paul II International College. Truth directs the mind toward what is good and just, Wisdom enables discernment and understanding, and Love calls each person to live in communion with God and neighbour. Together, these virtues express the College&rsquo;s mission of forming students who are academically competent, spiritually rooted, morally responsible, and inspired to serve humanity. Thus, the Coat of Arms stands not merely as a visual emblem, but as a living expression of Catholic faith and educational purpose, reflecting the enduring mission of St. John Paul II International College to form young men and women in the light of Christ.</p>
       </div>
     </div>
   </div>
@@ -636,17 +750,20 @@
         <span class="eyebrow">OUR FLAG</span>
         <h2>The School Flag</h2>
         <hr class="gold-rule" />
-        <p class="body">The school flag of St. John Paul II International College stands as a proud symbol of our identity, values and aspirations. Flown at our campus and carried at official events, it represents the unity and spirit of our school community.</p>
-        <div class="dummy-block">[Description of the school flag — its colours, symbols and their meaning — will be added here.]</div>
-        <p class="update-note">✦ Content to be updated by the school administration.</p>
+        <p class="body">The School Flag of St. John Paul II International College, Wennappuwa, serves as a sacred and educational emblem that visually expresses the institution's Catholic identity, spiritual mission, and commitment to the integral formation of young people in truth, wisdom, and love. Rooted in the rich heritage of Christian symbolism and Catholic tradition, each element displayed on the flag has been carefully chosen to communicate the school's vocation to nurture students intellectually, morally, and spiritually.</p>
+        <p class="body">The three stars displayed on the flag represent the Blessed Virgin Mary, Mother of Jesus Christ and Mother of the Church. In Catholic iconography, stars have long been associated with Mary under the title &ldquo;Stella Maris&rdquo; (Star of the Sea), the guiding light who leads believers toward Christ. Within the context of the College, these stars signify the maternal guidance of Our Lady over the educational journey of every student, directing hearts and minds toward faith, virtue, and holiness.</p>
+        <p class="body">Prominently featured on the flag is the Chi-Rho (&#9767;), one of the earliest Christograms in Christian history. Formed from the Greek letters Chi (&Chi;) and Rho (&Rho;) &mdash; the first two letters of the word <em>Christos</em> (Christ) &mdash; the Chi-Rho became a symbol of Christ&rsquo;s triumph and the victory of faith. On the College flag, it signifies the centrality of Jesus Christ as the source of truth, salvation, and wisdom, affirming that education reaches its fullest purpose when illuminated by the Gospel.</p>
+        <p class="body">The Holy Bible displayed on the flag represents the Word of God and the institution&rsquo;s dedication to academic excellence grounded in Christian values. Sacred Scripture is both the foundation of faith and a source of divine wisdom and truth. The Bible symbolizes the pursuit of knowledge that forms both intellect and conscience, reflecting the College&rsquo;s mission to educate the whole person by integrating scholarship with faith.</p>
+        <p class="body">The central cross on the flag, inspired by the coat of arms of Pope Saint John Paul II, carries profound theological significance. It reflects fidelity to Christ and the spiritual legacy of Saint John Paul II, whose life and teachings consistently called young people to become &ldquo;builders of a civilization of love.&rdquo; The cross stands as the ultimate sign of sacrifice, redemption, and hope, reminding the school community that authentic education is inseparable from service, faith, and human dignity.</p>
+        <p class="body">The colours of gold and blue further enrich the symbolism of the School Flag. Gold traditionally signifies divine glory, excellence, and truth, while blue has long represented heaven, wisdom, fidelity, and the Blessed Virgin Mary in Christian art and liturgical tradition.</p>
+        <p class="body">Finally, the motto &ldquo;Truth &bull; Wisdom &bull; Love&rdquo; encapsulates the educational philosophy of St. John Paul II International College. Together, these virtues express the College&rsquo;s mission of forming students who are academically competent, spiritually rooted, morally responsible, and inspired to serve humanity. Thus, the School Flag stands not merely as a visual symbol, but as a living expression of Catholic faith and educational purpose, reflecting the enduring mission of St. John Paul II International College to form young men and women in the light of Christ.</p>
       </div>
-      <div class="flag-image placeholder">
-        <svg width="56" height="56" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity:0.4">
-          <path d="M5 3v18M5 4h13l-2.5 4L18 12H5" stroke="#00BDB6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <div class="ph-label">[ School Flag ]</div>
-        <div class="ph-sub">Image placeholder</div>
-      </div>
+      <img
+        src="assets/images/JPIC_Flag.webp"
+        alt="School Flag — St. John Paul II International College"
+        style="width:100%;border-radius:12px;box-shadow:0 8px 40px rgba(0,33,71,0.15);display:block;align-self:start;"
+        loading="lazy"
+      />
     </div>
   </div>
 </section>
@@ -713,21 +830,6 @@
     <span class="eyebrow">GOVERNANCE</span>
     <h2>School Governance</h2>
     <hr class="gold-rule" />
-    <p class="intro">St. John Paul II International College is governed under the authority of the Diocese of Chilaw, guided by the principles of Catholic education and a commitment to academic excellence. Our governance structure ensures transparency, accountability and the highest standards of institutional leadership.</p>
-
-    <table class="gov-table">
-      <thead>
-        <tr><th>Role</th><th>Name</th><th>Notes</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>Diocese of Chilaw</td><td>Most Rev. Bishop</td><td>Governing Authority</td></tr>
-        <tr><td>School Board Chair</td><td>[To be confirmed]</td><td>Board of Directors</td></tr>
-        <tr><td>Principal</td><td>Rev. Fr. Isanka Mihiran Fernando</td><td>Academic Head</td></tr>
-        <tr><td>[Further positions]</td><td>—</td><td>To be updated</td></tr>
-      </tbody>
-    </table>
-
-    <p class="update-note" style="font-style:italic;margin-top:16px;">✦ Governance details to be updated by school administration.</p>
   </div>
 </section>
 
@@ -743,21 +845,12 @@
     <article class="patron-card">
       <div class="patron-photo">
         <div class="frame">
-          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" style="opacity:0.35" aria-hidden="true">
-            <circle cx="12" cy="8" r="4" stroke="#00BDB6" stroke-width="1.6"/>
-            <path d="M4 21c0-4 4-7 8-7s8 3 8 7" stroke="#00BDB6" stroke-width="1.6" stroke-linecap="round"/>
-          </svg>
-          <div class="ph-label">Rt. Rev. Dr. Valence Mendis</div>
-          <div class="ph-sub">Photo to be added</div>
+          <img src="assets/images/Staff/Rt_Rev_Dr_Valence_Mendis.webp" alt="Rt. Rev. Dr. Valence Mendis, Founding Bishop" width="853" height="1109" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:4px;">
         </div>
       </div>
       <div class="patron-content">
-        <div class="patron-seal" aria-label="Diocese seal">
-          <svg class="seal-icon" width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M12 2l8 3v6c0 5-3.5 9.5-8 11-4.5-1.5-8-6-8-11V5l8-3z" stroke="#00BDB6" stroke-width="1.6" stroke-linejoin="round"/>
-            <path d="M9 12h6M12 9v6" stroke="#00BDB6" stroke-width="1.4" stroke-linecap="round"/>
-          </svg>
-          <span class="seal-label">Diocese of<br>Chilaw</span>
+        <div class="patron-seal" aria-label="Diocese of Chilaw">
+          <img src="assets/images/Staff/Diocese_of_Chilaw_Bishop_Valence.webp" alt="Diocese of Chilaw" width="912" height="912" style="width:100%;height:100%;object-fit:contain;">
         </div>
         <span class="patron-eyebrow">Founding Patron &middot; 2015</span>
         <h3 class="patron-name">Rt. Rev. Dr. Valence Mendis</h3>
@@ -765,6 +858,36 @@
         <hr class="patron-rule" />
         <p class="patron-bio">As the founding Bishop, His Lordship Rt. Rev. Dr. Valence Mendis blessed the establishment of St. John Paul II International College in 2015 &mdash; championing the vision of bringing the globally recognised Cambridge curriculum to Wennappuwa under a Catholic ethos. His Lordship now serves as the Bishop of the Diocese of Kandy.</p>
         <div class="patron-attrib">Founding Bishop &middot; Now Bishop of Kandy</div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- =================== PRESENT BISHOP =================== -->
+<section id="present-bishop" class="leader-profile reveal">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">OUR PRESENT BISHOP</span>
+      <h2>The Bishop Who Guides Our College Today</h2>
+      <hr class="gold-rule centered" />
+      <p class="sub">St. John Paul II International College continues its mission under the pastoral leadership and guidance of His Lordship, the present Bishop of the Diocese of Chilaw.</p>
+    </div>
+    <article class="patron-card">
+      <div class="patron-photo">
+        <div class="frame">
+          <img src="assets/images/Staff/Rt_Rev_Dr_Wimal-_Siri_Jayasuriya.webp" alt="Rt. Rev. Dr. Wimal Siri Jayasuriya, Bishop of Chilaw" width="530" height="670" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:4px;">
+        </div>
+      </div>
+      <div class="patron-content">
+        <div class="patron-seal" aria-label="Diocese of Chilaw">
+          <img src="assets/images/Staff/Diocese%20of%20Chilaw.webp" alt="Diocese of Chilaw" width="2130" height="2556" style="width:100%;height:100%;object-fit:contain;">
+        </div>
+        <span class="patron-eyebrow">Present Bishop &middot; Diocese of Chilaw</span>
+        <h3 class="patron-name">Rt. Rev. Dr. Wimal Siri Jayasuriya</h3>
+        <div class="patron-role">Bishop of the Diocese of Chilaw</div>
+        <hr class="patron-rule" />
+        <p class="patron-bio">His Lordship Rt. Rev. Dr. Wimal Siri Jayasuriya serves as the present Bishop of the Diocese of Chilaw, under whose pastoral authority St. John Paul II International College continues to flourish. Committed to the advancement of Catholic education and the integral formation of young people, His Lordship provides inspired leadership to our school community, ensuring that the College&rsquo;s mission remains grounded in faith, truth, wisdom and love.</p>
+        <div class="patron-attrib">Present Bishop &middot; Diocese of Chilaw</div>
       </div>
     </article>
   </div>
@@ -782,7 +905,7 @@
     <article class="patron-card no-seal">
       <div class="patron-photo">
         <div class="frame">
-          <img src="assets/images/Staff/Rev. Fr. Don Neville Merinus Coonghe.webp" alt="Very Rev. Fr. Neville Coonghe, Founding Rector" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:4px;">
+          <img src="assets/images/Staff/Rev. Fr. Don Neville Merinus Coonghe.webp" alt="Very Rev. Fr. Neville Coonghe, Founding Rector" width="2652" height="3632" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:4px;">
         </div>
       </div>
       <div class="patron-content">
@@ -807,42 +930,42 @@
 
     <div class="council-grid">
       <div class="reveal" style="--i:0; grid-column:span 2">
-        <img class="portrait-real" src="assets/images/Staff/Rt_Rev_Dr_Wimal-_Siri_Jayasuriya.webp" alt="Rt. Rev. Dr. Don Wimal Siri Jayasuriya" loading="lazy">
+        <img class="portrait-real" src="assets/images/Staff/Rt_Rev_Dr_Wimal-_Siri_Jayasuriya.webp" alt="Rt. Rev. Dr. Don Wimal Siri Jayasuriya" width="530" height="670" loading="lazy">
         <div class="name-card">
           <div class="nc-name">Rt. Rev. Dr. Don Wimal Siri Jayasuriya</div>
           <div class="nc-credentials">Bishop of the Diocese of Chilaw</div>
         </div>
       </div>
       <div class="reveal" style="--i:1; grid-column:span 2">
-        <img class="portrait-real" src="assets/images/Staff/Rev_Fr_Ajith_Prasanna_Fernando.webp" alt="Rev. Fr. Ajith Prasanna Fernando" loading="lazy">
+        <img class="portrait-real" src="assets/images/Staff/Rev_Fr_Ajith_Prasanna_Fernando.webp" alt="Rev. Fr. Ajith Prasanna Fernando" width="700" height="935" loading="lazy">
         <div class="name-card">
           <div class="nc-name">Rev. Fr. Ajith Prasanna Fernando</div>
           <div class="nc-credentials">Rector</div>
         </div>
       </div>
       <div class="reveal" style="--i:2; grid-column:span 2">
-        <img class="portrait-real" src="assets/images/Staff/Rev_Fr_Isanka_Mihiran_Fernando.webp" alt="Rev. Fr. Isanka Mihiran Fernando" loading="lazy">
+        <img class="portrait-real" src="assets/images/Staff/Rev_Fr_Isanka_Mihiran_Fernando.webp" alt="Rev. Fr. Isanka Mihiran Fernando" width="700" height="935" loading="lazy">
         <div class="name-card">
           <div class="nc-name">Rev. Fr. Isanka Mihiran Fernando</div>
           <div class="nc-credentials">Director</div>
         </div>
       </div>
       <div class="reveal" style="--i:3; grid-column:span 2">
-        <img class="portrait-real" src="assets/images/Staff/Chrishanthi_Pereira.webp" alt="Dr. Chrishanthi Pereira" loading="lazy">
+        <img class="portrait-real" src="assets/images/Staff/Chrishanthi_Pereira.webp" alt="Dr. Chrishanthi Pereira" width="700" height="935" loading="lazy">
         <div class="name-card">
           <div class="nc-name">Dr. Chrishanthi Pereira</div>
           <div class="nc-credentials">Council Member</div>
         </div>
       </div>
       <div class="reveal" style="--i:4; grid-column:span 2">
-        <img class="portrait-real" src="assets/images/Staff/Prof_C_A_N_Fernando.webp" alt="Prof. C. A. N. Fernando" loading="lazy">
+        <img class="portrait-real" src="assets/images/Staff/Prof_C_A_N_Fernando.webp" alt="Prof. C. A. N. Fernando" width="700" height="935" loading="lazy">
         <div class="name-card">
           <div class="nc-name">Prof. C. A. N. Fernando</div>
           <div class="nc-credentials">Council Member</div>
         </div>
       </div>
       <div class="reveal" style="--i:5; grid-column:span 2">
-        <img class="portrait-real" src="assets/images/Staff/Prof_Shirley_Lal_Wijesinghe.webp" alt="Prof. Shirley Lal Wijesinghe" loading="lazy">
+        <img class="portrait-real" src="assets/images/Staff/Prof_Shirley_Lal_Wijesinghe.webp" alt="Prof. Shirley Lal Wijesinghe" width="700" height="935" loading="lazy">
         <div class="name-card">
           <div class="nc-name">Prof. Shirley Lal Wijesinghe</div>
           <div class="nc-credentials">Council Member</div>
@@ -892,46 +1015,6 @@
           <div class="regards">With prayers for abundant blessings,</div>
           <div class="name">Rt. Rev. Dr. Don Wimal Siri Jayasuriya</div>
           <div class="title">Bishop of the Diocese of Chilaw, Sri Lanka</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- =================== RECTOR'S MESSAGE =================== -->
-<section id="rectors-message" class="msg-section reveal" style="background:#fff;">
-  <div class="container">
-    <div class="grid">
-      <div>
-        <div class="portrait-ph placeholder">
-          <svg width="72" height="72" viewBox="0 0 24 24" fill="none" style="opacity:0.35"><circle cx="12" cy="8" r="4" stroke="#00BDB6" stroke-width="1.6"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7" stroke="#00BDB6" stroke-width="1.6" stroke-linecap="round"/></svg>
-          <div class="ph-label">[ Rector's Photo ]</div>
-          <div class="ph-sub">Image placeholder</div>
-        </div>
-        <div class="name-card">
-          <div class="nc-name">[Rector's Name]</div>
-          <div class="nc-credentials">Rector</div>
-          <div class="nc-sub">To be updated</div>
-        </div>
-      </div>
-      <div>
-        <span class="eyebrow">RECTOR'S MESSAGE</span>
-        <h2>A Message from Our Rector</h2>
-        <hr class="gold-rule" />
-
-        <div class="pull-quote">
-          <span class="quote-mark">❝</span>
-          <p>Excellence in education is not merely academic — it is the formation of character, faith and purpose in every young person entrusted to our care.</p>
-        </div>
-
-        <p class="body-italic">[The Rector's message will be added here. This section is reserved for the personal message from our Rector to students, parents and the school community.]</p>
-
-        <p class="update-note" style="margin-top:20px;font-size:13px;">✦ Rector's message to be provided by school administration.</p>
-
-        <div class="sign-off">
-          <div class="regards">&nbsp;</div>
-          <div class="name">[Rector's Name]</div>
-          <div class="title">Rector, St. John Paul II International College</div>
         </div>
       </div>
     </div>
@@ -1087,7 +1170,7 @@
       <hr class="gold-rule centered" />
       <p class="desc">St. John Paul II International College welcomes families who share our commitment to faith, excellence and the holistic development of every child.</p>
       <div class="actions">
-        <a href="/admissions/" class="btn-primary">Apply Now →</a>
+        <a href="/admissions/#enquiry-form" class="btn-primary">Apply Now →</a>
         <a href="/contact.html" class="btn-secondary">Contact Us</a>
       </div>
     </div>
@@ -1134,9 +1217,7 @@ document.querySelectorAll('.sub-nav a').forEach(function(link) {
       if (en.isIntersecting && en.intersectionRatio >= 0.25) {
         subLinks.forEach(function(l) { l.classList.remove('active'); });
         link.classList.add('active');
-        if (window.innerWidth <= 768) {
-          try { link.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' }); } catch(e) {}
-        }
+        try { link.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' }); } catch(e) {}
       }
     });
   }, { threshold: [0.25, 0.5, 0.75] });

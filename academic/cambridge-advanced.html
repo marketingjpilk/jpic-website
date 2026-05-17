@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cambridge Advanced — AS &amp; A Level (Age 16–19) | St. John Paul II International College</title>
+  <meta name="description" content="Cambridge International AS &amp; A Level at JPIC — recognised by over 2,200 universities worldwide including all UK universities and nearly 1,000 US universities." />
+  <link rel="canonical" href="https://jpeducation.net/academic/cambridge-advanced">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://jpeducation.net/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Academic",
+      "item": "https://jpeducation.net/academic/programmes"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Cambridge Advanced",
+      "item": "https://jpeducation.net/academic/cambridge-advanced"
+    }
+  ]
+}
+</script>
+  <meta name="keywords" content="Cambridge A Level JPIC, AS A Level Sri Lanka, Cambridge Advanced Wennappuwa, JPIC sixth form" />
+
+  <meta property="og:title" content="Cambridge Advanced (Age 16–19) — JPIC" />
+  <meta property="og:description" content="Cambridge International AS &amp; A Level at JPIC — recognised by over 2,200 universities worldwide including all UK universities and nearly 1,000 US universities." />
+  <meta property="og:image" content="https://jpeducation.net/assets/images/og-image.webp" />
+  <meta property="og:url" content="https://jpeducation.net/academic/cambridge-advanced.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="St. John Paul II International College" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cambridge Advanced (Age 16–19) — JPIC" />
+  <meta name="twitter:description" content="Cambridge International AS &amp; A Level for ages 16–19 at St. John Paul II International College, Wennappuwa." />
+  <meta name="twitter:image" content="https://jpeducation.net/assets/images/og-image.webp" />
+
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="/assets/css/main.css?v=20260517" />
+  <link rel="stylesheet" href="/assets/css/components.css?v=20260517" />
+  <script src="/assets/js/main.js" defer></script>
+
+  <style>
+    /* ════════════════════════════════════════════════════
+       PAGE-LEVEL ALIASES — bridge design tokens to production vars
+       ════════════════════════════════════════════════════ */
+    :root {
+      --light-cyan-alt: #D7FDF5;
+      --rule:           rgba(0, 33, 71, 0.10);
+      --serif-display:  var(--font-display);
+      --serif-italic:   var(--font-accent);
+      --sans:           var(--font-body);
+    }
+
+    /* ════════════════════════════════════════════════════
+       SHARED ATOMS (not in production main.css)
+       ════════════════════════════════════════════════════ */
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--tiffany);
+    }
+    .eyebrow.with-line::before {
+      content: '';
+      width: 28px;
+      height: 1px;
+      background: currentColor;
+    }
+
+    .gold-rule {
+      display: block;
+      width: 64px;
+      height: 3px;
+      background: var(--champagne);
+      border: none;
+    }
+
+    /* ════════════════════════════════════════════════════
+       REVEAL-CHILDREN support (production JS only handles .reveal)
+       ════════════════════════════════════════════════════ */
+    .reveal-children > * {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+      transition-delay: calc(var(--i, 0) * 0.1s);
+    }
+    .reveal-children.revealed > * {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ════════════════════════════════════════════════════
+       Section 1 — Hero
+       ════════════════════════════════════════════════════ */
+    .ca-hero {
+      background: var(--oxford-blue);
+      background-image: repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 40px,
+        rgba(255,255,255,0.03) 40px,
+        rgba(255,255,255,0.03) 41px
+      );
+      min-height: 460px;
+      padding: 80px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .ca-hero::before {
+      content: '';
+      position: absolute;
+      top: -200px; right: -180px;
+      width: 540px; height: 540px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0,189,182,0.18) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .ca-hero::after {
+      content: '05';
+      position: absolute;
+      bottom: -80px; left: -30px;
+      font-family: var(--serif-display);
+      font-size: 360px;
+      font-weight: 900;
+      color: rgba(255,230,158,0.04);
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .ca-hero-grid {
+      display: grid;
+      grid-template-columns: 58% 42%;
+      gap: 64px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .ca-hero-age-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin: 16px 0;
+      background: var(--champagne);
+      color: var(--oxford-blue);
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 20px;
+    }
+    .ca-hero-age-badge .sep {
+      width: 4px; height: 4px;
+      border-radius: 50%;
+      background: var(--oxford-blue);
+      opacity: 0.5;
+    }
+
+    .ca-hero-title {
+      font-family: var(--serif-display);
+      font-weight: 700;
+      color: #ffffff;
+      font-size: 58px;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+    }
+    .ca-hero-title em {
+      font-style: italic;
+      color: var(--champagne);
+      font-weight: 400;
+    }
+
+    .ca-hero-rule {
+      display: block;
+      width: 64px; height: 3px;
+      background: var(--champagne);
+      border: none;
+      margin: 20px 0;
+    }
+
+    .ca-hero-intro {
+      font-family: var(--sans);
+      font-size: 17px;
+      color: rgba(255,255,255,0.88);
+      line-height: 1.7;
+      max-width: 520px;
+    }
+
+    .ca-hero-chips {
+      display: inline-flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 32px;
+    }
+    .ca-hero-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 6px;
+      padding: 8px 18px;
+      font-family: var(--sans);
+      font-size: 13px;
+      color: #ffffff;
+      transition: all 0.3s ease;
+    }
+    .ca-hero-chip:hover {
+      border-color: var(--champagne);
+      background: rgba(255,230,158,0.06);
+    }
+    .ca-hero-chip strong { font-weight: 700; color: var(--champagne); }
+    .ca-hero-chip .chip-sep {
+      width: 1px; height: 14px;
+      background: rgba(255,255,255,0.2);
+    }
+    .ca-hero-chip span:last-child { color: rgba(255,255,255,0.65); }
+
+    /* Hero right visual */
+    .ca-hero-visual { position: relative; }
+    .ca-hero-img {
+      border-radius: 10px;
+      height: 340px;
+      position: relative;
+      overflow: hidden;
+      background: rgba(255,255,255,0.06);
+    }
+    .ca-hero-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    .ca-hero-overlay {
+      position: absolute;
+      bottom: -28px; left: -20px;
+      background: var(--oxford-blue);
+      border-left: 4px solid var(--champagne);
+      border-radius: 6px;
+      padding: 16px 20px;
+      box-shadow: 0 14px 38px rgba(0,0,0,0.32);
+      z-index: 2;
+    }
+    .ca-hero-overlay-label {
+      font-family: var(--sans);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--champagne);
+      margin-bottom: 4px;
+    }
+    .ca-hero-overlay-val {
+      font-family: var(--serif-display);
+      font-size: 15px;
+      color: #ffffff;
+      font-weight: 500;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Section 2 — Overview
+       ════════════════════════════════════════════════════ */
+    .ca-overview {
+      background: #ffffff;
+      padding: 96px 0;
+    }
+    .ca-overview-grid {
+      display: grid;
+      grid-template-columns: 62% 38%;
+      gap: 64px;
+      align-items: start;
+    }
+    .ca-overview-h2 {
+      font-family: var(--serif-display);
+      font-size: 40px;
+      font-weight: 500;
+      color: var(--oxford-blue);
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      margin-top: 12px;
+    }
+    .ca-overview-h2 em { font-style: italic; color: var(--tiffany); }
+    .ca-overview .gold-rule { margin: 18px 0 28px; }
+    .ca-overview-body p {
+      font-family: var(--sans);
+      font-size: 16px;
+      color: var(--eerie-black);
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    .ca-subheading {
+      font-family: var(--sans);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--oxford-blue);
+      margin: 40px 0 24px;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .ca-subheading::after {
+      content: '';
+      flex: 1;
+      min-width: 80px;
+      height: 1px;
+      background: var(--rule);
+    }
+
+    .ca-principles { display: flex; flex-direction: column; gap: 20px; }
+    .ca-principle { display: flex; gap: 16px; align-items: flex-start; padding: 14px 0; }
+    .ca-principle-num {
+      width: 36px; height: 36px;
+      flex-shrink: 0;
+      background: var(--tiffany);
+      color: #ffffff;
+      border-radius: 50%;
+      font-family: var(--sans);
+      font-size: 14px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+    .ca-principle:hover .ca-principle-num {
+      background: var(--oxford-blue);
+      transform: scale(1.04);
+    }
+    .ca-principle-title {
+      font-family: var(--sans);
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--oxford-blue);
+      margin-bottom: 4px;
+      letter-spacing: 0.02em;
+    }
+    .ca-principle-desc {
+      font-family: var(--sans);
+      font-size: 14px;
+      color: var(--eerie-black);
+      line-height: 1.65;
+    }
+
+    /* Sidebar */
+    .ca-sidebar {
+      position: sticky;
+      top: 100px;
+      background: var(--light-cyan-alt);
+      border-radius: 10px;
+      border-left: 4px solid var(--tiffany);
+      padding: 32px 28px;
+    }
+    .ca-sidebar-title {
+      font-family: var(--serif-display);
+      font-size: 22px;
+      font-weight: 500;
+      color: var(--oxford-blue);
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .ca-sidebar-title::before {
+      content: '';
+      display: block;
+      width: 18px; height: 1px;
+      background: var(--tiffany);
+    }
+    .ca-fact-row {
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(0,189,182,0.2);
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .ca-fact-row:last-child { border-bottom: none; }
+    .ca-fact-icon {
+      width: 36px; height: 36px;
+      border-radius: 8px;
+      background: rgba(0,189,182,0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .ca-fact-icon svg { width: 18px; height: 18px; color: var(--tiffany); }
+    .ca-fact-label {
+      font-family: var(--sans);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--tiffany);
+      display: block;
+      margin-bottom: 2px;
+    }
+    .ca-fact-value {
+      font-family: var(--sans);
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--oxford-blue);
+      line-height: 1.3;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Section 3 — Curriculum
+       ════════════════════════════════════════════════════ */
+    .ca-curriculum {
+      background: var(--baby-powder);
+      padding: 96px 0;
+    }
+    .ca-section-head {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+    .ca-section-head .eyebrow { justify-content: center; }
+    .ca-section-head h2 {
+      font-family: var(--serif-display);
+      font-size: 40px;
+      font-weight: 500;
+      color: var(--oxford-blue);
+      margin-top: 14px;
+      letter-spacing: -0.01em;
+    }
+    .ca-section-head h2 em { font-style: italic; color: var(--tiffany); }
+    .ca-section-head .gold-rule { margin: 18px auto 16px; }
+    .ca-section-head .lede {
+      font-family: var(--sans);
+      font-size: 15px;
+      color: var(--eerie-black);
+      max-width: 580px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    .ca-curriculum-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .ca-curric-card {
+      background: #ffffff;
+      border-radius: 10px;
+      border-top: 3px solid var(--tiffany);
+      padding: 32px 28px;
+      box-shadow: 0 2px 16px rgba(0,33,71,0.06);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .ca-curric-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 36px rgba(0,33,71,0.12);
+    }
+    .ca-curric-icon {
+      width: 52px; height: 52px;
+      background: var(--light-cyan-alt);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      transition: background 0.3s ease;
+    }
+    .ca-curric-card:hover .ca-curric-icon { background: var(--tiffany); }
+    .ca-curric-icon svg { width: 26px; height: 26px; color: var(--tiffany); transition: color 0.3s ease; }
+    .ca-curric-card:hover .ca-curric-icon svg { color: #ffffff; }
+    .ca-curric-name {
+      font-family: var(--sans);
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--oxford-blue);
+      margin-bottom: 10px;
+      letter-spacing: 0.01em;
+      line-height: 1.3;
+    }
+    .ca-curric-desc {
+      font-family: var(--sans);
+      font-size: 14px;
+      color: var(--eerie-black);
+      line-height: 1.65;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Section 4 — Assessment
+       ════════════════════════════════════════════════════ */
+    .ca-assessment {
+      background: #ffffff;
+      padding: 96px 0;
+    }
+    .ca-assessment-grid {
+      display: grid;
+      grid-template-columns: 55% 45%;
+      gap: 56px;
+      align-items: center;
+    }
+    .ca-assessment h2 {
+      font-family: var(--serif-display);
+      font-size: 38px;
+      font-weight: 500;
+      color: var(--oxford-blue);
+      margin-top: 12px;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+    .ca-assessment h2 em { font-style: italic; color: var(--tiffany); }
+    .ca-assessment .gold-rule { margin: 18px 0 24px; }
+    .ca-assessment-body {
+      font-family: var(--sans);
+      font-size: 15px;
+      color: var(--eerie-black);
+      line-height: 1.8;
+    }
+
+    .ca-asmt-blocks { margin-top: 36px; display: flex; flex-direction: column; gap: 0; }
+    .ca-asmt-block {
+      border-left: 3px solid var(--champagne);
+      padding: 16px 0 16px 20px;
+      margin-bottom: 8px;
+      transition: border-color 0.3s ease, padding-left 0.3s ease;
+    }
+    .ca-asmt-block:hover { border-left-color: var(--tiffany); padding-left: 26px; }
+    .ca-asmt-title {
+      font-family: var(--sans);
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--oxford-blue);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .ca-asmt-title .num {
+      font-family: var(--serif-display);
+      font-style: italic;
+      font-size: 14px;
+      color: var(--tiffany);
+      font-weight: 400;
+    }
+    .ca-asmt-desc { font-family: var(--sans); font-size: 14px; color: var(--eerie-black); line-height: 1.65; }
+
+    .ca-asmt-img {
+      border-radius: 10px;
+      height: 400px;
+      position: relative;
+      overflow: hidden;
+      background: var(--baby-powder);
+    }
+    .ca-asmt-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Section 5 — Support
+       ════════════════════════════════════════════════════ */
+    .ca-support {
+      background: var(--oxford-blue);
+      padding: 80px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .ca-support::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: repeating-linear-gradient(
+        45deg,
+        rgba(255,230,158,0.025) 0px, rgba(255,230,158,0.025) 1px,
+        transparent 1px, transparent 14px
+      );
+      pointer-events: none;
+    }
+    .ca-support .ca-section-head h2 { color: #ffffff; }
+    .ca-support .ca-section-head h2 em { color: var(--turquoise); }
+    .ca-support .ca-section-head .eyebrow { color: var(--champagne); }
+    .ca-support .ca-section-head .lede { color: rgba(255,255,255,0.8); }
+
+    .ca-support-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+    .ca-support-card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 10px;
+      padding: 36px 28px;
+      transition: all 0.3s ease;
+    }
+    .ca-support-card:hover {
+      background: rgba(255,255,255,0.10);
+      border-color: rgba(255,230,158,0.3);
+      transform: translateY(-4px);
+    }
+    .ca-support-icon {
+      width: 48px; height: 48px;
+      background: var(--tiffany);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .ca-support-icon svg { width: 22px; height: 22px; color: #ffffff; }
+    .ca-support-card h3 {
+      font-family: var(--serif-display);
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--champagne);
+      margin: 20px 0 12px;
+    }
+    .ca-support-card p {
+      font-family: var(--sans);
+      font-size: 14px;
+      color: rgba(255,255,255,0.8);
+      line-height: 1.7;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Section 6 — Pathway strip
+       ════════════════════════════════════════════════════ */
+    .ca-pathway {
+      background: var(--baby-powder);
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+      padding: 56px 0;
+    }
+    .ca-pathway-label {
+      text-align: center;
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--tiffany);
+    }
+    .ca-pathway-strip {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 0;
+      margin-top: 32px;
+      max-width: 980px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .ca-pathway-node {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+      width: 140px;
+      text-decoration: none;
+      transition: transform 0.3s ease;
+      padding: 0 4px;
+    }
+    .ca-pathway-node:hover { transform: translateY(-3px); }
+
+    .ca-path-circle {
+      width: 52px; height: 52px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--serif-display);
+      font-size: 20px;
+      font-weight: 700;
+      transition: all 0.3s ease;
+    }
+    .ca-pathway-node.active .ca-path-circle {
+      background: var(--champagne);
+      color: var(--oxford-blue);
+      box-shadow: 0 6px 22px rgba(255,230,158,0.45), inset 0 0 0 3px rgba(255,255,255,0.5);
+    }
+    .ca-pathway-node:not(.active) .ca-path-circle {
+      background: transparent;
+      border: 2px solid rgba(0,33,71,0.3);
+      color: rgba(0,33,71,0.5);
+    }
+    .ca-pathway-node:not(.active):hover .ca-path-circle {
+      border-color: var(--tiffany);
+      color: var(--tiffany);
+    }
+    .ca-path-name {
+      font-family: var(--sans);
+      font-size: 12px;
+      font-weight: 700;
+      margin-top: 4px;
+      text-align: center;
+      line-height: 1.3;
+      letter-spacing: 0.02em;
+      transition: color 0.3s ease;
+    }
+    .ca-path-age { font-family: var(--sans); font-size: 11px; margin-top: 0; letter-spacing: 0.02em; }
+    .ca-pathway-node.active .ca-path-name { color: var(--oxford-blue); }
+    .ca-pathway-node.active .ca-path-age { color: var(--tiffany); font-weight: 600; }
+    .ca-pathway-node:not(.active) .ca-path-name { color: rgba(0,33,71,0.5); }
+    .ca-pathway-node:not(.active) .ca-path-age { color: rgba(0,33,71,0.3); }
+    .ca-pathway-node:not(.active):hover .ca-path-name,
+    .ca-pathway-node:not(.active):hover .ca-path-age { color: var(--tiffany); }
+
+    .ca-path-connector {
+      flex: 1;
+      height: 1px;
+      margin-top: 26px;
+      background: repeating-linear-gradient(
+        to right,
+        var(--champagne) 0, var(--champagne) 6px,
+        transparent 6px, transparent 12px
+      );
+      min-width: 12px;
+      max-width: 60px;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Section 7 — Prev / Next
+       ════════════════════════════════════════════════════ */
+    .ca-prevnext { background: #ffffff; border-top: 1px solid var(--rule); }
+    .ca-prevnext-grid { display: grid; grid-template-columns: 1fr 1fr; align-items: stretch; }
+    .ca-prev, .ca-next {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 48px 40px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+      position: relative;
+    }
+    .ca-prev:hover, .ca-next:hover { background: var(--baby-powder); }
+    .ca-prev { padding-left: 0; border-right: 1px solid var(--rule); }
+    .ca-next { padding-right: 0; text-align: right; align-items: flex-end; }
+    .ca-pn-label {
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(0,189,182,0.7);
+      margin-bottom: 10px;
+    }
+    .ca-pn-title {
+      font-family: var(--serif-display);
+      font-size: 22px;
+      font-weight: 500;
+      color: var(--oxford-blue);
+      transition: color 0.3s ease;
+      letter-spacing: -0.005em;
+    }
+    .ca-prev:hover .ca-pn-title,
+    .ca-next:hover .ca-pn-title { color: var(--tiffany); }
+    .ca-pn-sub { font-family: var(--sans); font-size: 13px; color: rgba(31,33,33,0.6); margin-top: 6px; }
+    .ca-next .ca-pn-sub { color: var(--tiffany); font-weight: 500; }
+
+    /* ════════════════════════════════════════════════════
+       Section 8 — CTA
+       ════════════════════════════════════════════════════ */
+    .ca-cta {
+      background: var(--light-cyan-alt);
+      padding: 88px 0;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+    .ca-cta::before, .ca-cta::after {
+      content: '';
+      position: absolute;
+      width: 280px; height: 280px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0,189,182,0.18) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .ca-cta::before { top: -120px; left: -80px; }
+    .ca-cta::after  { bottom: -120px; right: -80px; }
+
+    .ca-cta-inner { max-width: 640px; margin: 0 auto; position: relative; }
+    .ca-cta-small {
+      font-family: var(--serif-italic);
+      font-style: italic;
+      font-size: 18px;
+      color: var(--tiffany);
+      margin-bottom: 16px;
+      display: block;
+    }
+    .ca-cta h2 {
+      font-family: var(--serif-display);
+      font-size: 42px;
+      font-weight: 500;
+      color: var(--oxford-blue);
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+    .ca-cta h2 em { font-style: italic; color: var(--tiffany); }
+    .ca-cta .gold-rule { margin: 20px auto; }
+    .ca-cta-sub {
+      font-family: var(--sans);
+      font-size: 16px;
+      color: var(--eerie-black);
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+    .ca-cta-actions { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+
+    /* CTA button overrides for this page's context */
+    .ca-cta .btn-primary {
+      background: var(--oxford-blue);
+      color: var(--champagne);
+      border-color: var(--oxford-blue);
+    }
+    .ca-cta .btn-primary:hover {
+      background: var(--tiffany);
+      border-color: var(--tiffany);
+      color: #ffffff;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Responsive — 768px
+       ════════════════════════════════════════════════════ */
+    @media (max-width: 768px) {
+      .ca-hero { padding: 56px 0 64px; min-height: 0; }
+      .ca-hero-grid { grid-template-columns: 1fr; gap: 0; }
+      .ca-hero-visual { display: none; }
+      .ca-hero-title { font-size: 36px; }
+      .ca-hero-chips { gap: 8px; }
+
+      .ca-overview { padding: 64px 0; }
+      .ca-overview-grid { grid-template-columns: 1fr; gap: 40px; }
+      .ca-sidebar { position: static; top: auto; }
+      .ca-overview-h2 { font-size: 30px; }
+
+      .ca-curriculum { padding: 64px 0; }
+      .ca-curriculum-grid { grid-template-columns: 1fr; gap: 16px; }
+      .ca-section-head h2 { font-size: 30px; }
+      .ca-section-head { margin-bottom: 40px; }
+
+      .ca-assessment { padding: 64px 0; }
+      .ca-assessment-grid { grid-template-columns: 1fr; gap: 40px; }
+      .ca-assessment h2 { font-size: 28px; }
+      .ca-asmt-img { height: 280px; }
+      .ca-assessment-grid > .ca-assessment-text { order: 1; }
+      .ca-assessment-grid > .ca-asmt-img-wrap  { order: 2; }
+
+      .ca-support { padding: 64px 0; }
+      .ca-support-grid { grid-template-columns: 1fr; gap: 16px; }
+
+      .ca-pathway { padding: 48px 0; }
+      .ca-pathway-strip {
+        flex-direction: column;
+        align-items: center;
+        max-width: 280px;
+        gap: 0;
+      }
+      .ca-pathway-node {
+        width: 100%;
+        flex-direction: row;
+        gap: 18px;
+        justify-content: flex-start;
+        padding: 12px 0;
+      }
+      .ca-path-text { display: flex; flex-direction: column; align-items: flex-start; }
+      .ca-path-name, .ca-path-age { text-align: left; }
+      .ca-path-connector {
+        width: 1px; height: 24px;
+        margin-top: 0; margin-left: 25px;
+        background: repeating-linear-gradient(
+          to bottom,
+          var(--champagne) 0, var(--champagne) 5px,
+          transparent 5px, transparent 10px
+        );
+        max-width: none; min-width: 0;
+        align-self: flex-start;
+      }
+
+      .ca-prevnext-grid { grid-template-columns: 1fr; }
+      .ca-prev, .ca-next {
+        padding: 32px 0;
+        text-align: left;
+        align-items: flex-start;
+        border-right: none;
+      }
+      .ca-prev { border-bottom: 1px solid var(--rule); }
+
+      .ca-cta { padding: 64px 0; }
+      .ca-cta h2 { font-size: 32px; }
+      .ca-cta-actions { flex-direction: column; }
+      .ca-cta-actions .btn { width: 100%; justify-content: center; }
+    }
+
+    @media (max-width: 1100px) and (min-width: 769px) {
+      .ca-curriculum-grid { grid-template-columns: repeat(2, 1fr); }
+      .ca-support-grid { grid-template-columns: 1fr; gap: 18px; }
+      .ca-hero-title { font-size: 48px; }
+    }
+  </style>
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation (injected by JS) -->
+  <div data-component="nav"></div>
+
+  <main id="main-content">
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 1 — HERO
+         ═══════════════════════════════════════════════════════ -->
+    <section class="ca-hero" aria-labelledby="page-h1">
+      <div class="container">
+        <div class="ca-hero-grid">
+
+          <div class="ca-hero-content">
+
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+              <a href="/">Home</a>
+              <span class="sep">/</span>
+              <a href="/academic/programmes.html">Academic</a>
+              <span class="sep">/</span>
+              <span class="current">Cambridge Advanced</span>
+            </nav>
+
+            <div class="ca-hero-age-badge">
+              <span>Age 16 – 19</span>
+              <span class="sep"></span>
+              <span>Stage 5 of 5</span>
+            </div>
+
+            <h1 id="page-h1" class="ca-hero-title">Cambridge <em>Advanced</em></h1>
+            <hr class="ca-hero-rule" />
+
+            <p class="ca-hero-intro">Cambridge International AS &amp; A Level — in-depth, globally recognised qualifications for ages 16 to 19, opening doors to over 2,200 universities worldwide including all UK universities and nearly 1,000 US universities.</p>
+
+            <div class="ca-hero-chips">
+              <div class="ca-hero-chip">
+                <strong>50+ Subjects</strong>
+                <span class="chip-sep"></span>
+                <span>AS &amp; A Level</span>
+              </div>
+              <div class="ca-hero-chip">
+                <strong>Age 16 – 19</strong>
+                <span class="chip-sep"></span>
+                <span>Advanced Stage</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="ca-hero-visual" aria-hidden="false">
+            <div class="ca-hero-img"><img src="/assets/images/Advanced/hero-3_L.webp" alt="Cambridge Advanced students at JPIC" width="1920" height="1080" loading="eager" /></div>
+            <div class="ca-hero-overlay">
+              <div class="ca-hero-overlay-label">Cambridge Pathway</div>
+              <div class="ca-hero-overlay-val">Stage 5 · Advanced</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 2 — OVERVIEW
+         ═══════════════════════════════════════════════════════ -->
+    <section class="ca-overview" aria-labelledby="overview-h">
+      <div class="container">
+        <div class="ca-overview-grid">
+
+          <article class="ca-overview-main reveal">
+            <span class="eyebrow with-line">About the Programme</span>
+            <h2 id="overview-h" class="ca-overview-h2">The Gold Standard of <em>International Education</em></h2>
+            <hr class="gold-rule" />
+
+            <div class="ca-overview-body">
+              <p>Cambridge International AS &amp; A Level is the most widely recognised pre-university qualification in the world. Developed in consultation with leading universities including Cambridge, Harvard and MIT, it helps students develop deep subject knowledge, conceptual understanding and the higher-order thinking skills that universities value most.</p>
+              <p>At JPIC, our Advanced programme is the culmination of the Cambridge Pathway — where students specialise, excel and prepare for university and beyond. With more than 50 subjects to choose from, every student can build an academic profile that reflects their strengths and ambitions, giving them the confidence and credentials to succeed anywhere in the world.</p>
+            </div>
+
+            <h3 class="ca-subheading">Why Cambridge Advanced</h3>
+
+            <div class="ca-principles">
+
+              <div class="ca-principle">
+                <div class="ca-principle-num">1</div>
+                <div>
+                  <div class="ca-principle-title">Globally Recognised</div>
+                  <div class="ca-principle-desc">Valued by over 2,200 universities and colleges worldwide, including all UK universities and nearly 1,000 US universities, Cambridge Advanced opens doors everywhere.</div>
+                </div>
+              </div>
+
+              <div class="ca-principle">
+                <div class="ca-principle-num">2</div>
+                <div>
+                  <div class="ca-principle-title">University-Consulted</div>
+                  <div class="ca-principle-desc">Syllabuses are developed with leading universities including Cambridge, Harvard and MIT to ensure students are genuinely prepared for higher education.</div>
+                </div>
+              </div>
+
+              <div class="ca-principle">
+                <div class="ca-principle-num">3</div>
+                <div>
+                  <div class="ca-principle-title">Deep Subject Knowledge</div>
+                  <div class="ca-principle-desc">In-depth study develops the conceptual understanding and higher-order thinking skills that top universities value and that make students stand out.</div>
+                </div>
+              </div>
+
+              <div class="ca-principle">
+                <div class="ca-principle-num">4</div>
+                <div>
+                  <div class="ca-principle-title">Flexible Specialisation</div>
+                  <div class="ca-principle-desc">Students can choose to specialise deeply in 2–3 subjects or study a broader range — over 50 subjects available across all disciplines.</div>
+                </div>
+              </div>
+
+            </div>
+          </article>
+
+          <aside class="ca-sidebar reveal" aria-label="Programme facts at a glance">
+            <div class="ca-sidebar-title">At a Glance</div>
+
+            <div class="ca-fact-row">
+              <div class="ca-fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/></svg>
+              </div>
+              <div>
+                <span class="ca-fact-label">Age Range</span>
+                <div class="ca-fact-value">16 to 19 years</div>
+              </div>
+            </div>
+
+            <div class="ca-fact-row">
+              <div class="ca-fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              </div>
+              <div>
+                <span class="ca-fact-label">Qualifications</span>
+                <div class="ca-fact-value">AS Level &amp; A Level</div>
+              </div>
+            </div>
+
+            <div class="ca-fact-row">
+              <div class="ca-fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+              </div>
+              <div>
+                <span class="ca-fact-label">Subjects</span>
+                <div class="ca-fact-value">50+ in any combination</div>
+              </div>
+            </div>
+
+            <div class="ca-fact-row">
+              <div class="ca-fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </div>
+              <div>
+                <span class="ca-fact-label">University Recognition</span>
+                <div class="ca-fact-value">2,200+ worldwide</div>
+              </div>
+            </div>
+
+            <div class="ca-fact-row">
+              <div class="ca-fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              </div>
+              <div>
+                <span class="ca-fact-label">Also Offered</span>
+                <div class="ca-fact-value">Cambridge IPQ &amp; AICE Diploma</div>
+              </div>
+            </div>
+
+            <div class="ca-fact-row">
+              <div class="ca-fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
+              </div>
+              <div>
+                <span class="ca-fact-label">Pathway Complete</span>
+                <div class="ca-fact-value">University &amp; Career Ready</div>
+              </div>
+            </div>
+
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 3 — CURRICULUM
+         ═══════════════════════════════════════════════════════ -->
+    <section class="ca-curriculum" aria-labelledby="curriculum-h">
+      <div class="container">
+
+        <div class="ca-section-head reveal">
+          <span class="eyebrow with-line">Qualifications</span>
+          <h2 id="curriculum-h">Three Routes to <em>International Recognition</em></h2>
+          <hr class="gold-rule" />
+          <p class="lede">Cambridge Advanced gives students flexibility in depth and breadth — from specialised A Levels to the AICE group diploma and the independent Cambridge IPQ.</p>
+        </div>
+
+        <div class="ca-curriculum-grid reveal-children">
+
+          <article class="ca-curric-card" data-num="01">
+            <div class="ca-curric-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <h3 class="ca-curric-name">Cambridge International AS &amp; A Level</h3>
+            <p class="ca-curric-desc">Over 50 subjects across English, Languages, Mathematics, Sciences, Humanities, Social Sciences and Creative &amp; Professional fields. Students specialise in 2–3 subjects for depth, or take a broader range. Graded A*–E (A Level) and A–E (AS Level), with exams at the end of the course.</p>
+          </article>
+
+          <article class="ca-curric-card" data-num="02">
+            <div class="ca-curric-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 class="ca-curric-name">Cambridge AICE Diploma</h3>
+            <p class="ca-curric-desc">A group award requiring study across at least three Cambridge subject groups plus Cambridge Global Perspectives &amp; Research. The AICE Diploma demonstrates academic breadth, balance and excellence — highly regarded by universities in the US, UK and worldwide.</p>
+          </article>
+
+          <article class="ca-curric-card" data-num="03">
+            <div class="ca-curric-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            </div>
+            <h3 class="ca-curric-name">Cambridge IPQ</h3>
+            <p class="ca-curric-desc">A standalone qualification taken alongside AS &amp; A Level. Students complete a 5,000-word research project on a topic of their own choice — graded A*–E. The Cambridge IPQ develops research, reflection, communication and higher-order thinking skills, and helps students stand out in university applications.</p>
+          </article>
+
+        </div>
+
+        <div style="margin-top:56px; background:var(--oxford-blue); border-radius:10px; padding:32px 40px; display:flex; align-items:center; justify-content:space-around; flex-wrap:wrap; gap:24px;">
+          <div style="text-align:center;">
+            <div style="font-family:var(--font-display); font-size:40px; font-weight:700; color:var(--champagne); line-height:1;">2,200+</div>
+            <div style="font-family:var(--font-body); font-size:13px; color:rgba(255,255,255,0.75); margin-top:6px;">Universities worldwide</div>
+          </div>
+          <div style="width:1px; height:48px; background:rgba(255,255,255,0.15);"></div>
+          <div style="text-align:center;">
+            <div style="font-family:var(--font-display); font-size:40px; font-weight:700; color:var(--champagne); line-height:1;">100%</div>
+            <div style="font-family:var(--font-body); font-size:13px; color:rgba(255,255,255,0.75); margin-top:6px;">UK universities</div>
+          </div>
+          <div style="width:1px; height:48px; background:rgba(255,255,255,0.15);"></div>
+          <div style="text-align:center;">
+            <div style="font-family:var(--font-display); font-size:40px; font-weight:700; color:var(--champagne); line-height:1;">~1,000</div>
+            <div style="font-family:var(--font-body); font-size:13px; color:rgba(255,255,255,0.75); margin-top:6px;">US universities</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 4 — ASSESSMENT
+         ═══════════════════════════════════════════════════════ -->
+    <section class="ca-assessment" aria-labelledby="assessment-h">
+      <div class="container">
+        <div class="ca-assessment-grid">
+
+          <div class="ca-assessment-text reveal">
+            <span class="eyebrow with-line">Assessment</span>
+            <h2 id="assessment-h">Three Ways to Take Your <em>A Level</em></h2>
+            <hr class="gold-rule" />
+            <p class="ca-assessment-body">Cambridge Advanced offers three flexible assessment routes, giving students and schools the choice of how to structure the programme — with all exams taken at the end of the course.</p>
+
+            <div class="ca-asmt-blocks">
+
+              <div class="ca-asmt-block">
+                <div class="ca-asmt-title"><span class="num">01 ·</span> AS Level Only</div>
+                <div class="ca-asmt-desc">Students take Cambridge International AS Level only. The syllabus content is half a Cambridge International A Level. This option typically takes one year and earns a standalone AS qualification.</div>
+              </div>
+
+              <div class="ca-asmt-block">
+                <div class="ca-asmt-title"><span class="num">02 ·</span> Two-Stage Route</div>
+                <div class="ca-asmt-desc">Students take Cambridge International AS Level in one exam series and Cambridge International A Level in a later series. This staged route typically takes two years and allows students to bank their AS results.</div>
+              </div>
+
+              <div class="ca-asmt-block">
+                <div class="ca-asmt-title"><span class="num">03 ·</span> Full A Level</div>
+                <div class="ca-asmt-desc">Students take all papers for Cambridge International A Level in the same exam series, usually at the end of a two-year course. This is the most common route at JPIC.</div>
+              </div>
+
+              <div class="ca-asmt-block">
+                <div class="ca-asmt-title"><span class="num">04 ·</span> Linear Assessment</div>
+                <div class="ca-asmt-desc">All examinations take place at the end of the course, giving learners more time to develop a deeper understanding of their subjects before being assessed.</div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="ca-asmt-img-wrap reveal">
+            <div class="ca-asmt-img"><img src="/assets/images/Advanced/Advanced_L.webp" alt="Cambridge Advanced assessment at JPIC" width="1400" height="897" loading="lazy" /></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 5 — SUPPORT
+         ═══════════════════════════════════════════════════════ -->
+    <section class="ca-support" aria-labelledby="support-h">
+      <div class="container">
+
+        <div class="ca-section-head reveal">
+          <span class="eyebrow with-line">At JPIC</span>
+          <h2 id="support-h">Supporting Every Student to <em>Reach Their Best</em></h2>
+          <hr class="gold-rule" />
+          <p class="lede">Our Advanced programme gives students the academic depth, examination skills and university preparation needed to thrive at the world's top institutions.</p>
+        </div>
+
+        <div class="ca-support-grid reveal-children">
+
+          <article class="ca-support-card">
+            <div class="ca-support-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            </div>
+            <h3>Teaching &amp; Exam Support</h3>
+            <p>Syllabuses, teacher guides, schemes of work, endorsed textbooks, Resource Plus, learner guides, past papers, mark schemes and examiner reports — everything needed for outstanding A Level teaching and confident exam preparation.</p>
+          </article>
+
+          <article class="ca-support-card">
+            <div class="ca-support-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h3>University Preparation</h3>
+            <p>Cambridge AICE Diploma and Cambridge IPQ help students build a distinctive university application. Cambridge qualifications are recognised by over 2,200 universities worldwide, including all UK universities and nearly 1,000 US universities.</p>
+          </article>
+
+          <article class="ca-support-card">
+            <div class="ca-support-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <h3>Professional Development</h3>
+            <p>Syllabus-specific professional development — face-to-face, virtual and online — ensures our teachers stay at the forefront of Cambridge A Level pedagogy and assessment practice.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 6 — PATHWAY STRIP
+         ═══════════════════════════════════════════════════════ -->
+    <section class="ca-pathway" aria-label="Cambridge Pathway navigation">
+      <div class="container">
+        <div class="ca-pathway-label">The Cambridge Pathway at JPIC</div>
+
+        <div class="ca-pathway-strip">
+
+          <a class="ca-pathway-node" href="/academic/cambridge-early-years.html">
+            <div class="ca-path-circle">1</div>
+            <div class="ca-path-text">
+              <div class="ca-path-name">Early Years</div>
+              <div class="ca-path-age">Age 3–6</div>
+            </div>
+          </a>
+
+          <div class="ca-path-connector" aria-hidden="true"></div>
+
+          <a class="ca-pathway-node" href="/academic/cambridge-primary.html">
+            <div class="ca-path-circle">2</div>
+            <div class="ca-path-text">
+              <div class="ca-path-name">Primary</div>
+              <div class="ca-path-age">Age 5–11</div>
+            </div>
+          </a>
+
+          <div class="ca-path-connector" aria-hidden="true"></div>
+
+          <a class="ca-pathway-node" href="/academic/cambridge-lower-secondary.html">
+            <div class="ca-path-circle">3</div>
+            <div class="ca-path-text">
+              <div class="ca-path-name">Lower Secondary</div>
+              <div class="ca-path-age">Age 11–14</div>
+            </div>
+          </a>
+
+          <div class="ca-path-connector" aria-hidden="true"></div>
+
+          <a class="ca-pathway-node" href="/academic/cambridge-upper-secondary.html">
+            <div class="ca-path-circle">4</div>
+            <div class="ca-path-text">
+              <div class="ca-path-name">Upper Secondary</div>
+              <div class="ca-path-age">Age 14–16</div>
+            </div>
+          </a>
+
+          <div class="ca-path-connector" aria-hidden="true"></div>
+
+          <a class="ca-pathway-node active" href="#" aria-current="page">
+            <div class="ca-path-circle">5</div>
+            <div class="ca-path-text">
+              <div class="ca-path-name">Advanced</div>
+              <div class="ca-path-age">Age 16–19</div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 7 — PREV / NEXT
+         ═══════════════════════════════════════════════════════ -->
+    <section class="ca-prevnext" aria-label="Programme navigation">
+      <div class="container">
+        <div class="ca-prevnext-grid">
+
+          <a class="ca-prev" href="/academic/cambridge-upper-secondary.html">
+            <div class="ca-pn-label">← Previous Stage</div>
+            <div class="ca-pn-title">Cambridge Upper Secondary</div>
+            <div class="ca-pn-sub">Age 14 – 16</div>
+          </a>
+
+          <a class="ca-next" href="/academic/programmes.html">
+            <div class="ca-pn-label">Overview →</div>
+            <div class="ca-pn-title">All Cambridge Programmes</div>
+            <div class="ca-pn-sub">Return to programme overview</div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 8 — CTA
+         ═══════════════════════════════════════════════════════ -->
+    <section class="ca-cta" aria-labelledby="cta-h">
+      <div class="container">
+        <div class="ca-cta-inner reveal">
+          <span class="ca-cta-small">The final stage of the Cambridge journey</span>
+          <h2 id="cta-h">Open Doors to the World's <em>Best Universities</em></h2>
+          <hr class="gold-rule" />
+          <p class="ca-cta-sub">Our Admissions team is ready to answer your questions and guide you through enrolment for Cambridge Advanced at St. John Paul II International College.</p>
+
+          <div class="ca-cta-actions">
+            <a href="/admissions/index.html" class="btn btn-primary">
+              Apply Now
+              <span class="arrow">→</span>
+            </a>
+            <a href="/contact.html" class="btn btn-outline">
+              Contact Admissions
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer (injected by JS) -->
+  <div data-component="footer"></div>
+
+  <script>
+    /* reveal-children: extend production scroll-reveal for staggered grids */
+    (function () {
+      if (!('IntersectionObserver' in window)) {
+        document.querySelectorAll('.reveal-children').forEach(function (el) {
+          el.classList.add('revealed');
+        });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            var parent = entry.target;
+            Array.from(parent.children).forEach(function (child, i) {
+              child.style.setProperty('--i', i);
+            });
+            parent.classList.add('revealed');
+            io.unobserve(parent);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+      document.querySelectorAll('.reveal-children').forEach(function (el) {
+        io.observe(el);
+      });
+    })();
+  </script>
+
+</body>
+</html>

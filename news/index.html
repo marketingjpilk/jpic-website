@@ -4,6 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Latest news, announcements and events from St. John Paul II International College, Wennappuwa, Sri Lanka.">
+  <link rel="canonical" href="https://jpeducation.net/news/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://jpeducation.net/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "News",
+      "item": "https://jpeducation.net/news/"
+    }
+  ]
+}
+</script>
   <meta property="og:title" content="News &amp; Announcements — St. John Paul II International College">
   <meta property="og:description" content="Stay up to date with the latest news and events from JPIC, Wennappuwa.">
   <meta property="og:image" content="https://jpeducation.net/assets/images/og-image.webp">
@@ -15,8 +36,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/main.css?v=20260521">
-  <link rel="stylesheet" href="/assets/css/components.css?v=20260521">
+  <link rel="stylesheet" href="/assets/css/main.css?v=20260517">
+  <link rel="stylesheet" href="/assets/css/components.css?v=20260517">
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -173,21 +194,48 @@
     }
 
     /* ── EMPTY STATE ────────────────────────────────────────── */
-    .news-empty {
+    .news-empty-state {
+      grid-column: 1 / -1;
       text-align: center;
-      padding: 64px 24px;
-      color: var(--text-muted);
+      padding: 80px 24px;
+      max-width: 480px;
+      margin: 0 auto;
     }
-    .news-empty p {
+    .news-empty-icon {
+      color: var(--tiffany);
+      margin-bottom: 24px;
+      opacity: 0.6;
+    }
+    .news-empty-title {
       font-family: var(--serif-display);
-      font-size: 1.4rem;
+      font-size: 1.5rem;
       font-weight: 400;
       color: var(--oxford-blue);
-      margin-bottom: 8px;
+      margin-bottom: 16px;
     }
-    .news-empty span {
+    .news-empty-text {
       font-family: var(--sans);
-      font-size: 14px;
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.75;
+      margin-bottom: 28px;
+    }
+    .news-empty-cta {
+      display: inline-block;
+      padding: 12px 28px;
+      background: var(--oxford-blue);
+      color: var(--champagne);
+      font-family: var(--sans);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: opacity 0.2s ease;
+    }
+    .news-empty-cta:hover {
+      opacity: 0.88;
     }
 
     /* ── RESPONSIVE ─────────────────────────────────────────── */
@@ -202,8 +250,9 @@
   </style>
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <div id="nav-placeholder"></div>
+  <div data-component="nav"></div>
 
   <main id="main-content">
 
@@ -225,34 +274,36 @@
 
   </main>
 
-  <div id="footer-placeholder"></div>
+  <div data-component="footer"></div>
 
-  <script src="/assets/js/main.js?v=20260521"></script>
+  <script src="/assets/js/main.js?v=20260517"></script>
   <script>
-    fetch('/components/nav.html')
-      .then(function(r) { return r.text(); })
-      .then(function(html) { document.getElementById('nav-placeholder').innerHTML = html; });
-
-    fetch('/components/footer.html')
-      .then(function(r) { return r.text(); })
-      .then(function(html) { document.getElementById('footer-placeholder').innerHTML = html; });
-
     function formatDate(iso) {
       var d = new Date(iso + 'T00:00:00');
       return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
     }
 
-    fetch('news.json')
+    fetch('/data/news.json')
       .then(function(r) { return r.json(); })
       .then(function(articles) {
         var grid = document.getElementById('news-grid');
 
         if (!articles || articles.length === 0) {
           grid.innerHTML =
-            '<div class="news-empty">' +
-              '<p>No news yet — check back soon.</p>' +
-              '<span>We’ll post updates, announcements and events here.</span>' +
-            '</div>';
+            ‘<div class="news-empty-state">’ +
+              ‘<div class="news-empty-icon">’ +
+                ‘<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">’ +
+                  ‘<path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v2"/>’ +
+                  ‘<path d="M4 11V6a2 2 0 0 1 2-2"/>’ +
+                  ‘<path d="M4 22a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2h8l4 4v9a2 2 0 0 0-2 2"/>’ +
+                  ‘<line x1="12" y1="12" x2="16" y2="12"/>’ +
+                  ‘<line x1="12" y1="16" x2="16" y2="16"/>’ +
+                ‘</svg>’ +
+              ‘</div>’ +
+              ‘<h3 class="news-empty-title">News &amp; Announcements Coming Soon</h3>’ +
+              ‘<p class="news-empty-text">We are preparing our latest news and announcements.<br>Follow us on Facebook for the latest updates from JPIC.</p>’ +
+              ‘<a href="https://www.facebook.com/jpinternationalcollege" target="_blank" rel="noopener noreferrer" class="news-empty-cta">Follow us on Facebook</a>’ +
+            ‘</div>’;
           return;
         }
 
@@ -260,8 +311,8 @@
         articles.sort(function(a, b) { return b.date.localeCompare(a.date); });
 
         grid.innerHTML = articles.map(function(article) {
-          var coverHtml = article.cover
-            ? '<img class="news-card-cover" src="' + article.cover + '" alt="' + article.title + '" loading="lazy">'
+          var coverHtml = article.image
+            ? '<img class="news-card-cover" src="/' + article.image + '" alt="' + article.title + '" loading="lazy">'
             : '<div class="news-card-cover-placeholder" aria-hidden="true">' +
                 '<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#00BDB6" stroke-width="1.4" opacity="0.5">' +
                   '<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/>' +

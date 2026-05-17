@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spiritual Formation | St. John Paul II International College, Wennappuwa</title>
+  <meta name="description" content="Faith is at the heart of life at JPIC. Our spiritual formation programme invites every student into a deeper understanding of themselves, their faith and their calling in the world." />
+  <link rel="canonical" href="https://jpeducation.net/student-life/spiritual-formation">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://jpeducation.net/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Student Life",
+      "item": "https://jpeducation.net/student-life/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Spiritual Formation",
+      "item": "https://jpeducation.net/student-life/spiritual-formation"
+    }
+  ]
+}
+</script>
+  <meta name="keywords" content="JPIC spiritual formation, Catholic school Sri Lanka, Diocese of Chilaw, faith education Wennappuwa, St John Paul II College faith" />
+
+  <meta property="og:title" content="Spiritual Formation — JPIC" />
+  <meta property="og:description" content="Faith is at the heart of life at JPIC. Our spiritual formation programme invites every student into a deeper understanding of themselves, their faith and their calling in the world." />
+  <meta property="og:image" content="https://jpeducation.net/assets/images/og-image.webp" />
+  <meta property="og:url" content="https://jpeducation.net/student-life/spiritual-formation.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="St. John Paul II International College" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Spiritual Formation — JPIC" />
+  <meta name="twitter:description" content="Faith is at the heart of life at JPIC — daily prayer, liturgy, retreats and service forming students of character and conscience." />
+  <meta name="twitter:image" content="https://jpeducation.net/assets/images/og-image.webp" />
+
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="/assets/css/main.css?v=20260517" />
+  <link rel="stylesheet" href="/assets/css/components.css?v=20260517" />
+  <script src="/assets/js/main.js" defer></script>
+
+  <style>
+    /* ════════════════════════════════════════════════════
+       PAGE-LEVEL ALIASES — bridge design tokens to production vars
+       ════════════════════════════════════════════════════ */
+    :root {
+      --light-cyan-alt: #D7FDF5;
+      --rule:           rgba(0, 33, 71, 0.10);
+      --serif-display:  var(--font-display);
+      --serif-italic:   var(--font-accent);
+      --sans:           var(--font-body);
+    }
+
+    /* ════════════════════════════════════════════════════
+       SHARED ATOMS
+       ════════════════════════════════════════════════════ */
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--tiffany);
+    }
+    .eyebrow.with-line::before {
+      content: '';
+      width: 28px;
+      height: 1px;
+      background: currentColor;
+    }
+
+    .gold-rule {
+      display: block;
+      width: 64px;
+      height: 3px;
+      background: var(--champagne);
+      border: none;
+    }
+
+    /* ════════════════════════════════════════════════════
+       REVEAL-CHILDREN support
+       ════════════════════════════════════════════════════ */
+    .reveal-children > * {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+      transition-delay: calc(var(--i, 0) * 0.1s);
+    }
+    .reveal-children.revealed > * {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ════════════════════════════════════════════════════
+       IMAGE PLACEHOLDER
+       ════════════════════════════════════════════════════ */
+    .sf-img-placeholder {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba(0,189,182,0.10) 0%, rgba(0,33,71,0.14) 100%);
+      border-radius: 10px;
+      border: 1px dashed rgba(0,189,182,0.28);
+    }
+
+    /* ════════════════════════════════════════════════════
+       Section 1 — Hero
+       ════════════════════════════════════════════════════ */
+    .sf-hero {
+      background: var(--oxford-blue);
+      background-image: repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 40px,
+        rgba(255,255,255,0.03) 40px,
+        rgba(255,255,255,0.03) 41px
+      );
+      min-height: 460px;
+      padding: 80px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .sf-hero::before {
+      content: '';
+      position: absolute;
+      top: -200px; right: -180px;
+      width: 540px; height: 540px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0,189,182,0.18) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .sf-hero::after {
+      content: 'S';
+      position: absolute;
+      bottom: -80px; left: -30px;
+      font-family: var(--serif-display);
+      font-size: 360px;
+      font-weight: 900;
+      color: rgba(255,230,158,0.04);
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .sf-hero-grid {
+      display: grid;
+      grid-template-columns: 58% 42%;
+      gap: 64px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .sf-hero-title {
+      font-family: var(--serif-display);
+      font-weight: 700;
+      color: #ffffff;
+      font-size: 58px;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      margin-top: 12px;
+    }
+    .sf-hero-title em {
+      font-style: italic;
+      color: var(--champagne);
+      font-weight: 400;
+    }
+
+    .sf-hero-rule {
+      display: block;
+      width: 64px; height: 3px;
+      background: var(--champagne);
+      border: none;
+      margin: 20px 0;
+    }
+
+    .sf-hero-intro {
+      font-family: var(--sans);
+      font-size: 17px;
+      color: rgba(255,255,255,0.88);
+      line-height: 1.7;
+      max-width: 520px;
+    }
+
+    /* Hero right visual */
+    .sf-hero-visual { position: relative; }
+    .sf-hero-img {
+      border-radius: 10px;
+      height: 340px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Section 2 — Overview
+       ════════════════════════════════════════════════════ */
+    .sf-overview {
+      background: #ffffff;
+      padding: 96px 0;
+    }
+    .sf-overview-grid {
+      display: grid;
+      grid-template-columns: 62% 38%;
+      gap: 64px;
+      align-items: start;
+    }
+    .sf-overview-h2 {
+      font-family: var(--serif-display);
+      font-size: 40px;
+      font-weight: 500;
+      color: var(--oxford-blue);
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      margin-top: 12px;
+    }
+    .sf-overview-h2 em { font-style: italic; color: var(--tiffany); }
+    .sf-overview .gold-rule { margin: 18px 0 28px; }
+    .sf-overview-body p {
+      font-family: var(--sans);
+      font-size: 16px;
+      color: var(--eerie-black);
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    .sf-subheading {
+      font-family: var(--sans);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--oxford-blue);
+      margin: 40px 0 24px;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .sf-subheading::after {
+      content: '';
+      flex: 1;
+      min-width: 80px;
+      height: 1px;
+      background: var(--rule);
+    }
+
+    .sf-principles { display: flex; flex-direction: column; gap: 20px; }
+    .sf-principle { display: flex; gap: 16px; align-items: flex-start; padding: 14px 0; }
+    .sf-principle-num {
+      width: 36px; height: 36px;
+      flex-shrink: 0;
+      background: var(--tiffany);
+      color: #ffffff;
+      border-radius: 50%;
+      font-family: var(--sans);
+      font-size: 14px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+    .sf-principle:hover .sf-principle-num {
+      background: var(--oxford-blue);
+      transform: scale(1.04);
+    }
+    .sf-principle-title {
+      font-family: var(--sans);
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--oxford-blue);
+      margin-bottom: 4px;
+      letter-spacing: 0.02em;
+    }
+    .sf-principle-desc {
+      font-family: var(--sans);
+      font-size: 14px;
+      color: var(--eerie-black);
+      line-height: 1.65;
+    }
+
+    /* Sidebar */
+    .sf-sidebar {
+      position: sticky;
+      top: 100px;
+      background: var(--light-cyan-alt);
+      border-radius: 10px;
+      border-left: 4px solid var(--tiffany);
+      padding: 32px 28px;
+    }
+    .sf-sidebar-title {
+      font-family: var(--serif-display);
+      font-size: 22px;
+      font-weight: 500;
+      color: var(--oxford-blue);
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .sf-sidebar-title::before {
+      content: '';
+      display: block;
+      width: 18px; height: 1px;
+      background: var(--tiffany);
+    }
+    .sf-fact-row {
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(0,189,182,0.2);
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .sf-fact-row:last-child { border-bottom: none; }
+    .sf-fact-icon {
+      width: 36px; height: 36px;
+      border-radius: 8px;
+      background: rgba(0,189,182,0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .sf-fact-icon svg { width: 18px; height: 18px; color: var(--tiffany); }
+    .sf-fact-label {
+      font-family: var(--sans);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--tiffany);
+      display: block;
+      margin-bottom: 2px;
+    }
+    .sf-fact-value {
+      font-family: var(--sans);
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--oxford-blue);
+      line-height: 1.3;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Section 3 — Our Spiritual Programme
+       ════════════════════════════════════════════════════ */
+    .sf-programme {
+      background: var(--baby-powder);
+      padding: 96px 0;
+    }
+    .sf-section-head {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+    .sf-section-head .eyebrow { justify-content: center; }
+    .sf-section-head h2 {
+      font-family: var(--serif-display);
+      font-size: 40px;
+      font-weight: 500;
+      color: var(--oxford-blue);
+      margin-top: 14px;
+      letter-spacing: -0.01em;
+    }
+    .sf-section-head h2 em { font-style: italic; color: var(--tiffany); }
+    .sf-section-head .gold-rule { margin: 18px auto 16px; }
+    .sf-section-head .lede {
+      font-family: var(--sans);
+      font-size: 15px;
+      color: var(--eerie-black);
+      max-width: 580px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    .sf-programme-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .sf-prog-card {
+      background: #ffffff;
+      border-radius: 10px;
+      border-top: 3px solid var(--tiffany);
+      padding: 32px 28px;
+      box-shadow: 0 2px 16px rgba(0,33,71,0.06);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .sf-prog-card::before {
+      content: attr(data-num);
+      position: absolute;
+      top: 14px; right: 18px;
+      font-family: var(--serif-display);
+      font-size: 56px;
+      font-weight: 700;
+      color: rgba(0,33,71,0.05);
+      line-height: 1;
+      pointer-events: none;
+    }
+    .sf-prog-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 36px rgba(0,33,71,0.12);
+    }
+    .sf-prog-icon {
+      width: 52px; height: 52px;
+      background: var(--light-cyan-alt);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      transition: background 0.3s ease;
+    }
+    .sf-prog-card:hover .sf-prog-icon { background: var(--tiffany); }
+    .sf-prog-icon svg { width: 26px; height: 26px; color: var(--tiffany); transition: color 0.3s ease; }
+    .sf-prog-card:hover .sf-prog-icon svg { color: #ffffff; }
+    .sf-prog-name {
+      font-family: var(--sans);
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--oxford-blue);
+      margin-bottom: 10px;
+      letter-spacing: 0.01em;
+      line-height: 1.3;
+    }
+    .sf-prog-desc {
+      font-family: var(--sans);
+      font-size: 14px;
+      color: var(--eerie-black);
+      line-height: 1.65;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Section 4 — Our Formation Journey
+       ════════════════════════════════════════════════════ */
+    .sf-journey {
+      background: #ffffff;
+      padding: 96px 0;
+    }
+    .sf-journey-grid {
+      display: grid;
+      grid-template-columns: 55% 45%;
+      gap: 56px;
+      align-items: center;
+    }
+    .sf-journey h2 {
+      font-family: var(--serif-display);
+      font-size: 38px;
+      font-weight: 500;
+      color: var(--oxford-blue);
+      margin-top: 12px;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+    .sf-journey h2 em { font-style: italic; color: var(--tiffany); }
+    .sf-journey .gold-rule { margin: 18px 0 24px; }
+    .sf-journey-body {
+      font-family: var(--sans);
+      font-size: 15px;
+      color: var(--eerie-black);
+      line-height: 1.8;
+    }
+
+    .sf-blocks { margin-top: 36px; display: flex; flex-direction: column; gap: 0; }
+    .sf-block {
+      border-left: 3px solid var(--champagne);
+      padding: 16px 0 16px 20px;
+      margin-bottom: 8px;
+      transition: border-color 0.3s ease, padding-left 0.3s ease;
+    }
+    .sf-block:hover { border-left-color: var(--tiffany); padding-left: 26px; }
+    .sf-block-title {
+      font-family: var(--sans);
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--oxford-blue);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .sf-block-title .num {
+      font-family: var(--serif-display);
+      font-style: italic;
+      font-size: 14px;
+      color: var(--tiffany);
+      font-weight: 400;
+    }
+    .sf-block-desc { font-family: var(--sans); font-size: 14px; color: var(--eerie-black); line-height: 1.65; }
+
+    .sf-journey-img {
+      border-radius: 10px;
+      height: 400px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Section 5 — Support
+       ════════════════════════════════════════════════════ */
+    .sf-support {
+      background: var(--oxford-blue);
+      padding: 80px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .sf-support::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: repeating-linear-gradient(
+        45deg,
+        rgba(255,230,158,0.025) 0px, rgba(255,230,158,0.025) 1px,
+        transparent 1px, transparent 14px
+      );
+      pointer-events: none;
+    }
+    .sf-support .sf-section-head h2 { color: #ffffff; }
+    .sf-support .sf-section-head h2 em { color: var(--turquoise); }
+    .sf-support .sf-section-head .eyebrow { color: var(--champagne); }
+    .sf-support .sf-section-head .lede { color: rgba(255,255,255,0.8); }
+
+    .sf-support-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+    .sf-support-card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 10px;
+      padding: 36px 28px;
+      transition: all 0.3s ease;
+    }
+    .sf-support-card:hover {
+      background: rgba(255,255,255,0.10);
+      border-color: rgba(255,230,158,0.3);
+      transform: translateY(-4px);
+    }
+    .sf-support-icon {
+      width: 48px; height: 48px;
+      background: var(--tiffany);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .sf-support-icon svg { width: 22px; height: 22px; color: #ffffff; }
+    .sf-support-card h3 {
+      font-family: var(--serif-display);
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--champagne);
+      margin: 20px 0 12px;
+    }
+    .sf-support-card p {
+      font-family: var(--sans);
+      font-size: 14px;
+      color: rgba(255,255,255,0.8);
+      line-height: 1.7;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Section 6 — CTA
+       ════════════════════════════════════════════════════ */
+    .sf-cta {
+      background: var(--light-cyan-alt);
+      padding: 88px 0;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+    .sf-cta::before, .sf-cta::after {
+      content: '';
+      position: absolute;
+      width: 280px; height: 280px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0,189,182,0.18) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .sf-cta::before { top: -120px; left: -80px; }
+    .sf-cta::after  { bottom: -120px; right: -80px; }
+
+    .sf-cta-inner { max-width: 640px; margin: 0 auto; position: relative; }
+    .sf-cta-small {
+      font-family: var(--serif-italic);
+      font-style: italic;
+      font-size: 18px;
+      color: var(--tiffany);
+      margin-bottom: 16px;
+      display: block;
+    }
+    .sf-cta h2 {
+      font-family: var(--serif-display);
+      font-size: 42px;
+      font-weight: 500;
+      color: var(--oxford-blue);
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+    .sf-cta h2 em { font-style: italic; color: var(--tiffany); }
+    .sf-cta .gold-rule { margin: 20px auto; }
+    .sf-cta-sub {
+      font-family: var(--sans);
+      font-size: 16px;
+      color: var(--eerie-black);
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+    .sf-cta-actions { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+
+    .sf-cta .btn-primary {
+      background: var(--oxford-blue);
+      color: var(--champagne);
+      border-color: var(--oxford-blue);
+    }
+    .sf-cta .btn-primary:hover {
+      background: var(--tiffany);
+      border-color: var(--tiffany);
+      color: #ffffff;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Responsive — 768px
+       ════════════════════════════════════════════════════ */
+    @media (max-width: 768px) {
+      .sf-hero { padding: 56px 0 64px; min-height: 0; }
+      .sf-hero-grid { grid-template-columns: 1fr; gap: 0; }
+      .sf-hero-visual { display: none; }
+      .sf-hero-title { font-size: 36px; }
+
+      .sf-overview { padding: 64px 0; }
+      .sf-overview-grid { grid-template-columns: 1fr; gap: 40px; }
+      .sf-sidebar { position: static; top: auto; }
+      .sf-overview-h2 { font-size: 30px; }
+
+      .sf-programme { padding: 64px 0; }
+      .sf-programme-grid { grid-template-columns: 1fr; gap: 16px; }
+      .sf-section-head h2 { font-size: 30px; }
+      .sf-section-head { margin-bottom: 40px; }
+
+      .sf-journey { padding: 64px 0; }
+      .sf-journey-grid { grid-template-columns: 1fr; gap: 40px; }
+      .sf-journey h2 { font-size: 28px; }
+      .sf-journey-img { height: 280px; }
+      .sf-journey-grid > .sf-journey-text { order: 1; }
+      .sf-journey-grid > .sf-journey-img-wrap { order: 2; }
+
+      .sf-support { padding: 64px 0; }
+      .sf-support-grid { grid-template-columns: 1fr; gap: 16px; }
+
+      .sf-cta { padding: 64px 0; }
+      .sf-cta h2 { font-size: 32px; }
+      .sf-cta-actions { flex-direction: column; }
+      .sf-cta-actions .btn { width: 100%; justify-content: center; }
+    }
+
+    @media (max-width: 1100px) and (min-width: 769px) {
+      .sf-programme-grid { grid-template-columns: repeat(2, 1fr); }
+      .sf-support-grid { grid-template-columns: 1fr; gap: 18px; }
+      .sf-hero-title { font-size: 48px; }
+    }
+  </style>
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation (injected by JS) -->
+  <div data-component="nav"></div>
+
+  <main id="main-content">
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 1 — HERO
+         ═══════════════════════════════════════════════════════ -->
+    <section class="sf-hero" aria-labelledby="page-h1">
+      <div class="container">
+        <div class="sf-hero-grid">
+
+          <div class="sf-hero-content">
+
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+              <a href="/">Home</a>
+              <span class="sep">/</span>
+              <a href="/student-life/">Student Life</a>
+              <span class="sep">/</span>
+              <span class="current">Spiritual Formation</span>
+            </nav>
+
+            <h1 id="page-h1" class="sf-hero-title">Spiritual <em>Formation</em></h1>
+            <hr class="sf-hero-rule" />
+
+            <p class="sf-hero-intro">Faith is at the heart of life at JPIC. Our spiritual formation programme invites every student into a deeper understanding of themselves, their faith and their calling in the world.</p>
+
+          </div>
+
+          <div class="sf-hero-visual" aria-hidden="true">
+            <div class="sf-hero-img">
+              <img src="/assets/images/Spiritual%20Formation/DSC07781.webp" alt="Spiritual formation at JPIC" width="1440" height="960" style="width:100%;height:100%;object-fit:cover;">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 2 — OVERVIEW
+         ═══════════════════════════════════════════════════════ -->
+    <section class="sf-overview" aria-labelledby="overview-h">
+      <div class="container">
+        <div class="sf-overview-grid">
+
+          <article class="sf-overview-main reveal">
+            <span class="eyebrow with-line">Faith &amp; Character</span>
+            <h2 id="overview-h" class="sf-overview-h2">Forming <em>Hearts and Minds</em></h2>
+            <hr class="gold-rule" />
+
+            <div class="sf-overview-body">
+              <p>JPIC is a Catholic school under the Diocese of Chilaw, and spiritual formation is central to our identity. We believe that education is not only about academic achievement — it is about forming young people of faith, character and conscience who are prepared to serve others and make a positive difference in the world.</p>
+              <p>Through daily prayer, liturgical celebrations, retreats, service programmes and Religious Education, we invite every student into a rich spiritual life. We welcome students of all backgrounds and faiths, forming a community united by shared values of respect, compassion and truth.</p>
+            </div>
+
+            <h3 class="sf-subheading">Our Principles</h3>
+
+            <div class="sf-principles">
+
+              <div class="sf-principle">
+                <div class="sf-principle-num">1</div>
+                <div>
+                  <div class="sf-principle-title">Faith in Daily Life</div>
+                  <div class="sf-principle-desc">Prayer, reflection and Gospel values are woven into the rhythm of each school day.</div>
+                </div>
+              </div>
+
+              <div class="sf-principle">
+                <div class="sf-principle-num">2</div>
+                <div>
+                  <div class="sf-principle-title">Liturgical Life</div>
+                  <div class="sf-principle-desc">Mass, feast day celebrations and the liturgical calendar shape our community's spiritual identity.</div>
+                </div>
+              </div>
+
+              <div class="sf-principle">
+                <div class="sf-principle-num">3</div>
+                <div>
+                  <div class="sf-principle-title">Service &amp; Justice</div>
+                  <div class="sf-principle-desc">Students are invited to serve others through outreach programmes, reflecting the call to love our neighbour.</div>
+                </div>
+              </div>
+
+              <div class="sf-principle">
+                <div class="sf-principle-num">4</div>
+                <div>
+                  <div class="sf-principle-title">Open to All</div>
+                  <div class="sf-principle-desc">While rooted in the Catholic tradition, our spiritual programme welcomes and respects students of all faith backgrounds.</div>
+                </div>
+              </div>
+
+            </div>
+          </article>
+
+          <aside class="sf-sidebar reveal" aria-label="Spiritual formation at a glance">
+            <div class="sf-sidebar-title">At a Glance</div>
+
+            <div class="sf-fact-row">
+              <div class="sf-fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <span class="sf-fact-label">Diocese</span>
+                <div class="sf-fact-value">Chilaw Diocese, Sri Lanka</div>
+              </div>
+            </div>
+
+            <div class="sf-fact-row">
+              <div class="sf-fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <div>
+                <span class="sf-fact-label">Patron Saint</span>
+                <div class="sf-fact-value">St. John Paul II (feast day: 22 October)</div>
+              </div>
+            </div>
+
+            <div class="sf-fact-row">
+              <div class="sf-fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </div>
+              <div>
+                <span class="sf-fact-label">Faith Tradition</span>
+                <div class="sf-fact-value">Roman Catholic</div>
+              </div>
+            </div>
+
+            <div class="sf-fact-row">
+              <div class="sf-fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+              </div>
+              <div>
+                <span class="sf-fact-label">Prayer</span>
+                <div class="sf-fact-value">Daily prayer integrated into school life</div>
+              </div>
+            </div>
+
+            <div class="sf-fact-row">
+              <div class="sf-fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <div>
+                <span class="sf-fact-label">Outreach</span>
+                <div class="sf-fact-value">Community service &amp; social action</div>
+              </div>
+            </div>
+
+            <div class="sf-fact-row">
+              <div class="sf-fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+              </div>
+              <div>
+                <span class="sf-fact-label">Formation</span>
+                <div class="sf-fact-value">Retreats and reflection days each year</div>
+              </div>
+            </div>
+
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 3 — OUR SPIRITUAL PROGRAMME
+         ═══════════════════════════════════════════════════════ -->
+    <section class="sf-programme" aria-labelledby="programme-h">
+      <div class="container">
+
+        <div class="sf-section-head reveal">
+          <span class="eyebrow with-line">Formation</span>
+          <h2 id="programme-h">How We <em>Nurture</em> Faith and Character</h2>
+          <hr class="gold-rule" />
+          <p class="lede">Six dimensions of spiritual life at JPIC.</p>
+        </div>
+
+        <div class="sf-programme-grid reveal-children">
+
+          <article class="sf-prog-card" data-num="01">
+            <div class="sf-prog-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            </div>
+            <h3 class="sf-prog-name">Daily Prayer</h3>
+            <p class="sf-prog-desc">Each school day begins and is marked by prayer, giving students space to centre themselves, reflect and connect with their faith.</p>
+          </article>
+
+          <article class="sf-prog-card" data-num="02">
+            <div class="sf-prog-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            </div>
+            <h3 class="sf-prog-name">Religious Education</h3>
+            <p class="sf-prog-desc">A structured RE curriculum helps students explore faith, ethics, Scripture and the Catholic tradition in depth and with intellectual rigour.</p>
+          </article>
+
+          <article class="sf-prog-card" data-num="03">
+            <div class="sf-prog-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+            </div>
+            <h3 class="sf-prog-name">Liturgy &amp; Sacraments</h3>
+            <p class="sf-prog-desc">School Masses, feast day celebrations and sacramental preparation mark the rhythm of the liturgical year and deepen community bonds.</p>
+          </article>
+
+          <article class="sf-prog-card" data-num="04">
+            <div class="sf-prog-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 20l5-9 4 6 3-4 6 7H2z"/><circle cx="17" cy="5" r="3"/></svg>
+            </div>
+            <h3 class="sf-prog-name">Retreats &amp; Reflection</h3>
+            <p class="sf-prog-desc">Annual retreats and reflection days provide space for students to step back, encounter God and grow in self-awareness and faith.</p>
+          </article>
+
+          <article class="sf-prog-card" data-num="05">
+            <div class="sf-prog-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <h3 class="sf-prog-name">Service &amp; Outreach</h3>
+            <p class="sf-prog-desc">Community service projects, charitable initiatives and social justice programmes put faith into action and build habits of generosity.</p>
+          </article>
+
+          <article class="sf-prog-card" data-num="06">
+            <div class="sf-prog-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/></svg>
+            </div>
+            <h3 class="sf-prog-name">Chaplaincy Support</h3>
+            <p class="sf-prog-desc">Our chaplaincy team is available to support students and staff spiritually — offering prayer, conversation and a compassionate presence.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 4 — OUR FORMATION JOURNEY
+         ═══════════════════════════════════════════════════════ -->
+    <section class="sf-journey" aria-labelledby="journey-h">
+      <div class="container">
+        <div class="sf-journey-grid">
+
+          <div class="sf-journey-text reveal">
+            <span class="eyebrow with-line">Spiritual Growth</span>
+            <h2 id="journey-h">Growing in <em>Faith and Virtue</em></h2>
+            <hr class="gold-rule" />
+            <p class="sf-journey-body">Spiritual formation is a lifelong journey. At JPIC, we create the conditions for that journey to begin and deepen throughout every year of a student's time with us.</p>
+
+            <div class="sf-blocks">
+
+              <div class="sf-block">
+                <div class="sf-block-title"><span class="num">01 ·</span> Foundation Years</div>
+                <div class="sf-block-desc">In Early Years and Primary, children are introduced to prayer, Scripture stories and the wonder of God's creation through age-appropriate, joyful experiences.</div>
+              </div>
+
+              <div class="sf-block">
+                <div class="sf-block-title"><span class="num">02 ·</span> Growing Years</div>
+                <div class="sf-block-desc">In Lower Secondary, students deepen their understanding of faith, ethics and Catholic Social Teaching, building a personal relationship with their beliefs.</div>
+              </div>
+
+              <div class="sf-block">
+                <div class="sf-block-title"><span class="num">03 ·</span> Maturing Years</div>
+                <div class="sf-block-desc">In Upper Secondary and Advanced, students engage with complex questions of faith, identity and vocation — discerning who they are and who they are called to become.</div>
+              </div>
+
+              <div class="sf-block">
+                <div class="sf-block-title"><span class="num">04 ·</span> Sending Forth</div>
+                <div class="sf-block-desc">Graduating students leave JPIC equipped not just academically, but as people of faith, conscience and compassion — ready to serve the world.</div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="sf-journey-img-wrap reveal">
+            <div class="sf-journey-img">
+              <img src="/assets/images/Spiritual%20Formation/DSC07832.webp" alt="Spiritual formation at JPIC" width="1400" height="933" style="width:100%;height:100%;object-fit:cover;">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 5 — SUPPORT
+         ═══════════════════════════════════════════════════════ -->
+    <section class="sf-support" aria-labelledby="support-h">
+      <div class="container">
+
+        <div class="sf-section-head reveal">
+          <span class="eyebrow with-line">At JPIC</span>
+          <h2 id="support-h">A Community of <em>Faith</em></h2>
+          <hr class="gold-rule" />
+          <p class="lede">Spiritual formation at JPIC is not a programme — it is a way of life, shared by students, staff and families together.</p>
+        </div>
+
+        <div class="sf-support-grid reveal-children">
+
+          <article class="sf-support-card">
+            <div class="sf-support-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/></svg>
+            </div>
+            <h3>Chaplaincy Team</h3>
+            <p>Our chaplaincy team accompanies the JPIC community in prayer, celebration and service — providing spiritual support for students and staff throughout the year.</p>
+          </article>
+
+          <article class="sf-support-card">
+            <div class="sf-support-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+            </div>
+            <h3>Diocesan Connection</h3>
+            <p>As part of the Diocese of Chilaw, JPIC is connected to a wider Catholic community — participating in diocesan events, youth programmes and celebrations.</p>
+          </article>
+
+          <article class="sf-support-card">
+            <div class="sf-support-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <h3>Family &amp; Parish Links</h3>
+            <p>We encourage strong links between school, home and parish — supporting families in nurturing the faith lives of their children beyond the school gates.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 6 — CTA
+         ═══════════════════════════════════════════════════════ -->
+    <section class="sf-cta" aria-labelledby="cta-h">
+      <div class="container">
+        <div class="sf-cta-inner reveal">
+          <span class="sf-cta-small">Faith at the heart of education</span>
+          <h2 id="cta-h">Discover the <em>JPIC Difference</em></h2>
+          <hr class="gold-rule" />
+          <p class="sf-cta-sub">We would love to share more about our spiritual life with you. Visit us, ask questions, and see what makes JPIC a place where faith and learning go hand in hand.</p>
+
+          <div class="sf-cta-actions">
+            <a href="/contact.html" class="btn btn-primary">
+              Contact Us
+              <span class="arrow">→</span>
+            </a>
+            <a href="/admissions/index.html" class="btn btn-outline">
+              Apply Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer (injected by JS) -->
+  <div data-component="footer"></div>
+
+  <script>
+    /* reveal-children: extend production scroll-reveal for staggered grids */
+    (function () {
+      if (!('IntersectionObserver' in window)) {
+        document.querySelectorAll('.reveal-children').forEach(function (el) {
+          el.classList.add('revealed');
+        });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            var parent = entry.target;
+            Array.from(parent.children).forEach(function (child, i) {
+              child.style.setProperty('--i', i);
+            });
+            parent.classList.add('revealed');
+            io.unobserve(parent);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+      document.querySelectorAll('.reveal-children').forEach(function (el) {
+        io.observe(el);
+      });
+    })();
+  </script>
+
+</body>
+</html>

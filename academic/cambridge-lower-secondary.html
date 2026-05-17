@@ -1,0 +1,1450 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cambridge Lower Secondary (Age 11–14) | St. John Paul II International College</title>
+  <meta name="description" content="Cambridge Lower Secondary at St. John Paul II International College — a broad and balanced curriculum for ages 11 to 14 building skills and confidence for upper secondary education." />
+  <link rel="canonical" href="https://jpeducation.net/academic/cambridge-lower-secondary">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://jpeducation.net/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Academic",
+      "item": "https://jpeducation.net/academic/programmes"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Cambridge Lower Secondary",
+      "item": "https://jpeducation.net/academic/cambridge-lower-secondary"
+    }
+  ]
+}
+</script>
+  <meta name="keywords" content="Cambridge Lower Secondary JPIC, secondary education Sri Lanka, JPIC Cambridge school, lower secondary Wennappuwa" />
+
+  <meta property="og:title" content="Cambridge Lower Secondary (Age 11–14) — JPIC" />
+  <meta property="og:description" content="Cambridge Lower Secondary at St. John Paul II International College — a broad and balanced curriculum for ages 11 to 14 building skills and confidence for upper secondary education." />
+  <meta property="og:image" content="https://jpeducation.net/assets/images/og-image.webp" />
+  <meta property="og:url" content="https://jpeducation.net/academic/cambridge-lower-secondary.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="St. John Paul II International College" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cambridge Lower Secondary (Age 11–14) — JPIC" />
+  <meta name="twitter:description" content="A broad and balanced Cambridge curriculum for ages 11–14 at St. John Paul II International College, Wennappuwa." />
+  <meta name="twitter:image" content="https://jpeducation.net/assets/images/og-image.webp" />
+
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="/assets/css/main.css?v=20260517" />
+  <link rel="stylesheet" href="/assets/css/components.css?v=20260517" />
+  <script src="/assets/js/main.js" defer></script>
+
+  <style>
+    /* ════════════════════════════════════════════════════
+       PAGE-LEVEL ALIASES — bridge design tokens to production vars
+       ════════════════════════════════════════════════════ */
+    :root {
+      --light-cyan-alt: #D7FDF5;
+      --rule:           rgba(0, 33, 71, 0.10);
+      --serif-display:  var(--font-display);
+      --serif-italic:   var(--font-accent);
+      --sans:           var(--font-body);
+    }
+
+    /* ════════════════════════════════════════════════════
+       SHARED ATOMS (not in production main.css)
+       ════════════════════════════════════════════════════ */
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--tiffany);
+    }
+    .eyebrow.with-line::before {
+      content: '';
+      width: 28px;
+      height: 1px;
+      background: currentColor;
+    }
+
+    .gold-rule {
+      display: block;
+      width: 64px;
+      height: 3px;
+      background: var(--champagne);
+      border: none;
+    }
+
+    /* ════════════════════════════════════════════════════
+       REVEAL-CHILDREN support (production JS only handles .reveal)
+       ════════════════════════════════════════════════════ */
+    .reveal-children > * {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+      transition-delay: calc(var(--i, 0) * 0.1s);
+    }
+    .reveal-children.revealed > * {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ════════════════════════════════════════════════════
+       Section 1 — Hero
+       ════════════════════════════════════════════════════ */
+    .ls-hero {
+      background: var(--oxford-blue);
+      background-image: repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 40px,
+        rgba(255,255,255,0.03) 40px,
+        rgba(255,255,255,0.03) 41px
+      );
+      min-height: 460px;
+      padding: 80px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .ls-hero::before {
+      content: '';
+      position: absolute;
+      top: -200px; right: -180px;
+      width: 540px; height: 540px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0,189,182,0.18) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .ls-hero::after {
+      content: '03';
+      position: absolute;
+      bottom: -80px; left: -30px;
+      font-family: var(--serif-display);
+      font-size: 360px;
+      font-weight: 900;
+      color: rgba(255,230,158,0.04);
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .ls-hero-grid {
+      display: grid;
+      grid-template-columns: 58% 42%;
+      gap: 64px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .ls-hero-age-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin: 16px 0;
+      background: var(--champagne);
+      color: var(--oxford-blue);
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 20px;
+    }
+    .ls-hero-age-badge .sep {
+      width: 4px; height: 4px;
+      border-radius: 50%;
+      background: var(--oxford-blue);
+      opacity: 0.5;
+    }
+
+    .ls-hero-title {
+      font-family: var(--serif-display);
+      font-weight: 700;
+      color: #ffffff;
+      font-size: 58px;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+    }
+    .ls-hero-title em {
+      font-style: italic;
+      color: var(--champagne);
+      font-weight: 400;
+    }
+
+    .ls-hero-rule {
+      display: block;
+      width: 64px; height: 3px;
+      background: var(--champagne);
+      border: none;
+      margin: 20px 0;
+    }
+
+    .ls-hero-intro {
+      font-family: var(--sans);
+      font-size: 17px;
+      color: rgba(255,255,255,0.88);
+      line-height: 1.7;
+      max-width: 520px;
+    }
+
+    .ls-hero-chips {
+      display: inline-flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 32px;
+    }
+    .ls-hero-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 6px;
+      padding: 8px 18px;
+      font-family: var(--sans);
+      font-size: 13px;
+      color: #ffffff;
+      transition: all 0.3s ease;
+    }
+    .ls-hero-chip:hover {
+      border-color: var(--champagne);
+      background: rgba(255,230,158,0.06);
+    }
+    .ls-hero-chip strong { font-weight: 700; color: var(--champagne); }
+    .ls-hero-chip .chip-sep {
+      width: 1px; height: 14px;
+      background: rgba(255,255,255,0.2);
+    }
+    .ls-hero-chip span:last-child { color: rgba(255,255,255,0.65); }
+
+    /* Hero right visual */
+    .ls-hero-visual { position: relative; }
+    .ls-hero-img {
+      border-radius: 10px;
+      height: 340px;
+      position: relative;
+      overflow: hidden;
+    }
+    .ls-hero-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    .ls-hero-overlay {
+      position: absolute;
+      bottom: -28px; left: -20px;
+      background: var(--oxford-blue);
+      border-left: 4px solid var(--champagne);
+      border-radius: 6px;
+      padding: 16px 20px;
+      box-shadow: 0 14px 38px rgba(0,0,0,0.32);
+      z-index: 2;
+    }
+    .ls-hero-overlay-label {
+      font-family: var(--sans);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--champagne);
+      margin-bottom: 4px;
+    }
+    .ls-hero-overlay-val {
+      font-family: var(--serif-display);
+      font-size: 15px;
+      color: #ffffff;
+      font-weight: 500;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Section 2 — Overview
+       ════════════════════════════════════════════════════ */
+    .ls-overview {
+      background: #ffffff;
+      padding: 96px 0;
+    }
+    .ls-overview-grid {
+      display: grid;
+      grid-template-columns: 62% 38%;
+      gap: 64px;
+      align-items: start;
+    }
+    .ls-overview-h2 {
+      font-family: var(--serif-display);
+      font-size: 40px;
+      font-weight: 500;
+      color: var(--oxford-blue);
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      margin-top: 12px;
+    }
+    .ls-overview-h2 em { font-style: italic; color: var(--tiffany); }
+    .ls-overview .gold-rule { margin: 18px 0 28px; }
+    .ls-overview-body p {
+      font-family: var(--sans);
+      font-size: 16px;
+      color: var(--eerie-black);
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    .ls-subheading {
+      font-family: var(--sans);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--oxford-blue);
+      margin: 40px 0 24px;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .ls-subheading::after {
+      content: '';
+      flex: 1;
+      min-width: 80px;
+      height: 1px;
+      background: var(--rule);
+    }
+
+    .ls-principles { display: flex; flex-direction: column; gap: 20px; }
+    .ls-principle { display: flex; gap: 16px; align-items: flex-start; padding: 14px 0; }
+    .ls-principle-num {
+      width: 36px; height: 36px;
+      flex-shrink: 0;
+      background: var(--tiffany);
+      color: #ffffff;
+      border-radius: 50%;
+      font-family: var(--sans);
+      font-size: 14px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+    .ls-principle:hover .ls-principle-num {
+      background: var(--oxford-blue);
+      transform: scale(1.04);
+    }
+    .ls-principle-title {
+      font-family: var(--sans);
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--oxford-blue);
+      margin-bottom: 4px;
+      letter-spacing: 0.02em;
+    }
+    .ls-principle-desc {
+      font-family: var(--sans);
+      font-size: 14px;
+      color: var(--eerie-black);
+      line-height: 1.65;
+    }
+
+    /* Sidebar */
+    .ls-sidebar {
+      position: sticky;
+      top: 100px;
+      background: var(--light-cyan-alt);
+      border-radius: 10px;
+      border-left: 4px solid var(--tiffany);
+      padding: 32px 28px;
+    }
+    .ls-sidebar-title {
+      font-family: var(--serif-display);
+      font-size: 22px;
+      font-weight: 500;
+      color: var(--oxford-blue);
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .ls-sidebar-title::before {
+      content: '';
+      display: block;
+      width: 18px; height: 1px;
+      background: var(--tiffany);
+    }
+    .ls-fact-row {
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(0,189,182,0.2);
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .ls-fact-row:last-child { border-bottom: none; }
+    .ls-fact-icon {
+      width: 36px; height: 36px;
+      border-radius: 8px;
+      background: rgba(0,189,182,0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .ls-fact-icon svg { width: 18px; height: 18px; color: var(--tiffany); }
+    .ls-fact-label {
+      font-family: var(--sans);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--tiffany);
+      display: block;
+      margin-bottom: 2px;
+    }
+    .ls-fact-value {
+      font-family: var(--sans);
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--oxford-blue);
+      line-height: 1.3;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Section 3 — Curriculum
+       ════════════════════════════════════════════════════ */
+    .ls-curriculum {
+      background: var(--baby-powder);
+      padding: 96px 0;
+    }
+    .ls-section-head {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+    .ls-section-head .eyebrow { justify-content: center; }
+    .ls-section-head h2 {
+      font-family: var(--serif-display);
+      font-size: 40px;
+      font-weight: 500;
+      color: var(--oxford-blue);
+      margin-top: 14px;
+      letter-spacing: -0.01em;
+    }
+    .ls-section-head h2 em { font-style: italic; color: var(--tiffany); }
+    .ls-section-head .gold-rule { margin: 18px auto 16px; }
+    .ls-section-head .lede {
+      font-family: var(--sans);
+      font-size: 15px;
+      color: var(--eerie-black);
+      max-width: 580px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    .ls-curriculum-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .ls-curric-card {
+      background: #ffffff;
+      border-radius: 10px;
+      border-top: 3px solid var(--tiffany);
+      padding: 32px 28px;
+      box-shadow: 0 2px 16px rgba(0,33,71,0.06);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .ls-curric-card::before {
+      content: attr(data-num);
+      position: absolute;
+      top: 14px; right: 18px;
+      font-family: var(--serif-display);
+      font-size: 56px;
+      font-weight: 700;
+      color: rgba(0,33,71,0.05);
+      line-height: 1;
+      pointer-events: none;
+    }
+    .ls-curric-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 36px rgba(0,33,71,0.12);
+    }
+    .ls-curric-icon {
+      width: 52px; height: 52px;
+      background: var(--light-cyan-alt);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      transition: background 0.3s ease;
+    }
+    .ls-curric-card:hover .ls-curric-icon { background: var(--tiffany); }
+    .ls-curric-icon svg { width: 26px; height: 26px; color: var(--tiffany); transition: color 0.3s ease; }
+    .ls-curric-card:hover .ls-curric-icon svg { color: #ffffff; }
+    .ls-curric-name {
+      font-family: var(--sans);
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--oxford-blue);
+      margin-bottom: 10px;
+      letter-spacing: 0.01em;
+      line-height: 1.3;
+    }
+    .ls-curric-desc {
+      font-family: var(--sans);
+      font-size: 14px;
+      color: var(--eerie-black);
+      line-height: 1.65;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Section 4 — Assessment
+       ════════════════════════════════════════════════════ */
+    .ls-assessment {
+      background: #ffffff;
+      padding: 96px 0;
+    }
+    .ls-assessment-grid {
+      display: grid;
+      grid-template-columns: 55% 45%;
+      gap: 56px;
+      align-items: center;
+    }
+    .ls-assessment h2 {
+      font-family: var(--serif-display);
+      font-size: 38px;
+      font-weight: 500;
+      color: var(--oxford-blue);
+      margin-top: 12px;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+    .ls-assessment h2 em { font-style: italic; color: var(--tiffany); }
+    .ls-assessment .gold-rule { margin: 18px 0 24px; }
+    .ls-assessment-body {
+      font-family: var(--sans);
+      font-size: 15px;
+      color: var(--eerie-black);
+      line-height: 1.8;
+    }
+
+    .ls-asmt-blocks { margin-top: 36px; display: flex; flex-direction: column; gap: 0; }
+    .ls-asmt-block {
+      border-left: 3px solid var(--champagne);
+      padding: 16px 0 16px 20px;
+      margin-bottom: 8px;
+      transition: border-color 0.3s ease, padding-left 0.3s ease;
+    }
+    .ls-asmt-block:hover { border-left-color: var(--tiffany); padding-left: 26px; }
+    .ls-asmt-title {
+      font-family: var(--sans);
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--oxford-blue);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .ls-asmt-title .num {
+      font-family: var(--serif-display);
+      font-style: italic;
+      font-size: 14px;
+      color: var(--tiffany);
+      font-weight: 400;
+    }
+    .ls-asmt-desc { font-family: var(--sans); font-size: 14px; color: var(--eerie-black); line-height: 1.65; }
+
+    .ls-asmt-img {
+      border-radius: 10px;
+      height: 400px;
+      position: relative;
+      overflow: hidden;
+    }
+    .ls-asmt-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Section 5 — Support
+       ════════════════════════════════════════════════════ */
+    .ls-support {
+      background: var(--oxford-blue);
+      padding: 80px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .ls-support::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: repeating-linear-gradient(
+        45deg,
+        rgba(255,230,158,0.025) 0px, rgba(255,230,158,0.025) 1px,
+        transparent 1px, transparent 14px
+      );
+      pointer-events: none;
+    }
+    .ls-support .ls-section-head h2 { color: #ffffff; }
+    .ls-support .ls-section-head h2 em { color: var(--turquoise); }
+    .ls-support .ls-section-head .eyebrow { color: var(--champagne); }
+    .ls-support .ls-section-head .lede { color: rgba(255,255,255,0.8); }
+
+    .ls-support-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+    .ls-support-card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 10px;
+      padding: 36px 28px;
+      transition: all 0.3s ease;
+    }
+    .ls-support-card:hover {
+      background: rgba(255,255,255,0.10);
+      border-color: rgba(255,230,158,0.3);
+      transform: translateY(-4px);
+    }
+    .ls-support-icon {
+      width: 48px; height: 48px;
+      background: var(--tiffany);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .ls-support-icon svg { width: 22px; height: 22px; color: #ffffff; }
+    .ls-support-card h3 {
+      font-family: var(--serif-display);
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--champagne);
+      margin: 20px 0 12px;
+    }
+    .ls-support-card p {
+      font-family: var(--sans);
+      font-size: 14px;
+      color: rgba(255,255,255,0.8);
+      line-height: 1.7;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Section 6 — Pathway strip
+       ════════════════════════════════════════════════════ */
+    .ls-pathway {
+      background: var(--baby-powder);
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+      padding: 56px 0;
+    }
+    .ls-pathway-label {
+      text-align: center;
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--tiffany);
+    }
+    .ls-pathway-strip {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 0;
+      margin-top: 32px;
+      max-width: 980px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .ls-pathway-node {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+      width: 140px;
+      text-decoration: none;
+      transition: transform 0.3s ease;
+      padding: 0 4px;
+    }
+    .ls-pathway-node:hover { transform: translateY(-3px); }
+
+    .ls-path-circle {
+      width: 52px; height: 52px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--serif-display);
+      font-size: 20px;
+      font-weight: 700;
+      transition: all 0.3s ease;
+    }
+    .ls-pathway-node.active .ls-path-circle {
+      background: var(--champagne);
+      color: var(--oxford-blue);
+      box-shadow: 0 6px 22px rgba(255,230,158,0.45), inset 0 0 0 3px rgba(255,255,255,0.5);
+    }
+    .ls-pathway-node:not(.active) .ls-path-circle {
+      background: transparent;
+      border: 2px solid rgba(0,33,71,0.3);
+      color: rgba(0,33,71,0.5);
+    }
+    .ls-pathway-node:not(.active):hover .ls-path-circle {
+      border-color: var(--tiffany);
+      color: var(--tiffany);
+    }
+    .ls-path-name {
+      font-family: var(--sans);
+      font-size: 12px;
+      font-weight: 700;
+      margin-top: 4px;
+      text-align: center;
+      line-height: 1.3;
+      letter-spacing: 0.02em;
+      transition: color 0.3s ease;
+    }
+    .ls-path-age { font-family: var(--sans); font-size: 11px; margin-top: 0; letter-spacing: 0.02em; }
+    .ls-pathway-node.active .ls-path-name { color: var(--oxford-blue); }
+    .ls-pathway-node.active .ls-path-age { color: var(--tiffany); font-weight: 600; }
+    .ls-pathway-node:not(.active) .ls-path-name { color: rgba(0,33,71,0.5); }
+    .ls-pathway-node:not(.active) .ls-path-age { color: rgba(0,33,71,0.3); }
+    .ls-pathway-node:not(.active):hover .ls-path-name,
+    .ls-pathway-node:not(.active):hover .ls-path-age { color: var(--tiffany); }
+
+    .ls-path-connector {
+      flex: 1;
+      height: 1px;
+      margin-top: 26px;
+      background: repeating-linear-gradient(
+        to right,
+        var(--champagne) 0, var(--champagne) 6px,
+        transparent 6px, transparent 12px
+      );
+      min-width: 12px;
+      max-width: 60px;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Section 7 — Prev / Next
+       ════════════════════════════════════════════════════ */
+    .ls-prevnext { background: #ffffff; border-top: 1px solid var(--rule); }
+    .ls-prevnext-grid { display: grid; grid-template-columns: 1fr 1fr; align-items: stretch; }
+    .ls-prev, .ls-next {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 48px 40px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+      position: relative;
+    }
+    .ls-prev:hover, .ls-next:hover { background: var(--baby-powder); }
+    .ls-prev { padding-left: 0; border-right: 1px solid var(--rule); }
+    .ls-next { padding-right: 0; text-align: right; align-items: flex-end; }
+    .ls-pn-label {
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(0,189,182,0.7);
+      margin-bottom: 10px;
+    }
+    .ls-pn-title {
+      font-family: var(--serif-display);
+      font-size: 22px;
+      font-weight: 500;
+      color: var(--oxford-blue);
+      transition: color 0.3s ease;
+      letter-spacing: -0.005em;
+    }
+    .ls-prev:hover .ls-pn-title,
+    .ls-next:hover .ls-pn-title { color: var(--tiffany); }
+    .ls-pn-sub { font-family: var(--sans); font-size: 13px; color: rgba(31,33,33,0.6); margin-top: 6px; }
+    .ls-next .ls-pn-sub { color: var(--tiffany); font-weight: 500; }
+
+    /* ════════════════════════════════════════════════════
+       Section 8 — CTA
+       ════════════════════════════════════════════════════ */
+    .ls-cta {
+      background: var(--light-cyan-alt);
+      padding: 88px 0;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+    .ls-cta::before, .ls-cta::after {
+      content: '';
+      position: absolute;
+      width: 280px; height: 280px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0,189,182,0.18) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .ls-cta::before { top: -120px; left: -80px; }
+    .ls-cta::after  { bottom: -120px; right: -80px; }
+
+    .ls-cta-inner { max-width: 640px; margin: 0 auto; position: relative; }
+    .ls-cta-small {
+      font-family: var(--serif-italic);
+      font-style: italic;
+      font-size: 18px;
+      color: var(--tiffany);
+      margin-bottom: 16px;
+      display: block;
+    }
+    .ls-cta h2 {
+      font-family: var(--serif-display);
+      font-size: 42px;
+      font-weight: 500;
+      color: var(--oxford-blue);
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+    .ls-cta h2 em { font-style: italic; color: var(--tiffany); }
+    .ls-cta .gold-rule { margin: 20px auto; }
+    .ls-cta-sub {
+      font-family: var(--sans);
+      font-size: 16px;
+      color: var(--eerie-black);
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+    .ls-cta-actions { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+
+    /* CTA button overrides for this page's context */
+    .ls-cta .btn-primary {
+      background: var(--oxford-blue);
+      color: var(--champagne);
+      border-color: var(--oxford-blue);
+    }
+    .ls-cta .btn-primary:hover {
+      background: var(--tiffany);
+      border-color: var(--tiffany);
+      color: #ffffff;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Responsive — 768px
+       ════════════════════════════════════════════════════ */
+    @media (max-width: 768px) {
+      .ls-hero { padding: 56px 0 64px; min-height: 0; }
+      .ls-hero-grid { grid-template-columns: 1fr; gap: 0; }
+      .ls-hero-visual { display: none; }
+      .ls-hero-title { font-size: 36px; }
+      .ls-hero-chips { gap: 8px; }
+
+      .ls-overview { padding: 64px 0; }
+      .ls-overview-grid { grid-template-columns: 1fr; gap: 40px; }
+      .ls-sidebar { position: static; top: auto; }
+      .ls-overview-h2 { font-size: 30px; }
+
+      .ls-curriculum { padding: 64px 0; }
+      .ls-curriculum-grid { grid-template-columns: 1fr; gap: 16px; }
+      .ls-section-head h2 { font-size: 30px; }
+      .ls-section-head { margin-bottom: 40px; }
+
+      .ls-assessment { padding: 64px 0; }
+      .ls-assessment-grid { grid-template-columns: 1fr; gap: 40px; }
+      .ls-assessment h2 { font-size: 28px; }
+      .ls-asmt-img { height: 280px; }
+      .ls-assessment-grid > .ls-assessment-text { order: 1; }
+      .ls-assessment-grid > .ls-asmt-img-wrap  { order: 2; }
+
+      .ls-support { padding: 64px 0; }
+      .ls-support-grid { grid-template-columns: 1fr; gap: 16px; }
+
+      .ls-pathway { padding: 48px 0; }
+      .ls-pathway-strip {
+        flex-direction: column;
+        align-items: center;
+        max-width: 280px;
+        gap: 0;
+      }
+      .ls-pathway-node {
+        width: 100%;
+        flex-direction: row;
+        gap: 18px;
+        justify-content: flex-start;
+        padding: 12px 0;
+      }
+      .ls-path-text { display: flex; flex-direction: column; align-items: flex-start; }
+      .ls-path-name, .ls-path-age { text-align: left; }
+      .ls-path-connector {
+        width: 1px; height: 24px;
+        margin-top: 0; margin-left: 25px;
+        background: repeating-linear-gradient(
+          to bottom,
+          var(--champagne) 0, var(--champagne) 5px,
+          transparent 5px, transparent 10px
+        );
+        max-width: none; min-width: 0;
+        align-self: flex-start;
+      }
+
+      .ls-prevnext-grid { grid-template-columns: 1fr; }
+      .ls-prev, .ls-next {
+        padding: 32px 0;
+        text-align: left;
+        align-items: flex-start;
+        border-right: none;
+      }
+      .ls-prev { border-bottom: 1px solid var(--rule); }
+
+      .ls-cta { padding: 64px 0; }
+      .ls-cta h2 { font-size: 32px; }
+      .ls-cta-actions { flex-direction: column; }
+      .ls-cta-actions .btn { width: 100%; justify-content: center; }
+    }
+
+    @media (max-width: 1100px) and (min-width: 769px) {
+      .ls-curriculum-grid { grid-template-columns: repeat(2, 1fr); }
+      .ls-support-grid { grid-template-columns: 1fr; gap: 18px; }
+      .ls-hero-title { font-size: 48px; }
+    }
+  </style>
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation (injected by JS) -->
+  <div data-component="nav"></div>
+
+  <main id="main-content">
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 1 — HERO
+         ═══════════════════════════════════════════════════════ -->
+    <section class="ls-hero" aria-labelledby="page-h1">
+      <div class="container">
+        <div class="ls-hero-grid">
+
+          <div class="ls-hero-content">
+
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+              <a href="/">Home</a>
+              <span class="sep">/</span>
+              <a href="/academic/programmes.html">Academic</a>
+              <span class="sep">/</span>
+              <span class="current">Cambridge Lower Secondary</span>
+            </nav>
+
+            <div class="ls-hero-age-badge">
+              <span>Age 11 – 14</span>
+              <span class="sep"></span>
+              <span>Stage 3 of 5</span>
+            </div>
+
+            <h1 id="page-h1" class="ls-hero-title">Cambridge <em>Lower Secondary</em></h1>
+            <hr class="ls-hero-rule" />
+
+            <p class="ls-hero-intro">A broad and balanced curriculum for ages 11 to 14 — developing skills across 11 subjects and providing an excellent foundation for Cambridge Upper Secondary and beyond.</p>
+
+            <div class="ls-hero-chips">
+              <div class="ls-hero-chip">
+                <strong>11 Subjects</strong>
+                <span class="chip-sep"></span>
+                <span>Broad Curriculum</span>
+              </div>
+              <div class="ls-hero-chip">
+                <strong>Age 11 – 14</strong>
+                <span class="chip-sep"></span>
+                <span>Lower Secondary</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="ls-hero-visual" aria-hidden="false">
+            <div class="ls-hero-img">
+              <img src="/assets/images/Lower_Secondary/IMG_3732_L.webp" alt="Cambridge Lower Secondary students at JPIC" width="1400" height="780" loading="eager" />
+            </div>
+            <div class="ls-hero-overlay">
+              <div class="ls-hero-overlay-label">Cambridge Pathway</div>
+              <div class="ls-hero-overlay-val">Stage 3 · Lower Secondary</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 2 — OVERVIEW
+         ═══════════════════════════════════════════════════════ -->
+    <section class="ls-overview" aria-labelledby="overview-h">
+      <div class="container">
+        <div class="ls-overview-grid">
+
+          <article class="ls-overview-main reveal">
+            <span class="eyebrow with-line">About the Programme</span>
+            <h2 id="overview-h" class="ls-overview-h2">Building Skills for the <em>Next Chapter</em></h2>
+            <hr class="gold-rule" />
+
+            <div class="ls-overview-body">
+              <p>Cambridge Lower Secondary develops skills in 11 subjects — including English, Mathematics and Science — preparing learners for the next step of their education with a broad and balanced curriculum that builds on the foundations of Cambridge Primary.</p>
+              <p>At JPIC, the Lower Secondary years are a time of growing independence and deeper subject knowledge. Our teachers bring the curriculum to life with flexible, contextualised teaching that builds on each learner's strengths while preparing them for the rigour of Cambridge Upper Secondary.</p>
+            </div>
+
+            <h3 class="ls-subheading">Our Approach</h3>
+
+            <div class="ls-principles">
+
+              <div class="ls-principle">
+                <div class="ls-principle-num">1</div>
+                <div>
+                  <div class="ls-principle-title">Clear Learning Objectives</div>
+                  <div class="ls-principle-desc">A coherent curriculum with clear objectives across all 11 subjects, building systematically on Cambridge Primary foundations.</div>
+                </div>
+              </div>
+
+              <div class="ls-principle">
+                <div class="ls-principle-num">2</div>
+                <div>
+                  <div class="ls-principle-title">Flexible Delivery</div>
+                  <div class="ls-principle-desc">Schools can offer subjects in any combination, adapting the curriculum to context, culture and ethos.</div>
+                </div>
+              </div>
+
+              <div class="ls-principle">
+                <div class="ls-principle-num">3</div>
+                <div>
+                  <div class="ls-principle-title">Broad and Balanced</div>
+                  <div class="ls-principle-desc">11 subjects spanning languages, sciences, mathematics, creative arts, computing, digital literacy and wellbeing.</div>
+                </div>
+              </div>
+
+              <div class="ls-principle">
+                <div class="ls-principle-num">4</div>
+                <div>
+                  <div class="ls-principle-title">Progression-Focused</div>
+                  <div class="ls-principle-desc">Assessment tools help predict future performance in Cambridge IGCSE, O Level and International AS &amp; A Level.</div>
+                </div>
+              </div>
+
+            </div>
+          </article>
+
+          <aside class="ls-sidebar reveal" aria-label="Programme facts at a glance">
+            <div class="ls-sidebar-title">At a Glance</div>
+
+            <div class="ls-fact-row">
+              <div class="ls-fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/></svg>
+              </div>
+              <div>
+                <span class="ls-fact-label">Age Range</span>
+                <div class="ls-fact-value">11 to 14 years</div>
+              </div>
+            </div>
+
+            <div class="ls-fact-row">
+              <div class="ls-fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+              </div>
+              <div>
+                <span class="ls-fact-label">Subjects</span>
+                <div class="ls-fact-value">11 subject areas</div>
+              </div>
+            </div>
+
+            <div class="ls-fact-row">
+              <div class="ls-fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12l2 2 4-4"/><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              </div>
+              <div>
+                <span class="ls-fact-label">Assessment</span>
+                <div class="ls-fact-value">4 flexible options</div>
+              </div>
+            </div>
+
+            <div class="ls-fact-row">
+              <div class="ls-fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              </div>
+              <div>
+                <span class="ls-fact-label">Language Support</span>
+                <div class="ls-fact-value">English First or Second Language</div>
+              </div>
+            </div>
+
+            <div class="ls-fact-row">
+              <div class="ls-fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </div>
+              <div>
+                <span class="ls-fact-label">Global Reach</span>
+                <div class="ls-fact-value">110,000 Checkpoint entries per year</div>
+              </div>
+            </div>
+
+            <div class="ls-fact-row">
+              <div class="ls-fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+              </div>
+              <div>
+                <span class="ls-fact-label">Leads To</span>
+                <div class="ls-fact-value">Cambridge Upper Secondary (Age 14–16)</div>
+              </div>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 3 — CURRICULUM
+         ═══════════════════════════════════════════════════════ -->
+    <section class="ls-curriculum" aria-labelledby="curriculum-h">
+      <div class="container">
+
+        <div class="ls-section-head reveal">
+          <span class="eyebrow with-line">Curriculum</span>
+          <h2 id="curriculum-h">What Your Child Will <em>Learn</em></h2>
+          <hr class="gold-rule" />
+          <p class="lede">The same 11 subjects as Cambridge Primary, with deeper content and greater challenge — building seamlessly on what learners already know.</p>
+        </div>
+
+        <div class="ls-curriculum-grid reveal-children">
+
+          <article class="ls-curric-card" data-num="01">
+            <div class="ls-curric-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9.06 11.9l8.07-8.06a2.85 2.85 0 1 1 4.03 4.03l-8.06 8.07"/><path d="M7.07 14.94c-1.66 0-3 1.35-3 3.02 0 1.33-2.5 1.52-2 2.02 1.08 1.1 2.49 2.02 4 2.02 2.2 0 4-1.8 4-4.04a3.01 3.01 0 0 0-3-3.02z"/></svg>
+            </div>
+            <h3 class="ls-curric-name">Art &amp; Design</h3>
+            <p class="ls-curric-desc">Developing creativity, visual thinking and artistic skills through making, exploring and responding to art in a variety of media.</p>
+          </article>
+
+          <article class="ls-curric-card" data-num="02">
+            <div class="ls-curric-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h3 class="ls-curric-name">Cambridge Global Perspectives™</h3>
+            <p class="ls-curric-desc">Building critical thinking, research, collaboration and communication skills through exploration of real-world global issues.</p>
+          </article>
+
+          <article class="ls-curric-card" data-num="03">
+            <div class="ls-curric-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="7" height="7" rx="1"/><circle cx="17.5" cy="6.5" r="3.5"/><polygon points="17.5,14 22,22 13,22"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>
+            </div>
+            <h3 class="ls-curric-name">Computing</h3>
+            <p class="ls-curric-desc">Exploring computational thinking, programming, data handling and digital problem-solving through hands-on activities.</p>
+          </article>
+
+          <article class="ls-curric-card" data-num="04">
+            <div class="ls-curric-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 3h20v14H2z"/><path d="M8 21h8m-4-4v4"/></svg>
+            </div>
+            <h3 class="ls-curric-name">Digital Literacy</h3>
+            <p class="ls-curric-desc">Developing confident, safe and responsible use of digital technologies and online environments.</p>
+          </article>
+
+          <article class="ls-curric-card" data-num="05">
+            <div class="ls-curric-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8z"/></svg>
+            </div>
+            <h3 class="ls-curric-name">English</h3>
+            <p class="ls-curric-desc">Developing reading, writing, speaking and listening for confident communication — offered as First or Second Language.</p>
+          </article>
+
+          <article class="ls-curric-card" data-num="06">
+            <div class="ls-curric-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="7" height="7" rx="1"/><circle cx="17.5" cy="6.5" r="3.5"/><polygon points="17.5,14 22,22 13,22"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>
+            </div>
+            <h3 class="ls-curric-name">Mathematics</h3>
+            <p class="ls-curric-desc">Building number sense, reasoning, problem-solving and mathematical fluency through structured and investigative activities.</p>
+          </article>
+
+          <article class="ls-curric-card" data-num="07">
+            <div class="ls-curric-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+            </div>
+            <h3 class="ls-curric-name">Music</h3>
+            <p class="ls-curric-desc">Exploring rhythm, melody, performance and listening through active music-making and creative expression.</p>
+          </article>
+
+          <article class="ls-curric-card" data-num="08">
+            <div class="ls-curric-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="13" cy="4" r="2"/><path d="M15 22l-2-7 3-3-3-3-2 3-4 1"/><path d="M19 9l-3 3 1 4"/></svg>
+            </div>
+            <h3 class="ls-curric-name">Physical Education</h3>
+            <p class="ls-curric-desc">Promoting physical fitness, teamwork, coordination and a lifelong love of movement, sport and healthy living.</p>
+          </article>
+
+          <article class="ls-curric-card" data-num="09">
+            <div class="ls-curric-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 3h6m-3 0v6l-5 9h16l-5-9V3"/></svg>
+            </div>
+            <h3 class="ls-curric-name">Science</h3>
+            <p class="ls-curric-desc">Developing curiosity and understanding of the natural world through investigation, enquiry and hands-on scientific exploration.</p>
+          </article>
+
+          <article class="ls-curric-card" data-num="10">
+            <div class="ls-curric-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <h3 class="ls-curric-name">Wellbeing <span style="background:var(--tiffany);color:#fff;font-size:9px;font-weight:700;letter-spacing:0.1em;padding:2px 6px;border-radius:3px;margin-left:6px;vertical-align:middle;">NEW</span></h3>
+            <p class="ls-curric-desc">Supporting mental, emotional and social wellbeing to help learners flourish in and out of school. NEW to Cambridge Primary.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 4 — ASSESSMENT
+         ═══════════════════════════════════════════════════════ -->
+    <section class="ls-assessment" aria-labelledby="assessment-h">
+      <div class="container">
+        <div class="ls-assessment-grid">
+
+          <div class="ls-assessment-text reveal">
+            <span class="eyebrow with-line">Assessment</span>
+            <h2 id="assessment-h">Tracking <em>Progress</em> Towards Upper Secondary</h2>
+            <hr class="gold-rule" />
+            <p class="ls-assessment-body">Cambridge Lower Secondary offers four assessment types, helping teachers monitor learner performance and report progress with confidence throughout Stages 7, 8 and 9.</p>
+
+            <div class="ls-asmt-blocks">
+
+              <div class="ls-asmt-block">
+                <div class="ls-asmt-title"><span class="num">01 ·</span> Measure Potential</div>
+                <div class="ls-asmt-desc">MidYIS is an on-screen baseline assessment for ages 11–14 that identifies learning needs, measures potential and helps predict future performance in Cambridge IGCSE, O Level and International AS &amp; A Level.</div>
+              </div>
+
+              <div class="ls-asmt-block">
+                <div class="ls-asmt-title"><span class="num">02 ·</span> Provide Feedback</div>
+                <div class="ls-asmt-desc">Formative assessment guidance throughout the year helps teachers give meaningful feedback on skill development so students can reflect on and improve their performance.</div>
+              </div>
+
+              <div class="ls-asmt-block">
+                <div class="ls-asmt-title"><span class="num">03 ·</span> Monitor Progress</div>
+                <div class="ls-asmt-desc">Cambridge Lower Secondary Progression Tests assess knowledge and understanding in English, Mathematics and Science across Stages 7, 8 and 9, at any time of year.</div>
+              </div>
+
+              <div class="ls-asmt-block">
+                <div class="ls-asmt-title"><span class="num">04 ·</span> Check Achievement</div>
+                <div class="ls-asmt-desc">Cambridge Lower Secondary Checkpoint monitors performance at the end of the programme. Results are benchmarked internationally, and learners receive a statement of achievement and a diagnostic feedback report.</div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="ls-asmt-img-wrap reveal">
+            <div class="ls-asmt-img">
+              <img src="/assets/images/Lower_Secondary/DSC06098_L.webp" alt="Cambridge Lower Secondary at JPIC" width="1440" height="960" loading="lazy" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 5 — SUPPORT
+         ═══════════════════════════════════════════════════════ -->
+    <section class="ls-support" aria-labelledby="support-h">
+      <div class="container">
+
+        <div class="ls-section-head reveal">
+          <span class="eyebrow with-line">At JPIC</span>
+          <h2 id="support-h">Everything Your Child Needs to <em>Excel</em></h2>
+          <hr class="gold-rule" />
+          <p class="lede">Our Lower Secondary programme prepares every student for Cambridge Upper Secondary within a caring, academically rigorous school community.</p>
+        </div>
+
+        <div class="ls-support-grid reveal-children">
+
+          <article class="ls-support-card">
+            <div class="ls-support-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            </div>
+            <h3>Teaching Support</h3>
+            <p>Curriculum frameworks, teacher guides, schemes of work and specialised Cambridge training support our teachers across all subjects — with dedicated core support for English, Mathematics and Science.</p>
+          </article>
+
+          <article class="ls-support-card">
+            <div class="ls-support-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M19.43 12.98a7.952 7.952 0 0 0 0-1.96l2.11-1.65a.5.5 0 0 0 .12-.64l-2-3.46a.5.5 0 0 0-.61-.22l-2.49 1a7.987 7.987 0 0 0-1.69-.98l-.38-2.65A.5.5 0 0 0 14 2h-4a.5.5 0 0 0-.5.42l-.38 2.65c-.61.24-1.18.56-1.69.98l-2.49-1a.5.5 0 0 0-.61.22l-2 3.46a.5.5 0 0 0 .12.64L4.57 11c-.07.65-.07 1.31 0 1.96L2.46 14.6a.5.5 0 0 0-.12.64l2 3.46c.14.24.42.34.61.22l2.49-1c.51.42 1.08.74 1.69.98l.38 2.65c.04.24.25.42.5.42h4a.5.5 0 0 0 .5-.42l.38-2.65c.61-.24 1.18-.56 1.69-.98l2.49 1c.19.07.47-.03.61-.22l2-3.46a.5.5 0 0 0-.12-.64z"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <h3>Learning Resources</h3>
+            <p>Textbooks, endorsed resources, Cambridge Lower Secondary Progression Tests and an analysis tool, plus a secure online support site, provide a rich and challenging learning environment for every subject.</p>
+          </article>
+
+          <article class="ls-support-card">
+            <div class="ls-support-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <h3>Professional Development</h3>
+            <p>Our teachers benefit from face-to-face, virtual and online Cambridge professional development to continuously strengthen subject knowledge and teaching practice at Lower Secondary level.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 6 — PATHWAY STRIP
+         ═══════════════════════════════════════════════════════ -->
+    <section class="ls-pathway" aria-label="Cambridge Pathway navigation">
+      <div class="container">
+        <div class="ls-pathway-label">The Cambridge Pathway at JPIC</div>
+
+        <div class="ls-pathway-strip">
+
+          <a class="ls-pathway-node" href="/academic/cambridge-early-years.html">
+            <div class="ls-path-circle">1</div>
+            <div class="ls-path-text">
+              <div class="ls-path-name">Early Years</div>
+              <div class="ls-path-age">Age 3–6</div>
+            </div>
+          </a>
+
+          <div class="ls-path-connector" aria-hidden="true"></div>
+
+          <a class="ls-pathway-node" href="/academic/cambridge-primary.html">
+            <div class="ls-path-circle">2</div>
+            <div class="ls-path-text">
+              <div class="ls-path-name">Primary</div>
+              <div class="ls-path-age">Age 5–11</div>
+            </div>
+          </a>
+
+          <div class="ls-path-connector" aria-hidden="true"></div>
+
+          <a class="ls-pathway-node active" href="/academic/cambridge-lower-secondary.html" aria-current="page">
+            <div class="ls-path-circle">3</div>
+            <div class="ls-path-text">
+              <div class="ls-path-name">Lower Secondary</div>
+              <div class="ls-path-age">Age 11–14</div>
+            </div>
+          </a>
+
+          <div class="ls-path-connector" aria-hidden="true"></div>
+
+          <a class="ls-pathway-node" href="/academic/cambridge-upper-secondary.html">
+            <div class="ls-path-circle">4</div>
+            <div class="ls-path-text">
+              <div class="ls-path-name">Upper Secondary</div>
+              <div class="ls-path-age">Age 14–16</div>
+            </div>
+          </a>
+
+          <div class="ls-path-connector" aria-hidden="true"></div>
+
+          <a class="ls-pathway-node" href="/academic/cambridge-advanced.html">
+            <div class="ls-path-circle">5</div>
+            <div class="ls-path-text">
+              <div class="ls-path-name">Advanced</div>
+              <div class="ls-path-age">Age 16–19</div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 7 — PREV / NEXT
+         ═══════════════════════════════════════════════════════ -->
+    <section class="ls-prevnext" aria-label="Programme navigation">
+      <div class="container">
+        <div class="ls-prevnext-grid">
+
+          <a class="ls-prev" href="/academic/cambridge-primary.html">
+            <div class="ls-pn-label">← Previous Stage</div>
+            <div class="ls-pn-title">Cambridge Primary</div>
+            <div class="ls-pn-sub">Age 5 – 11</div>
+          </a>
+
+          <a class="ls-next" href="/academic/cambridge-upper-secondary.html">
+            <div class="ls-pn-label">Next Stage →</div>
+            <div class="ls-pn-title">Cambridge Upper Secondary</div>
+            <div class="ls-pn-sub">Age 14 – 16</div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 8 — CTA
+         ═══════════════════════════════════════════════════════ -->
+    <section class="ls-cta" aria-labelledby="cta-h">
+      <div class="container">
+        <div class="ls-cta-inner reveal">
+          <span class="ls-cta-small">Prepare for the future at JPIC</span>
+          <h2 id="cta-h">Set Your Child Up for <em>Upper Secondary Success</em></h2>
+          <hr class="gold-rule" />
+          <p class="ls-cta-sub">Our Admissions team is ready to answer your questions and guide you through enrolment for Cambridge Lower Secondary at St. John Paul II International College.</p>
+
+          <div class="ls-cta-actions">
+            <a href="/admissions/index.html" class="btn btn-primary">
+              Apply Now
+              <span class="arrow">→</span>
+            </a>
+            <a href="/contact.html" class="btn btn-outline">
+              Contact Admissions
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer (injected by JS) -->
+  <div data-component="footer"></div>
+
+  <script>
+    /* reveal-children: extend production scroll-reveal for staggered grids */
+    (function () {
+      if (!('IntersectionObserver' in window)) {
+        document.querySelectorAll('.reveal-children').forEach(function (el) {
+          el.classList.add('revealed');
+        });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            var parent = entry.target;
+            Array.from(parent.children).forEach(function (child, i) {
+              child.style.setProperty('--i', i);
+            });
+            parent.classList.add('revealed');
+            io.unobserve(parent);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+      document.querySelectorAll('.reveal-children').forEach(function (el) {
+        io.observe(el);
+      });
+    })();
+  </script>
+
+</body>
+</html>

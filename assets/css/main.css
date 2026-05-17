@@ -27,6 +27,7 @@
 
   /* Secondary / Teal Palette */
   --tiffany:           #00BDB6;
+  --tiffany-accessible: #0077B6;
   --tiffany-dark:      #009A94;
   --tiffany-light:     #E6FAF9;
   --turquoise:         #3BE0D0;
@@ -109,6 +110,26 @@
 
   /* Nav */
   --nav-height: 72px;
+}
+
+/* ── SKIP NAVIGATION ─────────────────────────────────────── */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 16px;
+  z-index: 9999;
+  padding: 12px 24px;
+  background: var(--oxford-blue);
+  color: var(--champagne);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 0 0 6px 6px;
+  text-decoration: none;
+  transition: top 0.2s ease;
+}
+.skip-link:focus {
+  top: 0;
 }
 
 /* ------------------------------------------------------------
@@ -219,7 +240,7 @@ blockquote {
   font-weight: 400;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--tiffany);
+  color: var(--tiffany-accessible);
   display: flex;
   align-items: center;
   gap: 14px;
@@ -243,7 +264,7 @@ blockquote {
 .section-label-text {
   font-family: var(--font-body);
   font-size: 11px;
-  color: var(--tiffany);
+  color: var(--tiffany-accessible);
   letter-spacing: 0.22em;
   text-transform: uppercase;
 }
@@ -565,7 +586,7 @@ blockquote {
 }
 .news-card-date {
   font-size: var(--text-xs);
-  color: var(--tiffany);
+  color: var(--tiffany-accessible);
   font-weight: 600;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -588,7 +609,7 @@ blockquote {
 .news-card-link {
   font-size: var(--text-sm);
   font-weight: 600;
-  color: var(--tiffany);
+  color: var(--tiffany-accessible);
   display: inline-flex;
   align-items: center;
   gap: var(--space-1);

@@ -13,7 +13,7 @@ async function loadComponent(selector, url) {
   const el = document.querySelector(selector);
   if (!el) return;
   try {
-    const res = await fetch(url, { cache: 'no-store', headers: { 'X-Requested-With': 'XMLHttpRequest' } });
+    const res = await fetch(url, { cache: 'default', headers: { 'X-Requested-With': 'XMLHttpRequest' } });
     if (!res.ok) throw new Error(`Failed to load ${url}`);
     const html = await res.text();
     el.innerHTML = html;
@@ -187,7 +187,7 @@ function initBackToTop() {
 
 /* ------------------------------------------------------------
    6. NEWS FEED
-   Loads data/news.json and renders latest news cards
+   Loads news/news.json and renders latest news cards on homepage
    ------------------------------------------------------------ */
 async function loadNewsFeed(containerId, limit = 3) {
   const container = document.getElementById(containerId);
@@ -195,26 +195,30 @@ async function loadNewsFeed(containerId, limit = 3) {
 
   try {
     const root = document.documentElement.dataset.root || '/';
-    const res = await fetch(root + 'data/news.json');
+    const res = await fetch(root + 'news/news.json');
     if (!res.ok) throw new Error('News feed unavailable');
     const news = await res.json();
+
+    news.sort((a, b) => b.date.localeCompare(a.date));
     const latest = news.slice(0, limit);
 
-    container.innerHTML = latest.map(post => `
-      <article class="news-card reveal">
-        ${post.image ? `<img src="${root}${post.image}" alt="${escapeHtml(post.title)}" class="news-card-img" loading="lazy">` : ''}
-        <div class="news-card-body">
-          <div class="news-card-date">${formatDate(post.date)}</div>
-          <h3 class="news-card-title">${escapeHtml(post.title)}</h3>
-          <p class="news-card-excerpt">${escapeHtml(post.excerpt)}</p>
-          <a href="${root}news/posts/${post.slug}/" class="news-card-link">
-            Read more <span>→</span>
-          </a>
-        </div>
-      </article>
-    `).join('');
+    container.innerHTML = latest.map(post => {
+      const imgSrc = post.cover ? root + 'news/' + post.cover : null;
+      return `
+        <article class="news-card reveal">
+          ${imgSrc ? `<img src="${imgSrc}" alt="${escapeHtml(post.title)}" class="news-card-img" width="2048" height="1365" loading="lazy">` : ''}
+          <div class="news-card-body">
+            <div class="news-card-date">${formatDate(post.date)}</div>
+            <h3 class="news-card-title">${escapeHtml(post.title)}</h3>
+            <p class="news-card-excerpt">${escapeHtml(post.excerpt)}</p>
+            <a href="${root}news/article.html?id=${post.id}" class="news-card-link">
+              Read more <span>→</span>
+            </a>
+          </div>
+        </article>
+      `;
+    }).join('');
 
-    // Re-run reveal observer on new elements
     initScrollReveal();
   } catch (err) {
     container.innerHTML = '<p class="text-muted" style="text-align:center;padding:2rem">News feed unavailable.</p>';
@@ -255,7 +259,7 @@ function initEnquiryForm(formId) {
   const form = document.getElementById(formId);
   if (!form) return;
 
-  const API_URL = form.dataset.apiUrl || 'http://localhost:3100/api/v1/public/leads/inquiry';
+  const API_URL = form.dataset.apiUrl || 'https://api.jpeducation.net/api/v1/public/leads/inquiry';
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();

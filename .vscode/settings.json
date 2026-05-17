@@ -1,0 +1,6 @@
+{
+  "liveServer.settings.ignoreFiles": [
+    "components/**"
+  ],
+  "liveServer.settings.port": 5501
+}

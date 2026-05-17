@@ -1,0 +1,1536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | St. John Paul II International College, Wennappuwa</title>
+  <meta name="description" content="A glimpse into life at St. John Paul II International College — events, sports, academic life, campus and faith." />
+  <link rel="canonical" href="https://jpeducation.net/gallery/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://jpeducation.net/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Gallery",
+      "item": "https://jpeducation.net/gallery/"
+    }
+  ]
+}
+</script>
+
+  <meta property="og:title" content="Gallery — JPIC" />
+  <meta property="og:description" content="A glimpse into life at St. John Paul II International College — events, sports, academic life, campus and faith." />
+  <meta property="og:image" content="https://jpeducation.net/assets/images/og-image.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/webp" />
+  <meta property="og:url" content="https://jpeducation.net/gallery/index.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="St. John Paul II International College" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://jpeducation.net/assets/images/og-image.webp" />
+  <meta name="twitter:title" content="Gallery — JPIC" />
+  <meta name="twitter:description" content="A glimpse into life at St. John Paul II International College — events, sports, academic life, campus and faith." />
+
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="/assets/css/main.css?v=20260517" />
+  <link rel="stylesheet" href="/assets/css/components.css?v=20260517" />
+
+  <style>
+    /* ════════════════════════════════════════════════════
+       Local variable aliases — bridges main.css tokens
+       to the shorthand names used by the design
+       ════════════════════════════════════════════════════ */
+    :root {
+      --serif-display:  var(--font-display);
+      --serif-italic:   var(--font-accent);
+      --sans:           var(--font-body);
+      --rule:           rgba(0,33,71,0.1);
+      --light-cyan-alt: #D7FDF5;
+      --text-muted:     #5A6472;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Page-specific styles · Gallery  (gl- prefix)
+       ════════════════════════════════════════════════════ */
+
+    /* ─── Section 1 — Hero ─── */
+    .gl-hero {
+      background: var(--oxford-blue);
+      background-image: repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 40px,
+        rgba(255,255,255,0.03) 40px,
+        rgba(255,255,255,0.03) 41px
+      );
+      min-height: 460px;
+      padding: 80px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .gl-hero::before {
+      content: '';
+      position: absolute;
+      top: -200px;
+      right: -180px;
+      width: 540px; height: 540px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0,189,182,0.18) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .gl-hero::after {
+      content: 'G';
+      position: absolute;
+      bottom: -140px;
+      left: -40px;
+      font-family: var(--serif-display);
+      font-size: 460px;
+      font-weight: 900;
+      color: rgba(255,230,158,0.045);
+      line-height: 1;
+      pointer-events: none;
+      letter-spacing: -0.04em;
+    }
+
+    .gl-hero-grid {
+      display: grid;
+      grid-template-columns: 54% 46%;
+      gap: 64px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .gl-hero-title {
+      font-family: var(--serif-display);
+      font-weight: 700;
+      color: #ffffff;
+      font-size: 58px;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      margin-top: 20px;
+    }
+    .gl-hero-title em {
+      font-style: italic;
+      color: var(--champagne);
+      font-weight: 400;
+    }
+
+    .gl-hero-rule {
+      display: block;
+      width: 64px;
+      height: 3px;
+      background: var(--champagne);
+      border: none;
+      margin: 22px 0;
+    }
+
+    .gl-hero-intro {
+      font-family: var(--sans);
+      font-size: 17px;
+      color: rgba(255,255,255,0.88);
+      line-height: 1.7;
+      max-width: 520px;
+    }
+
+    .gl-hero-meta {
+      display: inline-flex;
+      gap: 28px;
+      margin-top: 32px;
+      align-items: center;
+    }
+    .gl-hero-meta-item {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .gl-hero-meta-num {
+      font-family: var(--serif-display);
+      font-style: italic;
+      font-size: 32px;
+      color: var(--champagne);
+      font-weight: 500;
+      line-height: 1;
+    }
+    .gl-hero-meta-label {
+      font-family: var(--sans);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.6);
+    }
+    .gl-hero-meta-sep {
+      width: 1px;
+      height: 32px;
+      background: rgba(255,255,255,0.18);
+    }
+
+    /* hero collage — 2×2 with varied heights */
+    .gl-hero-collage {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 14px;
+      position: relative;
+    }
+    .gl-hero-tile {
+      background: rgba(255,255,255,0.07);
+      border: 1.5px dashed rgba(255,255,255,0.22);
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      color: rgba(255,255,255,0.35);
+      position: relative;
+      overflow: hidden;
+    }
+    .gl-hero-tile::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: repeating-linear-gradient(
+        135deg,
+        rgba(255,255,255,0.025) 0px, rgba(255,255,255,0.025) 1px,
+        transparent 1px, transparent 16px
+      );
+    }
+    .gl-hero-tile svg {
+      width: 28px; height: 28px;
+      opacity: 0.6;
+      position: relative; z-index: 1;
+    }
+    .gl-hero-tile .gl-tile-tag {
+      font-family: var(--sans);
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      position: relative; z-index: 1;
+      color: rgba(255,230,158,0.55);
+    }
+    .gl-hero-tile:nth-child(1) { height: 200px; }
+    .gl-hero-tile:nth-child(2) { height: 150px; margin-top: 28px; }
+    .gl-hero-tile:nth-child(3) { height: 150px; }
+    .gl-hero-tile:nth-child(4) { height: 200px; margin-top: -28px; }
+
+    .gl-hero-badge-overlay {
+      position: absolute;
+      bottom: -22px;
+      left: -18px;
+      background: var(--oxford-blue);
+      border-left: 4px solid var(--champagne);
+      border-radius: 6px;
+      padding: 12px 18px;
+      box-shadow: 0 14px 38px rgba(0,0,0,0.32);
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .gl-hero-badge-overlay svg {
+      width: 18px; height: 18px;
+      color: var(--champagne);
+    }
+    .gl-hero-badge-overlay span {
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+
+    /* ─── Section 2 — Filter bar (sticky) ─── */
+    .gl-filter-wrap {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      background: #ffffff;
+      border-bottom: 1px solid var(--rule);
+      box-shadow: 0 4px 14px rgba(0,33,71,0.05);
+    }
+    .gl-filter-bar {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 18px 0;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .gl-filter-bar::-webkit-scrollbar { display: none; }
+
+    .gl-filter-label {
+      font-family: var(--sans);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--tiffany);
+      flex-shrink: 0;
+      border-right: 1px solid var(--rule);
+      margin-right: 2px;
+      padding: 4px 14px 4px 0;
+    }
+
+    .gl-pills {
+      display: inline-flex;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+    .gl-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 9px 18px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      background: transparent;
+      color: var(--oxford-blue);
+      font-family: var(--sans);
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .gl-pill:hover {
+      background: rgba(0,189,182,0.08);
+      color: var(--tiffany);
+    }
+    .gl-pill.active {
+      background: var(--oxford-blue);
+      color: #ffffff;
+    }
+    .gl-pill.active:hover {
+      background: var(--oxford-blue);
+      color: #ffffff;
+    }
+    .gl-pill-count {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 22px;
+      height: 20px;
+      padding: 0 7px;
+      background: var(--champagne);
+      color: var(--oxford-blue);
+      font-family: var(--sans);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      border-radius: 999px;
+      transition: all 0.3s ease;
+    }
+    .gl-pill:not(.active):hover .gl-pill-count {
+      background: var(--turquoise);
+      color: var(--oxford-blue);
+    }
+    .gl-pill.active .gl-pill-count {
+      background: var(--champagne);
+      color: var(--oxford-blue);
+    }
+
+    /* ─── Section 3 — Gallery Grid ─── */
+    .gl-grid-section {
+      background: var(--baby-powder);
+      padding: 64px 0 88px;
+      min-height: 60vh;
+    }
+    .gl-grid-meta {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 32px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid var(--rule);
+    }
+    .gl-grid-meta-left {
+      display: flex;
+      align-items: baseline;
+      gap: 14px;
+    }
+    .gl-grid-meta-eyebrow {
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--tiffany);
+    }
+    .gl-grid-meta-count {
+      font-family: var(--serif-italic);
+      font-style: italic;
+      font-size: 15px;
+      color: var(--text-muted);
+    }
+    .gl-grid-meta-count strong {
+      color: var(--oxford-blue);
+      font-weight: 600;
+      font-style: normal;
+      font-family: var(--sans);
+      font-size: 14px;
+      letter-spacing: 0.02em;
+    }
+    .gl-grid-meta-year {
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    /* Masonry — CSS columns */
+    .gl-grid {
+      column-count: 3;
+      column-gap: 20px;
+    }
+    .gl-card {
+      break-inside: avoid;
+      margin-bottom: 20px;
+      display: block;
+      cursor: pointer;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #ffffff;
+      box-shadow: 0 2px 12px rgba(0,33,71,0.06);
+      transition: transform 0.4s cubic-bezier(.2,.7,.2,1),
+                  box-shadow 0.4s ease,
+                  opacity 0.4s ease;
+      position: relative;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    .gl-card.is-in {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .gl-card.is-hidden {
+      display: none;
+    }
+    .gl-card:hover {
+      transform: translateY(-4px) scale(1.015);
+      box-shadow: 0 18px 40px rgba(0,33,71,0.18);
+    }
+
+    .gl-card-img {
+      position: relative;
+      background: rgba(0,33,71,0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .gl-card-img::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: repeating-linear-gradient(
+        135deg,
+        rgba(0,33,71,0.04) 0px, rgba(0,33,71,0.04) 1px,
+        transparent 1px, transparent 18px
+      );
+      pointer-events: none;
+    }
+    .gl-card-img-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      color: rgba(0,33,71,0.32);
+      position: relative;
+      z-index: 1;
+      padding: 24px;
+    }
+    .gl-card-img-inner svg {
+      width: 30px; height: 30px;
+      color: rgba(0,33,71,0.2);
+    }
+    .gl-card-img-inner span {
+      font-family: var(--sans);
+      font-size: 11px;
+      letter-spacing: 0.06em;
+      font-weight: 500;
+      color: rgba(0,33,71,0.45);
+    }
+
+    /* Masonry — varied heights */
+    .gl-card[data-h="tall"]   .gl-card-img { height: 420px; }
+    .gl-card[data-h="med"]    .gl-card-img { height: 320px; }
+    .gl-card[data-h="short"]  .gl-card-img { height: 240px; }
+    .gl-card[data-h="square"] .gl-card-img { height: 360px; }
+
+    /* Hover overlay */
+    .gl-card-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to top,
+        rgba(0,21,48,0.95) 0%,
+        rgba(0,21,48,0.7) 35%,
+        rgba(0,21,48,0) 65%
+      );
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 22px;
+      opacity: 0;
+      transform: translateY(12px);
+      transition: opacity 0.35s ease, transform 0.35s ease;
+      pointer-events: none;
+    }
+    .gl-card:hover .gl-card-overlay {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .gl-card-overlay-cat {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      align-self: flex-start;
+      font-family: var(--sans);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--tiffany);
+      margin-bottom: 8px;
+    }
+    .gl-card-overlay-cat::before {
+      content: '';
+      width: 18px;
+      height: 1px;
+      background: var(--tiffany);
+    }
+    .gl-card-overlay-title {
+      font-family: var(--serif-display);
+      font-size: 19px;
+      font-weight: 500;
+      color: #ffffff;
+      letter-spacing: -0.005em;
+      line-height: 1.25;
+    }
+    .gl-card-zoom {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      width: 38px;
+      height: 38px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.95);
+      color: var(--oxford-blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transform: translateY(-6px) scale(0.9);
+      transition: opacity 0.3s ease, transform 0.3s ease, background 0.3s ease;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+    }
+    .gl-card:hover .gl-card-zoom {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+    .gl-card-zoom:hover {
+      background: var(--champagne);
+    }
+    .gl-card-zoom svg { width: 16px; height: 16px; }
+
+    /* ─── Load more ─── */
+    .gl-loadmore-wrap {
+      display: flex;
+      justify-content: center;
+      margin-top: 56px;
+    }
+    .gl-loadmore {
+      font-family: var(--sans);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 16px 40px;
+      background: transparent;
+      color: var(--oxford-blue);
+      border: 2px solid var(--oxford-blue);
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .gl-loadmore:hover {
+      background: var(--tiffany);
+      border-color: var(--tiffany);
+      color: #ffffff;
+      transform: translateY(-1px);
+      box-shadow: 0 12px 28px rgba(0,189,182,0.28);
+    }
+
+    /* Empty state */
+    .gl-empty {
+      column-span: all;
+      text-align: center;
+      padding: 80px 24px;
+      color: var(--text-muted);
+      display: none;
+    }
+    .gl-empty.is-visible { display: block; }
+    .gl-empty-icon {
+      width: 56px; height: 56px;
+      margin: 0 auto 16px;
+      border-radius: 50%;
+      background: var(--light-cyan-alt);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--tiffany);
+    }
+    .gl-empty-icon svg { width: 22px; height: 22px; }
+    .gl-empty h3 {
+      font-family: var(--serif-display);
+      font-size: 22px;
+      color: var(--oxford-blue);
+      margin-bottom: 6px;
+    }
+    .gl-empty p {
+      font-family: var(--sans);
+      font-size: 14px;
+      max-width: 360px;
+      margin: 0 auto;
+    }
+
+    /* ─── Section 4 — Lightbox ─── */
+    .gl-lightbox {
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      background: rgba(0, 21, 48, 0.95);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 32px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .gl-lightbox.is-open {
+      display: flex;
+      opacity: 1;
+    }
+    .gl-lb-stage {
+      position: relative;
+      width: 100%;
+      max-width: 1080px;
+      max-height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 22px;
+    }
+    .gl-lb-image {
+      width: 100%;
+      max-height: 75vh;
+      aspect-ratio: 16 / 10;
+      background: rgba(255,255,255,0.06);
+      border: 1.5px dashed rgba(255,255,255,0.22);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 12px;
+      color: rgba(255,255,255,0.45);
+      position: relative;
+      overflow: hidden;
+    }
+    .gl-lb-image::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: repeating-linear-gradient(
+        135deg,
+        rgba(255,255,255,0.03) 0px, rgba(255,255,255,0.03) 1px,
+        transparent 1px, transparent 16px
+      );
+    }
+    .gl-lb-image svg {
+      width: 42px; height: 42px;
+      opacity: 0.6;
+      position: relative; z-index: 1;
+    }
+    .gl-lb-image .gl-lb-photo-coming {
+      font-family: var(--sans);
+      font-size: 13px;
+      letter-spacing: 0.06em;
+      position: relative; z-index: 1;
+    }
+    .gl-lb-image img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .gl-lb-meta {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      text-align: center;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .gl-lb-cat {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      background: rgba(0,189,182,0.18);
+      border: 1px solid rgba(0,189,182,0.45);
+      color: var(--turquoise);
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      border-radius: 999px;
+    }
+    .gl-lb-title {
+      font-family: var(--serif-display);
+      font-style: italic;
+      font-weight: 400;
+      font-size: 26px;
+      color: #ffffff;
+      letter-spacing: -0.005em;
+    }
+    .gl-lb-counter {
+      font-family: var(--sans);
+      font-size: 12px;
+      color: rgba(255,255,255,0.55);
+      letter-spacing: 0.08em;
+      font-variant-numeric: tabular-nums;
+    }
+    .gl-lb-counter strong {
+      color: var(--champagne);
+      font-weight: 600;
+    }
+
+    /* Lightbox controls */
+    .gl-lb-close,
+    .gl-lb-nav {
+      position: absolute;
+      width: 52px;
+      height: 52px;
+      background: transparent;
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 50%;
+      color: var(--champagne);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.25s ease;
+      z-index: 2;
+    }
+    .gl-lb-close:hover,
+    .gl-lb-nav:hover {
+      background: var(--champagne);
+      color: var(--oxford-blue);
+      border-color: var(--champagne);
+      transform: scale(1.05);
+    }
+    .gl-lb-close {
+      top: 28px;
+      right: 28px;
+    }
+    .gl-lb-nav svg { width: 20px; height: 20px; }
+    .gl-lb-close svg { width: 18px; height: 18px; }
+    .gl-lb-prev { left: 28px; top: 50%; transform: translateY(-50%); }
+    .gl-lb-next { right: 28px; top: 50%; transform: translateY(-50%); }
+    .gl-lb-prev:hover { transform: translateY(-50%) scale(1.05); }
+    .gl-lb-next:hover { transform: translateY(-50%) scale(1.05); }
+
+    body.gl-lb-locked { overflow: hidden; }
+
+    /* ─── Section 5 — CTA ─── */
+    .gl-cta {
+      background: var(--light-cyan-alt);
+      padding: 88px 0;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+    .gl-cta::before, .gl-cta::after {
+      content: '';
+      position: absolute;
+      width: 280px; height: 280px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0,189,182,0.18) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .gl-cta::before { top: -120px; left: -80px; }
+    .gl-cta::after  { bottom: -120px; right: -80px; }
+    .gl-cta-inner {
+      max-width: 640px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .gl-cta-small {
+      font-family: var(--serif-italic);
+      font-style: italic;
+      font-size: 18px;
+      color: var(--tiffany);
+      margin-bottom: 16px;
+      display: block;
+    }
+    .gl-cta h2 {
+      font-family: var(--serif-display);
+      font-size: 42px;
+      font-weight: 500;
+      color: var(--oxford-blue);
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+    .gl-cta h2 em { font-style: italic; color: var(--tiffany); }
+    .gl-cta .gold-rule { margin: 20px auto; }
+    .gl-cta-sub {
+      font-family: var(--sans);
+      font-size: 16px;
+      color: var(--eerie-black);
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+    .gl-cta-actions {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Responsive
+       ════════════════════════════════════════════════════ */
+    @media (max-width: 1100px) and (min-width: 769px) {
+      .gl-grid { column-count: 2; }
+      .gl-hero-title { font-size: 48px; }
+    }
+    @media (max-width: 768px) {
+      .gl-hero { padding: 56px 0 64px; min-height: 0; }
+      .gl-hero-grid { grid-template-columns: 1fr; gap: 40px; }
+      .gl-hero-title { font-size: 36px; }
+      .gl-hero-collage { gap: 10px; }
+      .gl-hero-tile:nth-child(1) { height: 140px; }
+      .gl-hero-tile:nth-child(2) { height: 110px; margin-top: 20px; }
+      .gl-hero-tile:nth-child(3) { height: 110px; }
+      .gl-hero-tile:nth-child(4) { height: 140px; margin-top: -20px; }
+      .gl-hero-meta { gap: 18px; }
+      .gl-hero-meta-num { font-size: 26px; }
+      .gl-hero::after { font-size: 280px; bottom: -80px; }
+
+      .gl-filter-bar { padding: 14px 0; gap: 14px; }
+      .gl-filter-label { display: none; }
+      .gl-pill { padding: 8px 14px; font-size: 12px; }
+
+      .gl-grid-section { padding: 48px 0 64px; }
+      .gl-grid { column-count: 1; }
+      .gl-grid-meta { flex-direction: column; align-items: flex-start; gap: 10px; }
+
+      .gl-card[data-h="tall"]   .gl-card-img { height: 320px; }
+      .gl-card[data-h="med"]    .gl-card-img { height: 260px; }
+      .gl-card[data-h="short"]  .gl-card-img { height: 220px; }
+      .gl-card[data-h="square"] .gl-card-img { height: 280px; }
+
+      .gl-lightbox { padding: 16px; }
+      .gl-lb-close { top: 14px; right: 14px; width: 44px; height: 44px; }
+      .gl-lb-prev { left: 8px; width: 44px; height: 44px; }
+      .gl-lb-next { right: 8px; width: 44px; height: 44px; }
+      .gl-lb-title { font-size: 20px; }
+
+      .gl-cta { padding: 64px 0; }
+      .gl-cta h2 { font-size: 32px; }
+      .gl-cta-actions { flex-direction: column; }
+      .gl-cta-actions .btn { width: 100%; text-align: center; }
+    }
+    @media (max-width: 480px) {
+      .gl-grid { column-count: 1; }
+    }
+  </style>
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <div data-component="nav"></div>
+
+  <main id="main-content">
+
+    <!-- ═══════════════════════════════════════════════════════════
+         SECTION 1 — HERO
+         ═══════════════════════════════════════════════════════════ -->
+    <section class="gl-hero" aria-labelledby="page-h1">
+      <div class="container">
+        <div class="gl-hero-grid">
+
+          <div class="gl-hero-content">
+
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+              <a href="/">Home</a>
+              <span class="sep">/</span>
+              <span class="current">Gallery</span>
+            </nav>
+
+            <span class="eyebrow with-line" style="color: var(--tiffany); margin-top: 16px;">School Life</span>
+
+            <h1 id="page-h1" class="gl-hero-title">Our <em>Gallery</em></h1>
+            <hr class="gl-hero-rule" />
+
+            <p class="gl-hero-intro">A glimpse into life at JPIC — moments of learning, celebration, sport, faith and community.</p>
+
+
+          </div>
+
+          <div class="gl-hero-visual">
+            <div class="gl-hero-collage" aria-hidden="true">
+              <div class="gl-hero-tile">
+                <img src="/gallery/images/Hero%20Images/DSC08005.webp" alt="" width="1440" height="960" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+              </div>
+              <div class="gl-hero-tile">
+                <img src="/gallery/images/Hero%20Images/DSC08007.webp" alt="" width="1440" height="960" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+              </div>
+              <div class="gl-hero-tile">
+                <img src="/gallery/images/Hero%20Images/IMG_3728.webp" alt="" width="1440" height="960" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+              </div>
+              <div class="gl-hero-tile">
+                <img src="/gallery/images/Hero%20Images/IMG_3758.webp" alt="" width="1440" height="960" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+              </div>
+            </div>
+
+            <div class="gl-hero-badge-overlay">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+              <span>Moments from JPIC</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         SECTION 2 — FILTER BAR (sticky)
+         ═══════════════════════════════════════════════════════════ -->
+    <section class="gl-filter-wrap" aria-label="Filter gallery by category">
+      <div class="container">
+        <div class="gl-filter-bar" role="tablist">
+          <span class="gl-filter-label">Filter</span>
+          <div class="gl-pills">
+            <button type="button" class="gl-pill active" role="tab" aria-selected="true" data-filter="all">
+              All <span class="gl-pill-count" data-count-for="all">28</span>
+            </button>
+            <button type="button" class="gl-pill" role="tab" aria-selected="false" data-filter="events">
+              Events <span class="gl-pill-count" data-count-for="events">9</span>
+            </button>
+            <button type="button" class="gl-pill" role="tab" aria-selected="false" data-filter="sports">
+              Sports <span class="gl-pill-count" data-count-for="sports">5</span>
+            </button>
+            <button type="button" class="gl-pill" role="tab" aria-selected="false" data-filter="academic-life">
+              Academic Life <span class="gl-pill-count" data-count-for="academic-life">4</span>
+            </button>
+            <button type="button" class="gl-pill" role="tab" aria-selected="false" data-filter="campus-facilities">
+              Campus &amp; Facilities <span class="gl-pill-count" data-count-for="campus-facilities">4</span>
+            </button>
+            <button type="button" class="gl-pill" role="tab" aria-selected="false" data-filter="faith-liturgy">
+              Faith &amp; Liturgy <span class="gl-pill-count" data-count-for="faith-liturgy">6</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         SECTION 3 — GALLERY GRID
+         ═══════════════════════════════════════════════════════════ -->
+    <section class="gl-grid-section" aria-label="Gallery">
+      <div class="container">
+
+        <div class="gl-grid-meta">
+          <div class="gl-grid-meta-left">
+            <span class="gl-grid-meta-eyebrow" id="gl-active-cat">All Moments</span>
+            <span class="gl-grid-meta-count">showing <strong id="gl-visible-count">28</strong> of <strong id="gl-total-count">28</strong></span>
+          </div>
+          <span class="gl-grid-meta-year">Academic Year 2025 — 2026</span>
+        </div>
+
+        <div class="gl-grid" id="gl-grid">
+
+          <!-- ── EVENTS (9) ── -->
+          <div class="gl-card" data-h="tall" data-src="/gallery/images/Events/DSC07646.webp" data-category="events" data-cat-label="Events" data-title="Events">
+            <div class="gl-card-img">
+              <img src="/gallery/images/Events/DSC07646.webp" alt="Events" width="1440" height="960" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+              <div class="gl-card-overlay">
+                <span class="gl-card-overlay-cat">Events</span>
+                <span class="gl-card-overlay-title">Events</span>
+              </div>
+              <span class="gl-card-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></span>
+            </div>
+          </div>
+
+          <div class="gl-card" data-h="med" data-src="/gallery/images/Events/DSC08027.webp" data-category="events" data-cat-label="Events" data-title="Events">
+            <div class="gl-card-img">
+              <img src="/gallery/images/Events/DSC08027.webp" alt="Events" width="1440" height="960" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+              <div class="gl-card-overlay">
+                <span class="gl-card-overlay-cat">Events</span>
+                <span class="gl-card-overlay-title">Events</span>
+              </div>
+              <span class="gl-card-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></span>
+            </div>
+          </div>
+
+          <div class="gl-card" data-h="square" data-src="/gallery/images/Events/DSC08314.webp" data-category="events" data-cat-label="Events" data-title="Events">
+            <div class="gl-card-img">
+              <img src="/gallery/images/Events/DSC08314.webp" alt="Events" width="1440" height="960" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+              <div class="gl-card-overlay">
+                <span class="gl-card-overlay-cat">Events</span>
+                <span class="gl-card-overlay-title">Events</span>
+              </div>
+              <span class="gl-card-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></span>
+            </div>
+          </div>
+
+          <div class="gl-card" data-h="short" data-src="/gallery/images/Events/DSC08377.webp" data-category="events" data-cat-label="Events" data-title="Events">
+            <div class="gl-card-img">
+              <img src="/gallery/images/Events/DSC08377.webp" alt="Events" width="1440" height="960" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+              <div class="gl-card-overlay">
+                <span class="gl-card-overlay-cat">Events</span>
+                <span class="gl-card-overlay-title">Events</span>
+              </div>
+              <span class="gl-card-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></span>
+            </div>
+          </div>
+
+          <div class="gl-card" data-h="tall" data-src="/gallery/images/Events/IMG_1748.webp" data-category="events" data-cat-label="Events" data-title="Events">
+            <div class="gl-card-img">
+              <img src="/gallery/images/Events/IMG_1748.webp" alt="Events" width="1440" height="960" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+              <div class="gl-card-overlay">
+                <span class="gl-card-overlay-cat">Events</span>
+                <span class="gl-card-overlay-title">Events</span>
+              </div>
+              <span class="gl-card-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></span>
+            </div>
+          </div>
+
+          <div class="gl-card" data-h="med" data-src="/gallery/images/Events/IMG_1773.webp" data-category="events" data-cat-label="Events" data-title="Events">
+            <div class="gl-card-img">
+              <img src="/gallery/images/Events/IMG_1773.webp" alt="Events" width="1440" height="960" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+              <div class="gl-card-overlay">
+                <span class="gl-card-overlay-cat">Events</span>
+                <span class="gl-card-overlay-title">Events</span>
+              </div>
+              <span class="gl-card-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></span>
+            </div>
+          </div>
+
+          <div class="gl-card" data-h="short" data-src="/gallery/images/Events/IMG_2002.webp" data-category="events" data-cat-label="Events" data-title="Events">
+            <div class="gl-card-img">
+              <img src="/gallery/images/Events/IMG_2002.webp" alt="Events" width="1440" height="960" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+              <div class="gl-card-overlay">
+                <span class="gl-card-overlay-cat">Events</span>
+                <span class="gl-card-overlay-title">Events</span>
+              </div>
+              <span class="gl-card-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></span>
+            </div>
+          </div>
+
+          <div class="gl-card" data-h="square" data-src="/gallery/images/Events/IMG_2248.webp" data-category="events" data-cat-label="Events" data-title="Events">
+            <div class="gl-card-img">
+              <img src="/gallery/images/Events/IMG_2248.webp" alt="Events" width="1440" height="960" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+              <div class="gl-card-overlay">
+                <span class="gl-card-overlay-cat">Events</span>
+                <span class="gl-card-overlay-title">Events</span>
+              </div>
+              <span class="gl-card-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></span>
+            </div>
+          </div>
+
+          <div class="gl-card" data-h="med" data-src="/gallery/images/Events/IMG_9338.webp" data-category="events" data-cat-label="Events" data-title="Events">
+            <div class="gl-card-img">
+              <img src="/gallery/images/Events/IMG_9338.webp" alt="Events" width="1440" height="960" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+              <div class="gl-card-overlay">
+                <span class="gl-card-overlay-cat">Events</span>
+                <span class="gl-card-overlay-title">Events</span>
+              </div>
+              <span class="gl-card-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></span>
+            </div>
+          </div>
+
+          <!-- ── SPORTS (5) ── -->
+          <div class="gl-card" data-h="med" data-src="/gallery/images/Sports/IMG_8712.webp" data-category="sports" data-cat-label="Sports" data-title="Sports">
+            <div class="gl-card-img">
+              <img src="/gallery/images/Sports/IMG_8712.webp" alt="Sports" width="1440" height="960" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+              <div class="gl-card-overlay">
+                <span class="gl-card-overlay-cat">Sports</span>
+                <span class="gl-card-overlay-title">Sports</span>
+              </div>
+              <span class="gl-card-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></span>
+            </div>
+          </div>
+
+          <div class="gl-card" data-h="tall" data-src="/gallery/images/Sports/IMG_8854.webp" data-category="sports" data-cat-label="Sports" data-title="Sports">
+            <div class="gl-card-img">
+              <img src="/gallery/images/Sports/IMG_8854.webp" alt="Sports" width="1440" height="960" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+              <div class="gl-card-overlay">
+                <span class="gl-card-overlay-cat">Sports</span>
+                <span class="gl-card-overlay-title">Sports</span>
+              </div>
+              <span class="gl-card-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></span>
+            </div>
+          </div>
+
+          <div class="gl-card" data-h="short" data-src="/gallery/images/Sports/IMG_8884.webp" data-category="sports" data-cat-label="Sports" data-title="Sports">
+            <div class="gl-card-img">
+              <img src="/gallery/images/Sports/IMG_8884.webp" alt="Sports" width="1440" height="960" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+              <div class="gl-card-overlay">
+                <span class="gl-card-overlay-cat">Sports</span>
+                <span class="gl-card-overlay-title">Sports</span>
+              </div>
+              <span class="gl-card-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></span>
+            </div>
+          </div>
+
+          <div class="gl-card" data-h="square" data-src="/gallery/images/Sports/IMG_9579.webp" data-category="sports" data-cat-label="Sports" data-title="Sports">
+            <div class="gl-card-img">
+              <img src="/gallery/images/Sports/IMG_9579.webp" alt="Sports" width="1440" height="960" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+              <div class="gl-card-overlay">
+                <span class="gl-card-overlay-cat">Sports</span>
+                <span class="gl-card-overlay-title">Sports</span>
+              </div>
+              <span class="gl-card-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></span>
+            </div>
+          </div>
+
+          <div class="gl-card" data-h="med" data-src="/gallery/images/Sports/IMG_9609.webp" data-category="sports" data-cat-label="Sports" data-title="Sports">
+            <div class="gl-card-img">
+              <img src="/gallery/images/Sports/IMG_9609.webp" alt="Sports" width="1440" height="960" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+              <div class="gl-card-overlay">
+                <span class="gl-card-overlay-cat">Sports</span>
+                <span class="gl-card-overlay-title">Sports</span>
+              </div>
+              <span class="gl-card-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></span>
+            </div>
+          </div>
+
+          <!-- ── ACADEMIC LIFE (4) ── -->
+          <div class="gl-card" data-h="short" data-src="/gallery/images/Academic%20Life/IMG_7621.webp" data-category="academic-life" data-cat-label="Academic Life" data-title="Academic Life">
+            <div class="gl-card-img">
+              <img src="/gallery/images/Academic%20Life/IMG_7621.webp" alt="Academic Life" width="1440" height="960" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+              <div class="gl-card-overlay">
+                <span class="gl-card-overlay-cat">Academic Life</span>
+                <span class="gl-card-overlay-title">Academic Life</span>
+              </div>
+              <span class="gl-card-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></span>
+            </div>
+          </div>
+
+          <div class="gl-card" data-h="tall" data-src="/gallery/images/Academic%20Life/IMG_7664.webp" data-category="academic-life" data-cat-label="Academic Life" data-title="Academic Life">
+            <div class="gl-card-img">
+              <img src="/gallery/images/Academic%20Life/IMG_7664.webp" alt="Academic Life" width="1440" height="960" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+              <div class="gl-card-overlay">
+                <span class="gl-card-overlay-cat">Academic Life</span>
+                <span class="gl-card-overlay-title">Academic Life</span>
+              </div>
+              <span class="gl-card-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></span>
+            </div>
+          </div>
+
+          <div class="gl-card" data-h="med" data-src="/gallery/images/Academic%20Life/IMG_7826.webp" data-category="academic-life" data-cat-label="Academic Life" data-title="Academic Life">
+            <div class="gl-card-img">
+              <img src="/gallery/images/Academic%20Life/IMG_7826.webp" alt="Academic Life" width="1440" height="960" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+              <div class="gl-card-overlay">
+                <span class="gl-card-overlay-cat">Academic Life</span>
+                <span class="gl-card-overlay-title">Academic Life</span>
+              </div>
+              <span class="gl-card-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></span>
+            </div>
+          </div>
+
+          <div class="gl-card" data-h="square" data-src="/gallery/images/Academic%20Life/IMG_7937.webp" data-category="academic-life" data-cat-label="Academic Life" data-title="Academic Life">
+            <div class="gl-card-img">
+              <img src="/gallery/images/Academic%20Life/IMG_7937.webp" alt="Academic Life" width="1440" height="960" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+              <div class="gl-card-overlay">
+                <span class="gl-card-overlay-cat">Academic Life</span>
+                <span class="gl-card-overlay-title">Academic Life</span>
+              </div>
+              <span class="gl-card-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></span>
+            </div>
+          </div>
+
+          <!-- ── CAMPUS & FACILITIES (4) ── -->
+          <div class="gl-card" data-h="tall" data-src="/gallery/images/Campus%20%26%20Facilities/IMG_1709.webp" data-category="campus-facilities" data-cat-label="Campus &amp; Facilities" data-title="Campus &amp; Facilities">
+            <div class="gl-card-img">
+              <img src="/gallery/images/Campus%20%26%20Facilities/IMG_1709.webp" alt="Campus &amp; Facilities" width="1440" height="960" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+              <div class="gl-card-overlay">
+                <span class="gl-card-overlay-cat">Campus &amp; Facilities</span>
+                <span class="gl-card-overlay-title">Campus &amp; Facilities</span>
+              </div>
+              <span class="gl-card-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></span>
+            </div>
+          </div>
+
+          <div class="gl-card" data-h="short" data-src="/gallery/images/Campus%20%26%20Facilities/IMG_1721.webp" data-category="campus-facilities" data-cat-label="Campus &amp; Facilities" data-title="Campus &amp; Facilities">
+            <div class="gl-card-img">
+              <img src="/gallery/images/Campus%20%26%20Facilities/IMG_1721.webp" alt="Campus &amp; Facilities" width="1440" height="960" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+              <div class="gl-card-overlay">
+                <span class="gl-card-overlay-cat">Campus &amp; Facilities</span>
+                <span class="gl-card-overlay-title">Campus &amp; Facilities</span>
+              </div>
+              <span class="gl-card-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></span>
+            </div>
+          </div>
+
+          <div class="gl-card" data-h="square" data-src="/gallery/images/Campus%20%26%20Facilities/IMG_1722.webp" data-category="campus-facilities" data-cat-label="Campus &amp; Facilities" data-title="Campus &amp; Facilities">
+            <div class="gl-card-img">
+              <img src="/gallery/images/Campus%20%26%20Facilities/IMG_1722.webp" alt="Campus &amp; Facilities" width="1440" height="960" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+              <div class="gl-card-overlay">
+                <span class="gl-card-overlay-cat">Campus &amp; Facilities</span>
+                <span class="gl-card-overlay-title">Campus &amp; Facilities</span>
+              </div>
+              <span class="gl-card-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></span>
+            </div>
+          </div>
+
+          <div class="gl-card" data-h="med" data-src="/gallery/images/Campus%20%26%20Facilities/IMG_3696.webp" data-category="campus-facilities" data-cat-label="Campus &amp; Facilities" data-title="Campus &amp; Facilities">
+            <div class="gl-card-img">
+              <img src="/gallery/images/Campus%20%26%20Facilities/IMG_3696.webp" alt="Campus &amp; Facilities" width="1440" height="960" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+              <div class="gl-card-overlay">
+                <span class="gl-card-overlay-cat">Campus &amp; Facilities</span>
+                <span class="gl-card-overlay-title">Campus &amp; Facilities</span>
+              </div>
+              <span class="gl-card-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></span>
+            </div>
+          </div>
+
+          <!-- ── FAITH & LITURGY (6) ── -->
+          <div class="gl-card" data-h="square" data-src="/gallery/images/Faith%20%26%20Liturgy/DSC07752.webp" data-category="faith-liturgy" data-cat-label="Faith &amp; Liturgy" data-title="Faith &amp; Liturgy">
+            <div class="gl-card-img">
+              <img src="/gallery/images/Faith%20%26%20Liturgy/DSC07752.webp" alt="Faith &amp; Liturgy" width="1440" height="960" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+              <div class="gl-card-overlay">
+                <span class="gl-card-overlay-cat">Faith &amp; Liturgy</span>
+                <span class="gl-card-overlay-title">Faith &amp; Liturgy</span>
+              </div>
+              <span class="gl-card-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></span>
+            </div>
+          </div>
+
+          <div class="gl-card" data-h="tall" data-src="/gallery/images/Faith%20%26%20Liturgy/DSC07784.webp" data-category="faith-liturgy" data-cat-label="Faith &amp; Liturgy" data-title="Faith &amp; Liturgy">
+            <div class="gl-card-img">
+              <img src="/gallery/images/Faith%20%26%20Liturgy/DSC07784.webp" alt="Faith &amp; Liturgy" width="1440" height="960" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+              <div class="gl-card-overlay">
+                <span class="gl-card-overlay-cat">Faith &amp; Liturgy</span>
+                <span class="gl-card-overlay-title">Faith &amp; Liturgy</span>
+              </div>
+              <span class="gl-card-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></span>
+            </div>
+          </div>
+
+          <div class="gl-card" data-h="med" data-src="/gallery/images/Faith%20%26%20Liturgy/DSC07798.webp" data-category="faith-liturgy" data-cat-label="Faith &amp; Liturgy" data-title="Faith &amp; Liturgy">
+            <div class="gl-card-img">
+              <img src="/gallery/images/Faith%20%26%20Liturgy/DSC07798.webp" alt="Faith &amp; Liturgy" width="1440" height="960" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+              <div class="gl-card-overlay">
+                <span class="gl-card-overlay-cat">Faith &amp; Liturgy</span>
+                <span class="gl-card-overlay-title">Faith &amp; Liturgy</span>
+              </div>
+              <span class="gl-card-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></span>
+            </div>
+          </div>
+
+          <div class="gl-card" data-h="short" data-src="/gallery/images/Faith%20%26%20Liturgy/DSC07806.webp" data-category="faith-liturgy" data-cat-label="Faith &amp; Liturgy" data-title="Faith &amp; Liturgy">
+            <div class="gl-card-img">
+              <img src="/gallery/images/Faith%20%26%20Liturgy/DSC07806.webp" alt="Faith &amp; Liturgy" width="1440" height="960" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+              <div class="gl-card-overlay">
+                <span class="gl-card-overlay-cat">Faith &amp; Liturgy</span>
+                <span class="gl-card-overlay-title">Faith &amp; Liturgy</span>
+              </div>
+              <span class="gl-card-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></span>
+            </div>
+          </div>
+
+          <div class="gl-card" data-h="square" data-src="/gallery/images/Faith%20%26%20Liturgy/DSC07848.webp" data-category="faith-liturgy" data-cat-label="Faith &amp; Liturgy" data-title="Faith &amp; Liturgy">
+            <div class="gl-card-img">
+              <img src="/gallery/images/Faith%20%26%20Liturgy/DSC07848.webp" alt="Faith &amp; Liturgy" width="1440" height="960" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+              <div class="gl-card-overlay">
+                <span class="gl-card-overlay-cat">Faith &amp; Liturgy</span>
+                <span class="gl-card-overlay-title">Faith &amp; Liturgy</span>
+              </div>
+              <span class="gl-card-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></span>
+            </div>
+          </div>
+
+          <div class="gl-card" data-h="tall" data-src="/gallery/images/Faith%20%26%20Liturgy/DSC07898.webp" data-category="faith-liturgy" data-cat-label="Faith &amp; Liturgy" data-title="Faith &amp; Liturgy">
+            <div class="gl-card-img">
+              <img src="/gallery/images/Faith%20%26%20Liturgy/DSC07898.webp" alt="Faith &amp; Liturgy" width="1440" height="960" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+              <div class="gl-card-overlay">
+                <span class="gl-card-overlay-cat">Faith &amp; Liturgy</span>
+                <span class="gl-card-overlay-title">Faith &amp; Liturgy</span>
+              </div>
+              <span class="gl-card-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></span>
+            </div>
+          </div>
+
+        </div><!-- /.gl-grid -->
+
+        <div class="gl-empty" id="gl-empty">
+          <div class="gl-empty-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          </div>
+          <h3>No moments to show yet</h3>
+          <p>Photos from this category will appear here soon. Try another filter in the meantime.</p>
+        </div>
+
+        <div class="gl-loadmore-wrap" id="gl-loadmore-wrap" style="display:none;">
+          <button type="button" class="gl-loadmore">Load More Moments</button>
+        </div>
+
+      </div><!-- /.container -->
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         SECTION 4 — LIGHTBOX
+         ═══════════════════════════════════════════════════════════ -->
+    <div class="gl-lightbox" id="gl-lightbox" role="dialog" aria-modal="true" aria-labelledby="gl-lb-title" aria-hidden="true">
+
+      <button type="button" class="gl-lb-close" id="gl-lb-close" aria-label="Close gallery viewer">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+
+      <button type="button" class="gl-lb-nav gl-lb-prev" id="gl-lb-prev" aria-label="Previous image">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+
+      <button type="button" class="gl-lb-nav gl-lb-next" id="gl-lb-next" aria-label="Next image">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
+
+      <div class="gl-lb-stage" id="gl-lb-stage">
+        <div class="gl-lb-image" id="gl-lb-image">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+          <span class="gl-lb-photo-coming">Photo coming soon</span>
+        </div>
+        <div class="gl-lb-meta">
+          <span class="gl-lb-cat" id="gl-lb-cat">Events</span>
+          <span class="gl-lb-title" id="gl-lb-title">Image title</span>
+          <span class="gl-lb-counter"><strong id="gl-lb-current">1</strong> / <span id="gl-lb-total">20</span></span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         SECTION 5 — CTA
+         ═══════════════════════════════════════════════════════════ -->
+    <section class="gl-cta" aria-labelledby="cta-h">
+      <div class="container">
+        <div class="gl-cta-inner">
+          <span class="gl-cta-small">Be part of our story</span>
+          <h2 id="cta-h">Join the <em>JPIC Community</em></h2>
+          <hr class="gold-rule" />
+          <p class="gl-cta-sub">Admissions are open for 2026 – 2027. We would love to welcome your child to St. John Paul II International College.</p>
+
+          <div class="gl-cta-actions">
+            <a href="/admissions/index.html" class="btn btn-primary">
+              Apply Now
+              <span class="arrow"></span>
+            </a>
+            <a href="/contact.html" class="btn btn-outline">
+              Contact Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div data-component="footer"></div>
+
+  <script src="/assets/js/main.js" defer></script>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       PAGE JS — filter, lightbox, staggered reveal
+       ═══════════════════════════════════════════════════════════ -->
+  <script>
+    (function () {
+      'use strict';
+
+      const grid        = document.getElementById('gl-grid');
+      const cards       = Array.from(grid.querySelectorAll('.gl-card'));
+      const pills       = Array.from(document.querySelectorAll('.gl-pill'));
+      const empty       = document.getElementById('gl-empty');
+      const visEl       = document.getElementById('gl-visible-count');
+      const totalEl     = document.getElementById('gl-total-count');
+      const activeCatEl = document.getElementById('gl-active-cat');
+
+      const CAT_LABELS = {
+        'all':                'All Moments',
+        'events':             'Events',
+        'sports':             'Sports',
+        'academic-life':      'Academic Life',
+        'campus-facilities':  'Campus & Facilities',
+        'faith-liturgy':      'Faith & Liturgy'
+      };
+
+      totalEl.textContent = cards.length;
+
+      /* ─── Staggered fade-in ─── */
+      function stagger(visibleCards) {
+        visibleCards.forEach((c, i) => {
+          c.style.transitionDelay = (i * 0.04) + 's';
+          requestAnimationFrame(() => { c.classList.add('is-in'); });
+        });
+        setTimeout(() => {
+          visibleCards.forEach(c => { c.style.transitionDelay = ''; });
+        }, 1500);
+      }
+
+      window.addEventListener('load', () => { stagger(cards); });
+
+      /* ─── Filter ─── */
+      function setFilter(filter) {
+        let visible = [];
+        cards.forEach(card => {
+          const match = (filter === 'all') || (card.dataset.category === filter);
+          if (match) {
+            card.classList.remove('is-hidden');
+            visible.push(card);
+          } else {
+            card.classList.add('is-hidden');
+            card.classList.remove('is-in');
+          }
+        });
+
+        visible.forEach(c => c.classList.remove('is-in'));
+        requestAnimationFrame(() => stagger(visible));
+
+        visEl.textContent = visible.length;
+        activeCatEl.textContent = CAT_LABELS[filter] || 'All Moments';
+
+        empty.classList.toggle('is-visible', visible.length === 0);
+
+        pills.forEach(p => {
+          const isActive = p.dataset.filter === filter;
+          p.classList.toggle('active', isActive);
+          p.setAttribute('aria-selected', isActive ? 'true' : 'false');
+        });
+      }
+
+      pills.forEach(p => {
+        p.addEventListener('click', () => setFilter(p.dataset.filter));
+      });
+
+      /* ─── Lightbox ─── */
+      const lb        = document.getElementById('gl-lightbox');
+      const lbImage   = document.getElementById('gl-lb-image');
+      const lbCat     = document.getElementById('gl-lb-cat');
+      const lbTitle   = document.getElementById('gl-lb-title');
+      const lbCurrent = document.getElementById('gl-lb-current');
+      const lbTotal   = document.getElementById('gl-lb-total');
+      const lbClose   = document.getElementById('gl-lb-close');
+      const lbPrev    = document.getElementById('gl-lb-prev');
+      const lbNext    = document.getElementById('gl-lb-next');
+
+      let lbIndex = 0;
+
+      function visibleCards() {
+        return cards.filter(c => !c.classList.contains('is-hidden'));
+      }
+
+      function decodeHtml(s) {
+        const t = document.createElement('textarea');
+        t.innerHTML = s;
+        return t.value;
+      }
+
+      function renderLb() {
+        const list = visibleCards();
+        if (!list.length) return;
+        if (lbIndex < 0) lbIndex = list.length - 1;
+        if (lbIndex >= list.length) lbIndex = 0;
+        const card = list[lbIndex];
+
+        lbTitle.textContent   = card.dataset.title || '';
+        lbCat.textContent     = decodeHtml(card.dataset.catLabel || '');
+        lbCurrent.textContent = lbIndex + 1;
+        lbTotal.textContent   = list.length;
+
+        /* swap in real image if one day present */
+        const existingImg = card.querySelector('img');
+        lbImage.innerHTML = '';
+        if (existingImg) {
+          const clone = existingImg.cloneNode(true);
+          lbImage.appendChild(clone);
+        } else {
+          lbImage.innerHTML =
+            '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">' +
+              '<path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>' +
+              '<circle cx="12" cy="13" r="4"/>' +
+            '</svg>' +
+            '<span class="gl-lb-photo-coming">Photo coming soon</span>';
+        }
+      }
+
+      function openLb(card) {
+        const list = visibleCards();
+        const idx = list.indexOf(card);
+        if (idx === -1) return;
+        lbIndex = idx;
+        renderLb();
+        lb.classList.add('is-open');
+        lb.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('gl-lb-locked');
+        lbClose.focus();
+      }
+
+      function closeLb() {
+        lb.classList.remove('is-open');
+        lb.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('gl-lb-locked');
+      }
+
+      cards.forEach(card => {
+        card.addEventListener('click', () => openLb(card));
+        card.addEventListener('keydown', e => {
+          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openLb(card); }
+        });
+        card.setAttribute('tabindex', '0');
+        card.setAttribute('role', 'button');
+        card.setAttribute('aria-label', 'View photo: ' + (card.dataset.title || ''));
+      });
+
+      lbPrev.addEventListener('click', e => { e.stopPropagation(); lbIndex--; renderLb(); });
+      lbNext.addEventListener('click', e => { e.stopPropagation(); lbIndex++; renderLb(); });
+      lbClose.addEventListener('click', closeLb);
+      lb.addEventListener('click', e => { if (e.target === lb) closeLb(); });
+
+      document.addEventListener('keydown', e => {
+        if (!lb.classList.contains('is-open')) return;
+        if (e.key === 'Escape')      closeLb();
+        else if (e.key === 'ArrowLeft')  { lbIndex--; renderLb(); }
+        else if (e.key === 'ArrowRight') { lbIndex++; renderLb(); }
+      });
+
+    }());
+  </script>
+
+</body>
+</html>

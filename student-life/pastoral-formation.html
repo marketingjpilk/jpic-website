@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pastoral Formation | St. John Paul II International College, Wennappuwa</title>
+  <meta name="description" content="Pastoral formation at St. John Paul II International College — nurturing each student's wellbeing, character and sense of belonging within our Catholic school community." />
+  <link rel="canonical" href="https://jpeducation.net/student-life/pastoral-formation">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://jpeducation.net/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Student Life",
+      "item": "https://jpeducation.net/student-life/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Pastoral Formation",
+      "item": "https://jpeducation.net/student-life/pastoral-formation"
+    }
+  ]
+}
+</script>
+  <meta name="keywords" content="JPIC pastoral care, student wellbeing Sri Lanka, Catholic school pastoral formation, JPIC Wennappuwa student support" />
+
+  <meta property="og:title" content="Pastoral Formation — JPIC" />
+  <meta property="og:description" content="Pastoral formation at St. John Paul II International College — nurturing each student's wellbeing, character and sense of belonging within our Catholic school community." />
+  <meta property="og:image" content="https://jpeducation.net/assets/images/og-image.webp" />
+  <meta property="og:url" content="https://jpeducation.net/student-life/pastoral-formation.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="St. John Paul II International College" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Pastoral Formation — JPIC" />
+  <meta name="twitter:description" content="Holistic pastoral care rooted in Catholic values at St. John Paul II International College, Wennappuwa." />
+  <meta name="twitter:image" content="https://jpeducation.net/assets/images/og-image.webp" />
+
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="/assets/css/main.css?v=20260517" />
+  <link rel="stylesheet" href="/assets/css/components.css?v=20260517" />
+  <script src="/assets/js/main.js" defer></script>
+
+  <style>
+    /* ════════════════════════════════════════════════════
+       PAGE-LEVEL ALIASES — bridge design tokens to production vars
+       ════════════════════════════════════════════════════ */
+    :root {
+      --light-cyan-alt: #D7FDF5;
+      --rule:           rgba(0, 33, 71, 0.10);
+      --serif-display:  var(--font-display);
+      --serif-italic:   var(--font-accent);
+      --sans:           var(--font-body);
+    }
+
+    /* ════════════════════════════════════════════════════
+       SHARED ATOMS (not in production main.css)
+       ════════════════════════════════════════════════════ */
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--tiffany);
+    }
+    .eyebrow.with-line::before {
+      content: '';
+      width: 28px;
+      height: 1px;
+      background: currentColor;
+    }
+
+    .gold-rule {
+      display: block;
+      width: 64px;
+      height: 3px;
+      background: var(--champagne);
+      border: none;
+    }
+
+    /* ════════════════════════════════════════════════════
+       REVEAL-CHILDREN support (production JS only handles .reveal)
+       ════════════════════════════════════════════════════ */
+    .reveal-children > * {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+      transition-delay: calc(var(--i, 0) * 0.1s);
+    }
+    .reveal-children.revealed > * {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ════════════════════════════════════════════════════
+       Section 1 — Hero
+       ════════════════════════════════════════════════════ */
+    .pf-hero {
+      background: var(--oxford-blue);
+      background-image: repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 40px,
+        rgba(255,255,255,0.03) 40px,
+        rgba(255,255,255,0.03) 41px
+      );
+      min-height: 460px;
+      padding: 80px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .pf-hero::before {
+      content: '';
+      position: absolute;
+      top: -200px; right: -180px;
+      width: 540px; height: 540px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0,189,182,0.18) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .pf-hero::after {
+      content: 'P';
+      position: absolute;
+      bottom: -80px; left: -30px;
+      font-family: var(--serif-display);
+      font-size: 360px;
+      font-weight: 900;
+      color: rgba(255,230,158,0.04);
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .pf-hero-grid {
+      display: grid;
+      grid-template-columns: 58% 42%;
+      gap: 64px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .pf-hero-title {
+      font-family: var(--serif-display);
+      font-weight: 700;
+      color: #ffffff;
+      font-size: 58px;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+    }
+    .pf-hero-title em {
+      font-style: italic;
+      color: var(--champagne);
+      font-weight: 400;
+    }
+
+    .pf-hero-rule {
+      display: block;
+      width: 64px; height: 3px;
+      background: var(--champagne);
+      border: none;
+      margin: 20px 0;
+    }
+
+    .pf-hero-intro {
+      font-family: var(--sans);
+      font-size: 17px;
+      color: rgba(255,255,255,0.88);
+      line-height: 1.7;
+      max-width: 520px;
+    }
+
+    /* Hero right visual */
+    .pf-hero-visual { position: relative; }
+    .pf-hero-img {
+      border-radius: 10px;
+      height: 340px;
+      position: relative;
+      overflow: hidden;
+    }
+    .pf-hero-placeholder {
+      width: 100%;
+      height: 100%;
+      background: rgba(0,33,71,0.08);
+      border-radius: 10px;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Section 2 — Overview
+       ════════════════════════════════════════════════════ */
+    .pf-overview {
+      background: #ffffff;
+      padding: 96px 0;
+    }
+    .pf-overview-grid {
+      display: grid;
+      grid-template-columns: 62% 38%;
+      gap: 64px;
+      align-items: start;
+    }
+    .pf-overview-h2 {
+      font-family: var(--serif-display);
+      font-size: 40px;
+      font-weight: 500;
+      color: var(--oxford-blue);
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      margin-top: 12px;
+    }
+    .pf-overview-h2 em { font-style: italic; color: var(--tiffany); }
+    .pf-overview .gold-rule { margin: 18px 0 28px; }
+    .pf-overview-body p {
+      font-family: var(--sans);
+      font-size: 16px;
+      color: var(--eerie-black);
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    .pf-subheading {
+      font-family: var(--sans);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--oxford-blue);
+      margin: 40px 0 24px;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .pf-subheading::after {
+      content: '';
+      flex: 1;
+      min-width: 80px;
+      height: 1px;
+      background: var(--rule);
+    }
+
+    .pf-principles { display: flex; flex-direction: column; gap: 20px; }
+    .pf-principle { display: flex; gap: 16px; align-items: flex-start; padding: 14px 0; }
+    .pf-principle-num {
+      width: 36px; height: 36px;
+      flex-shrink: 0;
+      background: var(--tiffany);
+      color: #ffffff;
+      border-radius: 50%;
+      font-family: var(--sans);
+      font-size: 14px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+    .pf-principle:hover .pf-principle-num {
+      background: var(--oxford-blue);
+      transform: scale(1.04);
+    }
+    .pf-principle-title {
+      font-family: var(--sans);
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--oxford-blue);
+      margin-bottom: 4px;
+      letter-spacing: 0.02em;
+    }
+    .pf-principle-desc {
+      font-family: var(--sans);
+      font-size: 14px;
+      color: var(--eerie-black);
+      line-height: 1.65;
+    }
+
+    /* Sidebar */
+    .pf-sidebar {
+      position: sticky;
+      top: 100px;
+      background: var(--light-cyan-alt);
+      border-radius: 10px;
+      border-left: 4px solid var(--tiffany);
+      padding: 32px 28px;
+    }
+    .pf-sidebar-title {
+      font-family: var(--serif-display);
+      font-size: 22px;
+      font-weight: 500;
+      color: var(--oxford-blue);
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .pf-sidebar-title::before {
+      content: '';
+      display: block;
+      width: 18px; height: 1px;
+      background: var(--tiffany);
+    }
+    .pf-fact-row {
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(0,189,182,0.2);
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .pf-fact-row:last-child { border-bottom: none; }
+    .pf-fact-icon {
+      width: 36px; height: 36px;
+      border-radius: 8px;
+      background: rgba(0,189,182,0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .pf-fact-icon svg { width: 18px; height: 18px; color: var(--tiffany); }
+    .pf-fact-label {
+      font-family: var(--sans);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--tiffany);
+      display: block;
+      margin-bottom: 2px;
+    }
+    .pf-fact-value {
+      font-family: var(--sans);
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--oxford-blue);
+      line-height: 1.3;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Section 3 — Our Pastoral Approach
+       ════════════════════════════════════════════════════ */
+    .pf-approach {
+      background: var(--baby-powder);
+      padding: 96px 0;
+    }
+    .pf-section-head {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+    .pf-section-head .eyebrow { justify-content: center; }
+    .pf-section-head h2 {
+      font-family: var(--serif-display);
+      font-size: 40px;
+      font-weight: 500;
+      color: var(--oxford-blue);
+      margin-top: 14px;
+      letter-spacing: -0.01em;
+    }
+    .pf-section-head h2 em { font-style: italic; color: var(--tiffany); }
+    .pf-section-head .gold-rule { margin: 18px auto 16px; }
+    .pf-section-head .lede {
+      font-family: var(--sans);
+      font-size: 15px;
+      color: var(--eerie-black);
+      max-width: 580px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    .pf-approach-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .pf-approach-card {
+      background: #ffffff;
+      border-radius: 10px;
+      border-top: 3px solid var(--tiffany);
+      padding: 32px 28px;
+      box-shadow: 0 2px 16px rgba(0,33,71,0.06);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .pf-approach-card::before {
+      content: attr(data-num);
+      position: absolute;
+      top: 14px; right: 18px;
+      font-family: var(--serif-display);
+      font-size: 56px;
+      font-weight: 700;
+      color: rgba(0,33,71,0.05);
+      line-height: 1;
+      pointer-events: none;
+    }
+    .pf-approach-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 36px rgba(0,33,71,0.12);
+    }
+    .pf-approach-icon {
+      width: 52px; height: 52px;
+      background: var(--light-cyan-alt);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      transition: background 0.3s ease;
+    }
+    .pf-approach-card:hover .pf-approach-icon { background: var(--tiffany); }
+    .pf-approach-icon svg { width: 26px; height: 26px; color: var(--tiffany); transition: color 0.3s ease; }
+    .pf-approach-card:hover .pf-approach-icon svg { color: #ffffff; }
+    .pf-approach-name {
+      font-family: var(--sans);
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--oxford-blue);
+      margin-bottom: 10px;
+      letter-spacing: 0.01em;
+      line-height: 1.3;
+    }
+    .pf-approach-desc {
+      font-family: var(--sans);
+      font-size: 14px;
+      color: var(--eerie-black);
+      line-height: 1.65;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Section 4 — Student Wellbeing Cycle
+       ════════════════════════════════════════════════════ */
+    .pf-cycle {
+      background: #ffffff;
+      padding: 96px 0;
+    }
+    .pf-cycle-grid {
+      display: grid;
+      grid-template-columns: 55% 45%;
+      gap: 56px;
+      align-items: center;
+    }
+    .pf-cycle h2 {
+      font-family: var(--serif-display);
+      font-size: 38px;
+      font-weight: 500;
+      color: var(--oxford-blue);
+      margin-top: 12px;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+    .pf-cycle h2 em { font-style: italic; color: var(--tiffany); }
+    .pf-cycle .gold-rule { margin: 18px 0 24px; }
+    .pf-cycle-body {
+      font-family: var(--sans);
+      font-size: 15px;
+      color: var(--eerie-black);
+      line-height: 1.8;
+    }
+
+    .pf-cycle-blocks { margin-top: 36px; display: flex; flex-direction: column; gap: 0; }
+    .pf-cycle-block {
+      border-left: 3px solid var(--champagne);
+      padding: 16px 0 16px 20px;
+      margin-bottom: 8px;
+      transition: border-color 0.3s ease, padding-left 0.3s ease;
+    }
+    .pf-cycle-block:hover { border-left-color: var(--tiffany); padding-left: 26px; }
+    .pf-cycle-title {
+      font-family: var(--sans);
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--oxford-blue);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .pf-cycle-title .num {
+      font-family: var(--serif-display);
+      font-style: italic;
+      font-size: 14px;
+      color: var(--tiffany);
+      font-weight: 400;
+    }
+    .pf-cycle-desc { font-family: var(--sans); font-size: 14px; color: var(--eerie-black); line-height: 1.65; }
+
+    .pf-cycle-img {
+      border-radius: 10px;
+      height: 400px;
+      overflow: hidden;
+    }
+    .pf-cycle-placeholder {
+      width: 100%;
+      height: 100%;
+      background: rgba(0,33,71,0.08);
+    }
+
+    /* ════════════════════════════════════════════════════
+       Section 5 — Support
+       ════════════════════════════════════════════════════ */
+    .pf-support {
+      background: var(--oxford-blue);
+      padding: 80px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .pf-support::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: repeating-linear-gradient(
+        45deg,
+        rgba(255,230,158,0.025) 0px, rgba(255,230,158,0.025) 1px,
+        transparent 1px, transparent 14px
+      );
+      pointer-events: none;
+    }
+    .pf-support .pf-section-head h2 { color: #ffffff; }
+    .pf-support .pf-section-head h2 em { color: var(--turquoise); }
+    .pf-support .pf-section-head .eyebrow { color: var(--champagne); }
+    .pf-support .pf-section-head .lede { color: rgba(255,255,255,0.8); }
+
+    .pf-support-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+    .pf-support-card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 10px;
+      padding: 36px 28px;
+      transition: all 0.3s ease;
+    }
+    .pf-support-card:hover {
+      background: rgba(255,255,255,0.10);
+      border-color: rgba(255,230,158,0.3);
+      transform: translateY(-4px);
+    }
+    .pf-support-icon {
+      width: 48px; height: 48px;
+      background: var(--tiffany);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .pf-support-icon svg { width: 22px; height: 22px; color: #ffffff; }
+    .pf-support-card h3 {
+      font-family: var(--serif-display);
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--champagne);
+      margin: 20px 0 12px;
+    }
+    .pf-support-card p {
+      font-family: var(--sans);
+      font-size: 14px;
+      color: rgba(255,255,255,0.8);
+      line-height: 1.7;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Section 6 — CTA
+       ════════════════════════════════════════════════════ */
+    .pf-cta {
+      background: var(--light-cyan-alt);
+      padding: 88px 0;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+    .pf-cta::before, .pf-cta::after {
+      content: '';
+      position: absolute;
+      width: 280px; height: 280px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0,189,182,0.18) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .pf-cta::before { top: -120px; left: -80px; }
+    .pf-cta::after  { bottom: -120px; right: -80px; }
+
+    .pf-cta-inner { max-width: 640px; margin: 0 auto; position: relative; }
+    .pf-cta-small {
+      font-family: var(--serif-italic);
+      font-style: italic;
+      font-size: 18px;
+      color: var(--tiffany);
+      margin-bottom: 16px;
+      display: block;
+    }
+    .pf-cta h2 {
+      font-family: var(--serif-display);
+      font-size: 42px;
+      font-weight: 500;
+      color: var(--oxford-blue);
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+    .pf-cta h2 em { font-style: italic; color: var(--tiffany); }
+    .pf-cta .gold-rule { margin: 20px auto; }
+    .pf-cta-sub {
+      font-family: var(--sans);
+      font-size: 16px;
+      color: var(--eerie-black);
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+    .pf-cta-actions { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+
+    .pf-cta .btn-primary {
+      background: var(--oxford-blue);
+      color: var(--champagne);
+      border-color: var(--oxford-blue);
+    }
+    .pf-cta .btn-primary:hover {
+      background: var(--tiffany);
+      border-color: var(--tiffany);
+      color: #ffffff;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Responsive — 768px
+       ════════════════════════════════════════════════════ */
+    @media (max-width: 768px) {
+      .pf-hero { padding: 56px 0 64px; min-height: 0; }
+      .pf-hero-grid { grid-template-columns: 1fr; gap: 0; }
+      .pf-hero-visual { display: none; }
+      .pf-hero-title { font-size: 36px; }
+
+      .pf-overview { padding: 64px 0; }
+      .pf-overview-grid { grid-template-columns: 1fr; gap: 40px; }
+      .pf-sidebar { position: static; top: auto; }
+      .pf-overview-h2 { font-size: 30px; }
+
+      .pf-approach { padding: 64px 0; }
+      .pf-approach-grid { grid-template-columns: 1fr; gap: 16px; }
+      .pf-section-head h2 { font-size: 30px; }
+      .pf-section-head { margin-bottom: 40px; }
+
+      .pf-cycle { padding: 64px 0; }
+      .pf-cycle-grid { grid-template-columns: 1fr; gap: 40px; }
+      .pf-cycle h2 { font-size: 28px; }
+      .pf-cycle-img { height: 280px; }
+      .pf-cycle-grid > .pf-cycle-text { order: 1; }
+      .pf-cycle-grid > .pf-cycle-img  { order: 2; }
+
+      .pf-support { padding: 64px 0; }
+      .pf-support-grid { grid-template-columns: 1fr; gap: 16px; }
+
+      .pf-cta { padding: 64px 0; }
+      .pf-cta h2 { font-size: 32px; }
+      .pf-cta-actions { flex-direction: column; }
+      .pf-cta-actions .btn { width: 100%; justify-content: center; }
+    }
+
+    @media (max-width: 1100px) and (min-width: 769px) {
+      .pf-approach-grid { grid-template-columns: repeat(2, 1fr); }
+      .pf-support-grid { grid-template-columns: 1fr; gap: 18px; }
+      .pf-hero-title { font-size: 48px; }
+    }
+  </style>
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation (injected by JS) -->
+  <div data-component="nav"></div>
+
+  <main id="main-content">
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 1 — HERO
+         ═══════════════════════════════════════════════════════ -->
+    <section class="pf-hero" aria-labelledby="page-h1">
+      <div class="container">
+        <div class="pf-hero-grid">
+
+          <div class="pf-hero-content">
+
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+              <a href="/">Home</a>
+              <span class="sep">/</span>
+              <a href="/student-life/">Student Life</a>
+              <span class="sep">/</span>
+              <span class="current">Pastoral Formation</span>
+            </nav>
+
+            <h1 id="page-h1" class="pf-hero-title">Pastoral <em>Formation</em></h1>
+            <hr class="pf-hero-rule" />
+
+            <p class="pf-hero-intro">At JPIC, pastoral care is woven into everything we do — nurturing each student's wellbeing, character and sense of belonging within our Catholic school community.</p>
+
+          </div>
+
+          <div class="pf-hero-visual" aria-hidden="true">
+            <div class="pf-hero-img">
+              <img src="/assets/images/Pastoral%20Formation/IMG_7664.webp" alt="Pastoral formation at JPIC" width="1440" height="960" style="width:100%;height:100%;object-fit:cover;">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 2 — OVERVIEW
+         ═══════════════════════════════════════════════════════ -->
+    <section class="pf-overview" aria-labelledby="overview-h">
+      <div class="container">
+        <div class="pf-overview-grid">
+
+          <article class="pf-overview-main reveal">
+            <span class="eyebrow with-line">Student Wellbeing</span>
+            <h2 id="overview-h" class="pf-overview-h2">Caring for the <em>Whole Person</em></h2>
+            <hr class="gold-rule" />
+
+            <div class="pf-overview-body">
+              <p>Pastoral formation at JPIC goes beyond academic support. It is a commitment to the holistic development of every student — their emotional wellbeing, their relationships, their sense of identity and their place in the wider community.</p>
+              <p>Every student at JPIC belongs to a pastoral group guided by a dedicated form teacher. Regular pastoral periods, individual check-ins, and a network of support staff ensure that no student faces challenges alone. We believe that when students feel safe, known and cared for, they are free to learn and grow.</p>
+            </div>
+
+            <h3 class="pf-subheading">Our Principles</h3>
+
+            <div class="pf-principles">
+
+              <div class="pf-principle">
+                <div class="pf-principle-num">1</div>
+                <div>
+                  <div class="pf-principle-title">Every Student Known</div>
+                  <div class="pf-principle-desc">Each student has a named pastoral guide who knows their story, their strengths and their needs.</div>
+                </div>
+              </div>
+
+              <div class="pf-principle">
+                <div class="pf-principle-num">2</div>
+                <div>
+                  <div class="pf-principle-title">Safe and Inclusive</div>
+                  <div class="pf-principle-desc">Our community is built on mutual respect, dignity and belonging for every member.</div>
+                </div>
+              </div>
+
+              <div class="pf-principle">
+                <div class="pf-principle-num">3</div>
+                <div>
+                  <div class="pf-principle-title">Wellbeing-Centred</div>
+                  <div class="pf-principle-desc">Academic progress and personal wellbeing are understood as inseparable at JPIC.</div>
+                </div>
+              </div>
+
+              <div class="pf-principle">
+                <div class="pf-principle-num">4</div>
+                <div>
+                  <div class="pf-principle-title">Family Partnership</div>
+                  <div class="pf-principle-desc">We work closely with families, keeping them informed and involved in their child's pastoral journey.</div>
+                </div>
+              </div>
+
+            </div>
+          </article>
+
+          <aside class="pf-sidebar reveal" aria-label="Pastoral care at a glance">
+            <div class="pf-sidebar-title">At a Glance</div>
+
+            <div class="pf-fact-row">
+              <div class="pf-fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </div>
+              <div>
+                <span class="pf-fact-label">Approach</span>
+                <div class="pf-fact-value">Holistic, student-centred care</div>
+              </div>
+            </div>
+
+            <div class="pf-fact-row">
+              <div class="pf-fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/></svg>
+              </div>
+              <div>
+                <span class="pf-fact-label">Form Tutors</span>
+                <div class="pf-fact-value">Every student has a named pastoral guide</div>
+              </div>
+            </div>
+
+            <div class="pf-fact-row">
+              <div class="pf-fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+              </div>
+              <div>
+                <span class="pf-fact-label">Support</span>
+                <div class="pf-fact-value">Counselling &amp; peer support available</div>
+              </div>
+            </div>
+
+            <div class="pf-fact-row">
+              <div class="pf-fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <div>
+                <span class="pf-fact-label">Community</span>
+                <div class="pf-fact-value">Catholic values at the heart of all care</div>
+              </div>
+            </div>
+
+            <div class="pf-fact-row">
+              <div class="pf-fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <div>
+                <span class="pf-fact-label">Ethos</span>
+                <div class="pf-fact-value">Rooted in dignity, respect and belonging</div>
+              </div>
+            </div>
+
+            <div class="pf-fact-row">
+              <div class="pf-fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+              </div>
+              <div>
+                <span class="pf-fact-label">Connected To</span>
+                <div class="pf-fact-value">Spiritual Formation programme</div>
+              </div>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 3 — OUR PASTORAL APPROACH
+         ═══════════════════════════════════════════════════════ -->
+    <section class="pf-approach" aria-labelledby="approach-h">
+      <div class="container">
+
+        <div class="pf-section-head reveal">
+          <span class="eyebrow with-line">Pastoral Care</span>
+          <h2 id="approach-h">How We <em>Support</em> Every Student</h2>
+          <hr class="gold-rule" />
+          <p class="lede">Six pillars of pastoral care that shape student life at JPIC.</p>
+        </div>
+
+        <div class="pf-approach-grid reveal-children">
+
+          <article class="pf-approach-card" data-num="01">
+            <div class="pf-approach-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/></svg>
+            </div>
+            <h3 class="pf-approach-name">Personal Guidance</h3>
+            <p class="pf-approach-desc">Named form tutors build relationships with each student, providing consistent guidance, mentoring and a listening ear throughout their time at JPIC.</p>
+          </article>
+
+          <article class="pf-approach-card" data-num="02">
+            <div class="pf-approach-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <h3 class="pf-approach-name">Wellbeing Support</h3>
+            <p class="pf-approach-desc">Access to counselling, peer support and wellbeing programmes helps students navigate challenges and build resilience.</p>
+          </article>
+
+          <article class="pf-approach-card" data-num="03">
+            <div class="pf-approach-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 class="pf-approach-name">Anti-Bullying &amp; Safety</h3>
+            <p class="pf-approach-desc">A clear code of conduct, restorative practices and a culture of respect ensure every student feels safe and valued.</p>
+          </article>
+
+          <article class="pf-approach-card" data-num="04">
+            <div class="pf-approach-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            </div>
+            <h3 class="pf-approach-name">Academic Pastoral Bridge</h3>
+            <p class="pf-approach-desc">Pastoral staff work closely with academic teachers to ensure personal challenges never become barriers to learning.</p>
+          </article>
+
+          <article class="pf-approach-card" data-num="05">
+            <div class="pf-approach-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3 class="pf-approach-name">Parental Partnership</h3>
+            <p class="pf-approach-desc">Regular communication with families — through reports, meetings and open channels — keeps parents informed and engaged.</p>
+          </article>
+
+          <article class="pf-approach-card" data-num="06">
+            <div class="pf-approach-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h3 class="pf-approach-name">Community &amp; Belonging</h3>
+            <p class="pf-approach-desc">Form activities, inter-house events and community projects strengthen bonds and create a shared sense of JPIC identity.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 4 — STUDENT WELLBEING CYCLE
+         ═══════════════════════════════════════════════════════ -->
+    <section class="pf-cycle" aria-labelledby="cycle-h">
+      <div class="container">
+        <div class="pf-cycle-grid">
+
+          <div class="pf-cycle-text reveal">
+            <span class="eyebrow with-line">Our Process</span>
+            <h2 id="cycle-h">Supporting Students <em>Every Step</em></h2>
+            <hr class="gold-rule" />
+            <p class="pf-cycle-body">Our pastoral team works through a continuous cycle of listening, supporting and reviewing — ensuring every student receives the care they need, when they need it.</p>
+
+            <div class="pf-cycle-blocks">
+
+              <div class="pf-cycle-block">
+                <div class="pf-cycle-title"><span class="num">01 ·</span> Listen &amp; Observe</div>
+                <div class="pf-cycle-desc">Form tutors and teachers observe each student's wellbeing, picking up on changes in behaviour, mood or engagement before issues escalate.</div>
+              </div>
+
+              <div class="pf-cycle-block">
+                <div class="pf-cycle-title"><span class="num">02 ·</span> Individual Support</div>
+                <div class="pf-cycle-desc">Where additional support is needed, students are connected to counselling, peer mentoring or specialist pastoral staff.</div>
+              </div>
+
+              <div class="pf-cycle-block">
+                <div class="pf-cycle-title"><span class="num">03 ·</span> Family Communication</div>
+                <div class="pf-cycle-desc">Parents and guardians are kept informed and invited to partner with school staff in supporting their child.</div>
+              </div>
+
+              <div class="pf-cycle-block">
+                <div class="pf-cycle-title"><span class="num">04 ·</span> Review &amp; Adjust</div>
+                <div class="pf-cycle-desc">Support plans are regularly reviewed and adjusted to reflect each student's evolving needs and progress.</div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="pf-cycle-img reveal" aria-hidden="true">
+            <img src="/assets/images/Pastoral%20Formation/IMG_7878.webp" alt="Pastoral formation at JPIC" width="1440" height="960" style="width:100%;height:100%;object-fit:cover;">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 5 — SUPPORT
+         ═══════════════════════════════════════════════════════ -->
+    <section class="pf-support" aria-labelledby="support-h">
+      <div class="container">
+
+        <div class="pf-section-head reveal">
+          <span class="eyebrow with-line">At JPIC</span>
+          <h2 id="support-h">A Community That <em>Cares</em></h2>
+          <hr class="gold-rule" />
+          <p class="lede">Our pastoral programme is grounded in our Catholic identity and our commitment to seeing every student flourish.</p>
+        </div>
+
+        <div class="pf-support-grid reveal-children">
+
+          <article class="pf-support-card">
+            <div class="pf-support-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+            </div>
+            <h3>Catholic Ethos</h3>
+            <p>Our pastoral care is rooted in Gospel values — dignity, compassion, justice and love. Every interaction is guided by our commitment to treating every person as a unique individual made in the image of God.</p>
+          </article>
+
+          <article class="pf-support-card">
+            <div class="pf-support-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <h3>Trained Pastoral Staff</h3>
+            <p>Our form tutors and pastoral leads receive ongoing professional development in student wellbeing, mental health awareness and restorative approaches to conflict resolution.</p>
+          </article>
+
+          <article class="pf-support-card">
+            <div class="pf-support-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <h3>Peer Support</h3>
+            <p>Student wellbeing leaders and peer mentors are trained to provide informal support, helping to build a culture where students look out for one another.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 6 — CTA
+         ═══════════════════════════════════════════════════════ -->
+    <section class="pf-cta" aria-labelledby="cta-h">
+      <div class="container">
+        <div class="pf-cta-inner reveal">
+          <span class="pf-cta-small">We are here for your child</span>
+          <h2 id="cta-h">Questions About <em>Pastoral Support</em>?</h2>
+          <hr class="gold-rule" />
+          <p class="pf-cta-sub">Our pastoral team is always available to speak with parents and students. Contact us to learn more about how we care for every member of the JPIC community.</p>
+
+          <div class="pf-cta-actions">
+            <a href="/contact.html" class="btn btn-primary">
+              Contact Us
+              <span class="arrow">→</span>
+            </a>
+            <a href="/admissions/index.html" class="btn btn-outline">
+              Learn About Admissions
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer (injected by JS) -->
+  <div data-component="footer"></div>
+
+  <script>
+    /* reveal-children: extend production scroll-reveal for staggered grids */
+    (function () {
+      if (!('IntersectionObserver' in window)) {
+        document.querySelectorAll('.reveal-children').forEach(function (el) {
+          el.classList.add('revealed');
+        });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            var parent = entry.target;
+            Array.from(parent.children).forEach(function (child, i) {
+              child.style.setProperty('--i', i);
+            });
+            parent.classList.add('revealed');
+            io.unobserve(parent);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+      document.querySelectorAll('.reveal-children').forEach(function (el) {
+        io.observe(el);
+      });
+    })();
+  </script>
+
+</body>
+</html>

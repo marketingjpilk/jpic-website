@@ -1,8 +1,24 @@
+http://jpeducation.net/*    https://jpeducation.net/:splat    301
+http://www.jpeducation.net/*    https://jpeducation.net/:splat    301
+https://www.jpeducation.net/*    https://jpeducation.net/:splat    301
+
+# Block internal files
+/_docs/*    /404    404
+/README.md    /404    404
+/package.json    /404    404
+/AUDIT-REPORT.md    /404    404
+
 # JPIC Website — Cloudflare Pages Redirects
 # Clean URL redirects and legacy WordPress URL handling
 
-# Coming soon — remove this line when the full site is ready
-/    /coming-soon.html    200
+# Section root redirect
+/academic/    /academic/programmes    301
+
+# Block removed pages
+/academic/benefits/              /academic/programmes    301
+/academic/benefits               /academic/programmes    301
+/academic/academic-pathways/     /academic/programmes    301
+/academic/academic-pathways      /academic/programmes    301
 
 # WordPress legacy URLs → new clean URLs
 /our-story/                          /about/our-story/                    301

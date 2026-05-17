@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cambridge Upper Secondary (Age 14–16) | St. John Paul II International College</title>
+  <meta name="description" content="Cambridge Upper Secondary at JPIC — Cambridge IGCSE and O Level qualifications for ages 14 to 16, recognised by universities and employers worldwide." />
+  <link rel="canonical" href="https://jpeducation.net/academic/cambridge-upper-secondary">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://jpeducation.net/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Academic",
+      "item": "https://jpeducation.net/academic/programmes"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Cambridge Upper Secondary",
+      "item": "https://jpeducation.net/academic/cambridge-upper-secondary"
+    }
+  ]
+}
+</script>
+  <meta name="keywords" content="Cambridge IGCSE JPIC, Cambridge O Level Sri Lanka, upper secondary JPIC Wennappuwa, IGCSE school Wennappuwa" />
+
+  <meta property="og:title" content="Cambridge Upper Secondary (Age 14–16) — JPIC" />
+  <meta property="og:description" content="Cambridge Upper Secondary at JPIC — Cambridge IGCSE and O Level qualifications for ages 14 to 16, recognised by universities and employers worldwide." />
+  <meta property="og:image" content="https://jpeducation.net/assets/images/og-image.webp" />
+  <meta property="og:url" content="https://jpeducation.net/academic/cambridge-upper-secondary.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="St. John Paul II International College" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cambridge Upper Secondary (Age 14–16) — JPIC" />
+  <meta name="twitter:description" content="Cambridge IGCSE and O Level for ages 14–16 at St. John Paul II International College, Wennappuwa." />
+  <meta name="twitter:image" content="https://jpeducation.net/assets/images/og-image.webp" />
+
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="/assets/css/main.css?v=20260517" />
+  <link rel="stylesheet" href="/assets/css/components.css?v=20260517" />
+  <script src="/assets/js/main.js" defer></script>
+
+  <style>
+    /* ════════════════════════════════════════════════════
+       PAGE-LEVEL ALIASES — bridge design tokens to production vars
+       ════════════════════════════════════════════════════ */
+    :root {
+      --light-cyan-alt: #D7FDF5;
+      --rule:           rgba(0, 33, 71, 0.10);
+      --serif-display:  var(--font-display);
+      --serif-italic:   var(--font-accent);
+      --sans:           var(--font-body);
+    }
+
+    /* ════════════════════════════════════════════════════
+       SHARED ATOMS (not in production main.css)
+       ════════════════════════════════════════════════════ */
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--tiffany);
+    }
+    .eyebrow.with-line::before {
+      content: '';
+      width: 28px;
+      height: 1px;
+      background: currentColor;
+    }
+
+    .gold-rule {
+      display: block;
+      width: 64px;
+      height: 3px;
+      background: var(--champagne);
+      border: none;
+    }
+
+    /* ════════════════════════════════════════════════════
+       REVEAL-CHILDREN support (production JS only handles .reveal)
+       ════════════════════════════════════════════════════ */
+    .reveal-children > * {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+      transition-delay: calc(var(--i, 0) * 0.1s);
+    }
+    .reveal-children.revealed > * {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ════════════════════════════════════════════════════
+       Section 1 — Hero
+       ════════════════════════════════════════════════════ */
+    .us-hero {
+      background: var(--oxford-blue);
+      background-image: repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 40px,
+        rgba(255,255,255,0.03) 40px,
+        rgba(255,255,255,0.03) 41px
+      );
+      min-height: 460px;
+      padding: 80px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .us-hero::before {
+      content: '';
+      position: absolute;
+      top: -200px; right: -180px;
+      width: 540px; height: 540px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0,189,182,0.18) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .us-hero::after {
+      content: '04';
+      position: absolute;
+      bottom: -80px; left: -30px;
+      font-family: var(--serif-display);
+      font-size: 360px;
+      font-weight: 900;
+      color: rgba(255,230,158,0.04);
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .us-hero-grid {
+      display: grid;
+      grid-template-columns: 58% 42%;
+      gap: 64px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .us-hero-age-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin: 16px 0;
+      background: var(--champagne);
+      color: var(--oxford-blue);
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 20px;
+    }
+    .us-hero-age-badge .sep {
+      width: 4px; height: 4px;
+      border-radius: 50%;
+      background: var(--oxford-blue);
+      opacity: 0.5;
+    }
+
+    .us-hero-title {
+      font-family: var(--serif-display);
+      font-weight: 700;
+      color: #ffffff;
+      font-size: 58px;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+    }
+    .us-hero-title em {
+      font-style: italic;
+      color: var(--champagne);
+      font-weight: 400;
+    }
+
+    .us-hero-rule {
+      display: block;
+      width: 64px; height: 3px;
+      background: var(--champagne);
+      border: none;
+      margin: 20px 0;
+    }
+
+    .us-hero-intro {
+      font-family: var(--sans);
+      font-size: 17px;
+      color: rgba(255,255,255,0.88);
+      line-height: 1.7;
+      max-width: 520px;
+    }
+
+    .us-hero-chips {
+      display: inline-flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 32px;
+    }
+    .us-hero-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 6px;
+      padding: 8px 18px;
+      font-family: var(--sans);
+      font-size: 13px;
+      color: #ffffff;
+      transition: all 0.3s ease;
+    }
+    .us-hero-chip:hover {
+      border-color: var(--champagne);
+      background: rgba(255,230,158,0.06);
+    }
+    .us-hero-chip strong { font-weight: 700; color: var(--champagne); }
+    .us-hero-chip .chip-sep {
+      width: 1px; height: 14px;
+      background: rgba(255,255,255,0.2);
+    }
+    .us-hero-chip span:last-child { color: rgba(255,255,255,0.65); }
+
+    /* Hero right visual */
+    .us-hero-visual { position: relative; }
+    .us-hero-img {
+      border-radius: 10px;
+      height: 340px;
+      position: relative;
+      overflow: hidden;
+    }
+    .us-hero-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    .us-hero-overlay {
+      position: absolute;
+      bottom: -28px; left: -20px;
+      background: var(--oxford-blue);
+      border-left: 4px solid var(--champagne);
+      border-radius: 6px;
+      padding: 16px 20px;
+      box-shadow: 0 14px 38px rgba(0,0,0,0.32);
+      z-index: 2;
+    }
+    .us-hero-overlay-label {
+      font-family: var(--sans);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--champagne);
+      margin-bottom: 4px;
+    }
+    .us-hero-overlay-val {
+      font-family: var(--serif-display);
+      font-size: 15px;
+      color: #ffffff;
+      font-weight: 500;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Section 2 — Overview
+       ════════════════════════════════════════════════════ */
+    .us-overview {
+      background: #ffffff;
+      padding: 96px 0;
+    }
+    .us-overview-grid {
+      display: grid;
+      grid-template-columns: 62% 38%;
+      gap: 64px;
+      align-items: start;
+    }
+    .us-overview-h2 {
+      font-family: var(--serif-display);
+      font-size: 40px;
+      font-weight: 500;
+      color: var(--oxford-blue);
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      margin-top: 12px;
+    }
+    .us-overview-h2 em { font-style: italic; color: var(--tiffany); }
+    .us-overview .gold-rule { margin: 18px 0 28px; }
+    .us-overview-body p {
+      font-family: var(--sans);
+      font-size: 16px;
+      color: var(--eerie-black);
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    .us-subheading {
+      font-family: var(--sans);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--oxford-blue);
+      margin: 40px 0 24px;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .us-subheading::after {
+      content: '';
+      flex: 1;
+      min-width: 80px;
+      height: 1px;
+      background: var(--rule);
+    }
+
+    .us-principles { display: flex; flex-direction: column; gap: 20px; }
+    .us-principle { display: flex; gap: 16px; align-items: flex-start; padding: 14px 0; }
+    .us-principle-num {
+      width: 36px; height: 36px;
+      flex-shrink: 0;
+      background: var(--tiffany);
+      color: #ffffff;
+      border-radius: 50%;
+      font-family: var(--sans);
+      font-size: 14px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+    .us-principle:hover .us-principle-num {
+      background: var(--oxford-blue);
+      transform: scale(1.04);
+    }
+    .us-principle-title {
+      font-family: var(--sans);
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--oxford-blue);
+      margin-bottom: 4px;
+      letter-spacing: 0.02em;
+    }
+    .us-principle-desc {
+      font-family: var(--sans);
+      font-size: 14px;
+      color: var(--eerie-black);
+      line-height: 1.65;
+    }
+
+    /* Sidebar */
+    .us-sidebar {
+      position: sticky;
+      top: 100px;
+      background: var(--light-cyan-alt);
+      border-radius: 10px;
+      border-left: 4px solid var(--tiffany);
+      padding: 32px 28px;
+    }
+    .us-sidebar-title {
+      font-family: var(--serif-display);
+      font-size: 22px;
+      font-weight: 500;
+      color: var(--oxford-blue);
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .us-sidebar-title::before {
+      content: '';
+      display: block;
+      width: 18px; height: 1px;
+      background: var(--tiffany);
+    }
+    .us-fact-row {
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(0,189,182,0.2);
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .us-fact-row:last-child { border-bottom: none; }
+    .us-fact-icon {
+      width: 36px; height: 36px;
+      border-radius: 8px;
+      background: rgba(0,189,182,0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .us-fact-icon svg { width: 18px; height: 18px; color: var(--tiffany); }
+    .us-fact-label {
+      font-family: var(--sans);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--tiffany);
+      display: block;
+      margin-bottom: 2px;
+    }
+    .us-fact-value {
+      font-family: var(--sans);
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--oxford-blue);
+      line-height: 1.3;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Section 3 — Curriculum / Qualifications
+       ════════════════════════════════════════════════════ */
+    .us-curriculum {
+      background: var(--baby-powder);
+      padding: 96px 0;
+    }
+    .us-section-head {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+    .us-section-head .eyebrow { justify-content: center; }
+    .us-section-head h2 {
+      font-family: var(--serif-display);
+      font-size: 40px;
+      font-weight: 500;
+      color: var(--oxford-blue);
+      margin-top: 14px;
+      letter-spacing: -0.01em;
+    }
+    .us-section-head h2 em { font-style: italic; color: var(--tiffany); }
+    .us-section-head .gold-rule { margin: 18px auto 16px; }
+    .us-section-head .lede {
+      font-family: var(--sans);
+      font-size: 15px;
+      color: var(--eerie-black);
+      max-width: 580px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    .us-curriculum-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+    .us-curric-card {
+      background: #ffffff;
+      border-radius: 10px;
+      border-top: 3px solid var(--tiffany);
+      padding: 32px 28px;
+      box-shadow: 0 2px 16px rgba(0,33,71,0.06);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .us-curric-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 36px rgba(0,33,71,0.12);
+    }
+    .us-curric-icon {
+      width: 52px; height: 52px;
+      background: var(--light-cyan-alt);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      transition: background 0.3s ease;
+    }
+    .us-curric-card:hover .us-curric-icon { background: var(--tiffany); }
+    .us-curric-icon svg { width: 26px; height: 26px; color: var(--tiffany); transition: color 0.3s ease; }
+    .us-curric-card:hover .us-curric-icon svg { color: #ffffff; }
+    .us-curric-name {
+      font-family: var(--sans);
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--oxford-blue);
+      margin-bottom: 10px;
+      letter-spacing: 0.01em;
+      line-height: 1.3;
+    }
+    .us-curric-desc {
+      font-family: var(--sans);
+      font-size: 14px;
+      color: var(--eerie-black);
+      line-height: 1.65;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Section 4 — Assessment
+       ════════════════════════════════════════════════════ */
+    .us-assessment {
+      background: #ffffff;
+      padding: 96px 0;
+    }
+    .us-assessment-grid {
+      display: grid;
+      grid-template-columns: 55% 45%;
+      gap: 56px;
+      align-items: center;
+    }
+    .us-assessment h2 {
+      font-family: var(--serif-display);
+      font-size: 38px;
+      font-weight: 500;
+      color: var(--oxford-blue);
+      margin-top: 12px;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+    .us-assessment h2 em { font-style: italic; color: var(--tiffany); }
+    .us-assessment .gold-rule { margin: 18px 0 24px; }
+    .us-assessment-body {
+      font-family: var(--sans);
+      font-size: 15px;
+      color: var(--eerie-black);
+      line-height: 1.8;
+    }
+
+    .us-asmt-blocks { margin-top: 36px; display: flex; flex-direction: column; gap: 0; }
+    .us-asmt-block {
+      border-left: 3px solid var(--champagne);
+      padding: 16px 0 16px 20px;
+      margin-bottom: 8px;
+      transition: border-color 0.3s ease, padding-left 0.3s ease;
+    }
+    .us-asmt-block:hover { border-left-color: var(--tiffany); padding-left: 26px; }
+    .us-asmt-title {
+      font-family: var(--sans);
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--oxford-blue);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .us-asmt-title .num {
+      font-family: var(--serif-display);
+      font-style: italic;
+      font-size: 14px;
+      color: var(--tiffany);
+      font-weight: 400;
+    }
+    .us-asmt-desc { font-family: var(--sans); font-size: 14px; color: var(--eerie-black); line-height: 1.65; }
+
+    .us-asmt-img {
+      border-radius: 10px;
+      height: 400px;
+      position: relative;
+      overflow: hidden;
+    }
+    .us-asmt-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Section 5 — Support
+       ════════════════════════════════════════════════════ */
+    .us-support {
+      background: var(--oxford-blue);
+      padding: 80px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .us-support::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: repeating-linear-gradient(
+        45deg,
+        rgba(255,230,158,0.025) 0px, rgba(255,230,158,0.025) 1px,
+        transparent 1px, transparent 14px
+      );
+      pointer-events: none;
+    }
+    .us-support .us-section-head h2 { color: #ffffff; }
+    .us-support .us-section-head h2 em { color: var(--turquoise); }
+    .us-support .us-section-head .eyebrow { color: var(--champagne); }
+    .us-support .us-section-head .lede { color: rgba(255,255,255,0.8); }
+
+    .us-support-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+    .us-support-card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 10px;
+      padding: 36px 28px;
+      transition: all 0.3s ease;
+    }
+    .us-support-card:hover {
+      background: rgba(255,255,255,0.10);
+      border-color: rgba(255,230,158,0.3);
+      transform: translateY(-4px);
+    }
+    .us-support-icon {
+      width: 48px; height: 48px;
+      background: var(--tiffany);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .us-support-icon svg { width: 22px; height: 22px; color: #ffffff; }
+    .us-support-card h3 {
+      font-family: var(--serif-display);
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--champagne);
+      margin: 20px 0 12px;
+    }
+    .us-support-card p {
+      font-family: var(--sans);
+      font-size: 14px;
+      color: rgba(255,255,255,0.8);
+      line-height: 1.7;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Section 6 — Pathway strip
+       ════════════════════════════════════════════════════ */
+    .us-pathway {
+      background: var(--baby-powder);
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+      padding: 56px 0;
+    }
+    .us-pathway-label {
+      text-align: center;
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--tiffany);
+    }
+    .us-pathway-strip {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 0;
+      margin-top: 32px;
+      max-width: 980px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .us-pathway-node {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+      width: 140px;
+      text-decoration: none;
+      transition: transform 0.3s ease;
+      padding: 0 4px;
+    }
+    .us-pathway-node:hover { transform: translateY(-3px); }
+
+    .us-path-circle {
+      width: 52px; height: 52px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--serif-display);
+      font-size: 20px;
+      font-weight: 700;
+      transition: all 0.3s ease;
+    }
+    .us-pathway-node.active .us-path-circle {
+      background: var(--champagne);
+      color: var(--oxford-blue);
+      box-shadow: 0 6px 22px rgba(255,230,158,0.45), inset 0 0 0 3px rgba(255,255,255,0.5);
+    }
+    .us-pathway-node:not(.active) .us-path-circle {
+      background: transparent;
+      border: 2px solid rgba(0,33,71,0.3);
+      color: rgba(0,33,71,0.5);
+    }
+    .us-pathway-node:not(.active):hover .us-path-circle {
+      border-color: var(--tiffany);
+      color: var(--tiffany);
+    }
+    .us-path-name {
+      font-family: var(--sans);
+      font-size: 12px;
+      font-weight: 700;
+      margin-top: 4px;
+      text-align: center;
+      line-height: 1.3;
+      letter-spacing: 0.02em;
+      transition: color 0.3s ease;
+    }
+    .us-path-age { font-family: var(--sans); font-size: 11px; margin-top: 0; letter-spacing: 0.02em; }
+    .us-pathway-node.active .us-path-name { color: var(--oxford-blue); }
+    .us-pathway-node.active .us-path-age { color: var(--tiffany); font-weight: 600; }
+    .us-pathway-node:not(.active) .us-path-name { color: rgba(0,33,71,0.5); }
+    .us-pathway-node:not(.active) .us-path-age { color: rgba(0,33,71,0.3); }
+    .us-pathway-node:not(.active):hover .us-path-name,
+    .us-pathway-node:not(.active):hover .us-path-age { color: var(--tiffany); }
+
+    .us-path-connector {
+      flex: 1;
+      height: 1px;
+      margin-top: 26px;
+      background: repeating-linear-gradient(
+        to right,
+        var(--champagne) 0, var(--champagne) 6px,
+        transparent 6px, transparent 12px
+      );
+      min-width: 12px;
+      max-width: 60px;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Section 7 — Prev / Next
+       ════════════════════════════════════════════════════ */
+    .us-prevnext { background: #ffffff; border-top: 1px solid var(--rule); }
+    .us-prevnext-grid { display: grid; grid-template-columns: 1fr 1fr; align-items: stretch; }
+    .us-prev, .us-next {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 48px 40px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+      position: relative;
+    }
+    .us-prev:hover, .us-next:hover { background: var(--baby-powder); }
+    .us-prev { padding-left: 0; border-right: 1px solid var(--rule); }
+    .us-next { padding-right: 0; text-align: right; align-items: flex-end; }
+    .us-pn-label {
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(0,189,182,0.7);
+      margin-bottom: 10px;
+    }
+    .us-pn-title {
+      font-family: var(--serif-display);
+      font-size: 22px;
+      font-weight: 500;
+      color: var(--oxford-blue);
+      transition: color 0.3s ease;
+      letter-spacing: -0.005em;
+    }
+    .us-prev:hover .us-pn-title,
+    .us-next:hover .us-pn-title { color: var(--tiffany); }
+    .us-pn-sub { font-family: var(--sans); font-size: 13px; color: rgba(31,33,33,0.6); margin-top: 6px; }
+    .us-next .us-pn-sub { color: var(--tiffany); font-weight: 500; }
+
+    /* ════════════════════════════════════════════════════
+       Section 8 — CTA
+       ════════════════════════════════════════════════════ */
+    .us-cta {
+      background: var(--light-cyan-alt);
+      padding: 88px 0;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+    .us-cta::before, .us-cta::after {
+      content: '';
+      position: absolute;
+      width: 280px; height: 280px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0,189,182,0.18) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .us-cta::before { top: -120px; left: -80px; }
+    .us-cta::after  { bottom: -120px; right: -80px; }
+
+    .us-cta-inner { max-width: 640px; margin: 0 auto; position: relative; }
+    .us-cta-small {
+      font-family: var(--serif-italic);
+      font-style: italic;
+      font-size: 18px;
+      color: var(--tiffany);
+      margin-bottom: 16px;
+      display: block;
+    }
+    .us-cta h2 {
+      font-family: var(--serif-display);
+      font-size: 42px;
+      font-weight: 500;
+      color: var(--oxford-blue);
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+    .us-cta h2 em { font-style: italic; color: var(--tiffany); }
+    .us-cta .gold-rule { margin: 20px auto; }
+    .us-cta-sub {
+      font-family: var(--sans);
+      font-size: 16px;
+      color: var(--eerie-black);
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+    .us-cta-actions { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+
+    /* CTA button overrides for this page's context */
+    .us-cta .btn-primary {
+      background: var(--oxford-blue);
+      color: var(--champagne);
+      border-color: var(--oxford-blue);
+    }
+    .us-cta .btn-primary:hover {
+      background: var(--tiffany);
+      border-color: var(--tiffany);
+      color: #ffffff;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Responsive — 768px
+       ════════════════════════════════════════════════════ */
+    @media (max-width: 768px) {
+      .us-hero { padding: 56px 0 64px; min-height: 0; }
+      .us-hero-grid { grid-template-columns: 1fr; gap: 0; }
+      .us-hero-visual { display: none; }
+      .us-hero-title { font-size: 36px; }
+      .us-hero-chips { gap: 8px; }
+
+      .us-overview { padding: 64px 0; }
+      .us-overview-grid { grid-template-columns: 1fr; gap: 40px; }
+      .us-sidebar { position: static; top: auto; }
+      .us-overview-h2 { font-size: 30px; }
+
+      .us-curriculum { padding: 64px 0; }
+      .us-curriculum-grid { grid-template-columns: 1fr; }
+      .us-section-head h2 { font-size: 30px; }
+      .us-section-head { margin-bottom: 40px; }
+
+      .us-assessment { padding: 64px 0; }
+      .us-assessment-grid { grid-template-columns: 1fr; gap: 40px; }
+      .us-assessment h2 { font-size: 28px; }
+      .us-asmt-img { height: 280px; }
+      .us-assessment-grid > .us-assessment-text { order: 1; }
+      .us-assessment-grid > .us-asmt-img-wrap  { order: 2; }
+
+      .us-support { padding: 64px 0; }
+      .us-support-grid { grid-template-columns: 1fr; gap: 16px; }
+
+      .us-pathway { padding: 48px 0; }
+      .us-pathway-strip {
+        flex-direction: column;
+        align-items: center;
+        max-width: 280px;
+        gap: 0;
+      }
+      .us-pathway-node {
+        width: 100%;
+        flex-direction: row;
+        gap: 18px;
+        justify-content: flex-start;
+        padding: 12px 0;
+      }
+      .us-path-text { display: flex; flex-direction: column; align-items: flex-start; }
+      .us-path-name, .us-path-age { text-align: left; }
+      .us-path-connector {
+        width: 1px; height: 24px;
+        margin-top: 0; margin-left: 25px;
+        background: repeating-linear-gradient(
+          to bottom,
+          var(--champagne) 0, var(--champagne) 5px,
+          transparent 5px, transparent 10px
+        );
+        max-width: none; min-width: 0;
+        align-self: flex-start;
+      }
+
+      .us-prevnext-grid { grid-template-columns: 1fr; }
+      .us-prev, .us-next {
+        padding: 32px 0;
+        text-align: left;
+        align-items: flex-start;
+        border-right: none;
+      }
+      .us-prev { border-bottom: 1px solid var(--rule); }
+
+      .us-cta { padding: 64px 0; }
+      .us-cta h2 { font-size: 32px; }
+      .us-cta-actions { flex-direction: column; }
+      .us-cta-actions .btn { width: 100%; justify-content: center; }
+    }
+
+    @media (max-width: 1100px) and (min-width: 769px) {
+      .us-support-grid { grid-template-columns: 1fr; gap: 18px; }
+      .us-hero-title { font-size: 48px; }
+    }
+  </style>
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation (injected by JS) -->
+  <div data-component="nav"></div>
+
+  <main id="main-content">
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 1 — HERO
+         ═══════════════════════════════════════════════════════ -->
+    <section class="us-hero" aria-labelledby="page-h1">
+      <div class="container">
+        <div class="us-hero-grid">
+
+          <div class="us-hero-content">
+
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+              <a href="/">Home</a>
+              <span class="sep">/</span>
+              <a href="/academic/programmes.html">Academic</a>
+              <span class="sep">/</span>
+              <span class="current">Cambridge Upper Secondary</span>
+            </nav>
+
+            <div class="us-hero-age-badge">
+              <span>Age 14 – 16</span>
+              <span class="sep"></span>
+              <span>Stage 4 of 5</span>
+            </div>
+
+            <h1 id="page-h1" class="us-hero-title">Cambridge <em>Upper Secondary</em></h1>
+            <hr class="us-hero-rule" />
+
+            <p class="us-hero-intro">Internationally recognised qualifications for ages 14 to 16 — Cambridge IGCSE and O Level inspire deep subject knowledge and the skills universities and employers value worldwide.</p>
+
+            <div class="us-hero-chips">
+              <div class="us-hero-chip">
+                <strong>70+ Subjects (IGCSE)</strong>
+                <span class="chip-sep"></span>
+                <span>World's Most Popular</span>
+              </div>
+              <div class="us-hero-chip">
+                <strong>Age 14 – 16</strong>
+                <span class="chip-sep"></span>
+                <span>Upper Secondary</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="us-hero-visual" aria-hidden="false">
+            <div class="us-hero-img">
+              <img src="/assets/images/Upper_Secondary/Home_3_L.webp" alt="Cambridge Upper Secondary students at JPIC" width="1400" height="780" loading="eager" />
+            </div>
+            <div class="us-hero-overlay">
+              <div class="us-hero-overlay-label">Cambridge Pathway</div>
+              <div class="us-hero-overlay-val">Stage 4 · Upper Secondary</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 2 — OVERVIEW
+         ═══════════════════════════════════════════════════════ -->
+    <section class="us-overview" aria-labelledby="overview-h">
+      <div class="container">
+        <div class="us-overview-grid">
+
+          <article class="us-overview-main reveal">
+            <span class="eyebrow with-line">About the Programme</span>
+            <h2 id="overview-h" class="us-overview-h2">World-Recognised Qualifications for the <em>Path Ahead</em></h2>
+            <hr class="gold-rule" />
+
+            <div class="us-overview-body">
+              <p>Cambridge Upper Secondary offers two internationally recognised qualifications — Cambridge IGCSE and Cambridge O Level — designed to inspire students to love learning and develop deep subject knowledge and skills for the future. Both build on the foundations of Cambridge Lower Secondary and are recognised by universities around the world.</p>
+              <p>At JPIC, Upper Secondary is where students define their academic strengths and chart their course to Advanced. Our teachers guide students through a broad and balanced curriculum, helping each learner build the subject expertise, critical thinking and confidence they need for A Level and beyond.</p>
+            </div>
+
+            <h3 class="us-subheading">Why Cambridge Upper Secondary</h3>
+
+            <div class="us-principles">
+
+              <div class="us-principle">
+                <div class="us-principle-num">1</div>
+                <div>
+                  <div class="us-principle-title">Globally Recognised</div>
+                  <div class="us-principle-desc">Cambridge IGCSE and O Level are valued by universities and higher education institutions worldwide, including all UK universities.</div>
+                </div>
+              </div>
+
+              <div class="us-principle">
+                <div class="us-principle-num">2</div>
+                <div>
+                  <div class="us-principle-title">Broad and Flexible</div>
+                  <div class="us-principle-desc">Choose from 70+ IGCSE subjects or 40+ O Level subjects in any combination to build a curriculum that suits every learner.</div>
+                </div>
+              </div>
+
+              <div class="us-principle">
+                <div class="us-principle-num">3</div>
+                <div>
+                  <div class="us-principle-title">Fair and Accessible</div>
+                  <div class="us-principle-desc">Assessments are designed to be fair for students worldwide, with tiered options in some subjects and support for non-native English speakers.</div>
+                </div>
+              </div>
+
+              <div class="us-principle">
+                <div class="us-principle-num">4</div>
+                <div>
+                  <div class="us-principle-title">Excellent Preparation</div>
+                  <div class="us-principle-desc">Both qualifications are the ideal foundation for Cambridge International AS &amp; A Level and other post-16 pathways.</div>
+                </div>
+              </div>
+
+            </div>
+          </article>
+
+          <aside class="us-sidebar reveal" aria-label="Programme facts at a glance">
+            <div class="us-sidebar-title">At a Glance</div>
+
+            <div class="us-fact-row">
+              <div class="us-fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/></svg>
+              </div>
+              <div>
+                <span class="us-fact-label">Age Range</span>
+                <div class="us-fact-value">14 to 16 years</div>
+              </div>
+            </div>
+
+            <div class="us-fact-row">
+              <div class="us-fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+              </div>
+              <div>
+                <span class="us-fact-label">Qualifications</span>
+                <div class="us-fact-value">IGCSE &amp; O Level</div>
+              </div>
+            </div>
+
+            <div class="us-fact-row">
+              <div class="us-fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+              </div>
+              <div>
+                <span class="us-fact-label">IGCSE Subjects</span>
+                <div class="us-fact-value">70+ in any combination</div>
+              </div>
+            </div>
+
+            <div class="us-fact-row">
+              <div class="us-fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+              </div>
+              <div>
+                <span class="us-fact-label">O Level Subjects</span>
+                <div class="us-fact-value">40+ in any combination</div>
+              </div>
+            </div>
+
+            <div class="us-fact-row">
+              <div class="us-fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </div>
+              <div>
+                <span class="us-fact-label">Global Reach</span>
+                <div class="us-fact-value">5,000 schools in 150 countries</div>
+              </div>
+            </div>
+
+            <div class="us-fact-row">
+              <div class="us-fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+              </div>
+              <div>
+                <span class="us-fact-label">Leads To</span>
+                <div class="us-fact-value">Cambridge Advanced (Age 16–19)</div>
+              </div>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 3 — QUALIFICATIONS
+         ═══════════════════════════════════════════════════════ -->
+    <section class="us-curriculum" aria-labelledby="curriculum-h">
+      <div class="container">
+
+        <div class="us-section-head reveal">
+          <span class="eyebrow with-line">Qualifications</span>
+          <h2 id="curriculum-h">Two Pathways, One <em>Global Standard</em></h2>
+          <hr class="gold-rule" />
+          <p class="lede">JPIC offers both Cambridge IGCSE and Cambridge O Level — each providing a rigorous, internationally benchmarked qualification for ages 14 to 16.</p>
+        </div>
+
+        <div class="us-curriculum-grid reveal-children">
+
+          <article class="us-curric-card">
+            <div class="us-curric-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><path d="M12 8l1.5 3 3.5.5-2.5 2.5.5 3.5L12 16l-3 1.5.5-3.5L7 11.5l3.5-.5z"/></svg>
+            </div>
+            <h3 class="us-curric-name">Cambridge IGCSE™</h3>
+            <p class="us-curric-desc">The world's most popular international qualification for ages 14 to 16. Choose from 70+ subjects in any combination — including 20 languages. Graded A* to G and recognised by universities in over 150 countries, Cambridge IGCSE helps students develop the deep subject knowledge and skills valued by top universities globally.</p>
+            <div style="display:flex; gap:16px; margin-top:16px; flex-wrap:wrap;">
+              <span style="font-family:var(--sans);font-size:12px;font-weight:700;color:var(--tiffany);">70+ Subjects</span>
+              <span style="font-family:var(--sans);font-size:12px;color:var(--eerie-black);opacity:0.5;">·</span>
+              <span style="font-family:var(--sans);font-size:12px;font-weight:700;color:var(--tiffany);">Graded A*–G</span>
+              <span style="font-family:var(--sans);font-size:12px;color:var(--eerie-black);opacity:0.5;">·</span>
+              <span style="font-family:var(--sans);font-size:12px;font-weight:700;color:var(--tiffany);">5,000 schools · 150 countries</span>
+            </div>
+          </article>
+
+          <article class="us-curric-card">
+            <div class="us-curric-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            </div>
+            <h3 class="us-curric-name">Cambridge O Level</h3>
+            <p class="us-curric-desc">An internationally recognised qualification equivalent to Cambridge IGCSE, sensitive to the needs of different countries. Available in 40+ subjects in any combination, Cambridge O Level is graded A*–E and accepted by universities worldwide — particularly suited to schools adapting the curriculum to their local context.</p>
+            <div style="display:flex; gap:16px; margin-top:16px; flex-wrap:wrap;">
+              <span style="font-family:var(--sans);font-size:12px;font-weight:700;color:var(--tiffany);">40+ Subjects</span>
+              <span style="font-family:var(--sans);font-size:12px;color:var(--eerie-black);opacity:0.5;">·</span>
+              <span style="font-family:var(--sans);font-size:12px;font-weight:700;color:var(--tiffany);">Graded A*–E</span>
+              <span style="font-family:var(--sans);font-size:12px;color:var(--eerie-black);opacity:0.5;">·</span>
+              <span style="font-family:var(--sans);font-size:12px;font-weight:700;color:var(--tiffany);">Equivalent to UK GCSE</span>
+            </div>
+          </article>
+
+        </div>
+
+        <div style="margin-top: 48px;">
+          <h3 style="font-family:var(--sans); font-size:13px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--oxford-blue); margin-bottom:20px; display:inline-flex; align-items:center; gap:12px;">
+            Subject Areas
+            <span style="flex:1; min-width:80px; height:1px; background:rgba(0,33,71,0.10); display:block;"></span>
+          </h3>
+          <div style="display:flex; flex-wrap:wrap; gap:10px;">
+            <span style="display:inline-flex; align-items:center; gap:6px; background:var(--baby-powder); border:1px solid rgba(0,33,71,0.12); border-radius:20px; padding:6px 14px; font-family:var(--sans); font-size:13px; color:var(--oxford-blue);">English Language &amp; Literature</span>
+            <span style="display:inline-flex; align-items:center; gap:6px; background:var(--baby-powder); border:1px solid rgba(0,33,71,0.12); border-radius:20px; padding:6px 14px; font-family:var(--sans); font-size:13px; color:var(--oxford-blue);">Languages (20+)</span>
+            <span style="display:inline-flex; align-items:center; gap:6px; background:var(--baby-powder); border:1px solid rgba(0,33,71,0.12); border-radius:20px; padding:6px 14px; font-family:var(--sans); font-size:13px; color:var(--oxford-blue);">Mathematics</span>
+            <span style="display:inline-flex; align-items:center; gap:6px; background:var(--baby-powder); border:1px solid rgba(0,33,71,0.12); border-radius:20px; padding:6px 14px; font-family:var(--sans); font-size:13px; color:var(--oxford-blue);">Additional Mathematics</span>
+            <span style="display:inline-flex; align-items:center; gap:6px; background:var(--baby-powder); border:1px solid rgba(0,33,71,0.12); border-radius:20px; padding:6px 14px; font-family:var(--sans); font-size:13px; color:var(--oxford-blue);">Biology</span>
+            <span style="display:inline-flex; align-items:center; gap:6px; background:var(--baby-powder); border:1px solid rgba(0,33,71,0.12); border-radius:20px; padding:6px 14px; font-family:var(--sans); font-size:13px; color:var(--oxford-blue);">Chemistry</span>
+            <span style="display:inline-flex; align-items:center; gap:6px; background:var(--baby-powder); border:1px solid rgba(0,33,71,0.12); border-radius:20px; padding:6px 14px; font-family:var(--sans); font-size:13px; color:var(--oxford-blue);">Physics</span>
+            <span style="display:inline-flex; align-items:center; gap:6px; background:var(--baby-powder); border:1px solid rgba(0,33,71,0.12); border-radius:20px; padding:6px 14px; font-family:var(--sans); font-size:13px; color:var(--oxford-blue);">Combined Science</span>
+            <span style="display:inline-flex; align-items:center; gap:6px; background:var(--baby-powder); border:1px solid rgba(0,33,71,0.12); border-radius:20px; padding:6px 14px; font-family:var(--sans); font-size:13px; color:var(--oxford-blue);">Economics</span>
+            <span style="display:inline-flex; align-items:center; gap:6px; background:var(--baby-powder); border:1px solid rgba(0,33,71,0.12); border-radius:20px; padding:6px 14px; font-family:var(--sans); font-size:13px; color:var(--oxford-blue);">Geography</span>
+            <span style="display:inline-flex; align-items:center; gap:6px; background:var(--baby-powder); border:1px solid rgba(0,33,71,0.12); border-radius:20px; padding:6px 14px; font-family:var(--sans); font-size:13px; color:var(--oxford-blue);">History</span>
+            <span style="display:inline-flex; align-items:center; gap:6px; background:var(--baby-powder); border:1px solid rgba(0,33,71,0.12); border-radius:20px; padding:6px 14px; font-family:var(--sans); font-size:13px; color:var(--oxford-blue);">Global Perspectives</span>
+            <span style="display:inline-flex; align-items:center; gap:6px; background:var(--baby-powder); border:1px solid rgba(0,33,71,0.12); border-radius:20px; padding:6px 14px; font-family:var(--sans); font-size:13px; color:var(--oxford-blue);">Computer Science</span>
+            <span style="display:inline-flex; align-items:center; gap:6px; background:var(--baby-powder); border:1px solid rgba(0,33,71,0.12); border-radius:20px; padding:6px 14px; font-family:var(--sans); font-size:13px; color:var(--oxford-blue);">Business Studies</span>
+            <span style="display:inline-flex; align-items:center; gap:6px; background:var(--baby-powder); border:1px solid rgba(0,33,71,0.12); border-radius:20px; padding:6px 14px; font-family:var(--sans); font-size:13px; color:var(--oxford-blue);">Art &amp; Design</span>
+            <span style="display:inline-flex; align-items:center; gap:6px; background:var(--baby-powder); border:1px solid rgba(0,33,71,0.12); border-radius:20px; padding:6px 14px; font-family:var(--sans); font-size:13px; color:var(--oxford-blue);">Design &amp; Technology</span>
+            <span style="display:inline-flex; align-items:center; gap:6px; background:var(--baby-powder); border:1px solid rgba(0,33,71,0.12); border-radius:20px; padding:6px 14px; font-family:var(--sans); font-size:13px; color:var(--oxford-blue);">Physical Education</span>
+            <span style="display:inline-flex; align-items:center; gap:6px; background:var(--baby-powder); border:1px solid rgba(0,33,71,0.12); border-radius:20px; padding:6px 14px; font-family:var(--sans); font-size:13px; color:var(--oxford-blue);">Food &amp; Nutrition</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 4 — ASSESSMENT
+         ═══════════════════════════════════════════════════════ -->
+    <section class="us-assessment" aria-labelledby="assessment-h">
+      <div class="container">
+        <div class="us-assessment-grid">
+
+          <div class="us-assessment-text reveal">
+            <span class="eyebrow with-line">Assessment</span>
+            <h2 id="assessment-h">Fair Assessment, <em>Global Standards</em></h2>
+            <hr class="gold-rule" />
+            <p class="us-assessment-body">Both Cambridge IGCSE and O Level assessments take place at the end of the course, using a range of assessment types to give every student the best opportunity to demonstrate their learning.</p>
+
+            <div class="us-asmt-blocks">
+
+              <div class="us-asmt-block">
+                <div class="us-asmt-title"><span class="num">01 ·</span> End-of-Course Assessment</div>
+                <div class="us-asmt-desc">All examinations take place at the end of the course, with a linear model that gives learners more time to develop deep subject understanding before being assessed.</div>
+              </div>
+
+              <div class="us-asmt-block">
+                <div class="us-asmt-title"><span class="num">02 ·</span> Tiered Options</div>
+                <div class="us-asmt-desc">Some subjects offer Core and Extended tiers, ensuring learners of all abilities are assessed positively while allowing the most able students the chance to excel.</div>
+              </div>
+
+              <div class="us-asmt-block">
+                <div class="us-asmt-title"><span class="num">03 ·</span> Range of Assessment Types</div>
+                <div class="us-asmt-desc">Written, oral, coursework and practical options give students more ways to demonstrate their learning — particularly important for non-native English speakers.</div>
+              </div>
+
+              <div class="us-asmt-block">
+                <div class="us-asmt-title"><span class="num">04 ·</span> Cambridge ICE Certificate</div>
+                <div class="us-asmt-desc">A group award for IGCSE students studying at least seven subjects including two languages — popular in India, Latin America and the US, and a strong complement to IGCSE results.</div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="us-asmt-img-wrap reveal">
+            <div class="us-asmt-img">
+              <img src="/assets/images/Upper_Secondary/DSC06013_L.webp" alt="Cambridge Upper Secondary at JPIC" width="1440" height="960" loading="lazy" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 5 — SUPPORT
+         ═══════════════════════════════════════════════════════ -->
+    <section class="us-support" aria-labelledby="support-h">
+      <div class="container">
+
+        <div class="us-section-head reveal">
+          <span class="eyebrow with-line">At JPIC</span>
+          <h2 id="support-h">Preparing Every Student to <em>Achieve</em></h2>
+          <hr class="gold-rule" />
+          <p class="lede">Our Upper Secondary programme equips students for their best possible examination performance and for the challenges of Cambridge Advanced.</p>
+        </div>
+
+        <div class="us-support-grid reveal-children">
+
+          <article class="us-support-card">
+            <div class="us-support-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            </div>
+            <h3>Teaching Support</h3>
+            <p>Syllabuses, teacher guides, schemes of work, endorsed textbooks and Resource Plus give our teachers everything needed to plan and deliver outstanding Cambridge IGCSE and O Level lessons across all subjects.</p>
+          </article>
+
+          <article class="us-support-card">
+            <div class="us-support-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 12l2 2 4-4"/><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+            </div>
+            <h3>Exam Support</h3>
+            <p>Past papers, mark schemes, principal examiner reports, example candidate responses and the online Test Maker help students prepare thoroughly and confidently for their examinations.</p>
+          </article>
+
+          <article class="us-support-card">
+            <div class="us-support-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <h3>Professional Development</h3>
+            <p>Cambridge provides syllabus-specific professional development — face-to-face, virtual and online — to keep our teachers at the forefront of Cambridge Upper Secondary teaching and assessment practice.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 6 — PATHWAY STRIP
+         ═══════════════════════════════════════════════════════ -->
+    <section class="us-pathway" aria-label="Cambridge Pathway navigation">
+      <div class="container">
+        <div class="us-pathway-label">The Cambridge Pathway at JPIC</div>
+
+        <div class="us-pathway-strip">
+
+          <a class="us-pathway-node" href="/academic/cambridge-early-years.html">
+            <div class="us-path-circle">1</div>
+            <div class="us-path-text">
+              <div class="us-path-name">Early Years</div>
+              <div class="us-path-age">Age 3–6</div>
+            </div>
+          </a>
+
+          <div class="us-path-connector" aria-hidden="true"></div>
+
+          <a class="us-pathway-node" href="/academic/cambridge-primary.html">
+            <div class="us-path-circle">2</div>
+            <div class="us-path-text">
+              <div class="us-path-name">Primary</div>
+              <div class="us-path-age">Age 5–11</div>
+            </div>
+          </a>
+
+          <div class="us-path-connector" aria-hidden="true"></div>
+
+          <a class="us-pathway-node" href="/academic/cambridge-lower-secondary.html">
+            <div class="us-path-circle">3</div>
+            <div class="us-path-text">
+              <div class="us-path-name">Lower Secondary</div>
+              <div class="us-path-age">Age 11–14</div>
+            </div>
+          </a>
+
+          <div class="us-path-connector" aria-hidden="true"></div>
+
+          <a class="us-pathway-node active" href="/academic/cambridge-upper-secondary.html" aria-current="page">
+            <div class="us-path-circle">4</div>
+            <div class="us-path-text">
+              <div class="us-path-name">Upper Secondary</div>
+              <div class="us-path-age">Age 14–16</div>
+            </div>
+          </a>
+
+          <div class="us-path-connector" aria-hidden="true"></div>
+
+          <a class="us-pathway-node" href="/academic/cambridge-advanced.html">
+            <div class="us-path-circle">5</div>
+            <div class="us-path-text">
+              <div class="us-path-name">Advanced</div>
+              <div class="us-path-age">Age 16–19</div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 7 — PREV / NEXT
+         ═══════════════════════════════════════════════════════ -->
+    <section class="us-prevnext" aria-label="Programme navigation">
+      <div class="container">
+        <div class="us-prevnext-grid">
+
+          <a class="us-prev" href="/academic/cambridge-lower-secondary.html">
+            <div class="us-pn-label">← Previous Stage</div>
+            <div class="us-pn-title">Cambridge Lower Secondary</div>
+            <div class="us-pn-sub">Age 11 – 14</div>
+          </a>
+
+          <a class="us-next" href="/academic/cambridge-advanced.html">
+            <div class="us-pn-label">Next Stage →</div>
+            <div class="us-pn-title">Cambridge Advanced</div>
+            <div class="us-pn-sub">Age 16 – 19</div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 8 — CTA
+         ═══════════════════════════════════════════════════════ -->
+    <section class="us-cta" aria-labelledby="cta-h">
+      <div class="container">
+        <div class="us-cta-inner reveal">
+          <span class="us-cta-small">Unlock your potential at JPIC</span>
+          <h2 id="cta-h">Begin the Path to a <em>World-Class Qualification</em></h2>
+          <hr class="gold-rule" />
+          <p class="us-cta-sub">Our Admissions team is ready to answer your questions and guide you through enrolment for Cambridge Upper Secondary at St. John Paul II International College.</p>
+
+          <div class="us-cta-actions">
+            <a href="/admissions/index.html" class="btn btn-primary">
+              Apply Now
+              <span class="arrow">→</span>
+            </a>
+            <a href="/contact.html" class="btn btn-outline">
+              Contact Admissions
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer (injected by JS) -->
+  <div data-component="footer"></div>
+
+  <script>
+    /* reveal-children: extend production scroll-reveal for staggered grids */
+    (function () {
+      if (!('IntersectionObserver' in window)) {
+        document.querySelectorAll('.reveal-children').forEach(function (el) {
+          el.classList.add('revealed');
+        });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            var parent = entry.target;
+            Array.from(parent.children).forEach(function (child, i) {
+              child.style.setProperty('--i', i);
+            });
+            parent.classList.add('revealed');
+            io.unobserve(parent);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+      document.querySelectorAll('.reveal-children').forEach(function (el) {
+        io.observe(el);
+      });
+    })();
+  </script>
+
+</body>
+</html>

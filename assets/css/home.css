@@ -48,9 +48,9 @@
     ),
     linear-gradient(
       110deg,
-      rgba(0,21,48,0.90) 0%,
-      rgba(0,21,48,0.72) 50%,
-      rgba(0,33,71,0.55) 100%
+      rgba(0,21,48,0.72) 0%,
+      rgba(0,21,48,0.52) 50%,
+      rgba(0,33,71,0.35) 100%
     );
 }
 
@@ -166,6 +166,7 @@
   z-index: 10;
 }
 .hero-dot {
+  position: relative;
   width: 7px;
   height: 7px;
   border-radius: 50%;
@@ -175,6 +176,15 @@
   padding: 0;
   transition: all 0.35s ease;
   backdrop-filter: blur(4px);
+}
+.hero-dot::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 44px;
+  height: 44px;
 }
 .hero-dot:hover {
   background: rgba(255,255,255,0.55);

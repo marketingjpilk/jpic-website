@@ -1,0 +1,1450 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cambridge Primary (Age 5–11) | St. John Paul II International College</title>
+  <meta name="description" content="Cambridge Primary at St. John Paul II International College — a broad and balanced curriculum for ages 5 to 11 building confident, responsible and innovative learners." />
+  <link rel="canonical" href="https://jpeducation.net/academic/cambridge-primary">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://jpeducation.net/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Academic",
+      "item": "https://jpeducation.net/academic/programmes"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Cambridge Primary",
+      "item": "https://jpeducation.net/academic/cambridge-primary"
+    }
+  ]
+}
+</script>
+  <meta name="keywords" content="Cambridge Primary JPIC, primary education Sri Lanka, Cambridge school Wennappuwa, JPIC primary programme" />
+
+  <meta property="og:title" content="Cambridge Primary (Age 5–11) — JPIC" />
+  <meta property="og:description" content="Cambridge Primary at St. John Paul II International College — a broad and balanced curriculum for ages 5 to 11 building confident, responsible and innovative learners." />
+  <meta property="og:image" content="https://jpeducation.net/assets/images/og-image.webp" />
+  <meta property="og:url" content="https://jpeducation.net/academic/cambridge-primary.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="St. John Paul II International College" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cambridge Primary (Age 5–11) — JPIC" />
+  <meta name="twitter:description" content="A broad and balanced Cambridge curriculum for ages 5–11 at St. John Paul II International College, Wennappuwa." />
+  <meta name="twitter:image" content="https://jpeducation.net/assets/images/og-image.webp" />
+
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="/assets/css/main.css?v=20260517" />
+  <link rel="stylesheet" href="/assets/css/components.css?v=20260517" />
+  <script src="/assets/js/main.js" defer></script>
+
+  <style>
+    /* ════════════════════════════════════════════════════
+       PAGE-LEVEL ALIASES — bridge design tokens to production vars
+       ════════════════════════════════════════════════════ */
+    :root {
+      --light-cyan-alt: #D7FDF5;
+      --rule:           rgba(0, 33, 71, 0.10);
+      --serif-display:  var(--font-display);
+      --serif-italic:   var(--font-accent);
+      --sans:           var(--font-body);
+    }
+
+    /* ════════════════════════════════════════════════════
+       SHARED ATOMS (not in production main.css)
+       ════════════════════════════════════════════════════ */
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--tiffany);
+    }
+    .eyebrow.with-line::before {
+      content: '';
+      width: 28px;
+      height: 1px;
+      background: currentColor;
+    }
+
+    .gold-rule {
+      display: block;
+      width: 64px;
+      height: 3px;
+      background: var(--champagne);
+      border: none;
+    }
+
+    /* ════════════════════════════════════════════════════
+       REVEAL-CHILDREN support (production JS only handles .reveal)
+       ════════════════════════════════════════════════════ */
+    .reveal-children > * {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+      transition-delay: calc(var(--i, 0) * 0.1s);
+    }
+    .reveal-children.revealed > * {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ════════════════════════════════════════════════════
+       Section 1 — Hero
+       ════════════════════════════════════════════════════ */
+    .pr-hero {
+      background: var(--oxford-blue);
+      background-image: repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 40px,
+        rgba(255,255,255,0.03) 40px,
+        rgba(255,255,255,0.03) 41px
+      );
+      min-height: 460px;
+      padding: 80px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .pr-hero::before {
+      content: '';
+      position: absolute;
+      top: -200px; right: -180px;
+      width: 540px; height: 540px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0,189,182,0.18) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .pr-hero::after {
+      content: '02';
+      position: absolute;
+      bottom: -80px; left: -30px;
+      font-family: var(--serif-display);
+      font-size: 360px;
+      font-weight: 900;
+      color: rgba(255,230,158,0.04);
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .pr-hero-grid {
+      display: grid;
+      grid-template-columns: 58% 42%;
+      gap: 64px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .pr-hero-age-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin: 16px 0;
+      background: var(--champagne);
+      color: var(--oxford-blue);
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 20px;
+    }
+    .pr-hero-age-badge .sep {
+      width: 4px; height: 4px;
+      border-radius: 50%;
+      background: var(--oxford-blue);
+      opacity: 0.5;
+    }
+
+    .pr-hero-title {
+      font-family: var(--serif-display);
+      font-weight: 700;
+      color: #ffffff;
+      font-size: 58px;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+    }
+    .pr-hero-title em {
+      font-style: italic;
+      color: var(--champagne);
+      font-weight: 400;
+    }
+
+    .pr-hero-rule {
+      display: block;
+      width: 64px; height: 3px;
+      background: var(--champagne);
+      border: none;
+      margin: 20px 0;
+    }
+
+    .pr-hero-intro {
+      font-family: var(--sans);
+      font-size: 17px;
+      color: rgba(255,255,255,0.88);
+      line-height: 1.7;
+      max-width: 520px;
+    }
+
+    .pr-hero-chips {
+      display: inline-flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 32px;
+    }
+    .pr-hero-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 6px;
+      padding: 8px 18px;
+      font-family: var(--sans);
+      font-size: 13px;
+      color: #ffffff;
+      transition: all 0.3s ease;
+    }
+    .pr-hero-chip:hover {
+      border-color: var(--champagne);
+      background: rgba(255,230,158,0.06);
+    }
+    .pr-hero-chip strong { font-weight: 700; color: var(--champagne); }
+    .pr-hero-chip .chip-sep {
+      width: 1px; height: 14px;
+      background: rgba(255,255,255,0.2);
+    }
+    .pr-hero-chip span:last-child { color: rgba(255,255,255,0.65); }
+
+    /* Hero right visual */
+    .pr-hero-visual { position: relative; }
+    .pr-hero-img {
+      border-radius: 10px;
+      height: 340px;
+      position: relative;
+      overflow: hidden;
+    }
+    .pr-hero-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    .pr-hero-overlay {
+      position: absolute;
+      bottom: -28px; left: -20px;
+      background: var(--oxford-blue);
+      border-left: 4px solid var(--champagne);
+      border-radius: 6px;
+      padding: 16px 20px;
+      box-shadow: 0 14px 38px rgba(0,0,0,0.32);
+      z-index: 2;
+    }
+    .pr-hero-overlay-label {
+      font-family: var(--sans);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--champagne);
+      margin-bottom: 4px;
+    }
+    .pr-hero-overlay-val {
+      font-family: var(--serif-display);
+      font-size: 15px;
+      color: #ffffff;
+      font-weight: 500;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Section 2 — Overview
+       ════════════════════════════════════════════════════ */
+    .pr-overview {
+      background: #ffffff;
+      padding: 96px 0;
+    }
+    .pr-overview-grid {
+      display: grid;
+      grid-template-columns: 62% 38%;
+      gap: 64px;
+      align-items: start;
+    }
+    .pr-overview-h2 {
+      font-family: var(--serif-display);
+      font-size: 40px;
+      font-weight: 500;
+      color: var(--oxford-blue);
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      margin-top: 12px;
+    }
+    .pr-overview-h2 em { font-style: italic; color: var(--tiffany); }
+    .pr-overview .gold-rule { margin: 18px 0 28px; }
+    .pr-overview-body p {
+      font-family: var(--sans);
+      font-size: 16px;
+      color: var(--eerie-black);
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    .pr-subheading {
+      font-family: var(--sans);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--oxford-blue);
+      margin: 40px 0 24px;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .pr-subheading::after {
+      content: '';
+      flex: 1;
+      min-width: 80px;
+      height: 1px;
+      background: var(--rule);
+    }
+
+    .pr-principles { display: flex; flex-direction: column; gap: 20px; }
+    .pr-principle { display: flex; gap: 16px; align-items: flex-start; padding: 14px 0; }
+    .pr-principle-num {
+      width: 36px; height: 36px;
+      flex-shrink: 0;
+      background: var(--tiffany);
+      color: #ffffff;
+      border-radius: 50%;
+      font-family: var(--sans);
+      font-size: 14px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+    .pr-principle:hover .pr-principle-num {
+      background: var(--oxford-blue);
+      transform: scale(1.04);
+    }
+    .pr-principle-title {
+      font-family: var(--sans);
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--oxford-blue);
+      margin-bottom: 4px;
+      letter-spacing: 0.02em;
+    }
+    .pr-principle-desc {
+      font-family: var(--sans);
+      font-size: 14px;
+      color: var(--eerie-black);
+      line-height: 1.65;
+    }
+
+    /* Sidebar */
+    .pr-sidebar {
+      position: sticky;
+      top: 100px;
+      background: var(--light-cyan-alt);
+      border-radius: 10px;
+      border-left: 4px solid var(--tiffany);
+      padding: 32px 28px;
+    }
+    .pr-sidebar-title {
+      font-family: var(--serif-display);
+      font-size: 22px;
+      font-weight: 500;
+      color: var(--oxford-blue);
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .pr-sidebar-title::before {
+      content: '';
+      display: block;
+      width: 18px; height: 1px;
+      background: var(--tiffany);
+    }
+    .pr-fact-row {
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(0,189,182,0.2);
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .pr-fact-row:last-child { border-bottom: none; }
+    .pr-fact-icon {
+      width: 36px; height: 36px;
+      border-radius: 8px;
+      background: rgba(0,189,182,0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .pr-fact-icon svg { width: 18px; height: 18px; color: var(--tiffany); }
+    .pr-fact-label {
+      font-family: var(--sans);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--tiffany);
+      display: block;
+      margin-bottom: 2px;
+    }
+    .pr-fact-value {
+      font-family: var(--sans);
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--oxford-blue);
+      line-height: 1.3;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Section 3 — Curriculum
+       ════════════════════════════════════════════════════ */
+    .pr-curriculum {
+      background: var(--baby-powder);
+      padding: 96px 0;
+    }
+    .pr-section-head {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+    .pr-section-head .eyebrow { justify-content: center; }
+    .pr-section-head h2 {
+      font-family: var(--serif-display);
+      font-size: 40px;
+      font-weight: 500;
+      color: var(--oxford-blue);
+      margin-top: 14px;
+      letter-spacing: -0.01em;
+    }
+    .pr-section-head h2 em { font-style: italic; color: var(--tiffany); }
+    .pr-section-head .gold-rule { margin: 18px auto 16px; }
+    .pr-section-head .lede {
+      font-family: var(--sans);
+      font-size: 15px;
+      color: var(--eerie-black);
+      max-width: 580px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    .pr-curriculum-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .pr-curric-card {
+      background: #ffffff;
+      border-radius: 10px;
+      border-top: 3px solid var(--tiffany);
+      padding: 32px 28px;
+      box-shadow: 0 2px 16px rgba(0,33,71,0.06);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .pr-curric-card::before {
+      content: attr(data-num);
+      position: absolute;
+      top: 14px; right: 18px;
+      font-family: var(--serif-display);
+      font-size: 56px;
+      font-weight: 700;
+      color: rgba(0,33,71,0.05);
+      line-height: 1;
+      pointer-events: none;
+    }
+    .pr-curric-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 36px rgba(0,33,71,0.12);
+    }
+    .pr-curric-icon {
+      width: 52px; height: 52px;
+      background: var(--light-cyan-alt);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      transition: background 0.3s ease;
+    }
+    .pr-curric-card:hover .pr-curric-icon { background: var(--tiffany); }
+    .pr-curric-icon svg { width: 26px; height: 26px; color: var(--tiffany); transition: color 0.3s ease; }
+    .pr-curric-card:hover .pr-curric-icon svg { color: #ffffff; }
+    .pr-curric-name {
+      font-family: var(--sans);
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--oxford-blue);
+      margin-bottom: 10px;
+      letter-spacing: 0.01em;
+      line-height: 1.3;
+    }
+    .pr-curric-desc {
+      font-family: var(--sans);
+      font-size: 14px;
+      color: var(--eerie-black);
+      line-height: 1.65;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Section 4 — Assessment
+       ════════════════════════════════════════════════════ */
+    .pr-assessment {
+      background: #ffffff;
+      padding: 96px 0;
+    }
+    .pr-assessment-grid {
+      display: grid;
+      grid-template-columns: 55% 45%;
+      gap: 56px;
+      align-items: center;
+    }
+    .pr-assessment h2 {
+      font-family: var(--serif-display);
+      font-size: 38px;
+      font-weight: 500;
+      color: var(--oxford-blue);
+      margin-top: 12px;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+    .pr-assessment h2 em { font-style: italic; color: var(--tiffany); }
+    .pr-assessment .gold-rule { margin: 18px 0 24px; }
+    .pr-assessment-body {
+      font-family: var(--sans);
+      font-size: 15px;
+      color: var(--eerie-black);
+      line-height: 1.8;
+    }
+
+    .pr-asmt-blocks { margin-top: 36px; display: flex; flex-direction: column; gap: 0; }
+    .pr-asmt-block {
+      border-left: 3px solid var(--champagne);
+      padding: 16px 0 16px 20px;
+      margin-bottom: 8px;
+      transition: border-color 0.3s ease, padding-left 0.3s ease;
+    }
+    .pr-asmt-block:hover { border-left-color: var(--tiffany); padding-left: 26px; }
+    .pr-asmt-title {
+      font-family: var(--sans);
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--oxford-blue);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .pr-asmt-title .num {
+      font-family: var(--serif-display);
+      font-style: italic;
+      font-size: 14px;
+      color: var(--tiffany);
+      font-weight: 400;
+    }
+    .pr-asmt-desc { font-family: var(--sans); font-size: 14px; color: var(--eerie-black); line-height: 1.65; }
+
+    .pr-asmt-img {
+      border-radius: 10px;
+      height: 400px;
+      position: relative;
+      overflow: hidden;
+    }
+    .pr-asmt-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Section 5 — Support
+       ════════════════════════════════════════════════════ */
+    .pr-support {
+      background: var(--oxford-blue);
+      padding: 80px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .pr-support::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: repeating-linear-gradient(
+        45deg,
+        rgba(255,230,158,0.025) 0px, rgba(255,230,158,0.025) 1px,
+        transparent 1px, transparent 14px
+      );
+      pointer-events: none;
+    }
+    .pr-support .pr-section-head h2 { color: #ffffff; }
+    .pr-support .pr-section-head h2 em { color: var(--turquoise); }
+    .pr-support .pr-section-head .eyebrow { color: var(--champagne); }
+    .pr-support .pr-section-head .lede { color: rgba(255,255,255,0.8); }
+
+    .pr-support-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+    .pr-support-card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 10px;
+      padding: 36px 28px;
+      transition: all 0.3s ease;
+    }
+    .pr-support-card:hover {
+      background: rgba(255,255,255,0.10);
+      border-color: rgba(255,230,158,0.3);
+      transform: translateY(-4px);
+    }
+    .pr-support-icon {
+      width: 48px; height: 48px;
+      background: var(--tiffany);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .pr-support-icon svg { width: 22px; height: 22px; color: #ffffff; }
+    .pr-support-card h3 {
+      font-family: var(--serif-display);
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--champagne);
+      margin: 20px 0 12px;
+    }
+    .pr-support-card p {
+      font-family: var(--sans);
+      font-size: 14px;
+      color: rgba(255,255,255,0.8);
+      line-height: 1.7;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Section 6 — Pathway strip
+       ════════════════════════════════════════════════════ */
+    .pr-pathway {
+      background: var(--baby-powder);
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+      padding: 56px 0;
+    }
+    .pr-pathway-label {
+      text-align: center;
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--tiffany);
+    }
+    .pr-pathway-strip {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 0;
+      margin-top: 32px;
+      max-width: 980px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .pr-pathway-node {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+      width: 140px;
+      text-decoration: none;
+      transition: transform 0.3s ease;
+      padding: 0 4px;
+    }
+    .pr-pathway-node:hover { transform: translateY(-3px); }
+
+    .pr-path-circle {
+      width: 52px; height: 52px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--serif-display);
+      font-size: 20px;
+      font-weight: 700;
+      transition: all 0.3s ease;
+    }
+    .pr-pathway-node.active .pr-path-circle {
+      background: var(--champagne);
+      color: var(--oxford-blue);
+      box-shadow: 0 6px 22px rgba(255,230,158,0.45), inset 0 0 0 3px rgba(255,255,255,0.5);
+    }
+    .pr-pathway-node:not(.active) .pr-path-circle {
+      background: transparent;
+      border: 2px solid rgba(0,33,71,0.3);
+      color: rgba(0,33,71,0.5);
+    }
+    .pr-pathway-node:not(.active):hover .pr-path-circle {
+      border-color: var(--tiffany);
+      color: var(--tiffany);
+    }
+    .pr-path-name {
+      font-family: var(--sans);
+      font-size: 12px;
+      font-weight: 700;
+      margin-top: 4px;
+      text-align: center;
+      line-height: 1.3;
+      letter-spacing: 0.02em;
+      transition: color 0.3s ease;
+    }
+    .pr-path-age { font-family: var(--sans); font-size: 11px; margin-top: 0; letter-spacing: 0.02em; }
+    .pr-pathway-node.active .pr-path-name { color: var(--oxford-blue); }
+    .pr-pathway-node.active .pr-path-age { color: var(--tiffany); font-weight: 600; }
+    .pr-pathway-node:not(.active) .pr-path-name { color: rgba(0,33,71,0.5); }
+    .pr-pathway-node:not(.active) .pr-path-age { color: rgba(0,33,71,0.3); }
+    .pr-pathway-node:not(.active):hover .pr-path-name,
+    .pr-pathway-node:not(.active):hover .pr-path-age { color: var(--tiffany); }
+
+    .pr-path-connector {
+      flex: 1;
+      height: 1px;
+      margin-top: 26px;
+      background: repeating-linear-gradient(
+        to right,
+        var(--champagne) 0, var(--champagne) 6px,
+        transparent 6px, transparent 12px
+      );
+      min-width: 12px;
+      max-width: 60px;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Section 7 — Prev / Next
+       ════════════════════════════════════════════════════ */
+    .pr-prevnext { background: #ffffff; border-top: 1px solid var(--rule); }
+    .pr-prevnext-grid { display: grid; grid-template-columns: 1fr 1fr; align-items: stretch; }
+    .pr-prev, .pr-next {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 48px 40px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+      position: relative;
+    }
+    .pr-prev:hover, .pr-next:hover { background: var(--baby-powder); }
+    .pr-prev { padding-left: 0; border-right: 1px solid var(--rule); }
+    .pr-next { padding-right: 0; text-align: right; align-items: flex-end; }
+    .pr-pn-label {
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(0,189,182,0.7);
+      margin-bottom: 10px;
+    }
+    .pr-pn-title {
+      font-family: var(--serif-display);
+      font-size: 22px;
+      font-weight: 500;
+      color: var(--oxford-blue);
+      transition: color 0.3s ease;
+      letter-spacing: -0.005em;
+    }
+    .pr-prev:hover .pr-pn-title,
+    .pr-next:hover .pr-pn-title { color: var(--tiffany); }
+    .pr-pn-sub { font-family: var(--sans); font-size: 13px; color: rgba(31,33,33,0.6); margin-top: 6px; }
+    .pr-next .pr-pn-sub { color: var(--tiffany); font-weight: 500; }
+
+    /* ════════════════════════════════════════════════════
+       Section 8 — CTA
+       ════════════════════════════════════════════════════ */
+    .pr-cta {
+      background: var(--light-cyan-alt);
+      padding: 88px 0;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+    .pr-cta::before, .pr-cta::after {
+      content: '';
+      position: absolute;
+      width: 280px; height: 280px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0,189,182,0.18) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .pr-cta::before { top: -120px; left: -80px; }
+    .pr-cta::after  { bottom: -120px; right: -80px; }
+
+    .pr-cta-inner { max-width: 640px; margin: 0 auto; position: relative; }
+    .pr-cta-small {
+      font-family: var(--serif-italic);
+      font-style: italic;
+      font-size: 18px;
+      color: var(--tiffany);
+      margin-bottom: 16px;
+      display: block;
+    }
+    .pr-cta h2 {
+      font-family: var(--serif-display);
+      font-size: 42px;
+      font-weight: 500;
+      color: var(--oxford-blue);
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+    .pr-cta h2 em { font-style: italic; color: var(--tiffany); }
+    .pr-cta .gold-rule { margin: 20px auto; }
+    .pr-cta-sub {
+      font-family: var(--sans);
+      font-size: 16px;
+      color: var(--eerie-black);
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+    .pr-cta-actions { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+
+    /* CTA button overrides for this page's context */
+    .pr-cta .btn-primary {
+      background: var(--oxford-blue);
+      color: var(--champagne);
+      border-color: var(--oxford-blue);
+    }
+    .pr-cta .btn-primary:hover {
+      background: var(--tiffany);
+      border-color: var(--tiffany);
+      color: #ffffff;
+    }
+
+    /* ════════════════════════════════════════════════════
+       Responsive — 768px
+       ════════════════════════════════════════════════════ */
+    @media (max-width: 768px) {
+      .pr-hero { padding: 56px 0 64px; min-height: 0; }
+      .pr-hero-grid { grid-template-columns: 1fr; gap: 0; }
+      .pr-hero-visual { display: none; }
+      .pr-hero-title { font-size: 36px; }
+      .pr-hero-chips { gap: 8px; }
+
+      .pr-overview { padding: 64px 0; }
+      .pr-overview-grid { grid-template-columns: 1fr; gap: 40px; }
+      .pr-sidebar { position: static; top: auto; }
+      .pr-overview-h2 { font-size: 30px; }
+
+      .pr-curriculum { padding: 64px 0; }
+      .pr-curriculum-grid { grid-template-columns: 1fr; gap: 16px; }
+      .pr-section-head h2 { font-size: 30px; }
+      .pr-section-head { margin-bottom: 40px; }
+
+      .pr-assessment { padding: 64px 0; }
+      .pr-assessment-grid { grid-template-columns: 1fr; gap: 40px; }
+      .pr-assessment h2 { font-size: 28px; }
+      .pr-asmt-img { height: 280px; }
+      .pr-assessment-grid > .pr-assessment-text { order: 1; }
+      .pr-assessment-grid > .pr-asmt-img-wrap  { order: 2; }
+
+      .pr-support { padding: 64px 0; }
+      .pr-support-grid { grid-template-columns: 1fr; gap: 16px; }
+
+      .pr-pathway { padding: 48px 0; }
+      .pr-pathway-strip {
+        flex-direction: column;
+        align-items: center;
+        max-width: 280px;
+        gap: 0;
+      }
+      .pr-pathway-node {
+        width: 100%;
+        flex-direction: row;
+        gap: 18px;
+        justify-content: flex-start;
+        padding: 12px 0;
+      }
+      .pr-path-text { display: flex; flex-direction: column; align-items: flex-start; }
+      .pr-path-name, .pr-path-age { text-align: left; }
+      .pr-path-connector {
+        width: 1px; height: 24px;
+        margin-top: 0; margin-left: 25px;
+        background: repeating-linear-gradient(
+          to bottom,
+          var(--champagne) 0, var(--champagne) 5px,
+          transparent 5px, transparent 10px
+        );
+        max-width: none; min-width: 0;
+        align-self: flex-start;
+      }
+
+      .pr-prevnext-grid { grid-template-columns: 1fr; }
+      .pr-prev, .pr-next {
+        padding: 32px 0;
+        text-align: left;
+        align-items: flex-start;
+        border-right: none;
+      }
+      .pr-prev { border-bottom: 1px solid var(--rule); }
+
+      .pr-cta { padding: 64px 0; }
+      .pr-cta h2 { font-size: 32px; }
+      .pr-cta-actions { flex-direction: column; }
+      .pr-cta-actions .btn { width: 100%; justify-content: center; }
+    }
+
+    @media (max-width: 1100px) and (min-width: 769px) {
+      .pr-curriculum-grid { grid-template-columns: repeat(2, 1fr); }
+      .pr-support-grid { grid-template-columns: 1fr; gap: 18px; }
+      .pr-hero-title { font-size: 48px; }
+    }
+  </style>
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation (injected by JS) -->
+  <div data-component="nav"></div>
+
+  <main id="main-content">
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 1 — HERO
+         ═══════════════════════════════════════════════════════ -->
+    <section class="pr-hero" aria-labelledby="page-h1">
+      <div class="container">
+        <div class="pr-hero-grid">
+
+          <div class="pr-hero-content">
+
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+              <a href="/">Home</a>
+              <span class="sep">/</span>
+              <a href="/academic/programmes.html">Academic</a>
+              <span class="sep">/</span>
+              <span class="current">Cambridge Primary</span>
+            </nav>
+
+            <div class="pr-hero-age-badge">
+              <span>Age 5 – 11</span>
+              <span class="sep"></span>
+              <span>Stage 2 of 5</span>
+            </div>
+
+            <h1 id="page-h1" class="pr-hero-title">Cambridge <em>Primary</em></h1>
+            <hr class="pr-hero-rule" />
+
+            <p class="pr-hero-intro">A broad and balanced programme for ages 5 to 11 — developing knowledge and skills across 11 subjects to help every child become confident, responsible, reflective, innovative and engaged.</p>
+
+            <div class="pr-hero-chips">
+              <div class="pr-hero-chip">
+                <strong>11 Subjects</strong>
+                <span class="chip-sep"></span>
+                <span>Broad Curriculum</span>
+              </div>
+              <div class="pr-hero-chip">
+                <strong>Age 5 – 11</strong>
+                <span class="chip-sep"></span>
+                <span>Primary Stage</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="pr-hero-visual" aria-hidden="false">
+            <div class="pr-hero-img">
+              <img src="/assets/images/Primary/Primary_L.webp" alt="Cambridge Primary students at JPIC" width="1440" height="960" loading="eager" />
+            </div>
+            <div class="pr-hero-overlay">
+              <div class="pr-hero-overlay-label">Cambridge Pathway</div>
+              <div class="pr-hero-overlay-val">Stage 2 · Primary</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 2 — OVERVIEW
+         ═══════════════════════════════════════════════════════ -->
+    <section class="pr-overview" aria-labelledby="overview-h">
+      <div class="container">
+        <div class="pr-overview-grid">
+
+          <article class="pr-overview-main reveal">
+            <span class="eyebrow with-line">About the Programme</span>
+            <h2 id="overview-h" class="pr-overview-h2">Building <em>Confident Learners</em> from the Start</h2>
+            <hr class="gold-rule" />
+
+            <div class="pr-overview-body">
+              <p>Cambridge Primary starts every learner on an exciting educational journey. It provides a strong foundation at the beginning of schooling, helping children become confident, responsible, reflective, innovative and engaged learners who are ready for the next stage of education.</p>
+              <p>At JPIC, our Primary programme delivers the Cambridge curriculum in a warm, encouraging environment. Clear learning objectives across 11 subjects give children excellent foundations, while the flexibility of the programme allows our teachers to bring in local contexts and real-world examples that make learning meaningful.</p>
+            </div>
+
+            <h3 class="pr-subheading">Our Approach</h3>
+
+            <div class="pr-principles">
+
+              <div class="pr-principle">
+                <div class="pr-principle-num">1</div>
+                <div>
+                  <div class="pr-principle-title">Clear Objectives</div>
+                  <div class="pr-principle-desc">The curriculum sets clear learning objectives focused on developing knowledge and skills in all 11 subjects, giving every child an excellent foundation.</div>
+                </div>
+              </div>
+
+              <div class="pr-principle">
+                <div class="pr-principle-num">2</div>
+                <div>
+                  <div class="pr-principle-title">Flexible Delivery</div>
+                  <div class="pr-principle-desc">Schools can adapt the programme to suit their context, culture and ethos, so teaching is always relevant and engaging.</div>
+                </div>
+              </div>
+
+              <div class="pr-principle">
+                <div class="pr-principle-num">3</div>
+                <div>
+                  <div class="pr-principle-title">Broad &amp; Balanced</div>
+                  <div class="pr-principle-desc">11 subjects ensure every child develops across academic, creative, physical and digital areas.</div>
+                </div>
+              </div>
+
+              <div class="pr-principle">
+                <div class="pr-principle-num">4</div>
+                <div>
+                  <div class="pr-principle-title">Assessment-Informed</div>
+                  <div class="pr-principle-desc">Four assessment options help teachers understand potential, provide feedback, monitor progress and check achievement.</div>
+                </div>
+              </div>
+
+            </div>
+          </article>
+
+          <aside class="pr-sidebar reveal" aria-label="Programme facts at a glance">
+            <div class="pr-sidebar-title">At a Glance</div>
+
+            <div class="pr-fact-row">
+              <div class="pr-fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/></svg>
+              </div>
+              <div>
+                <span class="pr-fact-label">Age Range</span>
+                <div class="pr-fact-value">5 to 11 years</div>
+              </div>
+            </div>
+
+            <div class="pr-fact-row">
+              <div class="pr-fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+              </div>
+              <div>
+                <span class="pr-fact-label">Subjects</span>
+                <div class="pr-fact-value">11 subject areas</div>
+              </div>
+            </div>
+
+            <div class="pr-fact-row">
+              <div class="pr-fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12l2 2 4-4"/><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              </div>
+              <div>
+                <span class="pr-fact-label">Assessment</span>
+                <div class="pr-fact-value">4 flexible options</div>
+              </div>
+            </div>
+
+            <div class="pr-fact-row">
+              <div class="pr-fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              </div>
+              <div>
+                <span class="pr-fact-label">Language Support</span>
+                <div class="pr-fact-value">English First or Second Language</div>
+              </div>
+            </div>
+
+            <div class="pr-fact-row">
+              <div class="pr-fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </div>
+              <div>
+                <span class="pr-fact-label">Global Reach</span>
+                <div class="pr-fact-value">2,300+ schools in 120+ countries</div>
+              </div>
+            </div>
+
+            <div class="pr-fact-row">
+              <div class="pr-fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+              </div>
+              <div>
+                <span class="pr-fact-label">Leads To</span>
+                <div class="pr-fact-value">Cambridge Lower Secondary (Age 11–14)</div>
+              </div>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 3 — CURRICULUM
+         ═══════════════════════════════════════════════════════ -->
+    <section class="pr-curriculum" aria-labelledby="curriculum-h">
+      <div class="container">
+
+        <div class="pr-section-head reveal">
+          <span class="eyebrow with-line">Curriculum</span>
+          <h2 id="curriculum-h">What Your Child Will <em>Learn</em></h2>
+          <hr class="gold-rule" />
+          <p class="lede">Eleven carefully designed subjects develop knowledge and skills across every area of learning.</p>
+        </div>
+
+        <div class="pr-curriculum-grid reveal-children">
+
+          <article class="pr-curric-card" data-num="01">
+            <div class="pr-curric-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9.06 11.9l8.07-8.06a2.85 2.85 0 1 1 4.03 4.03l-8.06 8.07"/><path d="M7.07 14.94c-1.66 0-3 1.35-3 3.02 0 1.33-2.5 1.52-2 2.02 1.08 1.1 2.49 2.02 4 2.02 2.2 0 4-1.8 4-4.04a3.01 3.01 0 0 0-3-3.02z"/></svg>
+            </div>
+            <h3 class="pr-curric-name">Art &amp; Design</h3>
+            <p class="pr-curric-desc">Developing creativity, visual thinking and artistic skills through making, exploring and responding to art in a variety of media.</p>
+          </article>
+
+          <article class="pr-curric-card" data-num="02">
+            <div class="pr-curric-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h3 class="pr-curric-name">Cambridge Global Perspectives™</h3>
+            <p class="pr-curric-desc">Building critical thinking, research, collaboration and communication skills through exploration of real-world global issues.</p>
+          </article>
+
+          <article class="pr-curric-card" data-num="03">
+            <div class="pr-curric-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="7" height="7" rx="1"/><circle cx="17.5" cy="6.5" r="3.5"/><polygon points="17.5,14 22,22 13,22"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>
+            </div>
+            <h3 class="pr-curric-name">Computing</h3>
+            <p class="pr-curric-desc">Exploring computational thinking, programming, data handling and digital problem-solving through hands-on activities.</p>
+          </article>
+
+          <article class="pr-curric-card" data-num="04">
+            <div class="pr-curric-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 3h20v14H2z"/><path d="M8 21h8m-4-4v4"/></svg>
+            </div>
+            <h3 class="pr-curric-name">Digital Literacy</h3>
+            <p class="pr-curric-desc">Developing confident, safe and responsible use of digital technologies and online environments.</p>
+          </article>
+
+          <article class="pr-curric-card" data-num="05">
+            <div class="pr-curric-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8z"/></svg>
+            </div>
+            <h3 class="pr-curric-name">English</h3>
+            <p class="pr-curric-desc">Developing reading, writing, speaking and listening for confident communication — offered as First or Second Language.</p>
+          </article>
+
+          <article class="pr-curric-card" data-num="06">
+            <div class="pr-curric-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="7" height="7" rx="1"/><circle cx="17.5" cy="6.5" r="3.5"/><polygon points="17.5,14 22,22 13,22"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>
+            </div>
+            <h3 class="pr-curric-name">Mathematics</h3>
+            <p class="pr-curric-desc">Building number sense, reasoning, problem-solving and mathematical fluency through structured and investigative activities.</p>
+          </article>
+
+          <article class="pr-curric-card" data-num="07">
+            <div class="pr-curric-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+            </div>
+            <h3 class="pr-curric-name">Music</h3>
+            <p class="pr-curric-desc">Exploring rhythm, melody, performance and listening through active music-making and creative expression.</p>
+          </article>
+
+          <article class="pr-curric-card" data-num="08">
+            <div class="pr-curric-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="13" cy="4" r="2"/><path d="M15 22l-2-7 3-3-3-3-2 3-4 1"/><path d="M19 9l-3 3 1 4"/></svg>
+            </div>
+            <h3 class="pr-curric-name">Physical Education</h3>
+            <p class="pr-curric-desc">Promoting physical fitness, teamwork, coordination and a lifelong love of movement, sport and healthy living.</p>
+          </article>
+
+          <article class="pr-curric-card" data-num="09">
+            <div class="pr-curric-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 3h6m-3 0v6l-5 9h16l-5-9V3"/></svg>
+            </div>
+            <h3 class="pr-curric-name">Science</h3>
+            <p class="pr-curric-desc">Developing curiosity and understanding of the natural world through investigation, enquiry and hands-on scientific exploration.</p>
+          </article>
+
+          <article class="pr-curric-card" data-num="10">
+            <div class="pr-curric-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <h3 class="pr-curric-name">Wellbeing <span style="background:var(--tiffany);color:#fff;font-size:9px;font-weight:700;letter-spacing:0.1em;padding:2px 6px;border-radius:3px;margin-left:6px;vertical-align:middle;">NEW</span></h3>
+            <p class="pr-curric-desc">Supporting mental, emotional and social wellbeing to help learners flourish in and out of school. NEW to Cambridge Primary.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 4 — ASSESSMENT
+         ═══════════════════════════════════════════════════════ -->
+    <section class="pr-assessment" aria-labelledby="assessment-h">
+      <div class="container">
+        <div class="pr-assessment-grid">
+
+          <div class="pr-assessment-text reveal">
+            <span class="eyebrow with-line">Assessment</span>
+            <h2 id="assessment-h">Measuring <em>Potential</em> and Progress</h2>
+            <hr class="gold-rule" />
+            <p class="pr-assessment-body">Cambridge Primary offers four flexible assessment options, giving teachers the power to understand every child's potential, track their progress and share meaningful feedback with parents throughout the programme.</p>
+
+            <div class="pr-asmt-blocks">
+
+              <div class="pr-asmt-block">
+                <div class="pr-asmt-title"><span class="num">01 ·</span> Measure Potential</div>
+                <div class="pr-asmt-desc">Cambridge Primary Insight is an on-screen baseline assessment that helps identify and diagnose learning needs and benchmark each learner's potential against students of a similar age.</div>
+              </div>
+
+              <div class="pr-asmt-block">
+                <div class="pr-asmt-title"><span class="num">02 ·</span> Provide Feedback</div>
+                <div class="pr-asmt-desc">Teacher-led formative assessment guidance helps give meaningful feedback on skill development so learners can reflect on and improve their performance throughout the year.</div>
+              </div>
+
+              <div class="pr-asmt-block">
+                <div class="pr-asmt-title"><span class="num">03 ·</span> Monitor Progress</div>
+                <div class="pr-asmt-desc">Cambridge Primary Progression Tests assess knowledge, skills and understanding in English, Mathematics and Science across Stages 3, 4, 5 and 6 at any time of year.</div>
+              </div>
+
+              <div class="pr-asmt-block">
+                <div class="pr-asmt-title"><span class="num">04 ·</span> Check Achievement</div>
+                <div class="pr-asmt-desc">Cambridge Primary Checkpoint monitors performance at the end of the programme. Learners receive a statement of achievement and a diagnostic feedback report benchmarked internationally.</div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="pr-asmt-img-wrap reveal">
+            <div class="pr-asmt-img">
+              <img src="/assets/images/Primary/DSC05838_L.webp" alt="Cambridge Primary at JPIC" width="1440" height="960" loading="lazy" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 5 — SUPPORT
+         ═══════════════════════════════════════════════════════ -->
+    <section class="pr-support" aria-labelledby="support-h">
+      <div class="container">
+
+        <div class="pr-section-head reveal">
+          <span class="eyebrow with-line">At JPIC</span>
+          <h2 id="support-h">Everything Your Child Needs to <em>Succeed</em></h2>
+          <hr class="gold-rule" />
+          <p class="lede">Our Primary programme combines Cambridge's world-class framework with the warmth and care of a Catholic school community.</p>
+        </div>
+
+        <div class="pr-support-grid reveal-children">
+
+          <article class="pr-support-card">
+            <div class="pr-support-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            </div>
+            <h3>Teaching Support</h3>
+            <p>Our teachers receive curriculum frameworks, teacher guides, schemes of work and Cambridge training to plan and deliver all 11 subjects with confidence — with specialist support for English, Mathematics and Science.</p>
+          </article>
+
+          <article class="pr-support-card">
+            <div class="pr-support-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M19.43 12.98a7.952 7.952 0 0 0 0-1.96l2.11-1.65a.5.5 0 0 0 .12-.64l-2-3.46a.5.5 0 0 0-.61-.22l-2.49 1a7.987 7.987 0 0 0-1.69-.98l-.38-2.65A.5.5 0 0 0 14 2h-4a.5.5 0 0 0-.5.42l-.38 2.65c-.61.24-1.18.56-1.69.98l-2.49-1a.5.5 0 0 0-.61.22l-2 3.46a.5.5 0 0 0 .12.64L4.57 11c-.07.65-.07 1.31 0 1.96L2.46 14.6a.5.5 0 0 0-.12.64l2 3.46c.14.24.42.34.61.22l2.49-1c.51.42 1.08.74 1.69.98l.38 2.65c.04.24.25.42.5.42h4a.5.5 0 0 0 .5-.42l.38-2.65c.61-.24 1.18-.56 1.69-.98l2.49 1c.19.07.47-.03.61-.22l2-3.46a.5.5 0 0 0-.12-.64z"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <h3>Learning Resources</h3>
+            <p>Textbooks, endorsed resources, the Cambridge Primary Progression Tests and analysis tool, and a secure online support site provide a rich and engaging learning environment across all subjects.</p>
+          </article>
+
+          <article class="pr-support-card">
+            <div class="pr-support-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <h3>Professional Development</h3>
+            <p>Cambridge provides face-to-face, virtual and online professional development for our teachers, ensuring continuous improvement in teaching quality across all 11 subject areas.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 6 — PATHWAY STRIP
+         ═══════════════════════════════════════════════════════ -->
+    <section class="pr-pathway" aria-label="Cambridge Pathway navigation">
+      <div class="container">
+        <div class="pr-pathway-label">The Cambridge Pathway at JPIC</div>
+
+        <div class="pr-pathway-strip">
+
+          <a class="pr-pathway-node" href="/academic/cambridge-early-years.html">
+            <div class="pr-path-circle">1</div>
+            <div class="pr-path-text">
+              <div class="pr-path-name">Early Years</div>
+              <div class="pr-path-age">Age 3–6</div>
+            </div>
+          </a>
+
+          <div class="pr-path-connector" aria-hidden="true"></div>
+
+          <a class="pr-pathway-node active" href="/academic/cambridge-primary.html" aria-current="page">
+            <div class="pr-path-circle">2</div>
+            <div class="pr-path-text">
+              <div class="pr-path-name">Primary</div>
+              <div class="pr-path-age">Age 5–11</div>
+            </div>
+          </a>
+
+          <div class="pr-path-connector" aria-hidden="true"></div>
+
+          <a class="pr-pathway-node" href="/academic/cambridge-lower-secondary.html">
+            <div class="pr-path-circle">3</div>
+            <div class="pr-path-text">
+              <div class="pr-path-name">Lower Secondary</div>
+              <div class="pr-path-age">Age 11–14</div>
+            </div>
+          </a>
+
+          <div class="pr-path-connector" aria-hidden="true"></div>
+
+          <a class="pr-pathway-node" href="/academic/cambridge-upper-secondary.html">
+            <div class="pr-path-circle">4</div>
+            <div class="pr-path-text">
+              <div class="pr-path-name">Upper Secondary</div>
+              <div class="pr-path-age">Age 14–16</div>
+            </div>
+          </a>
+
+          <div class="pr-path-connector" aria-hidden="true"></div>
+
+          <a class="pr-pathway-node" href="/academic/cambridge-advanced.html">
+            <div class="pr-path-circle">5</div>
+            <div class="pr-path-text">
+              <div class="pr-path-name">Advanced</div>
+              <div class="pr-path-age">Age 16–19</div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 7 — PREV / NEXT
+         ═══════════════════════════════════════════════════════ -->
+    <section class="pr-prevnext" aria-label="Programme navigation">
+      <div class="container">
+        <div class="pr-prevnext-grid">
+
+          <a class="pr-prev" href="/academic/cambridge-early-years.html">
+            <div class="pr-pn-label">← Previous Stage</div>
+            <div class="pr-pn-title">Cambridge Early Years</div>
+            <div class="pr-pn-sub">Age 3 – 6</div>
+          </a>
+
+          <a class="pr-next" href="/academic/cambridge-lower-secondary.html">
+            <div class="pr-pn-label">Next Stage →</div>
+            <div class="pr-pn-title">Cambridge Lower Secondary</div>
+            <div class="pr-pn-sub">Age 11 – 14</div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 8 — CTA
+         ═══════════════════════════════════════════════════════ -->
+    <section class="pr-cta" aria-labelledby="cta-h">
+      <div class="container">
+        <div class="pr-cta-inner reveal">
+          <span class="pr-cta-small">Continue the journey at JPIC</span>
+          <h2 id="cta-h">Give Your Child the <em>Foundation They Deserve</em></h2>
+          <hr class="gold-rule" />
+          <p class="pr-cta-sub">Our Admissions team is ready to answer your questions and guide you through enrolment for Cambridge Primary at St. John Paul II International College.</p>
+
+          <div class="pr-cta-actions">
+            <a href="/admissions/index.html" class="btn btn-primary">
+              Apply Now
+              <span class="arrow">→</span>
+            </a>
+            <a href="/contact.html" class="btn btn-outline">
+              Contact Admissions
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer (injected by JS) -->
+  <div data-component="footer"></div>
+
+  <script>
+    /* reveal-children: extend production scroll-reveal for staggered grids */
+    (function () {
+      if (!('IntersectionObserver' in window)) {
+        document.querySelectorAll('.reveal-children').forEach(function (el) {
+          el.classList.add('revealed');
+        });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            var parent = entry.target;
+            Array.from(parent.children).forEach(function (child, i) {
+              child.style.setProperty('--i', i);
+            });
+            parent.classList.add('revealed');
+            io.unobserve(parent);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+      document.querySelectorAll('.reveal-children').forEach(function (el) {
+        io.observe(el);
+      });
+    })();
+  </script>
+
+</body>
+</html>
