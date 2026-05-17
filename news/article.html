@@ -213,6 +213,8 @@
 
   <script src="/assets/js/main.js?v=20260517"></script>
   <script>
+    var API_BASE = 'http://localhost:3100/api/v1';
+
     fetch('/components/nav.html')
       .then(function(r) { return r.text(); })
       .then(function(html) { document.getElementById('nav-placeholder').innerHTML = html; });
@@ -222,7 +224,7 @@
       .then(function(html) { document.getElementById('footer-placeholder').innerHTML = html; });
 
     function formatDate(iso) {
-      var d = new Date(iso + 'T00:00:00');
+      var d = new Date(iso);
       return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
     }
 
@@ -232,10 +234,10 @@
 
     var articleId = getParam('id');
 
-    fetch('news.json')
+    fetch(API_BASE + '/public/news/' + articleId)
       .then(function(r) { return r.json(); })
-      .then(function(articles) {
-        var article = articles.find(function(a) { return a.id === articleId; });
+      .then(function(json) {
+        var article = (json.data && json.data.post) ? json.data.post : null;
         var container = document.getElementById('article-content');
 
         if (!article) {
@@ -248,8 +250,10 @@
           return;
         }
 
-        // Update page title
+        // Update page title and meta description
         document.getElementById('page-title').textContent = article.title + ' | St. John Paul II International College';
+        var metaDesc = document.querySelector('meta[name="description"]');
+        if (metaDesc && article.excerpt) metaDesc.setAttribute('content', article.excerpt);
 
         // Dynamic canonical
         (function() {
@@ -291,8 +295,8 @@
         })();
 
         // Cover image
-        var coverHtml = article.cover
-          ? '<div class="article-cover-wrap"><img class="article-cover" src="' + article.cover + '" alt="' + article.title + '" loading="lazy"></div>'
+        var coverHtml = article.coverImage
+          ? '<div class="article-cover-wrap"><img class="article-cover" src="' + article.coverImage + '" alt="' + article.title + '" loading="lazy"></div>'
           : '';
 
         // Gallery
@@ -319,7 +323,7 @@
               '</a>' +
               '<span class="article-badge">' + article.category + '</span>' +
               '<h1 class="article-title">' + article.title + '</h1>' +
-              '<div class="article-meta">' + formatDate(article.date) + '</div>' +
+              '<div class="article-meta">' + formatDate(article.publishedAt) + '</div>' +
             '</div>' +
           '</header>' +
           coverHtml +

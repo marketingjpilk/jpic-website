@@ -5,6 +5,8 @@
 
 'use strict';
 
+const API_BASE = 'http://localhost:3100/api/v1';
+
 /* ------------------------------------------------------------
    1. COMPONENT LOADER
    Injects nav.html and footer.html into every page
@@ -195,23 +197,26 @@ async function loadNewsFeed(containerId, limit = 3) {
 
   try {
     const root = document.documentElement.dataset.root || '/';
-    const res = await fetch(root + 'news/news.json');
+    const res = await fetch(`${API_BASE}/public/news`);
     if (!res.ok) throw new Error('News feed unavailable');
-    const news = await res.json();
+    const json = await res.json();
+    const posts = (json.data && json.data.posts) ? json.data.posts : [];
 
-    news.sort((a, b) => b.date.localeCompare(a.date));
-    const latest = news.slice(0, limit);
+    const latest = posts.slice(0, limit);
 
     container.innerHTML = latest.map(post => {
-      const imgSrc = post.cover ? root + 'news/' + post.cover : null;
+      const imgSrc = post.coverImage || null;
       return `
         <article class="news-card reveal">
           ${imgSrc ? `<img src="${imgSrc}" alt="${escapeHtml(post.title)}" class="news-card-img" width="2048" height="1365" loading="lazy">` : ''}
           <div class="news-card-body">
-            <div class="news-card-date">${formatDate(post.date)}</div>
+            <div class="news-card-meta">
+              ${post.category ? `<span class="news-card-badge">${escapeHtml(post.category)}</span>` : ''}
+              <span class="news-card-date">${formatDate(post.publishedAt)}</span>
+            </div>
             <h3 class="news-card-title">${escapeHtml(post.title)}</h3>
             <p class="news-card-excerpt">${escapeHtml(post.excerpt)}</p>
-            <a href="${root}news/article.html?id=${post.id}" class="news-card-link">
+            <a href="${root}news/article.html?id=${post.slug}" class="news-card-link">
               Read more <span>→</span>
             </a>
           </div>
