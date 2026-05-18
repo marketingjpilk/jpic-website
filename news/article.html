@@ -296,7 +296,7 @@
 
         // Cover image
         var coverHtml = article.coverImage
-          ? '<div class="article-cover-wrap"><img class="article-cover" src="' + article.coverImage + '" alt="' + article.title + '" loading="lazy"></div>'
+          ? '<div class="article-cover-wrap"><img class="article-cover" src="' + API_BASE.replace('/api/v1', '') + '/uploads/' + article.coverImage + '" alt="' + article.title + '" loading="lazy"></div>'
           : '';
 
         // Gallery

@@ -2,7 +2,6 @@ User-agent: *
 Allow: /
 Disallow: /_docs/
 Disallow: /coming-soon.html
-Disallow: /README.md
 Disallow: /package.json
 Disallow: /AUDIT-REPORT.md
 

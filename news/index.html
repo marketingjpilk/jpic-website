@@ -312,7 +312,7 @@
 
         grid.innerHTML = posts.map(function(article) {
           var coverHtml = article.coverImage
-            ? ‘<img class="news-card-cover" src="’ + article.coverImage + ‘" alt="’ + article.title + ‘" loading="lazy">’
+            ? ‘<img class="news-card-cover" src="’ + API_BASE.replace(‘/api/v1’, ‘’) + ‘/uploads/’ + article.coverImage + ‘" alt="’ + article.title + ‘" loading="lazy">’
             : ‘<div class="news-card-cover-placeholder" aria-hidden="true">’ +
                 ‘<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#00BDB6" stroke-width="1.4" opacity="0.5">’ +
                   ‘<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/>’ +
