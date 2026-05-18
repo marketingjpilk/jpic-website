@@ -5,7 +5,7 @@
 
 'use strict';
 
-const API_BASE = 'http://localhost:3100/api/v1';
+const API_BASE = 'https://api.jpeducation.net/api/v1';
 
 /* ------------------------------------------------------------
    1. COMPONENT LOADER
