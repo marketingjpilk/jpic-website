@@ -918,6 +918,20 @@
        has explicit .section-label-line divs, so ::before creates a double line */
     .section-label::before { display: none; }
 
+    .recaptcha-notice {
+      font-family: var(--serif-body);
+      font-size: 11px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .recaptcha-notice a {
+      color: var(--text-muted);
+      text-decoration: underline;
+    }
+
     /* ── SCROLL REVEAL ── */
     .reveal {
       opacity: 0;
@@ -1537,6 +1551,12 @@
 
             <button type="submit" id="enquiry-submit-btn" class="btn-primary" style="width: 100%; font-size: 14px; padding: 16px;">Submit Enquiry</button>
 
+            <p class="recaptcha-notice">
+              This site is protected by reCAPTCHA and the Google
+              <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a> and
+              <a href="https://policies.google.com/terms" target="_blank" rel="noopener">Terms of Service</a> apply.
+            </p>
+
           </form>
         </div>
       </div>
@@ -1552,6 +1572,7 @@
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
   </button>
 
+  <script src="https://www.google.com/recaptcha/api.js?render=6LdNRvMpAAAAALo6YFOOcH76zLDTAlmYPArDJNuY" async defer></script>
   <script src="/assets/js/main.js?v=20260510b"></script>
 
   <script>
@@ -1700,7 +1721,7 @@
       };
     }
 
-    function submitEnquiry() {
+    async function submitEnquiry() {
       if (!validateForm()) return;
 
       var btn         = document.getElementById('enquiry-submit-btn');
@@ -1715,16 +1736,28 @@
       btn.textContent = 'Sending…';
       hideInlineMessage();
 
+      var recaptchaToken = '';
+      try {
+        recaptchaToken = await grecaptcha.execute(
+          '6LdNRvMpAAAAALo6YFOOcH76zLDTAlmYPArDJNuY',
+          { action: 'enquiry' }
+        );
+      } catch (e) {
+        console.warn('reCAPTCHA failed, submitting without token:', e);
+        // Continue without token — backend fails open on reCAPTCHA errors
+      }
+
       var utmData = getUtm();
       if (dob) utmData.dateOfBirth = dob;
 
       var payload = {
-        studentName:   studentName,
-        gradeApplying: grade,
-        parentName:    parentName,
-        parentPhone:   phone,
-        source:        'WEBSITE',
-        sourceMeta:    utmData
+        studentName:    studentName,
+        gradeApplying:  grade,
+        parentName:     parentName,
+        parentPhone:    phone,
+        recaptchaToken: recaptchaToken,
+        source:         'WEBSITE',
+        sourceMeta:     utmData
       };
       if (email) payload.parentEmail = email;
 
