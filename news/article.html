@@ -213,8 +213,6 @@
 
   <script src="/assets/js/main.js?v=20260517"></script>
   <script>
-    var API_BASE = 'https://api.jpeducation.net/api/v1';
-
     fetch('/components/nav.html')
       .then(function(r) { return r.text(); })
       .then(function(html) { document.getElementById('nav-placeholder').innerHTML = html; });
