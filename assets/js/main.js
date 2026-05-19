@@ -206,9 +206,10 @@ async function loadNewsFeed(containerId, limit = 3) {
 
     container.innerHTML = latest.map(post => {
       const imgSrc = post.coverImage || null;
+      const imgUrl = imgSrc ? `${API_BASE.replace('/api/v1', '')}/uploads/${imgSrc}` : null;
       return `
         <article class="news-card reveal">
-          ${imgSrc ? `<img src="${imgSrc}" alt="${escapeHtml(post.title)}" class="news-card-img" width="2048" height="1365" loading="lazy">` : ''}
+          ${imgUrl ? `<img src="${imgUrl}" alt="${escapeHtml(post.title)}" class="news-card-img" width="2048" height="1365" loading="lazy">` : ''}
           <div class="news-card-body">
             <div class="news-card-meta">
               ${post.category ? `<span class="news-card-badge">${escapeHtml(post.category)}</span>` : ''}
