@@ -278,69 +278,69 @@
 
   <script src="/assets/js/main.js?v=20260517"></script>
   <script>
-    var API_BASE = ‘https://api.jpeducation.net/api/v1’;
+    var API_BASE = 'https://api.jpeducation.net/api/v1';
 
     function formatDate(iso) {
       var d = new Date(iso);
-      return d.toLocaleDateString(‘en-GB’, { day: ‘numeric’, month: ‘long’, year: ‘numeric’ });
+      return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
     }
 
-    fetch(API_BASE + ‘/public/news’)
+    fetch(API_BASE + '/public/news')
       .then(function(r) { return r.json(); })
       .then(function(json) {
         var posts = (json.data && json.data.posts) ? json.data.posts : [];
-        var grid = document.getElementById(‘news-grid’);
+        var grid = document.getElementById('news-grid');
 
         if (!posts || posts.length === 0) {
           grid.innerHTML =
-            ‘<div class="news-empty-state">’ +
-              ‘<div class="news-empty-icon">’ +
-                ‘<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">’ +
-                  ‘<path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v2"/>’ +
-                  ‘<path d="M4 11V6a2 2 0 0 1 2-2"/>’ +
-                  ‘<path d="M4 22a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2h8l4 4v9a2 2 0 0 0-2 2"/>’ +
-                  ‘<line x1="12" y1="12" x2="16" y2="12"/>’ +
-                  ‘<line x1="12" y1="16" x2="16" y2="16"/>’ +
-                ‘</svg>’ +
-              ‘</div>’ +
-              ‘<h3 class="news-empty-title">News &amp; Announcements Coming Soon</h3>’ +
-              ‘<p class="news-empty-text">We are preparing our latest news and announcements.<br>Follow us on Facebook for the latest updates from JPIC.</p>’ +
-              ‘<a href="https://www.facebook.com/jpinternationalcollege" target="_blank" rel="noopener noreferrer" class="news-empty-cta">Follow us on Facebook</a>’ +
-            ‘</div>’;
+            '<div class="news-empty-state">' +
+              '<div class="news-empty-icon">' +
+                '<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">' +
+                  '<path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v2"/>' +
+                  '<path d="M4 11V6a2 2 0 0 1 2-2"/>' +
+                  '<path d="M4 22a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2h8l4 4v9a2 2 0 0 0-2 2"/>' +
+                  '<line x1="12" y1="12" x2="16" y2="12"/>' +
+                  '<line x1="12" y1="16" x2="16" y2="16"/>' +
+                '</svg>' +
+              '</div>' +
+              '<h3 class="news-empty-title">News &amp; Announcements Coming Soon</h3>' +
+              '<p class="news-empty-text">We are preparing our latest news and announcements.<br>Follow us on Facebook for the latest updates from JPIC.</p>' +
+              '<a href="https://www.facebook.com/jpinternationalcollege" target="_blank" rel="noopener noreferrer" class="news-empty-cta">Follow us on Facebook</a>' +
+            '</div>';
           return;
         }
 
         grid.innerHTML = posts.map(function(article) {
           var coverHtml = article.coverImage
-            ? ‘<img class="news-card-cover" src="’ + API_BASE.replace(‘/api/v1’, ‘’) + ‘/uploads/’ + article.coverImage + ‘" alt="’ + article.title + ‘" loading="lazy">’
-            : ‘<div class="news-card-cover-placeholder" aria-hidden="true">’ +
-                ‘<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#00BDB6" stroke-width="1.4" opacity="0.5">’ +
-                  ‘<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/>’ +
-                ‘</svg>’ +
-              ‘</div>’;
+            ? '<img class="news-card-cover" src="' + API_BASE.replace('/api/v1', '') + '/uploads/' + article.coverImage + '" alt="' + article.title + '" loading="lazy">'
+            : '<div class="news-card-cover-placeholder" aria-hidden="true">' +
+                '<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#00BDB6" stroke-width="1.4" opacity="0.5">' +
+                  '<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/>' +
+                '</svg>' +
+              '</div>';
 
           return (
-            ‘<article class="news-card">’ +
+            '<article class="news-card">' +
               coverHtml +
-              ‘<div class="news-card-body">’ +
-                ‘<div class="news-card-meta">’ +
-                  ‘<span class="news-card-badge">’ + article.category + ‘</span>’ +
-                  ‘<span class="news-card-date">’ + formatDate(article.publishedAt) + ‘</span>’ +
-                ‘</div>’ +
-                ‘<h2 class="news-card-title">’ + article.title + ‘</h2>’ +
-                ‘<p class="news-card-excerpt">’ + article.excerpt + ‘</p>’ +
-                ‘<a href="article.html?id=’ + article.slug + ‘" class="news-card-link">Read More &rarr;</a>’ +
-              ‘</div>’ +
-            ‘</article>’
+              '<div class="news-card-body">' +
+                '<div class="news-card-meta">' +
+                  '<span class="news-card-badge">' + article.category + '</span>' +
+                  '<span class="news-card-date">' + formatDate(article.publishedAt) + '</span>' +
+                '</div>' +
+                '<h2 class="news-card-title">' + article.title + '</h2>' +
+                '<p class="news-card-excerpt">' + article.excerpt + '</p>' +
+                '<a href="article.html?id=' + article.slug + '" class="news-card-link">Read More &rarr;</a>' +
+              '</div>' +
+            '</article>'
           );
-        }).join(‘’);
+        }).join('');
       })
       .catch(function() {
-        document.getElementById(‘news-grid’).innerHTML =
-          ‘<div class="news-empty">’ +
-            ‘<p>Unable to load news.</p>’ +
-            ‘<span>Please refresh the page or try again later.</span>’ +
-          ‘</div>’;
+        document.getElementById('news-grid').innerHTML =
+          '<div class="news-empty">' +
+            '<p>Unable to load news.</p>' +
+            '<span>Please refresh the page or try again later.</span>' +
+          '</div>';
       });
   </script>
 
