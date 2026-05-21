@@ -1025,9 +1025,16 @@
     // ── Config ──────────────────────────────────────────────
     const API_BASE = 'https://api.jpeducation.net/api/v1';
     const CALENDAR_ENDPOINT = API_BASE + '/calendar/public';
-    let currentYear = '2026-2027';
-    let currentMonth = 7;  // August (0-indexed: 7 = August)
-    let currentYearNum = 2026;
+    const _today = new Date();
+    const _todayMonth = _today.getMonth();
+    const _todayYear  = _today.getFullYear();
+    // Academic year runs August–July; determine which year today falls in
+    const _todayAcYear = _todayMonth >= 7
+      ? _todayYear + '-' + (_todayYear + 1)
+      : (_todayYear - 1) + '-' + _todayYear;
+    let currentYear    = _todayAcYear;
+    let currentMonth   = _todayMonth;
+    let currentYearNum = _todayYear;
     let allEvents = [];
     let selectedDate = null;
 
@@ -1078,6 +1085,13 @@
         allEvents = FALLBACK_EVENTS;
       }
       renderCalendar();
+      // Auto-select today when the view is the current month
+      if (currentYearNum === _todayYear && currentMonth === _todayMonth) {
+        const todayEvents = getEventsForDate(_todayYear, _todayMonth, _today.getDate());
+        showDayEvents(_todayYear, _todayMonth, _today.getDate(), todayEvents);
+        selectedDate = { year: _todayYear, month: _todayMonth, day: _today.getDate() };
+        document.querySelectorAll('.ac-day-today').forEach(c => c.classList.add('ac-day-selected'));
+      }
       renderUpcoming();
       renderTermCards();
     }
@@ -1385,6 +1399,14 @@
     });
 
     // ── Init ─────────────────────────────────────────────────
+    // Activate whichever year pill matches today's academic year
+    document.querySelectorAll('.ac-year-pill[data-year]').forEach(p => {
+      const isActive = p.dataset.year === currentYear;
+      p.classList.toggle('ac-year-pill--active', isActive);
+      p.classList.toggle('ac-year-pill--inactive', !isActive);
+      if (isActive) p.setAttribute('aria-current', 'true');
+      else p.removeAttribute('aria-current');
+    });
     loadEvents(currentYear);
   })();
   </script>
