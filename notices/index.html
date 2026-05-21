@@ -1067,7 +1067,7 @@
           });
           if (!response.ok) throw new Error('API error ' + response.status);
           var json = await response.json();
-          allNotices = json.data || [];
+          allNotices = (json.data && json.data.notices) || [];
         } catch (err) {
           console.warn('Notices API unavailable, using fallback:', err.message);
           allNotices = FALLBACK_NOTICES;
