@@ -1661,7 +1661,9 @@
                 Enrolment for the 2026–27 academic year is now open. Places are limited — we encourage
                 early application to secure your child's position.
               </p>
-              <a href="#enquiry" class="btn-dark" id="admissions-apply-btn">Apply Now →</a>
+              <a href="/assets/downloads/JPIC_Application_Form_2026-2027.pdf"
+                 download="JPIC_Application_Form_2026-2027.pdf"
+                 class="btn-dark">DOWNLOAD APPLICATION FORM →</a>
             </div>
           </div>
         </div>
@@ -1774,10 +1776,11 @@
             <div style="font-family:var(--serif-body);font-size:13px;color:var(--text-muted);">031 22 54143
               &nbsp;·&nbsp; 0707 640 657 &nbsp;·&nbsp; 0707 640 642</div>
             <div style="margin-top:28px;padding-top:24px;border-top:1px solid rgba(0,33,71,0.1);">
-              <p style="font-family:var(--serif-body);font-size:14px;color:var(--text-muted);margin-bottom:14px;">Ready
-                to submit the full application?</p>
-              <a id="apply-now-btn" href="#" target="_blank" class="btn-primary"
-                style="font-size:13px;padding:12px 28px;">Complete Full Application Form →</a>
+              <p style="font-family:var(--serif-body);font-size:14px;color:var(--text-muted);margin-bottom:14px;">Ready to apply? Download the application form, fill it in, and submit it to our admissions office along with the required documents.</p>
+              <a href="/assets/downloads/JPIC_Application_Form_2026-2027.pdf"
+                 download="JPIC_Application_Form_2026-2027.pdf"
+                 class="btn-primary"
+                 style="font-size:13px;padding:12px 28px;">Download Application Form →</a>
             </div>
           </div>
 
@@ -1927,18 +1930,6 @@
     document.addEventListener('DOMContentLoaded', function () {
 
       loadGrades();
-
-      var applyBtn = document.getElementById('admissions-apply-btn');
-      if (applyBtn) {
-        applyBtn.href = ADMISSIONS_APPLY_URL;
-        applyBtn.target = '_blank';
-        applyBtn.rel = 'noopener';
-      }
-
-      var applyNowBtn = document.getElementById('apply-now-btn');
-      if (applyNowBtn) {
-        applyNowBtn.href = ADMISSIONS_APPLY_URL;
-      }
 
       var form = document.getElementById('admissions-form');
       if (!form) return;
