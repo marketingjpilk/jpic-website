@@ -2038,8 +2038,6 @@
       }
 
       var utmData = getUtm();
-      if (dob) utmData.dateOfBirth = dob;
-
       var payload = {
         studentName: studentName,
         gradeApplying: grade,
@@ -2050,6 +2048,7 @@
         sourceMeta: utmData
       };
       if (email) payload.parentEmail = email;
+      if (dob) payload.dateOfBirth = dob;
 
       fetch(ADMISSIONS_API_URL + '/public/leads/inquiry', {
         method: 'POST',
