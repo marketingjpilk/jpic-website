@@ -81,9 +81,51 @@
   <main id="main-content">
 
     <!-- =========================================
-         HERO
+         HERO — MOBILE (< 768px)
          ========================================= -->
-    <section class="hero" id="hero">
+    <section class="hero-mobile" aria-label="Welcome to JPIC">
+      <div class="hero-mobile__bg">
+        <img
+          src="assets/images/hero/Mobile.webp"
+          alt="St. John Paul II International College — Cambridge International Education"
+          loading="eager"
+          fetchpriority="high"
+          width="800"
+          height="1000"
+          class="hero-mobile__img"
+        >
+        <div class="hero-mobile__overlay" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero-mobile__content">
+        <span class="hero-mobile__eyebrow">Cambridge International Education</span>
+        <h1 class="hero-mobile__title">
+          Where Faith Meets<br>Academic Excellence
+        </h1>
+        <p class="hero-mobile__sub">
+          Early Years to A Level · Chilaw Diocese, Wennappuwa
+        </p>
+        <div class="hero-mobile__actions">
+          <a
+            href="https://admissions.jpeducation.net/apply"
+            class="hero-mobile__btn hero-mobile__btn--primary"
+          >
+            Apply Now
+          </a>
+          <a
+            href="/admissions/#enquiry-form"
+            class="hero-mobile__btn hero-mobile__btn--secondary"
+          >
+            Make an Enquiry
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         HERO — DESKTOP (≥ 768px)
+         ========================================= -->
+    <section class="hero hero-desktop" id="hero">
 
       <!-- SLIDE 1: Faith & Excellence -->
       <div class="hero-slide active" id="slide-0">
@@ -879,6 +921,7 @@
   </script>
 
   <script>
+  if (window.innerWidth >= 768) {
   (function() {
     const slides = document.querySelectorAll('.hero-slide');
     const dots   = document.querySelectorAll('.hero-dot');
@@ -932,6 +975,7 @@
 
     startAuto();
   })();
+  } // end width guard
   </script>
 
 </body>
