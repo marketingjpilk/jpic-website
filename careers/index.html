@@ -891,10 +891,18 @@
         location: job.location,
         tag: { label: tagLabel, kind: tagKind },
         summary: job.shortDescription,
-        responsibilities: job.description ? job.description.split('\n').filter(Boolean) : [],
-        requirements: job.requirements ? job.requirements.split('\n').filter(Boolean) : [],
+        responsibilities: job.description ? job.description.split('\n').filter(function(l) { return l.trim(); }) : [],
+        requirements: job.requirements ? job.requirements.split('\n').filter(function(l) { return l.trim(); }) : [],
         salary: job.salaryRange || 'Competitive · Negotiable on experience',
-        contact: 'hr@jpeducation.net'
+        contact: 'hr@jpeducation.net',
+        datePosted: job.createdAt ? new Date(job.createdAt).toISOString().split('T')[0] : new Date().toISOString().split('T')[0],
+        salaryMin: job.salaryMin ?? null,
+        salaryMax: job.salaryMax ?? null,
+        salaryCurrency: job.salaryCurrency ?? 'LKR',
+        description: job.description || null,
+        shortDescription: job.shortDescription || null,
+        closingDate: job.closingDate || null,
+        employmentType: job.employmentType || null,
       };
     }
 
@@ -997,24 +1005,62 @@
       }
 
       // Inject JobPosting JSON-LD per position
-      _jobs.forEach(function (job_raw) {
-        var closing = job_raw.closingDate ? job_raw.closingDate.slice(0, 10) : undefined;
-        var ld = {
-          '@context': 'https://schema.org',
-          '@type': 'JobPosting',
-          title: job_raw.title,
-          description: job_raw.description,
-          datePosted: new Date().toISOString().slice(0, 10),
-          hiringOrganization: { '@type': 'Organization', name: 'St. John Paul II International College', sameAs: 'https://jpeducation.net' },
-          jobLocation: { '@type': 'Place', address: { '@type': 'PostalAddress', addressLocality: 'Wennappuwa', addressCountry: 'LK' } },
-          employmentType: (job_raw.employmentType || 'FULL_TIME').replace('_', '-'),
-          directApply: true
+      _jobs.forEach(function (job) {
+        const schemaObj = {
+          "@context": "https://schema.org",
+          "@type": "JobPosting",
+          "identifier": {
+            "@type": "PropertyValue",
+            "name": "St. John Paul II International College",
+            "value": job.id
+          },
+          "title": job.title,
+          "description": job.description || job.shortDescription,
+          "datePosted": job.datePosted,
+          "hiringOrganization": {
+            "@type": "Organization",
+            "name": "St. John Paul II International College",
+            "sameAs": "https://jpeducation.net",
+            "logo": "https://jpeducation.net/assets/images/school-logo.png"
+          },
+          "jobLocation": {
+            "@type": "Place",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Lunuwila Junction, Chilaw Road",
+              "addressLocality": "Wennappuwa",
+              "addressRegion": "North Western Province",
+              "postalCode": "61170",
+              "addressCountry": "LK"
+            }
+          },
+          "employmentType": job.employmentType,
+          "directApply": true
         };
-        if (closing) ld.validThrough = closing + 'T23:59:59';
-        if (job_raw.salaryRange) ld.baseSalary = { '@type': 'MonetaryAmount', currency: 'LKR', value: { '@type': 'QuantitativeValue', description: job_raw.salaryRange } };
-        var s = document.createElement('script');
+
+        // Add validThrough only if closingDate exists
+        if (job.closingDate) {
+          schemaObj.validThrough = new Date(job.closingDate)
+            .toISOString().split('T')[0];
+        }
+
+        // Add baseSalary only if structured salary fields exist
+        if (job.salaryMin && job.salaryMax) {
+          schemaObj.baseSalary = {
+            "@type": "MonetaryAmount",
+            "currency": job.salaryCurrency || "LKR",
+            "value": {
+              "@type": "QuantitativeValue",
+              "minValue": job.salaryMin,
+              "maxValue": job.salaryMax,
+              "unitText": "MONTH"
+            }
+          };
+        }
+
+        const s = document.createElement('script');
         s.type = 'application/ld+json';
-        s.textContent = JSON.stringify(ld);
+        s.textContent = JSON.stringify(schemaObj, null, 2);
         document.head.appendChild(s);
       });
     }
