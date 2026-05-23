@@ -44,7 +44,14 @@
 
     .legal-hero {
       background: var(--oxford);
-      padding: 72px 0 60px;
+      background-image: repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 40px,
+        rgba(255,255,255,0.03) 40px,
+        rgba(255,255,255,0.03) 41px
+      );
+      padding: calc(var(--nav-height) + 40px) 0 60px;
     }
     .legal-hero h1 {
       font-family: var(--font-display, 'Playfair Display', Georgia, serif);

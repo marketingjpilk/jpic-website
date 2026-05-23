@@ -44,7 +44,7 @@ body {
 #hero {
   position: relative;
   width: 100%;
-  padding: 156px 0 90px;
+  padding: 152px 0 80px;
   overflow: hidden;
   background: var(--oxford-deep);
 }
