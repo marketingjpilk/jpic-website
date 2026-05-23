@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sports Programme — St. John Paul II International College</title>
+  <meta name="description" content="JPIC's year-round sports programme covers cricket, athletics, swimming, karate, football, badminton and chess. Representative squads train three sessions a week at provincially accredited venues in Wennappuwa, Sri Lanka." />
+  <link rel="canonical" href="https://jpeducation.net/student-life/sports" />
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jpeducation.net/" },
+      { "@type": "ListItem", "position": 2, "name": "Student Life", "item": "https://jpeducation.net/student-life/" },
+      { "@type": "ListItem", "position": 3, "name": "Sports", "item": "https://jpeducation.net/student-life/sports" }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What sports does JPIC offer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "St. John Paul II International College offers nine sports: cricket, athletics, swimming, badminton, football, chess, karate, netball and basketball. All are formally coached with representative squads entering provincial and national tournaments."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How often do JPIC sports teams train?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Every representative squad trains a minimum of three sessions per week, with strength and conditioning, technical skill work and match-play kept in separate blocks, timed to the inter-school and provincial tournament calendar."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does JPIC offer Physical Education as a Cambridge subject?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Cambridge IGCSE and AS &amp; A Level Physical Education are available as examined subjects at St. John Paul II International College."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where do JPIC sports teams train?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "JPIC holds formal partnerships with recognised provincial sports associations and certified specialist coaches. Students train at professionally managed, association-accredited venues that meet the standards of provincial and national development programmes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What sporting achievements has JPIC recorded?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "JPIC has recorded over 60 medals and trophies since its founding, including national and provincial honours in karate, athletics, swimming, football and chess. Recent highlights include gold medals at the Yozo Takimoto International Open Karate Championship and NW Province athletics records."
+        }
+      }
+    ]
+  }
+]
+</script>
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="St. John Paul II International College">
+  <meta property="og:title" content="Sports Programme | St. John Paul II International College">
+  <meta property="og:description" content="Year-round cricket, athletics, swimming, karate, football, badminton and chess — representative squads training at provincially accredited venues in Wennappuwa, Sri Lanka.">
+  <meta property="og:image" content="https://jpeducation.net/assets/images/og-image.webp">
+  <meta property="og:url" content="https://jpeducation.net/student-life/sports">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sports Programme | St. John Paul II International College">
+  <meta name="twitter:description" content="Year-round cricket, athletics, swimming, karate, football, badminton and chess — representative squads training at provincially accredited venues in Wennappuwa, Sri Lanka.">
+  <meta name="twitter:image" content="https://jpeducation.net/assets/images/og-image.webp">
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/main.css?v=20260517" />
+  <link rel="stylesheet" href="/assets/css/components.css?v=20260517" />
+  <link rel="stylesheet" href="/assets/css/facility-page.css" />
+  <script src="/assets/js/main.js" defer></script>
+  <style>
+    /* Sports-specific */
+    .sport-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2px;
+      background: var(--line);
+      margin-top: 40px;
+    }
+    .sport-cell {
+      background: var(--white);
+      padding: 28px 26px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      min-height: 200px;
+      border-bottom: 3px solid transparent;
+      transition: border-color 0.3s, background 0.2s;
+    }
+    .sport-cell:hover { border-bottom-color: var(--teal); background: var(--near-white); }
+    .sport-cell-num {
+      font-family: var(--serif-display);
+      font-size: 26px;
+      font-style: italic;
+      color: var(--gold-dark);
+      line-height: 1;
+    }
+    .sport-cell-name {
+      font-family: var(--serif-display);
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--oxford);
+      line-height: 1.25;
+      margin-top: 10px;
+    }
+    .sport-cell-meta {
+      font-family: var(--serif-body);
+      font-size: 12.5px;
+      color: var(--text-muted);
+      letter-spacing: 0.04em;
+      line-height: 1.6;
+      margin-top: auto;
+      padding-top: 12px;
+      border-top: 1px solid var(--line);
+    }
+    .sport-cell-meta strong { color: var(--teal); font-weight: 600; }
+    .sport-cell--soon { opacity: 0.6; pointer-events: none; }
+    .sport-cell--soon .sport-cell-name::after {
+      content: 'Coming Soon';
+      display: inline-block;
+      margin-left: 8px;
+      font-family: var(--font-body);
+      font-size: 9px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--white);
+      background: var(--teal);
+      padding: 2px 7px;
+      border-radius: 3px;
+      vertical-align: middle;
+      font-style: normal;
+    }
+
+    .legend {
+      display: flex; gap: 22px; flex-wrap: wrap;
+      margin-top: 16px;
+      font-family: var(--serif-body);
+      font-size: 12px;
+      color: var(--text-muted);
+      letter-spacing: 0.06em;
+    }
+    .legend .ach-medal { font-size: 10px; padding: 4px 9px; }
+
+    /* suppress duplicate ::before line — main.css already adds it, section-label-line adds a second */
+    .section-label::before { display: none; }
+
+    @media (max-width: 1100px) {
+      .sport-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 600px) {
+      .sport-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation (injected by JS) -->
+  <div data-component="nav"></div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-photo"></div>
+    <div class="hero-bg"></div>
+    <div class="hero-pattern"></div>
+    <div class="hero-bigword">Sports</div>
+
+    <div class="hero-content">
+      <div class="hero-left">
+        <div class="crumbs">
+          <a href="index.html">Home</a>
+          <span class="sep"></span>
+          <a href="index.html#programmes">Campus Life</a>
+          <span class="sep"></span>
+          <span class="current">Sports</span>
+        </div>
+        <div class="hero-badge">
+          <div class="hero-badge-line"></div>
+          <span class="hero-badge-text">Athletics, Teamwork &amp; Character</span>
+        </div>
+        <h1 class="hero-title">
+          Strength of Body.<br />
+          Strength of <em>Character</em>.
+        </h1>
+        <p class="hero-subtitle">
+          From cricket and swimming to athletics, karate and badminton, sport is a
+          daily, formative part of college life. Every student trains in a recognised
+          discipline, and our representative teams have brought home regional and
+          national honours every year since the college opened.
+        </p>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-meta">
+          <div class="hero-meta-num">60<span style="font-size:32px; color: var(--teal-bright);">+</span></div>
+          <div class="hero-meta-label">Medals &amp; Trophies</div>
+          <div class="hero-meta-sub">National &amp; provincial honours across athletics, swimming, cricket, karate, badminton and football since the college's founding.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFO STRIP -->
+  <div id="strip">
+    <div class="strip-inner">
+      <div class="strip-item">
+        <div class="strip-num">9 Sports</div>
+        <div class="strip-label">Offered Year-Round</div>
+      </div>
+      <div class="strip-item">
+        <div class="strip-num">7 Coaches</div>
+        <div class="strip-label">Specialist Faculty</div>
+      </div>
+      <div class="strip-item">
+        <div class="strip-num">National</div>
+        <div class="strip-label">Tournament Honours</div>
+      </div>
+      <div class="strip-item">
+        <div class="strip-num">100%</div>
+        <div class="strip-label">Student Participation</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- INTRO -->
+  <section id="overview" style="background: var(--white);">
+    <div class="section-inner">
+      <div class="head-grid">
+        <div>
+          <div class="section-label">
+            <div class="section-label-line"></div>
+            <span class="section-label-text">Our Philosophy</span>
+          </div>
+          <h2 class="section-title">Where the <em>whole student</em><br />takes the field.</h2>
+          <div class="divider"></div>
+        </div>
+        <p class="section-intro">
+          Sport at JPIC is timetabled, coached and, where chosen, examined as a Cambridge qualification. The habits formed on a field or court, discipline, resilience, teamwork, are the same ones that define a person long after school ends. Every learner from Primary through A Level participates, and those at representative level enter a year-round programme built around fitness, leadership and belonging to a squad.
+        </p>
+      </div>
+
+      <!-- Hero image of athletes / field -->
+      <div style="position:relative;width:100%;aspect-ratio:21/9;overflow:hidden;border-radius:var(--radius-xl);">
+        <img src="/assets/images/Sports/1.webp" alt="Sports field at JPIC during inter-house athletics" width="1920" height="820" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+      </div>
+    </div>
+  </section>
+
+  <!-- SPORTS WE OFFER -->
+  <section id="sports-offered" style="background: var(--cream);">
+    <div class="section-inner">
+      <div class="section-label">
+        <div class="section-label-line"></div>
+        <span class="section-label-text">Disciplines</span>
+      </div>
+      <h2 class="section-title">Sports We <em>Offer</em></h2>
+      <div class="divider"></div>
+      <p class="section-intro">
+        Nine sports are formally coached on campus, with representative squads
+        entering provincial and national tournaments. Every student chooses one as a
+        primary, and is encouraged to take up a second discipline each year.
+      </p>
+
+      <div class="sport-grid">
+        <div class="sport-cell">
+          <div class="sport-cell-num">01</div>
+          <h3 class="sport-cell-name">Cricket</h3>
+          <div class="sport-cell-meta">Boys' &amp; Girls' XI<br /><strong>U13 · U15 · U17 · U19</strong></div>
+        </div>
+        <div class="sport-cell">
+          <div class="sport-cell-num">02</div>
+          <h3 class="sport-cell-name">Athletics</h3>
+          <div class="sport-cell-meta">Track &amp; field<br /><strong>All age groups</strong></div>
+        </div>
+        <div class="sport-cell">
+          <div class="sport-cell-num">03</div>
+          <h3 class="sport-cell-name">Swimming</h3>
+          <div class="sport-cell-meta">Competitive &amp; learn-to-swim<br /><strong>Year 3 upwards</strong></div>
+        </div>
+        <div class="sport-cell">
+          <div class="sport-cell-num">04</div>
+          <h3 class="sport-cell-name">Badminton</h3>
+          <div class="sport-cell-meta">Singles &amp; doubles<br /><strong>U13 · U15 · U17 · U19</strong></div>
+        </div>
+        <div class="sport-cell">
+          <div class="sport-cell-num">05</div>
+          <h3 class="sport-cell-name">Football</h3>
+          <div class="sport-cell-meta">Boys' &amp; Girls' squads<br /><strong>U13 · U15 · U17</strong></div>
+        </div>
+        <div class="sport-cell">
+          <div class="sport-cell-num">06</div>
+          <h3 class="sport-cell-name">Chess</h3>
+          <div class="sport-cell-meta">Tournament club<br /><strong>All age groups</strong></div>
+        </div>
+        <div class="sport-cell">
+          <div class="sport-cell-num">07</div>
+          <h3 class="sport-cell-name">Karate</h3>
+          <div class="sport-cell-meta">Grading &amp; competition<br /><strong>All age groups</strong></div>
+        </div>
+        <div class="sport-cell sport-cell--soon">
+          <div class="sport-cell-num">08</div>
+          <h3 class="sport-cell-name">Netball</h3>
+          <div class="sport-cell-meta">Girls' representative<br /><strong>U13 · U15 · U17 · U19</strong></div>
+        </div>
+        <div class="sport-cell sport-cell--soon">
+          <div class="sport-cell-num">09</div>
+          <h3 class="sport-cell-name">Basketball</h3>
+          <div class="sport-cell-meta">Boys' &amp; Girls' squads<br /><strong>U15 · U17 · U19</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURE: TRAINING -->
+  <section id="training" style="background: var(--white);">
+    <div class="section-inner">
+      <div class="feature">
+        <div class="feature-media">
+          <div style="position:relative;width:100%;aspect-ratio:4/3;overflow:hidden;border-radius:var(--radius-xl);">
+            <img src="/assets/images/Sports/2.webp" alt="Cricket net session at JPIC" width="1200" height="900" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+          </div>
+        </div>
+        <div class="feature-copy">
+          <div class="feature-eyebrow">Programme</div>
+          <h3 class="feature-title">A weekly <em>training rhythm</em>, year-round.</h3>
+          <p class="feature-desc">
+            Every representative squad trains a minimum of three sessions per week, with strength and conditioning, skill work and match-play kept in separate blocks, timed to the tournament calendar. Formal partnerships with provincial associations mean our students train at accredited venues alongside club and provincial athletes.
+          </p>
+          <ul class="feature-list">
+            <li>Three structured training sessions per week per primary squad</li>
+            <li>Inter-house tournaments each term to keep participation broad across year groups</li>
+            <li>Formal coaching partnerships with Western Province and national sports bodies</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="feature reverse">
+        <div class="feature-media">
+          <div style="position:relative;width:100%;aspect-ratio:4/3;overflow:hidden;border-radius:var(--radius-xl);">
+            <img src="/assets/images/Sports/3.webp" alt="Swimming pool at JPIC" width="1200" height="900" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+          </div>
+        </div>
+        <div class="feature-copy">
+          <div class="feature-eyebrow">Recognised Standards</div>
+          <h3 class="feature-title">Training environments that <em>reflect our ambitions</em>.</h3>
+          <p class="feature-desc">
+            Our students train at association-accredited venues, under supervision that matches the standards of provincial development programmes. Every venue is vetted for safety and coaching quality, so parents can be confident their child is being developed, not simply kept active.
+          </p>
+          <ul class="feature-list">
+            <li>All training venues meet provincial association standards for the relevant sport</li>
+            <li>Coaching staff hold national or internationally recognised qualifications</li>
+            <li>Students competing at inter-school level are covered under the school's sports affiliation</li>
+            <li>Performance records maintained termly and shared with parents at review meetings</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="moments" style="background: var(--cream);">
+    <div class="section-inner">
+      <div class="section-label">
+        <div class="section-label-line"></div>
+        <span class="section-label-text">In Action</span>
+      </div>
+      <h2 class="section-title">Moments from the <em>Season</em></h2>
+      <div class="divider"></div>
+
+      <div class="gallery" style="margin-top: 48px;">
+        <div style="grid-column: span 8; position:relative; aspect-ratio:16/10; overflow:hidden; border-radius:var(--radius-lg);">
+          <img src="/assets/images/Sports/4.webp" alt="Annual Sports Meet at JPIC" width="1600" height="1000" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div style="grid-column: span 4; position:relative; aspect-ratio:4/5; overflow:hidden; border-radius:var(--radius-lg);">
+          <img src="/assets/images/Sports/5.webp" alt="Sports captain at JPIC" width="800" height="1000" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div style="grid-column: span 4; position:relative; aspect-ratio:1/1; overflow:hidden; border-radius:var(--radius-lg);">
+          <img src="/assets/images/Sports/6.webp" alt="Athletics at JPIC" width="900" height="900" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div style="grid-column: span 4; position:relative; aspect-ratio:1/1; overflow:hidden; border-radius:var(--radius-lg);">
+          <img src="/assets/images/Sports/7.webp" alt="Netball match at JPIC" width="900" height="900" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div style="grid-column: span 4; position:relative; aspect-ratio:1/1; overflow:hidden; border-radius:var(--radius-lg);">
+          <img src="/assets/images/Sports/8.webp" alt="Karate grading at JPIC" width="900" height="900" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements" style="background: var(--white);">
+    <div class="section-inner">
+      <div class="head-grid">
+        <div>
+          <div class="section-label">
+            <div class="section-label-line"></div>
+            <span class="section-label-text">Honour Board</span>
+          </div>
+          <h2 class="section-title">Recent <em>Achievements</em></h2>
+          <div class="divider"></div>
+        </div>
+        <p class="section-intro">
+          A selection of provincial and national honours from the most recent seasons.
+          The full Honour Board is displayed in the Sports Pavilion and updated at the
+          end of every academic year.
+        </p>
+      </div>
+
+      <div class="legend">
+        <span style="display: inline-flex; align-items: center; gap: 8px;"><span class="ach-medal">Gold</span> National / Champions</span>
+        <span style="display: inline-flex; align-items: center; gap: 8px;"><span class="ach-medal silver">Silver</span> Runners-up / Finalists</span>
+        <span style="display: inline-flex; align-items: center; gap: 8px;"><span class="ach-medal bronze">Bronze</span> Semi-finalists / 3rd</span>
+      </div>
+
+      <div class="achievements">
+
+        <!-- KARATE – Takeshi Cup 2026 -->
+        <div class="ach-row">
+          <div class="ach-year">2026</div>
+          <div>
+            <div class="ach-title">Karate Kata &amp; Kumite, 1st Place
+              <span class="ach-title-sub">Maneesa (Kata &amp; Kumite), Macbeth (Kata &amp; Kumite), Terren (Kata), Eshan (Kumite Junior Boys)</span>
+            </div>
+          </div>
+          <div class="ach-event">Takeshi Cup Karate Championship</div>
+          <span class="ach-medal">Gold</span>
+        </div>
+        <div class="ach-row">
+          <div class="ach-year">2026</div>
+          <div>
+            <div class="ach-title">Karate Kata &amp; Kumite, Runners-up &amp; 3rd Place
+              <span class="ach-title-sub">Terren (Kumite 2nd), Deneth (Kata &amp; Kumite 2nd), Sachel (Kumite Junior Boys 3rd)</span>
+            </div>
+          </div>
+          <div class="ach-event">Takeshi Cup Karate Championship</div>
+          <span class="ach-medal silver">Silver</span>
+        </div>
+
+        <!-- KARATE – NWP School Sports 2025 -->
+        <div class="ach-row">
+          <div class="ach-year">2025</div>
+          <div>
+            <div class="ach-title">Karate Kumite U-16, 1st Place
+              <span class="ach-title-sub">E.D. Oshan Maleesha Anthony (57 kg)</span>
+            </div>
+          </div>
+          <div class="ach-event">NWP School Sports Karate Championship</div>
+          <span class="ach-medal">Gold</span>
+        </div>
+
+        <!-- KARATE – Yozo Takimoto 2025 -->
+        <div class="ach-row">
+          <div class="ach-year">2025</div>
+          <div>
+            <div class="ach-title">Karate Kata, 1st Place
+              <span class="ach-title-sub">Maneesa, Macbeth, Deneth, Nimnara, Terren, Methuki</span>
+            </div>
+          </div>
+          <div class="ach-event">Yozo Takimoto International Open Karate Championship</div>
+          <span class="ach-medal">Gold</span>
+        </div>
+        <div class="ach-row">
+          <div class="ach-year">2025</div>
+          <div>
+            <div class="ach-title">Karate Kumite, 1st Place
+              <span class="ach-title-sub">Maneesa, Macbeth, Deneth, Nimnara</span>
+            </div>
+          </div>
+          <div class="ach-event">Yozo Takimoto International Open Karate Championship</div>
+          <span class="ach-medal">Gold</span>
+        </div>
+        <div class="ach-row">
+          <div class="ach-year">2025</div>
+          <div>
+            <div class="ach-title">Karate Kata &amp; Kumite, 2nd Place
+              <span class="ach-title-sub">Terren (Kumite), Methuki (Kumite), Shalomi (Kata &amp; Kumite), Victoria (Kata)</span>
+            </div>
+          </div>
+          <div class="ach-event">Yozo Takimoto International Open Karate Championship</div>
+          <span class="ach-medal silver">Silver</span>
+        </div>
+
+        <!-- ATHLETICS 2025 -->
+        <div class="ach-row">
+          <div class="ach-year">2025</div>
+          <div>
+            <div class="ach-title">Athletics Long Jump U-16, 1st Place
+              <span class="ach-title-sub">Stephen Demitha, Divisional Champion &amp; Zonal Champion</span>
+            </div>
+          </div>
+          <div class="ach-event">Divisional &amp; Zonal Athletic Meets</div>
+          <span class="ach-medal">Gold</span>
+        </div>
+        <div class="ach-row">
+          <div class="ach-year">2025</div>
+          <div>
+            <div class="ach-title">Athletics Discus &amp; Shot Put U-16, 1st Place
+              <span class="ach-title-sub">Kenal Keshara, 5 gold medals across Divisional, Zonal &amp; NW Province. NW Province Discus New Record: 14.24 m</span>
+            </div>
+          </div>
+          <div class="ach-event">Divisional, Zonal &amp; NW Province Athletic Meets</div>
+          <span class="ach-medal">Gold</span>
+        </div>
+        <div class="ach-row">
+          <div class="ach-year">2025</div>
+          <div>
+            <div class="ach-title">Athletics, NW Province &amp; Junior National Medals
+              <span class="ach-title-sub">Stephen Demitha, Long Jump 2nd (NW Province), Triple Jump 3rd (Junior National). Nadeen Poorna, Shot Put 3rd (Zonal)</span>
+            </div>
+          </div>
+          <div class="ach-event">NW Province &amp; Junior National Athletic Meets</div>
+          <span class="ach-medal silver">Silver</span>
+        </div>
+        <div class="ach-row">
+          <div class="ach-year">2025</div>
+          <div>
+            <div class="ach-title">Athletics Divisional, Jumps &amp; Throws
+              <span class="ach-title-sub">Ridma Sadasi (Long Jump U-14, 2nd), Javith Vinthula (High Jump U-12, 2nd), Chenul Sandira (High Jump U-14, 2nd), Dinura Tashmika (Long Jump U-18, 3rd), Sinesh Angelo (Javelin U-16, 2nd), Nadeen Poorna (Shot Put U-16, 2nd, Discus U-16, 3rd)</span>
+            </div>
+          </div>
+          <div class="ach-event">Divisional Athletic Meet</div>
+          <span class="ach-medal silver">Silver</span>
+        </div>
+
+        <!-- SWIMMING 2025 -->
+        <div class="ach-row">
+          <div class="ach-year">2025</div>
+          <div>
+            <div class="ach-title">Swimming U-12, Relay Gold &amp; Butterfly Silver
+              <span class="ach-title-sub">W. Diyon Ethan Fernando, 50m Medley Relay 1st, 50m Freestyle Relay 1st, 100m Butterfly 2nd</span>
+            </div>
+          </div>
+          <div class="ach-event">St. John Paul II Network Swimming Meet</div>
+          <span class="ach-medal">Gold</span>
+        </div>
+        <div class="ach-row">
+          <div class="ach-year">2025</div>
+          <div>
+            <div class="ach-title">Swimming U-16, Relay Medals
+              <span class="ach-title-sub">Shevon Henry Pietersz &amp; W. Shone Nathan Fernando, 50m Medley Relay 2nd, 50m Freestyle Relay 2nd</span>
+            </div>
+          </div>
+          <div class="ach-event">St. John Paul II Network Swimming Meet</div>
+          <span class="ach-medal silver">Silver</span>
+        </div>
+        <div class="ach-row">
+          <div class="ach-year">2025</div>
+          <div>
+            <div class="ach-title">Swimming Provincial, Relay &amp; Individual Medals
+              <span class="ach-title-sub">50m×4 Freestyle Relay 2nd, 50m×4 Medley Relay 3rd. Pravesh Vishwadhara, 100m Butterfly 3rd (U-16)</span>
+            </div>
+          </div>
+          <div class="ach-event">Provincial Swimming Championships</div>
+          <span class="ach-medal silver">Silver</span>
+        </div>
+
+        <!-- FOOTBALL 2025 -->
+        <div class="ach-row">
+          <div class="ach-year">2025</div>
+          <div>
+            <div class="ach-title">Football U-12 Girls, Champions
+              <span class="ach-title-sub">Samedha, Tenuri, Senadi, Ridma</span>
+            </div>
+          </div>
+          <div class="ach-event">Puttalam District Championship</div>
+          <span class="ach-medal">Gold</span>
+        </div>
+        <div class="ach-row">
+          <div class="ach-year">2025</div>
+          <div>
+            <div class="ach-title">Football Open, 1st Place
+              <span class="ach-title-sub">Javith, Chenul</span>
+            </div>
+          </div>
+          <div class="ach-event">Indian International Football Tournament</div>
+          <span class="ach-medal">Gold</span>
+        </div>
+        <div class="ach-row">
+          <div class="ach-year">2025</div>
+          <div>
+            <div class="ach-title">Football U-18 Boys, National Squad Selected
+              <span class="ach-title-sub">Dinura, Ashara, Dimithree, Keith, Rimash, Sinesh</span>
+            </div>
+          </div>
+          <div class="ach-event">All Island Football Tournament</div>
+          <span class="ach-medal silver">Silver</span>
+        </div>
+
+        <!-- CHESS 2025 -->
+        <div class="ach-row">
+          <div class="ach-year">2025</div>
+          <div>
+            <div class="ach-title">Chess, Winning Place
+              <span class="ach-title-sub">Deegayu Damsath, Osuli Pavoliya, Gloriya Sithuwili, Okitha Nethmika</span>
+            </div>
+          </div>
+          <div class="ach-event">Zonal, District &amp; Provincial Chess Championships</div>
+          <span class="ach-medal">Gold</span>
+        </div>
+
+      </div>
+
+      <div class="stat-grid" style="margin-top: 60px;">
+        <div class="stat">
+          <div class="stat-num">60<em>+</em></div>
+          <div class="stat-label">Total Medals</div>
+          <div class="stat-sub">Since 2016</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">38</div>
+          <div class="stat-label">National Honours</div>
+          <div class="stat-sub">Provincial &amp; all-island</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">9</div>
+          <div class="stat-label">Sports Coached</div>
+          <div class="stat-sub">Year-round programmes</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">100<em>%</em></div>
+          <div class="stat-label">Participation</div>
+          <div class="stat-sub">Every student plays</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <section class="quote-band">
+    <div class="quote-bg-word">Honor.</div>
+    <div class="quote-inner">
+      <div class="quote-mark">"</div>
+      <p class="quote-text">
+        We do not measure our sports programme by trophies alone. We measure it by
+        the young men and women who arrive shy and leave us standing tall, captains,
+        team-mates, and friends for life.
+      </p>
+      <div class="quote-attrib">
+        Director of Sport
+        <span>St. John Paul II International College</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta-band">
+    <div class="cta-bg-word">Compete.</div>
+    <div class="section-inner">
+      <div>
+        <div class="section-label">
+          <div class="section-label-line" style="background: var(--gold);"></div>
+          <span class="section-label-text" style="color: var(--gold);">Visit Us</span>
+        </div>
+        <h2 class="cta-title">Come and meet our <em>coaches &amp; teams</em>.</h2>
+        <p class="cta-sub">
+          Prospective families are welcome to attend an inter-house fixture, the Annual
+          Sports Meet or any of our weekend training sessions. Book a guided tour and
+          we will introduce you to the coaching team.
+        </p>
+      </div>
+      <div class="cta-actions">
+        <a href="/contact.html" class="btn-primary">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (injected by JS) -->
+  <div data-component="footer"></div>
+
+</body>
+</html>
