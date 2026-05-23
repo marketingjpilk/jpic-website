@@ -28,7 +28,7 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&family=Cormorant+Garamond:ital,wght@1,300;1,400;1,500;1,600&display=swap"></noscript>
   <link rel="stylesheet" href="/assets/css/main.css?v=20260523b">
   <link rel="stylesheet" href="/assets/css/components.css?v=20260517">
-  <link rel="stylesheet" href="/assets/css/home.css?v=20260523b">
+  <link rel="stylesheet" href="/assets/css/home.css?v=20260523c">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -85,40 +85,49 @@
          HERO — MOBILE (< 768px)
          ========================================= -->
     <section class="hero-mobile" aria-label="Welcome to JPIC">
-      <div class="hero-mobile__bg">
-        <img
-          src="assets/images/hero/Mobile.webp"
-          alt="St. John Paul II International College — Cambridge International Education"
-          loading="eager"
-          fetchpriority="high"
-          width="800"
-          height="1000"
-          class="hero-mobile__img"
-        >
-        <div class="hero-mobile__overlay" aria-hidden="true"></div>
-      </div>
+      <!-- Oxford blue grid pattern -->
+      <div class="hm-bg" aria-hidden="true"></div>
+      <!-- Gold corner glow -->
+      <div class="hm-glow" aria-hidden="true"></div>
 
-      <div class="hero-mobile__content">
-        <span class="hero-mobile__eyebrow">Cambridge International Education</span>
-        <h1 class="hero-mobile__title">
-          Where Faith Meets<br>Academic Excellence
-        </h1>
-        <p class="hero-mobile__sub">
-          Early Years to A Level · Chilaw Diocese, Wennappuwa
-        </p>
-        <div class="hero-mobile__actions">
-          <a
-            href="https://admissions.jpeducation.net/apply"
-            class="hero-mobile__btn hero-mobile__btn--primary"
-          >
-            Apply Now
-          </a>
-          <a
-            href="/admissions/#enquiry-form"
-            class="hero-mobile__btn hero-mobile__btn--secondary"
-          >
-            Make an Enquiry
-          </a>
+      <div class="hm-content">
+        <div class="hm-body">
+          <div class="hm-eyebrow-row">
+            <div class="hm-rule" aria-hidden="true"></div>
+            <span class="hm-eyebrow">Wennappuwa &middot; Since 2015</span>
+          </div>
+
+          <h1 class="hm-title">
+            Shaping<br>
+            <em>Tomorrow's</em><br>
+            World Leaders,<br>
+            <span class="hm-title-gold">Today.</span>
+          </h1>
+
+          <p class="hm-desc">
+            Full Cambridge International curriculum &mdash; from Primary through A&nbsp;Level &mdash; in Sri Lanka's premier college.
+          </p>
+        </div>
+
+        <div class="hm-spacer" aria-hidden="true"></div>
+
+        <!-- Stats strip -->
+        <div class="hm-stats">
+          <div class="hm-stat">
+            <div class="hm-stat-val">Primary<br>A/ Level</div>
+            <div class="hm-stat-label">Cambridge Pathway</div>
+          </div>
+          <div class="hm-stat-sep" aria-hidden="true"></div>
+          <div class="hm-stat hm-stat--right">
+            <div class="hm-stat-val hm-stat-val--teal">Catholic</div>
+            <div class="hm-stat-label">Values-Led</div>
+          </div>
+        </div>
+
+        <!-- CTAs -->
+        <div class="hm-actions">
+          <a href="https://admissions.jpeducation.net/apply" class="hm-btn hm-btn--primary">Apply Now &rarr;</a>
+          <a href="/contact/" class="hm-btn hm-btn--outline">Visit</a>
         </div>
       </div>
     </section>
