@@ -640,20 +640,6 @@ section { position: relative; }
 }
 .btn-ghost:hover { color: var(--gold); }
 
-/* ── FOOTER ── */
-footer.site-footer { background: var(--oxford-deep); border-top: 1px solid rgba(201,168,76,0.2); }
-.footer-inner { max-width: 1200px; margin: 0 auto; padding: 60px 60px 40px; }
-.footer-top { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 60px; padding-bottom: 44px; border-bottom: 1px solid rgba(255,255,255,0.08); margin-bottom: 32px; }
-.footer-brand-name { font-family: var(--serif-display); font-size: 16px; font-weight: 600; color: var(--gold); margin-bottom: 6px; }
-.footer-brand-sub { font-family: var(--serif-body); font-size: 12px; color: var(--teal-bright); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 16px; }
-.footer-brand-desc { font-family: var(--serif-body); font-size: 14px; color: rgba(255,255,255,0.45); line-height: 1.75; max-width: 280px; }
-.footer-col-title { font-family: var(--serif-body); font-size: 10px; color: var(--teal); letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 16px; }
-.footer-links { display: flex; flex-direction: column; gap: 10px; list-style: none; }
-.footer-links a { font-family: var(--serif-body); font-size: 14.5px; color: rgba(255,255,255,0.5); text-decoration: none; transition: color 0.2s; }
-.footer-links a:hover { color: var(--gold); }
-.footer-bottom { display: flex; align-items: center; justify-content: space-between; }
-.footer-copy { font-family: var(--serif-body); font-size: 13px; color: rgba(255,255,255,0.3); }
-.footer-cambridge-badge { display: flex; align-items: center; gap: 10px; font-family: var(--serif-body); font-size: 12px; color: var(--teal-bright); letter-spacing: 0.08em; text-transform: uppercase; }
 
 /* ── Responsive ── */
 @media (max-width: 1100px) {
@@ -675,13 +661,9 @@ footer.site-footer { background: var(--oxford-deep); border-top: 1px solid rgba(
   .ach-row .ach-event, .ach-row .ach-medal { grid-column: 2; justify-self: start; }
   #cta-band .section-inner { grid-template-columns: 1fr; gap: 32px; padding: 60px 20px; }
   .cta-bg-word, .quote-bg-word { font-size: 120px; opacity: 0.6; }
-  .footer-top { grid-template-columns: 1fr 1fr; gap: 32px; }
-  .footer-inner { padding: 40px 20px 28px; }
-  .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
   .quote-inner { padding: 60px 20px; }
 }
 @media (max-width: 600px) {
-  .footer-top { grid-template-columns: 1fr; }
   .stat-grid { grid-template-columns: 1fr; }
   .hero-title { font-size: 36px; }
   .strip-inner { grid-template-columns: 1fr; }
