@@ -302,6 +302,9 @@
   padding-top: var(--space-6) !important;
   border-bottom: none !important;
 }
+.nav-mobile-links .btn-primary {
+  color: #001530;
+}
 
 @media (max-width: 1024px) {
   .nav-links, .nav-cta { display: none; }
@@ -494,6 +497,7 @@
 
 /* Footer responsive */
 @media (max-width: 860px) {
+  .footer-inner { padding: 0 32px; }
   .footer-top { grid-template-columns: 1fr 1fr; gap: 40px; }
   .footer-brand { grid-column: 1 / -1; }
 }
