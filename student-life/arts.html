@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Performing Arts — St. John Paul II International College</title>
+  <meta name="description" content="Performing Arts at St. John Paul II International College spans Music, Dance and Drama — from ABRSM-examined instrument tuition and Sri Lankan classical dance to drama productions staged in the College Concert Hall." />
+  <link rel="canonical" href="https://jpeducation.net/student-life/arts" />
+  <meta name="robots" content="index, follow" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="St. John Paul II International College">
+  <meta property="og:title" content="Performing Arts | St. John Paul II International College">
+  <meta property="og:description" content="Performing Arts at St. John Paul II International College spans Music, Dance and Drama — from ABRSM-examined instrument tuition and classical dance to live productions in the Concert Hall.">
+  <meta property="og:image" content="https://jpeducation.net/assets/images/og-image.webp">
+  <meta property="og:url" content="https://jpeducation.net/student-life/arts">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Performing Arts | St. John Paul II International College">
+  <meta name="twitter:description" content="Music, Dance and Drama at St. John Paul II International College — examined, performed, and celebrated year-round.">
+  <meta name="twitter:image" content="https://jpeducation.net/assets/images/og-image.webp">
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/main.css?v=20260524" />
+  <link rel="stylesheet" href="/assets/css/components.css?v=20260524" />
+  <script src="/assets/js/main.js" defer></script>
+
+  <style>
+    /* ════════════════════════════════════════════════════════════
+       JPIC · Performing Arts — a theatrical programme page.
+       On-brand with the rest of the site (Oxford / gold / teal),
+       but composed as its own art piece. Nav + footer are spliced
+       in elsewhere — intentionally NOT built here.
+       ════════════════════════════════════════════════════════════ */
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --oxford: #002147;
+      --oxford-deep: #001226;
+      --oxford-mid: #003166;
+      --gold: #FFE69E;
+      --gold-soft: #E9CF86;
+      --gold-dark: #C9A648;
+      --teal: #00BDB6;
+      --teal-bright: #3BE0D0;
+      --cream: #F6F3EC;
+      --cream-deep: #EFEADD;
+      --white: #FFFFFF;
+      --ink: #1A1D24;
+      --text-muted: #5A6478;
+
+      --display: 'Playfair Display', Georgia, serif;
+      --quill: 'Cormorant Garamond', Georgia, serif;
+      --body: 'DM Sans', system-ui, sans-serif;
+      --mono: 'JetBrains Mono', ui-monospace, Menlo, monospace;
+    }
+
+    html { scroll-behavior: smooth; overflow-x: hidden; }
+    body {
+      font-family: var(--body);
+      background: var(--oxford-deep);
+      color: var(--white);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    /* future fixed site-nav (72px) won't overlap content */
+    section[id] { scroll-margin-top: 84px; }
+
+    /* ── shared atoms ───────────────────────────────────────────── */
+    .eyebrow {
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      display: inline-flex; align-items: center; gap: 12px;
+    }
+    .eyebrow::before { content: ''; width: 30px; height: 1px; background: currentColor; }
+    .hairline { width: 64px; height: 1px; background: var(--gold); border: 0; }
+
+    /* ════════════════ OVERTURE / HERO ════════════════ */
+    .overture {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 150px 6vw 80px;
+      overflow: hidden;
+      background:
+        radial-gradient(120% 90% at 78% 12%, rgba(0,49,102,0.55) 0%, transparent 55%),
+        radial-gradient(100% 80% at 0% 100%, rgba(0,189,182,0.10) 0%, transparent 50%),
+        var(--oxford-deep);
+    }
+    /* fine vertical "curtain" striations */
+    .overture::before {
+      content: '';
+      position: absolute; inset: 0;
+      background-image: repeating-linear-gradient(90deg,
+        rgba(255,230,158,0.045) 0px, rgba(255,230,158,0.045) 1px,
+        transparent 1px, transparent 64px);
+      mask-image: linear-gradient(180deg, transparent, #000 40%);
+      pointer-events: none;
+    }
+    .overture-word {
+      position: absolute;
+      right: -4vw; bottom: -7vh;
+      font-family: var(--display);
+      font-style: italic;
+      font-size: clamp(260px, 42vw, 760px);
+      font-weight: 400;
+      line-height: 0.74;
+      color: rgba(255,230,158,0.035);
+      pointer-events: none;
+      user-select: none;
+      letter-spacing: -0.03em;
+    }
+    .overture-inner { position: relative; z-index: 2; max-width: 1180px; margin: 0 auto; width: 100%; }
+    .overture .eyebrow { color: var(--gold); }
+    .overture h1 {
+      font-family: var(--display);
+      font-weight: 400;
+      font-size: clamp(56px, 11vw, 168px);
+      line-height: 0.92;
+      letter-spacing: -0.02em;
+      margin: 26px 0 0;
+      color: var(--white);
+    }
+    .overture h1 em { font-style: italic; color: var(--gold); }
+    .overture .lede {
+      font-family: var(--quill);
+      font-style: italic;
+      font-size: clamp(20px, 2.4vw, 30px);
+      color: rgba(255,255,255,0.7);
+      max-width: 600px;
+      margin-top: 30px;
+      line-height: 1.5;
+    }
+
+    /* concert-programme index */
+    .programme {
+      margin-top: 64px;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      border-top: 1px solid rgba(255,230,158,0.22);
+    }
+    .prog-item {
+      position: relative;
+      padding: 22px 18px 22px 0;
+      text-decoration: none;
+      display: flex; flex-direction: column; gap: 6px;
+      border-right: 1px solid rgba(255,230,158,0.12);
+      transition: background 0.3s ease;
+    }
+    .prog-item:last-child { border-right: 0; }
+    .prog-item::after {
+      content: ''; position: absolute; left: 0; top: -1px; height: 2px; width: 0;
+      background: var(--gold); transition: width 0.4s ease;
+    }
+    .prog-item:hover { background: rgba(255,230,158,0.05); }
+    .prog-item:hover::after { width: 100%; }
+    .prog-num { font-family: var(--mono); font-size: 11px; letter-spacing: 0.2em; color: var(--teal-bright); }
+    .prog-name {
+      font-family: var(--display); font-size: 17px; font-weight: 500;
+      color: rgba(255,255,255,0.82); letter-spacing: 0.01em; transition: color 0.3s ease;
+    }
+    .prog-item:hover .prog-name { color: var(--gold); }
+
+    .scroll-cue {
+      margin-top: 54px;
+      font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.3em;
+      text-transform: uppercase; color: rgba(255,255,255,0.4);
+      display: inline-flex; align-items: center; gap: 14px;
+    }
+    .scroll-cue span { width: 54px; height: 1px; background: rgba(255,255,255,0.3); position: relative; overflow: hidden; }
+    .scroll-cue span::after {
+      content: ''; position: absolute; inset: 0; width: 18px; background: var(--gold);
+      animation: cue 2.4s ease-in-out infinite;
+    }
+    @keyframes cue { 0% { transform: translateX(-20px); } 100% { transform: translateX(60px); } }
+
+    /* ════════════════ MARQUEE RIBBON ════════════════ */
+    .ribbon {
+      background: var(--oxford);
+      border-top: 1px solid rgba(255,230,158,0.16);
+      border-bottom: 1px solid rgba(255,230,158,0.16);
+      overflow: hidden;
+      padding: 18px 0;
+      white-space: nowrap;
+    }
+    .ribbon-track {
+      display: inline-flex; align-items: center; gap: 0;
+      animation: drift 38s linear infinite;
+    }
+    .ribbon-track span {
+      font-family: var(--display); font-style: italic; font-weight: 400;
+      font-size: 22px; color: rgba(255,230,158,0.5); padding: 0 30px;
+    }
+    .ribbon-track i { color: var(--teal); font-style: normal; }
+    @keyframes drift { to { transform: translateX(-50%); } }
+
+    /* ════════════════ ACT — shared ════════════════ */
+    .act { position: relative; }
+    .act-kicker {
+      font-family: var(--mono); font-size: 11px; letter-spacing: 0.28em;
+      text-transform: uppercase; display: flex; align-items: center; gap: 14px;
+    }
+    .act-roman {
+      font-family: var(--display); font-style: italic; font-weight: 400;
+      line-height: 0.8; letter-spacing: -0.02em;
+    }
+    .act-name {
+      font-family: var(--display); font-weight: 400;
+      font-size: clamp(46px, 7vw, 104px); line-height: 0.95;
+      letter-spacing: -0.02em; margin: 14px 0 0;
+    }
+    .act-line {
+      font-family: var(--quill); font-style: italic;
+      font-size: clamp(21px, 2.3vw, 30px); line-height: 1.45;
+      margin-top: 22px; max-width: 460px;
+    }
+    .act-meta { margin-top: 30px; display: flex; flex-direction: column; gap: 12px; max-width: 440px; }
+    .act-tag {
+      font-family: var(--mono); font-size: 11px; letter-spacing: 0.16em;
+      text-transform: uppercase; display: flex; align-items: baseline; gap: 12px;
+    }
+    .act-tag .dot { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; transform: translateY(-2px); }
+    .act-note { font-family: var(--body); font-size: 13.5px; line-height: 1.65; letter-spacing: 0.01em; }
+
+    /* ── full-size placeholder system (light + dark variants) ── */
+    .plate { position: relative; width: 100%; height: 100%; overflow: hidden; }
+    .plate::before { /* corner ticks (top-left) */
+      content: ''; position: absolute; top: 20px; left: 20px; width: 30px; height: 30px;
+      border-top: 1px solid; border-left: 1px solid; opacity: 0.55; z-index: 3;
+    }
+    .plate::after { /* corner ticks (bottom-right) */
+      content: ''; position: absolute; bottom: 20px; right: 20px; width: 30px; height: 30px;
+      border-bottom: 1px solid; border-right: 1px solid; opacity: 0.55; z-index: 3;
+    }
+    .plate-label {
+      position: absolute; left: 22px; bottom: 22px; z-index: 4;
+      font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.08em;
+      line-height: 1.5; max-width: 70%;
+      padding: 9px 13px; border-left: 2px solid var(--teal);
+    }
+    .plate-dim {
+      position: absolute; top: 22px; right: 24px; z-index: 4;
+      font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em;
+    }
+    /* dark plate (cinematic acts) */
+    .plate.dark {
+      background:
+        repeating-linear-gradient(135deg, rgba(255,230,158,0.05) 0, rgba(255,230,158,0.05) 1px, transparent 1px, transparent 11px),
+        linear-gradient(150deg, #021a36 0%, #00386f 48%, #001226 100%);
+    }
+    .plate.dark::before, .plate.dark::after { border-color: rgba(255,230,158,0.7); }
+    .plate.dark .plate-label { background: rgba(0,12,28,0.6); color: rgba(255,255,255,0.82); backdrop-filter: blur(2px); }
+    .plate.dark .plate-dim { color: rgba(255,255,255,0.5); }
+    /* light plate (editorial acts) */
+    .plate.light {
+      background:
+        repeating-linear-gradient(135deg, rgba(0,33,71,0.05) 0, rgba(0,33,71,0.05) 1px, transparent 1px, transparent 11px),
+        linear-gradient(160deg, #E9E3D4 0%, #DCD4C2 100%);
+    }
+    .plate.light::before, .plate.light::after { border-color: rgba(0,33,71,0.4); }
+    .plate.light .plate-label { background: rgba(255,255,255,0.86); color: var(--oxford); }
+    .plate.light .plate-dim { color: rgba(0,33,71,0.5); }
+    .plate img {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: center;
+      display: block;
+    }
+
+    /* ── full-wide landscape plate band (one per act) ── */
+    .act-wide { position: relative; width: 100%; }
+    .act-wide .plate { aspect-ratio: 21 / 9; max-height: 78vh; min-height: 300px; }
+    .act-wide.dark-band { background: var(--oxford-deep); border-top: 1px solid rgba(255,230,158,0.18); }
+    .act-wide.light-band { background: var(--cream); border-top: 1px solid rgba(0,33,71,0.12); }
+    @media (max-width: 960px) {
+      .act-wide .plate { aspect-ratio: 4 / 3; }
+    }
+
+    /* ════════════════ ACT — CINEMA (dark, full-bleed) ════════════════ */
+    .act--cinema {
+      position: relative;
+      min-height: 92vh;
+      display: flex;
+      align-items: center;
+      background: var(--oxford-deep);
+    }
+    .act--cinema .act-stage { position: absolute; inset: 0; z-index: 0; }
+    .act--cinema .act-scrim {
+      position: absolute; inset: 0; z-index: 1; pointer-events: none;
+      background: linear-gradient(90deg, rgba(0,8,20,0.92) 0%, rgba(0,8,20,0.7) 34%, rgba(0,8,20,0.12) 62%, transparent 100%);
+    }
+    .act--cinema.flip .act-scrim {
+      background: linear-gradient(270deg, rgba(0,8,20,0.92) 0%, rgba(0,8,20,0.7) 34%, rgba(0,8,20,0.12) 62%, transparent 100%);
+    }
+    .act--cinema .act-body {
+      position: relative; z-index: 2;
+      width: 100%; max-width: 1180px; margin: 0 auto; padding: 100px 6vw;
+    }
+    .act--cinema.flip .act-body { text-align: right; }
+    .act--cinema.flip .act-kicker,
+    .act--cinema.flip .act-meta,
+    .act--cinema.flip .act-tag { justify-content: flex-end; }
+    .act--cinema.flip .act-line,
+    .act--cinema.flip .act-meta { margin-left: auto; }
+    .act--cinema .panel { max-width: 540px; }
+    .act--cinema.flip .panel { margin-left: auto; }
+    .act--cinema .act-kicker { color: var(--gold); }
+    .act--cinema .act-roman { color: rgba(255,230,158,0.9); font-size: 26px; }
+    .act--cinema .act-name { color: var(--white); }
+    .act--cinema .act-name em { font-style: italic; color: var(--gold); }
+    .act--cinema .act-line { color: rgba(255,255,255,0.72); }
+    .act--cinema .act-tag { color: rgba(255,255,255,0.78); }
+    .act--cinema .act-tag .dot { background: var(--teal-bright); }
+    .act--cinema .act-note { color: rgba(255,255,255,0.5); }
+    /* giant ghost numeral */
+    .act--cinema .ghost-num {
+      position: absolute; z-index: 1; bottom: -4vh; right: 4vw;
+      font-family: var(--display); font-style: italic; font-weight: 400;
+      font-size: clamp(200px, 30vw, 460px); line-height: 0.7;
+      color: rgba(255,230,158,0.06); pointer-events: none; user-select: none;
+    }
+    .act--cinema.flip .ghost-num { right: auto; left: 4vw; }
+
+    /* ════════════════ ACT — EDITORIAL (cream, split) ════════════════ */
+    .act--editorial {
+      background: var(--cream);
+      color: var(--ink);
+      padding: clamp(80px, 11vh, 150px) 6vw;
+    }
+    .act--editorial .act-grid {
+      max-width: 1180px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 1.08fr; gap: clamp(40px, 6vw, 96px);
+      align-items: center;
+    }
+    .act--editorial.flip .act-grid { grid-template-columns: 1.08fr 1fr; }
+    .act--editorial.flip .act-media { order: 2; }
+    .act--editorial.flip .act-copy { order: 1; }
+    .act--editorial .act-media { position: relative; aspect-ratio: 4 / 5; }
+    .act--editorial .act-kicker { color: var(--gold-dark); }
+    .act--editorial .act-roman { color: var(--teal); font-size: 26px; }
+    .act--editorial .act-name { color: var(--oxford); }
+    .act--editorial .act-name em { font-style: italic; color: var(--teal); }
+    .act--editorial .act-line { color: var(--oxford-mid); }
+    .act--editorial .act-tag { color: var(--oxford); }
+    .act--editorial .act-tag .dot { background: var(--teal); }
+    .act--editorial .act-note { color: var(--text-muted); }
+    .act--editorial .act-copy { position: relative; }
+    .act--editorial .edge-num {
+      position: absolute; top: -64px; right: 0;
+      font-family: var(--display); font-style: italic; font-weight: 400;
+      font-size: 150px; line-height: 0.7; color: rgba(0,33,71,0.05);
+      pointer-events: none; user-select: none;
+    }
+    .act--editorial.flip .edge-num { right: auto; left: 0; }
+
+    /* ════════════════ ACCOLADE BAND (gold) ════════════════ */
+    .accolade {
+      position: relative;
+      background:
+        radial-gradient(140% 120% at 50% 0%, #FFF4D2 0%, var(--gold) 46%, #E7C66A 100%);
+      color: var(--oxford-deep);
+      padding: clamp(80px, 12vh, 150px) 6vw;
+      overflow: hidden;
+      text-align: center;
+    }
+    .accolade::before {
+      content: ''; position: absolute; inset: 0;
+      background-image: repeating-linear-gradient(135deg,
+        rgba(0,33,71,0.05) 0, rgba(0,33,71,0.05) 1px, transparent 1px, transparent 13px);
+      pointer-events: none;
+    }
+    .accolade-inner { position: relative; z-index: 2; max-width: 920px; margin: 0 auto; }
+    .accolade .eyebrow { color: var(--oxford); justify-content: center; }
+    .accolade .eyebrow::before, .accolade .eyebrow::after {
+      content: ''; width: 30px; height: 1px; background: currentColor;
+    }
+    .accolade-laurel {
+      font-family: var(--display); font-style: italic; font-size: 22px;
+      color: var(--oxford); margin: 22px 0 6px;
+    }
+    .accolade h2 {
+      font-family: var(--display); font-weight: 500;
+      font-size: clamp(32px, 4.6vw, 60px); line-height: 1.1;
+      letter-spacing: -0.015em; color: var(--oxford-deep); margin-top: 8px;
+    }
+    .accolade h2 em { font-style: italic; }
+    .accolade .accolade-sub {
+      font-family: var(--body); font-size: 14.5px; line-height: 1.7;
+      color: rgba(0,18,38,0.66); max-width: 600px; margin: 26px auto 0;
+      letter-spacing: 0.01em;
+    }
+    .accolade-medals {
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 34px;
+    }
+    .medal {
+      font-family: var(--mono); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase;
+      padding: 10px 18px; border: 1px solid rgba(0,33,71,0.3); border-radius: 2px;
+      color: var(--oxford-deep); background: rgba(255,255,255,0.35);
+    }
+
+    /* ════════════════ SEASON (closing, dark) ════════════════ */
+    .season {
+      position: relative;
+      background: var(--oxford-deep);
+      padding: clamp(90px, 13vh, 160px) 6vw clamp(110px, 16vh, 190px);
+      overflow: hidden;
+    }
+    .season-word {
+      position: absolute; left: -3vw; top: 40%;
+      font-family: var(--display); font-style: italic;
+      font-size: clamp(200px, 30vw, 480px); line-height: 0.7;
+      color: rgba(255,230,158,0.035); pointer-events: none; user-select: none;
+    }
+    .season-inner { position: relative; z-index: 2; max-width: 1180px; margin: 0 auto; }
+    .season .eyebrow { color: var(--gold); }
+    .season h2 {
+      font-family: var(--display); font-weight: 400;
+      font-size: clamp(34px, 5vw, 68px); line-height: 1.02;
+      letter-spacing: -0.02em; color: var(--white); margin-top: 22px; max-width: 14ch;
+    }
+    .season h2 em { font-style: italic; color: var(--gold); }
+    .season-list { margin-top: 60px; border-top: 1px solid rgba(255,230,158,0.18); }
+    .season-row {
+      display: grid; grid-template-columns: 200px 1fr auto; gap: 32px; align-items: baseline;
+      padding: 28px 4px; border-bottom: 1px solid rgba(255,230,158,0.12);
+      transition: padding-left 0.3s ease;
+    }
+    .season-row:hover { padding-left: 16px; background: rgba(255,230,158,0.03); }
+    .season-when { font-family: var(--mono); font-size: 12px; letter-spacing: 0.16em; color: var(--teal-bright); text-transform: uppercase; }
+    .season-what { font-family: var(--display); font-size: clamp(22px, 2.6vw, 32px); font-weight: 400; color: var(--white); line-height: 1.25; }
+    .season-what em { font-style: italic; color: var(--gold); }
+    .season-where { font-family: var(--body); font-size: 13px; letter-spacing: 0.04em; color: rgba(255,255,255,0.5); text-align: right; white-space: nowrap; }
+    .season-foot {
+      margin-top: 48px; font-family: var(--quill); font-style: italic;
+      font-size: clamp(20px, 2.4vw, 30px); color: rgba(255,255,255,0.62); max-width: 620px; line-height: 1.5;
+    }
+
+    /* ════════════════ ACT-RAIL (scroll-spy) ════════════════ */
+    .rail {
+      position: fixed; top: 50%; right: 26px; transform: translateY(-50%);
+      z-index: 80; display: flex; flex-direction: column; gap: 16px;
+      mix-blend-mode: difference;
+    }
+    .rail a {
+      display: flex; align-items: center; gap: 10px; text-decoration: none;
+      font-family: var(--mono); font-size: 9.5px; letter-spacing: 0.18em;
+      color: rgba(255,255,255,0.55); transition: color 0.3s ease;
+    }
+    .rail a .tick { width: 18px; height: 1px; background: rgba(255,255,255,0.4); transition: all 0.3s ease; }
+    .rail a .rl { opacity: 0; transform: translateX(6px); transition: opacity 0.3s ease, transform 0.3s ease; }
+    .rail a:hover .rl, .rail a.active .rl { opacity: 1; transform: translateX(0); }
+    .rail a.active { color: #fff; }
+    .rail a.active .tick { width: 34px; background: #fff; }
+
+    /* ════════════════ reveal ════════════════ */
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.9s ease, transform 0.9s ease; }
+    .reveal.in { opacity: 1; transform: none; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .ribbon-track, .scroll-cue span::after { animation: none; }
+      .reveal { opacity: 1; transform: none; transition: none; }
+      html { scroll-behavior: auto; }
+    }
+
+    /* ════════════════ responsive ════════════════ */
+    @media (max-width: 960px) {
+      .rail { display: none; }
+      .programme { grid-template-columns: repeat(3, 1fr); }
+      .prog-item:nth-child(3n) { border-right: 0; }
+      .act--cinema .act-scrim,
+      .act--cinema.flip .act-scrim { background: linear-gradient(0deg, rgba(0,8,20,0.95) 0%, rgba(0,8,20,0.6) 50%, rgba(0,8,20,0.4) 100%); }
+      .act--cinema .act-body, .act--cinema.flip .act-body { text-align: left; }
+      .act--cinema.flip .act-kicker, .act--cinema.flip .act-meta, .act--cinema.flip .act-tag { justify-content: flex-start; }
+      .act--cinema.flip .act-line, .act--cinema.flip .act-meta, .act--cinema.flip .panel { margin-left: 0; }
+      .act--editorial .act-grid,
+      .act--editorial.flip .act-grid { grid-template-columns: 1fr; gap: 36px; }
+      .act--editorial.flip .act-media { order: 1; }
+      .act--editorial.flip .act-copy { order: 2; }
+      .act--editorial .edge-num, .act--editorial.flip .edge-num { top: -52px; right: 0; left: auto; }
+      .season-row { grid-template-columns: 1fr; gap: 8px; }
+      .season-where { text-align: left; }
+    }
+    @media (max-width: 560px) {
+      .programme { grid-template-columns: repeat(2, 1fr); }
+      .prog-item:nth-child(3n) { border-right: 1px solid rgba(255,230,158,0.12); }
+      .prog-item:nth-child(2n) { border-right: 0; }
+      .act--editorial .act-media { aspect-ratio: 3 / 4; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation (injected by JS) -->
+  <div data-component="nav"></div>
+
+  <!-- ════════ NAV + FOOTER are spliced in elsewhere — not built here. ════════ -->
+
+  <!-- ════════════════ ACT-RAIL ════════════════ -->
+  <nav class="rail" aria-label="Programme">
+    <a href="#music" data-rail="music"><span class="tick"></span><span class="rl">I · MUSIC</span></a>
+    <a href="#choir" data-rail="choir"><span class="tick"></span><span class="rl">II · CHOIR</span></a>
+    <a href="#orchestra" data-rail="orchestra"><span class="tick"></span><span class="rl">III · ORCHESTRA</span></a>
+    <a href="#band" data-rail="band"><span class="tick"></span><span class="rl">IV · BAND</span></a>
+    <a href="#dance" data-rail="dance"><span class="tick"></span><span class="rl">V · DANCE</span></a>
+    <a href="#drama" data-rail="drama"><span class="tick"></span><span class="rl">VI · DRAMA</span></a>
+  </nav>
+
+  <!-- ════════════════ OVERTURE ════════════════ -->
+  <header class="overture" data-screen-label="Overture">
+    <div class="overture-word" aria-hidden="true">Arts</div>
+    <div class="overture-inner">
+      <span class="eyebrow">St. John Paul II International College &nbsp;·&nbsp; Aesthetic Education</span>
+      <h1>The Performing<br /><em>Arts</em></h1>
+      <p class="lede">Where faith, discipline and imagination are given a stage — sung, played, danced and spoken.</p>
+
+      <nav class="programme" aria-label="On this page">
+        <a class="prog-item" href="#music"><span class="prog-num">I</span><span class="prog-name">Music</span></a>
+        <a class="prog-item" href="#choir"><span class="prog-num">II</span><span class="prog-name">Choir</span></a>
+        <a class="prog-item" href="#orchestra"><span class="prog-num">III</span><span class="prog-name">Orchestra</span></a>
+        <a class="prog-item" href="#band"><span class="prog-num">IV</span><span class="prog-name">Western Band</span></a>
+        <a class="prog-item" href="#dance"><span class="prog-num">V</span><span class="prog-name">Dance</span></a>
+        <a class="prog-item" href="#drama"><span class="prog-num">VI</span><span class="prog-name">Drama</span></a>
+      </nav>
+
+      <div class="scroll-cue">Begin the programme <span></span></div>
+    </div>
+  </header>
+
+  <!-- ════════════════ RIBBON ════════════════ -->
+  <div class="ribbon" aria-hidden="true">
+    <div class="ribbon-track">
+      <span>Overture <i>·</i></span><span>Cantata <i>·</i></span><span>Crescendo <i>·</i></span><span>Pas de deux <i>·</i></span><span>Tableau <i>·</i></span><span>Sotto voce <i>·</i></span><span>Allegro <i>·</i></span><span>Encore <i>·</i></span>
+      <span>Overture <i>·</i></span><span>Cantata <i>·</i></span><span>Crescendo <i>·</i></span><span>Pas de deux <i>·</i></span><span>Tableau <i>·</i></span><span>Sotto voce <i>·</i></span><span>Allegro <i>·</i></span><span>Encore <i>·</i></span>
+    </div>
+  </div>
+
+  <!-- ════════════════ ACT I — MUSIC (cinema) ════════════════ -->
+  <section class="act act--cinema" id="music" data-screen-label="Act I — Music">
+    <div class="act-stage">
+      <div class="plate dark">
+        <img src="/assets/images/Art/Music.webp" alt="Music ensemble mid-rehearsal in the music room" loading="lazy" />
+      </div>
+    </div>
+    <div class="act-scrim" aria-hidden="true"></div>
+    <div class="ghost-num" aria-hidden="true">I</div>
+    <div class="act-body">
+      <div class="panel reveal">
+        <div class="act-kicker"><span class="act-roman">I</span> The Programme</div>
+        <h2 class="act-name">Music</h2>
+        <p class="act-line">Where the school day finds its <em>rhythm</em>.</p>
+        <div class="act-meta">
+          <div class="act-tag"><span class="dot"></span> Three ensembles — Choir · Orchestra · Band</div>
+          <p class="act-note">A fully-equipped music room with audio &amp; visual facilities, where every instrument and every voice begins.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- wide landscape plate — Music -->
+  <div class="act-wide dark-band reveal">
+    <div class="plate dark">
+      <img src="/assets/images/Art/Music_Wide.webp" alt="The full music room in session" loading="lazy" />
+    </div>
+  </div>
+
+  <!-- ════════════════ ACT II — CHOIR (editorial) ════════════════ -->
+  <section class="act act--editorial" id="choir" data-screen-label="Act II — Choir">
+    <div class="act-grid">
+      <div class="act-media reveal">
+        <div class="plate light">
+          <img src="/assets/images/Art/Choir.webp" alt="Robed choir in performance" loading="lazy" />
+        </div>
+      </div>
+      <div class="act-copy reveal">
+        <div class="edge-num" aria-hidden="true">II</div>
+        <div class="act-kicker"><span class="act-roman">II</span> Voices</div>
+        <h2 class="act-name">Choir</h2>
+        <p class="act-line">Many voices, drawn to a <em>single breath</em>.</p>
+        <div class="act-meta">
+          <div class="act-tag"><span class="dot"></span> Sacred &amp; secular repertoire</div>
+          <p class="act-note"><em>Dona Nobis Pacem</em> — sung at the Festival of Nine Lessons &amp; Carols, every December.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- wide landscape plate — Choir -->
+  <div class="act-wide light-band reveal">
+    <div class="plate light">
+      <img src="/assets/images/Art/Choir_Wide.webp" alt="The full choir in formation across the stage" loading="lazy" />
+    </div>
+  </div>
+
+  <!-- ════════════════ ACT III — ORCHESTRA (cinema, flip) ════════════════ -->
+  <section class="act act--cinema flip" id="orchestra" data-screen-label="Act III — Orchestra">
+    <div class="act-stage">
+      <div class="plate dark">
+        <img src="/assets/images/Art/Orchestra.webp" alt="School orchestra on stage, strings and brass under warm light" loading="lazy" />
+      </div>
+    </div>
+    <div class="act-scrim" aria-hidden="true"></div>
+    <div class="ghost-num" aria-hidden="true">III</div>
+    <div class="act-body">
+      <div class="panel reveal">
+        <div class="act-kicker"><span class="act-roman">III</span> Ensemble</div>
+        <h2 class="act-name">Orchestra</h2>
+        <p class="act-line">Strings, brass — and the <em>space between</em>.</p>
+        <div class="act-meta">
+          <div class="act-tag"><span class="dot"></span> Featured at Splendours · 2023 &amp; 2025</div>
+          <p class="act-note">The full school orchestra, tuning the discipline of many parts into one performance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- wide landscape plate — Orchestra -->
+  <div class="act-wide dark-band reveal">
+    <div class="plate dark">
+      <img src="/assets/images/Art/Orchestra_Wide.webp" alt="The full school orchestra, panoramic view from the hall" loading="lazy" />
+    </div>
+  </div>
+
+  <!-- ════════════════ ACT IV — WESTERN BAND (editorial, flip) ════════════════ -->
+  <section class="act act--editorial flip" id="band" data-screen-label="Act IV — Western Band">
+    <div class="act-grid">
+      <div class="act-media reveal">
+        <div class="plate light">
+          <img src="/assets/images/Art/Western_Band.webp" alt="Western Band brass and percussion performing on stage" loading="lazy" />
+        </div>
+      </div>
+      <div class="act-copy reveal">
+        <div class="edge-num" aria-hidden="true">IV</div>
+        <div class="act-kicker"><span class="act-roman">IV</span> Brass &amp; Percussion</div>
+        <h2 class="act-name">Western<br />Band</h2>
+        <p class="act-line">Sound enough to <em>fill the hall</em>.</p>
+        <div class="act-meta">
+          <div class="act-tag"><span class="dot"></span> All-Island First Place · 2025</div>
+          <p class="act-note">Awarded Best Band at the Lanka Festival of Music, Dance &amp; Speech — the College's standout accolade.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- wide landscape plate — Western Band -->
+  <div class="act-wide light-band reveal">
+    <div class="plate light">
+      <img src="/assets/images/Art/Western_Band_Wide.webp" alt="Western Band in full formation across the grounds" loading="lazy" />
+    </div>
+  </div>
+
+  <!-- ════════════════ ACT V — DANCE (cinema) ════════════════ -->
+  <section class="act act--cinema" id="dance" data-screen-label="Act V — Dance">
+    <div class="act-stage">
+      <div class="plate dark">
+        <img src="/assets/images/Art/Dance.webp" alt="Dancers mid-movement under dramatic stage lighting" loading="lazy" />
+      </div>
+    </div>
+    <div class="act-scrim" aria-hidden="true"></div>
+    <div class="ghost-num" aria-hidden="true">V</div>
+    <div class="act-body">
+      <div class="panel reveal">
+        <div class="act-kicker"><span class="act-roman">V</span> Movement</div>
+        <h2 class="act-name">Dance</h2>
+        <p class="act-line">The body, speaking <em>without words</em>.</p>
+        <div class="act-meta">
+          <div class="act-tag"><span class="dot"></span> Splendours · 2023 &amp; 2025</div>
+          <p class="act-note">A fully-equipped dancing studio with audio &amp; visual facilities — where movement is rehearsed into performance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- wide landscape plate — Dance -->
+  <div class="act-wide dark-band reveal">
+    <div class="plate dark">
+      <img src="/assets/images/Art/Dance_Wide.webp" alt="Full dance ensemble across the stage mid-formation" loading="lazy" />
+    </div>
+  </div>
+
+  <!-- ════════════════ ACT VI — DRAMA (editorial) ════════════════ -->
+  <section class="act act--editorial" id="drama" data-screen-label="Act VI — Drama">
+    <div class="act-grid">
+      <div class="act-media reveal">
+        <div class="plate light">
+          <img src="/assets/images/Art/Drama.webp" alt="A single figure under a spotlight on a darkened stage" loading="lazy" />
+        </div>
+      </div>
+      <div class="act-copy reveal">
+        <div class="edge-num" aria-hidden="true">VI</div>
+        <div class="act-kicker"><span class="act-roman">VI</span> The Stage</div>
+        <h2 class="act-name">Drama</h2>
+        <p class="act-line">A light, a silence — a <em>story begun</em>.</p>
+        <div class="act-meta">
+          <div class="act-tag"><span class="dot"></span> Stagecraft · Movement · Voice</div>
+          <p class="act-note">Where students learn to hold a room — to speak, to listen, and to become someone else for a while.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- wide landscape plate — Drama -->
+  <div class="act-wide light-band reveal">
+    <div class="plate light">
+      <img src="/assets/images/Art/Drama_Wide.webp" alt="Full set and cast on stage during a drama production" loading="lazy" />
+    </div>
+  </div>
+
+  <!-- ════════════════ ACCOLADE ════════════════ -->
+  <section class="accolade" data-screen-label="Accolade">
+    <div class="accolade-inner reveal">
+      <span class="eyebrow">Recognition · 2025</span>
+      <div class="accolade-laurel">— All-Island First Place —</div>
+      <h2>Lanka Festival of Music, <em>Dance &amp; Speech</em></h2>
+      <p class="accolade-sub">
+        Awarded first place island-wide, with special awards for Best Band and Best Choir
+        in the Group Singing competition — affiliated with the British &amp; International
+        Federation of Festivals for Music, Dance &amp; Speech, United Kingdom.
+      </p>
+      <div class="accolade-medals">
+        <span class="medal">All-Island First Place</span>
+        <span class="medal">Best Band</span>
+        <span class="medal">Best Choir</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════ SEASON ════════════════ -->
+  <section class="season" data-screen-label="The Season">
+    <div class="season-word" aria-hidden="true">Encore</div>
+    <div class="season-inner">
+      <div class="reveal">
+        <span class="eyebrow">The Season</span>
+        <h2>Our annual <em>performances</em>.</h2>
+      </div>
+      <div class="season-list reveal">
+        <div class="season-row">
+          <div class="season-when">2023 · 2025</div>
+          <div class="season-what"><em>Splendours</em></div>
+          <div class="season-where">College Stage</div>
+        </div>
+        <div class="season-row">
+          <div class="season-when">Every December</div>
+          <div class="season-what">A Festival of Nine Lessons &amp; Carols<br /><em>Dona Nobis Pacem</em></div>
+          <div class="season-where">College Chapel</div>
+        </div>
+      </div>
+      <p class="season-foot">Visitors are welcome at every performance — the surest way to hear what the arts sound like, here.</p>
+    </div>
+  </section>
+
+  <!-- Footer (injected by JS) -->
+  <div data-component="footer"></div>
+
+  <script>
+    /* reveal on scroll */
+    (function () {
+      var els = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window)) { els.forEach(function (e) { e.classList.add('in'); }); return; }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+        });
+      }, { threshold: 0.18, rootMargin: '0px 0px -8% 0px' });
+      els.forEach(function (e) { io.observe(e); });
+    })();
+
+    /* act-rail scroll-spy */
+    (function () {
+      var links = Array.prototype.slice.call(document.querySelectorAll('.rail a'));
+      var map = {};
+      links.forEach(function (a) {
+        var id = a.getAttribute('data-rail');
+        var sec = document.getElementById(id);
+        if (sec) map[id] = { link: a, sec: sec };
+      });
+      function spy() {
+        var y = window.scrollY + window.innerHeight * 0.42;
+        var current = null;
+        Object.keys(map).forEach(function (id) {
+          if (y >= map[id].sec.offsetTop) current = id;
+        });
+        links.forEach(function (a) { a.classList.remove('active'); });
+        if (current && map[current]) map[current].link.classList.add('active');
+      }
+      window.addEventListener('scroll', spy, { passive: true });
+      window.addEventListener('resize', spy);
+      spy();
+    })();
+  </script>
+</body>
+</html>
